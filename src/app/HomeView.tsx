@@ -17,12 +17,12 @@ export function HomeView({ subjects }: { subjects: SubjectItem[] }) {
       <section className="card relative overflow-hidden p-6">
         <div aria-hidden className="absolute -right-6 -top-6 h-28 w-28 rounded-full bg-candy-yellow-soft" />
         <div aria-hidden className="absolute -bottom-8 right-16 h-20 w-20 rounded-full bg-candy-sky-soft" />
-        <p className="relative text-4xl" aria-hidden>💊🧪⭐</p>
+        <p className="relative text-4xl" aria-hidden>🛡️💊📚</p>
         <h1 className="relative mt-2 text-[1.7rem] font-extrabold leading-tight">
-          みんなの<span className="text-candy-pink">薬学</span>
-          <span className="text-candy-purple">クイズ</span>
+          再試<span className="text-candy-pink">回避</span>
+          <span className="text-candy-purple">委員会</span>
         </h1>
-        <p className="relative mt-1 text-sm text-ink-soft">授業ごとのまとめとクイズで試験対策！何度でも挑戦して平均正答率を上げよう✨</p>
+        <p className="relative mt-1 text-sm text-ink-soft">まとめを読んで、クイズを解いて、再試を回避しよう 🛡️ 何度でも挑戦して平均正答率を上げよう✨</p>
       </section>
 
       <section>

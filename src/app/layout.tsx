@@ -5,9 +5,9 @@ import { AppHeader } from "@/components/AppHeader";
 import { Decor } from "@/components/ui";
 
 export const metadata: Metadata = {
-  title: "みんなの薬学クイズ",
+  title: "再試回避委員会",
   description: "授業資料から作ったまとめとクイズで、楽しく薬学の試験対策",
-  appleWebApp: { capable: true, title: "薬学クイズ", statusBarStyle: "default" },
+  appleWebApp: { capable: true, title: "再試回避委員会", statusBarStyle: "default" },
   formatDetection: { telephone: false },
   robots: { index: false, follow: false },
 };
