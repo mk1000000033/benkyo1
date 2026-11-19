@@ -1,0 +1,99 @@
+// npm test で実行（Node.js 組み込みのテストランナー）
+import { test } from "node:test";
+import assert from "node:assert/strict";
+import { compareRates, formatDelta, formatPercent } from "../src/lib/stats";
+import { addAnswer, addCompletedAttempt, MAX_STORED_ATTEMPTS, type Progress, type SetRecord } from "../src/lib/records";
+import { gradeAnswer } from "../src/lib/grade";
+import { validateQuizSet } from "../src/lib/quiz-validate";
+import type { QuizSetFile } from "../src/lib/quiz-types";
+import sample from "../content/quiz-sets/sample-pharmacology-basics.v1.json";
+
+/** k問正解で15問回答済みの進行状態 */
+function finished(id: string, k: number): Progress {
+  return {
+    attemptId: id, setId: "s", version: 1, questionCount: 15, currentIndex: 14, startedAt: "t",
+    answers: Array.from({ length: 15 }, (_, i) => ({ index: i, answer: "a", isCorrect: i < k })),
+  };
+}
+function play(rec: SetRecord | null, id: string, k: number) {
+  return addCompletedAttempt(rec, finished(id, k), "2026-11-19T00:00:00Z");
+}
+
+test("平均正答率：仕様の例 12 → 9 → 15 で 80%", () => {
+  let r = play(null, "1", 12).record;
+  assert.equal(formatPercent(r.totalCorrect, r.totalQuestions), "80.0");
+  r = play(r, "2", 9).record;
+  assert.equal(formatPercent(r.totalCorrect, r.totalQuestions), "70.0"); // 下がる
+  r = play(r, "3", 15).record;
+  assert.equal(r.attemptsCount, 3);
+  assert.equal(r.totalCorrect, 36);
+  assert.equal(formatPercent(r.totalCorrect, r.totalQuestions), "80.0");
+});
+
+test("同じ挑戦を2回完了しても1回分だけ（二重タップ対策）", () => {
+  const first = play(null, "x", 10);
+  const again = addCompletedAttempt(first.record, finished("x", 10), "later");
+  assert.equal(again.added, false);
+  assert.equal(again.record.attemptsCount, 1);
+  assert.equal(again.record.totalCorrect, 10);
+});
+
+test("未完了の挑戦は記録できない", () => {
+  const p = finished("y", 5);
+  p.answers = p.answers.slice(0, 14);
+  assert.throws(() => addCompletedAttempt(null, p, "t"));
+});
+
+test("結果画面用に直前の累計を保存", () => {
+  const r1 = play(null, "1", 12).record;
+  const { attempt } = play(r1, "2", 9);
+  assert.deepEqual(attempt.prev, { attemptsCount: 1, totalCorrect: 12, totalQuestions: 15 });
+  assert.equal(formatDelta(12, 15, 21, 30), "−10.0");
+});
+
+test("詳細は直近だけ残すが、累計は消さない", () => {
+  let r: SetRecord | null = null;
+  for (let i = 0; i < MAX_STORED_ATTEMPTS + 5; i++) r = play(r, String(i), 15).record;
+  assert.equal(r!.attempts.length, MAX_STORED_ATTEMPTS);
+  assert.equal(r!.attemptsCount, MAX_STORED_ATTEMPTS + 5);
+});
+
+test("確定済みの回答は変更できない・順番飛ばしは無視", () => {
+  let p: Progress = { ...finished("z", 0), currentIndex: 0, answers: [] };
+  p = addAnswer(p, { index: 0, answer: "a", isCorrect: true });
+  const again = addAnswer(p, { index: 0, answer: "b", isCorrect: false });
+  assert.equal(again, p);
+  assert.equal(addAnswer(p, { index: 5, answer: "a", isCorrect: true }), p);
+});
+
+test("採点", () => {
+  const set = sample as unknown as QuizSetFile;
+  assert.equal(gradeAnswer(set.questions[0], "a"), true);
+  assert.equal(gradeAnswer(set.questions[0], "b"), false);
+  assert.equal(gradeAnswer(set.questions[0], "zzz"), null);
+  assert.equal(gradeAnswer(set.questions[1], false), true); // ○×
+  assert.equal(gradeAnswer(set.questions[1], "a"), null);
+});
+
+test("表示：小数第1位・厳密比較", () => {
+  assert.equal(formatPercent(1, 3), "33.3");
+  assert.equal(formatPercent(2, 3), "66.7");
+  assert.equal(formatPercent(1, 8), "12.5");
+  assert.equal(compareRates(12, 15, 24, 30), 0);
+  assert.equal(compareRates(2001, 3000, 2000, 2999), 1);
+  assert.equal(formatDelta(36, 45, 48, 60), "±0.0");
+  assert.equal(formatDelta(1, 3, 1, 2), "+16.7");
+});
+
+test("問題データの検査：サンプルは合格・壊れたデータは不合格", () => {
+  const ids = ["sample"];
+  assert.deepEqual(validateQuizSet(sample, ids), []);
+  const broken = structuredClone(sample) as any;
+  broken.questions[0].answer = "z";
+  broken.questions[2].prompt = "空欄なし";
+  broken.questions.pop();
+  const errs = validateQuizSet(broken, ids);
+  assert.ok(errs.some((e) => e.includes("answer が選択肢ID")));
+  assert.ok(errs.some((e) => e.includes("[[blank]]")));
+  assert.ok(errs.some((e) => e.includes("15問")));
+});

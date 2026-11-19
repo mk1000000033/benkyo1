@@ -1,4 +1,4 @@
-import { listSubjectsWithCounts } from "@/server/quiz-registry";
+import { listSubjectsWithCounts } from "@/lib/quiz-registry";
 import { HomeView } from "./HomeView";
 
 export default function HomePage() {

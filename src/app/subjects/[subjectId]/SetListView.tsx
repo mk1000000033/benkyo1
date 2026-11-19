@@ -1,34 +1,30 @@
 "use client";
 import Link from "next/link";
-import { useCallback, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import type { SubjectColor } from "@content/subjects";
 import type { QuizSetSummary } from "@/lib/quiz-types";
-import type { MySummaryDTO } from "@/lib/api-types";
-import { api, errorMessage } from "@/lib/api-client";
-import { COLOR, ErrorBox, formatDateJa } from "@/components/ui";
+import { loadProgress, loadRecord, type Progress, type SetRecord } from "@/lib/records";
+import { formatPercent } from "@/lib/stats";
+import { COLOR } from "@/lib/colors";
+import { formatDateJa } from "@/components/ui";
 
 interface Props {
   subject: { id: string; name: string; emoji: string; color: SubjectColor };
   sets: QuizSetSummary[];
 }
 
+type Local = Record<string, { record: SetRecord | null; progress: Progress | null }>;
+
 export function SetListView({ subject, sets }: Props) {
   const c = COLOR[subject.color];
-  const [summary, setSummary] = useState<MySummaryDTO | null>(null);
-  const [error, setError] = useState<string | null>(null);
-
-  const load = useCallback(async () => {
-    setError(null);
-    try {
-      setSummary(await api<MySummaryDTO>("/api/me/summary"));
-    } catch (e) {
-      setError(errorMessage(e));
-    }
-  }, []);
+  // 端末の記録は表示後に読み込む（サーバー側の描画には存在しないため）
+  const [local, setLocal] = useState<Local | null>(null);
 
   useEffect(() => {
-    void load();
-  }, [load]);
+    const next: Local = {};
+    for (const s of sets) next[s.id] = { record: loadRecord(s.id), progress: loadProgress(s.id) };
+    setLocal(next);
+  }, [sets]);
 
   return (
     <div className="space-y-5">
@@ -43,15 +39,13 @@ export function SetListView({ subject, sets }: Props) {
         </div>
       </header>
 
-      {error && <ErrorBox message={error} onRetry={() => void load()} />}
-
       {sets.length === 0 && <p className="card p-6 text-center font-bold text-ink-soft">まだ問題セットがありません。お楽しみに！</p>}
 
       <ul className="space-y-4">
         {sets.map((s, i) => {
-          const stat = summary?.stats[s.id];
-          const progress = summary?.inProgress[s.id];
-          const resumable = progress && !progress.outdated;
+          const rec = local?.[s.id]?.record;
+          const progress = local?.[s.id]?.progress;
+          const resumable = progress && progress.version === s.version;
           return (
             <li key={s.id} className="card p-5">
               <div className="flex items-start gap-3">
@@ -70,29 +64,24 @@ export function SetListView({ subject, sets }: Props) {
                 <div className="rounded-2xl bg-candy-mint-soft p-2">
                   <p className="text-xs font-bold text-ink-soft">自分の平均正答率</p>
                   <p className="text-xl font-extrabold text-candy-mint-deep">
-                    {summary ? (stat ? `${stat.percentText}%` : "未挑戦") : "…"}
+                    {local ? (rec && rec.attemptsCount > 0 ? `${formatPercent(rec.totalCorrect, rec.totalQuestions)}%` : "未挑戦") : "…"}
                   </p>
                 </div>
                 <div className="rounded-2xl bg-candy-sky-soft p-2">
                   <p className="text-xs font-bold text-ink-soft">挑戦回数</p>
-                  <p className="text-xl font-extrabold text-candy-sky-deep">{summary ? `${stat?.attemptsCount ?? 0}回` : "…"}</p>
+                  <p className="text-xl font-extrabold text-candy-sky-deep">{local ? `${rec?.attemptsCount ?? 0}回` : "…"}</p>
                 </div>
               </div>
 
               {resumable && (
                 <p className="mt-3 rounded-2xl bg-candy-yellow-soft px-3 py-2 text-sm font-bold">
-                  ⏸️ 途中のクイズがあります（{progress.answeredCount}/{progress.questionCount}問 回答済み）
+                  ⏸️ 途中のクイズがあります（{progress.answers.length}/{progress.questionCount}問 回答済み）
                 </p>
               )}
 
-              <div className="mt-4 grid grid-cols-2 gap-3">
-                <Link href={`/quiz/${s.id}`} className={`btn-pop ${resumable ? "pop-yellow" : "pop-pink"} text-sm`}>
-                  {resumable ? "▶ 続きから再開" : "▶ クイズ開始"}
-                </Link>
-                <Link href={`/ranking/${s.id}`} className="btn-pop pop-purple text-sm">
-                  🏆 ランキング
-                </Link>
-              </div>
+              <Link href={`/quiz/${s.id}`} className={`btn-pop ${resumable ? "pop-yellow" : "pop-pink"} mt-4 w-full`}>
+                {resumable ? "▶ 続きから再開" : "▶ クイズ開始"}
+              </Link>
             </li>
           );
         })}

@@ -1,8 +1,6 @@
-"use client";
 import Link from "next/link";
 import type { SubjectColor } from "@content/subjects";
-import { useParticipant } from "@/components/ParticipantProvider";
-import { COLOR } from "@/components/ui";
+import { COLOR } from "@/lib/colors";
 
 interface SubjectItem {
   id: string;
@@ -14,21 +12,17 @@ interface SubjectItem {
 }
 
 export function HomeView({ subjects }: { subjects: SubjectItem[] }) {
-  const { nickname } = useParticipant();
   return (
     <div className="space-y-6">
       <section className="card relative overflow-hidden p-6">
         <div aria-hidden className="absolute -right-6 -top-6 h-28 w-28 rounded-full bg-candy-yellow-soft" />
         <div aria-hidden className="absolute -bottom-8 right-16 h-20 w-20 rounded-full bg-candy-sky-soft" />
-        <p className="relative text-sm font-bold text-ink-soft">こんにちは、</p>
-        <p className="relative text-2xl font-extrabold">
-          <span className="break-all">{nickname}</span> さん 👋
-        </p>
-        <h1 className="relative mt-3 text-[1.7rem] font-extrabold leading-tight">
+        <p className="relative text-4xl" aria-hidden>💊🧪⭐</p>
+        <h1 className="relative mt-2 text-[1.7rem] font-extrabold leading-tight">
           みんなの<span className="text-candy-pink">薬学</span>
           <span className="text-candy-purple">クイズ</span>
         </h1>
-        <p className="relative mt-1 text-sm text-ink-soft">科目を選んでクイズに挑戦！平均正答率でランキングを競おう🏆</p>
+        <p className="relative mt-1 text-sm text-ink-soft">授業ごとの15問クイズで試験対策！何度でも挑戦して平均正答率を上げよう✨</p>
       </section>
 
       <section>
@@ -63,6 +57,10 @@ export function HomeView({ subjects }: { subjects: SubjectItem[] }) {
           })}
         </ul>
       </section>
+
+      <p className="text-center text-xs text-ink-soft">
+        📱 学習記録はこの端末のブラウザに保存されます（機種変更やSafariのデータ消去で消えます）
+      </p>
     </div>
   );
 }

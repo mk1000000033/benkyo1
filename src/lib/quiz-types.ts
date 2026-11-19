@@ -1,4 +1,4 @@
-// 問題データの型定義（クライアントとサーバーで共有。正答そのものはここには含まれない）
+// 問題データの型定義
 
 export type QuestionType = "choice" | "truefalse" | "fill";
 export type AnswerValue = string | boolean;
@@ -54,22 +54,7 @@ export interface QuizSetFile {
   questions: Question[];
 }
 
-/** クライアントに送ってよい問題（正答・解説を除いたもの） */
-export type PublicQuestion =
-  | Omit<ChoiceQuestion, "answer" | "explanation" | "sourcePage">
-  | Omit<TrueFalseQuestion, "answer" | "explanation" | "sourcePage">
-  | Omit<FillQuestion, "answer" | "explanation" | "sourcePage">;
-
-/** 回答確定後にだけ送る情報 */
-export interface RevealedInfo {
-  answer: AnswerValue;
-  correctAnswer: AnswerValue;
-  isCorrect: boolean;
-  explanation: string;
-  sourcePage: string | null;
-}
-
-/** 一覧表示用のメタ情報（秘密情報なし） */
+/** 一覧表示用のメタ情報 */
 export interface QuizSetSummary {
   id: string;
   version: number;

@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import { getSubject, listActiveSummaries } from "@/server/quiz-registry";
+import { getSubject, listActiveSummaries } from "@/lib/quiz-registry";
 import { SetListView } from "./SetListView";
 
 export default async function SubjectPage({ params }: { params: Promise<{ subjectId: string }> }) {

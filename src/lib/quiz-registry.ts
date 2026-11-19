@@ -1,10 +1,10 @@
-// 問題データ（正答を含む）を扱うサーバー専用モジュール。
-//   "server-only" により、誤ってブラウザ側から import するとビルドエラーになります。
+// 問題データの登録簿を読むモジュール（ページのサーバー側でだけ使う）。
+//   "server-only" により、全セットのデータがブラウザ用コードに丸ごと入ることを防ぎます。
 import "server-only";
 import { QUIZ_SET_FILES } from "@content/quiz-sets";
 import { SUBJECTS, findSubject, type Subject } from "@content/subjects";
 import { validateQuizSet, asQuizSet } from "@/lib/quiz-validate";
-import type { AnswerValue, PublicQuestion, Question, QuizSetFile, QuizSetSummary } from "@/lib/quiz-types";
+import type { QuizSetFile, QuizSetSummary } from "@/lib/quiz-types";
 
 const HIDE_SAMPLES = process.env.HIDE_SAMPLE_SETS === "true";
 
@@ -84,24 +84,7 @@ export function getSubject(id: string): Subject | undefined {
   return s;
 }
 
-/** 正答と解説を取り除いた問題（ブラウザに送ってよい形） */
-export function toPublicQuestion(q: Question): PublicQuestion {
-  switch (q.type) {
-    case "choice":
-      return { id: q.id, type: q.type, prompt: q.prompt, options: q.options };
-    case "fill":
-      return { id: q.id, type: q.type, prompt: q.prompt, options: q.options };
-    case "truefalse":
-      return { id: q.id, type: q.type, prompt: q.prompt };
-  }
-}
-
-/** サーバー側の採点。回答の形式が不正なら null */
-export function gradeAnswer(q: Question, answer: unknown): { isCorrect: boolean; answer: AnswerValue; correctAnswer: AnswerValue } | null {
-  if (q.type === "truefalse") {
-    if (typeof answer !== "boolean") return null;
-    return { isCorrect: answer === q.answer, answer, correctAnswer: q.answer };
-  }
-  if (typeof answer !== "string" || !q.options.some((o) => o.id === answer)) return null;
-  return { isCorrect: answer === q.answer, answer, correctAnswer: q.answer };
+/** 同じセットの全バージョン（過去の挑戦の復習用） */
+export function getAllVersions(id: string): QuizSetFile[] {
+  return ALL_SETS.filter((s) => s.id === id);
 }

@@ -1,15 +1,6 @@
 "use client";
 // 共通の小さなUI部品（進捗バー・紙吹雪・星・装飾・読み込み表示）
 import { useMemo, type CSSProperties } from "react";
-import type { SubjectColor } from "@content/subjects";
-
-export const COLOR: Record<SubjectColor, { pop: string; soft: string; text: string; ring: string }> = {
-  pink: { pop: "pop-pink", soft: "bg-candy-pink-soft", text: "text-candy-pink-deep", ring: "border-candy-pink" },
-  sky: { pop: "pop-sky", soft: "bg-candy-sky-soft", text: "text-candy-sky-deep", ring: "border-candy-sky" },
-  purple: { pop: "pop-purple", soft: "bg-candy-purple-soft", text: "text-candy-purple-deep", ring: "border-candy-purple" },
-  yellow: { pop: "pop-yellow", soft: "bg-candy-yellow-soft", text: "text-candy-yellow-deep", ring: "border-candy-yellow" },
-  mint: { pop: "pop-mint", soft: "bg-candy-mint-soft", text: "text-candy-mint-deep", ring: "border-candy-mint" },
-};
 
 export function ProgressBar({ value, max, label }: { value: number; max: number; label?: string }) {
   const pct = max > 0 ? Math.min(100, Math.round((value / max) * 100)) : 0;

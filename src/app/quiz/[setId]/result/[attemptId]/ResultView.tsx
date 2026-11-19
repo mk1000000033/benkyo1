@@ -1,38 +1,95 @@
 "use client";
 import Link from "next/link";
-import { useCallback, useEffect, useState } from "react";
-import type { ResultDTO } from "@/lib/api-types";
-import { api, errorMessage } from "@/lib/api-client";
-import { Confetti, ErrorBox, LoadingScreen } from "@/components/ui";
+import { useEffect, useState } from "react";
+import type { QuestionType, QuizOption, QuizSetFile, AnswerValue } from "@/lib/quiz-types";
+import { findAttempt, type AttemptRecord } from "@/lib/records";
+import { compareRates, formatDelta, formatPercent } from "@/lib/stats";
+import { Confetti, LoadingScreen } from "@/components/ui";
 import { QuestionBody, TYPE_LABEL, answerLabel } from "@/components/QuestionBody";
 
-const MESSAGES: Record<ResultDTO["direction"], { emoji: string; title: string; body: string; cls: string }> = {
-  first: { emoji: "🎉", title: "ランキングに参加しました！", body: "初挑戦おつかれさま！ここからどんどん伸ばしていこう。", cls: "bg-candy-yellow-soft" },
-  up: { emoji: "🚀", title: "平均正答率アップ！", body: "復習の成果が出てるね！この調子でランキング上位を目指そう！", cls: "bg-candy-mint-soft" },
+type Direction = "first" | "up" | "down" | "same";
+
+interface ReviewItem {
+  index: number;
+  type: QuestionType;
+  prompt: string;
+  options: QuizOption[] | null;
+  answer: AnswerValue;
+  correctAnswer: AnswerValue;
+  isCorrect: boolean;
+  explanation: string;
+  sourcePage: string | null;
+}
+
+function buildResult(a: AttemptRecord, versions: QuizSetFile[]) {
+  const set = versions.find((v) => v.version === a.version);
+  const { attemptsCount: n0, totalCorrect: c0, totalQuestions: q0 } = a.prev;
+  const c1 = c0 + a.score;
+  const q1 = q0 + a.questionCount;
+  let direction: Direction = "first";
+  if (n0 > 0) {
+    const cmp = compareRates(c1, q1, c0, q0);
+    direction = cmp > 0 ? "up" : cmp < 0 ? "down" : "same";
+  }
+  const review: ReviewItem[] = a.answers.flatMap((ans) => {
+    const q = set?.questions[ans.index];
+    if (!q) return [];
+    return [{
+      index: ans.index,
+      type: q.type,
+      prompt: q.prompt,
+      options: q.type === "truefalse" ? null : q.options,
+      answer: ans.answer,
+      correctAnswer: q.answer,
+      isCorrect: ans.isCorrect,
+      explanation: q.explanation,
+      sourcePage: q.sourcePage ?? null,
+    }];
+  });
+  return {
+    title: set?.title ?? "",
+    setId: a.setId,
+    score: a.score,
+    questionCount: a.questionCount,
+    thisPercentText: formatPercent(a.score, a.questionCount),
+    average: { percentText: formatPercent(c1, q1), attemptsCount: n0 + 1 },
+    previous: n0 > 0 ? { percentText: formatPercent(c0, q0) } : null,
+    deltaText: n0 > 0 ? formatDelta(c0, q0, c1, q1) : null,
+    direction,
+    review,
+  };
+}
+
+const MESSAGES: Record<Direction, { emoji: string; title: string; body: string; cls: string }> = {
+  first: { emoji: "🎉", title: "初挑戦クリア！", body: "おつかれさま！何度も挑戦して平均正答率を上げていこう。", cls: "bg-candy-yellow-soft" },
+  up: { emoji: "🚀", title: "平均正答率アップ！", body: "復習の成果が出てるね！この調子でどんどん伸ばそう！", cls: "bg-candy-mint-soft" },
   same: { emoji: "👍", title: "平均正答率キープ！", body: "安定した実力がついてきたね。苦手な問題を復習してさらに上へ！", cls: "bg-candy-sky-soft" },
   down: { emoji: "🌱", title: "今回はちょっと苦戦…でも大丈夫！", body: "間違えた問題は伸びしろ。下の復習で解説を確認して、もう一度挑戦してみよう！", cls: "bg-candy-pink-soft" },
 };
 
-export function ResultView({ setId, subjectId, subjectName, attemptId }: { setId: string; subjectId: string; subjectName: string; attemptId: string }) {
-  const [data, setData] = useState<ResultDTO | null>(null);
-  const [error, setError] = useState<string | null>(null);
+export function ResultView({ versions, subjectId, subjectName, attemptId }: { versions: QuizSetFile[]; subjectId: string; subjectName: string; attemptId: string }) {
+  const [attempt, setAttempt] = useState<AttemptRecord | null | undefined>(undefined);
   const [open, setOpen] = useState<Record<number, boolean>>({});
 
-  const load = useCallback(async () => {
-    setError(null);
-    try {
-      setData(await api<ResultDTO>(`/api/attempts/${attemptId}`));
-    } catch (e) {
-      setError(errorMessage(e));
-    }
-  }, [attemptId]);
-
   useEffect(() => {
-    void load();
-  }, [load]);
+    setAttempt(findAttempt(versions[0]?.id ?? "", attemptId));
+  }, [versions, attemptId]);
 
-  if (error) return <ErrorBox message={error} onRetry={() => void load()} />;
-  if (!data) return <LoadingScreen message="結果をよみこみ中…" />;
+  if (attempt === undefined) return <LoadingScreen message="結果をよみこみ中…" />;
+  if (attempt === null) {
+    return (
+      <div className="card mx-auto max-w-md p-6 text-center">
+        <div className="text-4xl">🔍</div>
+        <p className="mt-2 font-bold">この挑戦の記録が見つかりませんでした。</p>
+        <p className="mt-1 text-sm text-ink-soft">別の端末・ブラウザで解いた記録や、古い記録は表示できません。</p>
+        <Link href={`/subjects/${subjectId}`} className="btn-pop pop-pink mt-4">
+          ◀ 問題セット一覧へ
+        </Link>
+      </div>
+    );
+  }
+  const data = buildResult(attempt, versions);
+  const setId = data.setId;
 
   const msg = MESSAGES[data.direction];
   const celebrate = data.direction === "up" || data.direction === "first";
@@ -62,7 +119,7 @@ export function ResultView({ setId, subjectId, subjectName, attemptId }: { setId
 
       {/* 平均正答率（過去を含む） */}
       <section className="card overflow-hidden">
-        <div className="bg-candy-purple px-5 py-2 text-sm font-extrabold text-white">📊 これまでの成績（ランキング対象）</div>
+        <div className="bg-candy-purple px-5 py-2 text-sm font-extrabold text-white">📊 これまでの成績</div>
         <div className="grid grid-cols-2 gap-3 p-5 text-center">
           <div className="rounded-2xl bg-candy-purple-soft p-3">
             <p className="text-xs font-bold text-ink-soft">平均正答率</p>
@@ -81,19 +138,6 @@ export function ResultView({ setId, subjectId, subjectName, attemptId }: { setId
             <p className="text-xs font-bold text-ink-soft">完了回数（今回を含む）</p>
             <p className="text-3xl font-extrabold text-candy-sky-deep">{data.average.attemptsCount}回</p>
           </div>
-          <div className="col-span-2 rounded-2xl bg-candy-yellow-soft p-3">
-            <p className="text-xs font-bold text-ink-soft">現在のランキング順位</p>
-            <p className="text-3xl font-extrabold text-candy-yellow-deep">
-              {data.rank ? (
-                <>
-                  {data.rank.rank <= 3 ? ["🥇", "🥈", "🥉"][data.rank.rank - 1] : "🏅"} {data.rank.rank}位
-                  <span className="text-base text-ink-soft"> / {data.rank.total}人中</span>
-                </>
-              ) : (
-                "—"
-              )}
-            </p>
-          </div>
         </div>
       </section>
 
@@ -107,8 +151,8 @@ export function ResultView({ setId, subjectId, subjectName, attemptId }: { setId
         <Link href={`/quiz/${setId}?mode=new`} className="btn-pop pop-pink">
           ↺ もう一度挑戦
         </Link>
-        <Link href={`/ranking/${setId}`} className="btn-pop pop-purple">
-          🏆 ランキング
+        <Link href={`/subjects/${subjectId}`} className="btn-pop pop-purple">
+          📚 セット一覧
         </Link>
         <Link href="/" className="btn-pop pop-white">
           🏠 ホーム
@@ -176,10 +220,6 @@ export function ResultView({ setId, subjectId, subjectName, attemptId }: { setId
           })}
         </ul>
       </section>
-
-      <Link href={`/subjects/${subjectId}`} className="block text-center text-sm font-bold text-ink-soft">
-        ◀ 問題セット一覧へ
-      </Link>
     </div>
   );
 }
