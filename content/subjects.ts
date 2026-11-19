@@ -18,8 +18,6 @@ export const SUBJECTS: Subject[] = [
   { id: "basic-pharmacology", name: "基礎薬理学", emoji: "💊", color: "pink" },
   { id: "immunology", name: "免疫学", emoji: "🛡️", color: "sky" },
   { id: "organic-chemistry", name: "有機化学", emoji: "⚗️", color: "yellow" },
-  // ↓ 動作確認用。本番運用で不要になったら README の「サンプルの削除」を参照
-  { id: "sample", name: "動作確認用サンプル", emoji: "🧪", color: "yellow", isSample: true },
 ];
 
 export function findSubject(id: string): Subject | undefined {

@@ -87,7 +87,6 @@ docs/ADDING_QUIZ.md           問題追加の詳しい手順（Claude向け）
 - [ ] iPhone Safari で クイズ → 結果 → 全問復習 まで動く
 - [ ] クイズ途中で Safari を閉じ、開き直して「続きから再開」できる
 - [ ] 2回目を解くと平均正答率と完了回数が更新される
-- [ ] 本番用の問題セットを追加したら、サンプルを非表示にする（6章）
 
 ---
 
@@ -125,10 +124,3 @@ npm run typecheck         # 型チェック
 ```
 
 ---
-
-## 6. サンプルの削除
-
-サンプル（科目「動作確認用サンプル」）は本番の問題と区別して表示されています。
-
-- **非表示にするだけ**：Vercel の Settings → Environment Variables に `HIDE_SAMPLE_SETS` = `true` を追加して再デプロイ。
-- **完全に削除**：`content/quiz-sets/sample-pharmacology-basics.v1.json` と `content/notes/sample-pharmacology-basics.json` を削除し、それぞれの `index.ts` の該当2行と、`content/subjects.ts` の `sample` の行を削除。

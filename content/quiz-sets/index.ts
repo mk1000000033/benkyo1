@@ -6,7 +6,6 @@
 //     正答がブラウザに送られることはありません。
 // ============================================================================
 
-import sample_pharmacology_basics_v1 from "./sample-pharmacology-basics.v1.json";
 import natural_products_2024_q2_v1 from "./natural-products-2024-q2.v1.json";
 import natural_products_2024_q3_v1 from "./natural-products-2024-q3.v1.json";
 import natural_products_2024_q4_v1 from "./natural-products-2024-q4.v1.json";
@@ -15,7 +14,6 @@ import natural_products_2024_q6_v1 from "./natural-products-2024-q6.v1.json";
 import natural_products_2024_q7_v1 from "./natural-products-2024-q7.v1.json";
 
 export const QUIZ_SET_FILES: unknown[] = [
-  sample_pharmacology_basics_v1,
   natural_products_2024_q2_v1,
   natural_products_2024_q3_v1,
   natural_products_2024_q4_v1,

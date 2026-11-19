@@ -6,7 +6,7 @@ import { addAnswer, addCompletedAttempt, MAX_STORED_ATTEMPTS, type Progress, typ
 import { gradeAnswer } from "../src/lib/grade";
 import { validateQuizSet } from "../src/lib/quiz-validate";
 import type { QuizSetFile } from "../src/lib/quiz-types";
-import sample from "../content/quiz-sets/sample-pharmacology-basics.v1.json";
+import sample from "../content/quiz-sets/natural-products-2024-q2.v1.json";
 
 /** k問正解で15問回答済みの進行状態 */
 function finished(id: string, k: number): Progress {
@@ -68,11 +68,15 @@ test("確定済みの回答は変更できない・順番飛ばしは無視", ()
 
 test("採点", () => {
   const set = sample as unknown as QuizSetFile;
-  assert.equal(gradeAnswer(set.questions[0], "a"), true);
-  assert.equal(gradeAnswer(set.questions[0], "b"), false);
-  assert.equal(gradeAnswer(set.questions[0], "zzz"), null);
-  assert.equal(gradeAnswer(set.questions[1], false), true); // ○×
-  assert.equal(gradeAnswer(set.questions[1], "a"), null);
+  const choice = set.questions.find((q) => q.type === "choice")!;
+  if (choice.type !== "choice") throw new Error("unreachable");
+  const wrong = choice.options.find((o) => o.id !== choice.answer)!.id;
+  assert.equal(gradeAnswer(choice, choice.answer), true);
+  assert.equal(gradeAnswer(choice, wrong), false);
+  assert.equal(gradeAnswer(choice, "zzz"), null);
+  const tf = set.questions.find((q) => q.type === "truefalse")!;
+  assert.equal(gradeAnswer(tf, tf.answer), true); // ○×
+  assert.equal(gradeAnswer(tf, "a"), null);
 });
 
 test("表示：小数第1位・厳密比較", () => {
@@ -86,11 +90,11 @@ test("表示：小数第1位・厳密比較", () => {
 });
 
 test("問題データの検査：サンプルは合格・壊れたデータは不合格", () => {
-  const ids = ["sample"];
+  const ids = ["natural-products"];
   assert.deepEqual(validateQuizSet(sample, ids), []);
   const broken = structuredClone(sample) as any;
-  broken.questions[0].answer = "z";
-  broken.questions[2].prompt = "空欄なし";
+  broken.questions.find((q: any) => q.type === "choice").answer = "z";
+  broken.questions.find((q: any) => q.type === "fill").prompt = "空欄なし";
   broken.questions.pop();
   const errs = validateQuizSet(broken, ids);
   assert.ok(errs.some((e) => e.includes("answer が選択肢ID")));
@@ -125,15 +129,15 @@ test("日付の表示（今日・昨日・N日前・年またぎ）", () => {
 });
 
 import { validateNote } from "../src/lib/note-validate";
-import sampleNote from "../content/notes/sample-pharmacology-basics.json";
+import sampleNote from "../content/notes/natural-products-2024-q2.json";
 
 test("まとめの検査：サンプルは合格・壊れたデータは不合格", () => {
-  assert.deepEqual(validateNote(sampleNote, ["sample-pharmacology-basics"]), []);
+  assert.deepEqual(validateNote(sampleNote, ["natural-products-2024-q2"]), []);
   assert.ok(validateNote(sampleNote, ["other"]).some((e) => e.includes("setId")));
   const broken = structuredClone(sampleNote) as any;
-  broken.sections[0].blocks[1].rows[0] = ["列が足りない"];
+  broken.sections.flatMap((s: any) => s.blocks).find((b: any) => b.type === "table").rows[0] = ["列が足りない"];
   broken.sections[1].blocks.push({ type: "video", url: "x" });
-  const errs = validateNote(broken, ["sample-pharmacology-basics"]);
+  const errs = validateNote(broken, ["natural-products-2024-q2"]);
   assert.ok(errs.some((e) => e.includes("列数")));
   assert.ok(errs.some((e) => e.includes('"video"')));
 });
