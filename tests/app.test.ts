@@ -95,7 +95,9 @@ test("問題データの検査：サンプルは合格・壊れたデータは�
   const errs = validateQuizSet(broken, ids);
   assert.ok(errs.some((e) => e.includes("answer が選択肢ID")));
   assert.ok(errs.some((e) => e.includes("[[blank]]")));
-  assert.ok(errs.some((e) => e.includes("15問")));
+  assert.ok(errs.some((e) => e.includes("10〜20問")) === false); // 14問は範囲内
+  broken.questions = broken.questions.slice(0, 9);
+  assert.ok(validateQuizSet(broken, ids).some((e) => e.includes("10〜20問")));
 });
 
 import { formatLastDate } from "../src/lib/dates";

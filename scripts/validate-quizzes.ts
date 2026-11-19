@@ -1,5 +1,5 @@
 // 問題データの検査:  npm run validate:quizzes
-//   ・content/quiz-sets/*.json の形式（15問・3形式混在・正答が選択肢にある 等）
+//   ・content/quiz-sets/*.json の形式（10〜20問・3形式混在・正答が選択肢にある 等）
 //   ・すべての JSON が content/quiz-sets/index.ts に登録されているか
 //   ・同じ id/version の重複がないか
 // ビルド（npm run build）の前にも自動で実行され、エラーがあれば公開されません。

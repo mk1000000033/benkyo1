@@ -22,7 +22,7 @@ export function HomeView({ subjects }: { subjects: SubjectItem[] }) {
           みんなの<span className="text-candy-pink">薬学</span>
           <span className="text-candy-purple">クイズ</span>
         </h1>
-        <p className="relative mt-1 text-sm text-ink-soft">授業ごとの15問クイズで試験対策！何度でも挑戦して平均正答率を上げよう✨</p>
+        <p className="relative mt-1 text-sm text-ink-soft">授業ごとのまとめとクイズで試験対策！何度でも挑戦して平均正答率を上げよう✨</p>
       </section>
 
       <section>

@@ -1,7 +1,9 @@
 // 問題セットJSONの形式チェック（ビルド時スクリプトとサーバー起動時の両方で使う）
 import { BLANK_TOKEN, type Question, type QuizSetFile } from "./quiz-types";
 
-export const QUESTIONS_PER_SET = 15;
+/** 1セットの問題数（内容に合わせてこの範囲で決める） */
+export const MIN_QUESTIONS = 10;
+export const MAX_QUESTIONS = 20;
 const ID_RE = /^[a-z0-9][a-z0-9-]{2,63}$/;
 
 function isNonEmptyString(v: unknown): v is string {
@@ -48,7 +50,9 @@ export function validateQuizSet(data: unknown, knownSubjectIds: string[]): strin
 
   const qs = s.questions;
   if (!Array.isArray(qs)) return [...errors, `${label}: questions が配列ではありません`];
-  if (qs.length !== QUESTIONS_PER_SET) errors.push(`${label}: 問題数は${QUESTIONS_PER_SET}問にしてください（現在${qs.length}問）`);
+  if (qs.length < MIN_QUESTIONS || qs.length > MAX_QUESTIONS) {
+    errors.push(`${label}: 問題数は${MIN_QUESTIONS}〜${MAX_QUESTIONS}問にしてください（現在${qs.length}問）`);
+  }
 
   const qIds = new Set<string>();
   const types = new Set<string>();

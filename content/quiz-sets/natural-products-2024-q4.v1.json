@@ -1,0 +1,291 @@
+{
+  "id": "natural-products-2024-q4",
+  "version": 1,
+  "subjectId": "natural-products",
+  "title": "2024年度 大問4 セサミン・クルクミン・テトラヒドロカンナビノール",
+  "lectureDate": null,
+  "published": true,
+  "sourceMaterial": "2024年度 天然物化学 中間試験（問題用紙・模範解答）とユーザー作成の知識データ",
+  "questions": [
+    {
+      "id": "q01",
+      "type": "choice",
+      "prompt": "Sesamum indicum の種子を基原とする生薬の主要成分はどれか。",
+      "options": [
+        {
+          "id": "a",
+          "text": "セサミン"
+        },
+        {
+          "id": "b",
+          "text": "クルクミン"
+        },
+        {
+          "id": "c",
+          "text": "テトラヒドロカンナビノール"
+        },
+        {
+          "id": "d",
+          "text": "サリシン"
+        }
+      ],
+      "answer": "a",
+      "explanation": "Sesamum indicum の種子を基原とする生薬は胡麻（ゴマ）で、主要成分はセサミンです。",
+      "sourcePage": "2024中間 問4"
+    },
+    {
+      "id": "q02",
+      "type": "choice",
+      "prompt": "セサミンの構造分類名はどれか。",
+      "options": [
+        {
+          "id": "a",
+          "text": "ジアリルヘプタノイド"
+        },
+        {
+          "id": "b",
+          "text": "フラボノイド"
+        },
+        {
+          "id": "c",
+          "text": "ポリケチド"
+        },
+        {
+          "id": "d",
+          "text": "リグナン"
+        }
+      ],
+      "answer": "d",
+      "explanation": "セサミンはリグナンに分類されます。",
+      "sourcePage": "2024中間 問4"
+    },
+    {
+      "id": "q03",
+      "type": "truefalse",
+      "prompt": "セサミンはシキミ酸経路で生合成される。",
+      "answer": true,
+      "explanation": "セサミンの生合成経路はシキミ酸経路です。",
+      "sourcePage": "2024中間 問4"
+    },
+    {
+      "id": "q04",
+      "type": "fill",
+      "prompt": "セサミンに期待される作用は [[blank]] である。",
+      "options": [
+        {
+          "id": "a",
+          "text": "利胆作用"
+        },
+        {
+          "id": "b",
+          "text": "過酸化脂質生成抑制"
+        },
+        {
+          "id": "c",
+          "text": "免疫賦活作用"
+        }
+      ],
+      "answer": "b",
+      "explanation": "セサミンに期待される作用は過酸化脂質生成抑制です。",
+      "sourcePage": "2024中間 問4"
+    },
+    {
+      "id": "q05",
+      "type": "choice",
+      "prompt": "Curcuma longa の根茎を基原とする生薬の主要成分で、利胆作用や胆汁酸分泌促進作用を示す化合物はどれか。",
+      "options": [
+        {
+          "id": "a",
+          "text": "クルクミン"
+        },
+        {
+          "id": "b",
+          "text": "セサミン"
+        },
+        {
+          "id": "c",
+          "text": "テトラヒドロカンナビノール"
+        },
+        {
+          "id": "d",
+          "text": "バイカリン"
+        }
+      ],
+      "answer": "a",
+      "explanation": "Curcuma longa の根茎を基原とする生薬（ウコン）の主要成分はクルクミンです。",
+      "sourcePage": "2024中間 問4"
+    },
+    {
+      "id": "q06",
+      "type": "choice",
+      "prompt": "クルクミンの構造分類名はどれか。",
+      "options": [
+        {
+          "id": "a",
+          "text": "リグナン"
+        },
+        {
+          "id": "b",
+          "text": "アザ糖"
+        },
+        {
+          "id": "c",
+          "text": "ポリエーテル"
+        },
+        {
+          "id": "d",
+          "text": "ジアリルヘプタノイド"
+        }
+      ],
+      "answer": "d",
+      "explanation": "クルクミンはジアリルヘプタノイドに分類されます。",
+      "sourcePage": "2024中間 問4"
+    },
+    {
+      "id": "q07",
+      "type": "choice",
+      "prompt": "クルクミンの生合成経路として正しいものはどれか。",
+      "options": [
+        {
+          "id": "a",
+          "text": "シキミ酸経路のみ"
+        },
+        {
+          "id": "b",
+          "text": "酢酸－マロン酸経路とイソプレノイド経路の複合経路"
+        },
+        {
+          "id": "c",
+          "text": "シキミ酸経路と酢酸－マロン酸経路の複合経路"
+        },
+        {
+          "id": "d",
+          "text": "イソプレノイド経路のみ"
+        }
+      ],
+      "answer": "c",
+      "explanation": "クルクミンはシキミ酸経路と酢酸－マロン酸経路の複合経路で生合成されます。",
+      "sourcePage": "2024中間 問4"
+    },
+    {
+      "id": "q08",
+      "type": "choice",
+      "prompt": "ウコンの基原植物 Curcuma longa が属する科はどれか。",
+      "options": [
+        {
+          "id": "a",
+          "text": "シソ科"
+        },
+        {
+          "id": "b",
+          "text": "ショウガ科"
+        },
+        {
+          "id": "c",
+          "text": "マメ科"
+        },
+        {
+          "id": "d",
+          "text": "クワ科"
+        }
+      ],
+      "answer": "b",
+      "explanation": "Curcuma longa はショウガ科（Zingiberaceae）です。",
+      "sourcePage": "2024中間 問4"
+    },
+    {
+      "id": "q09",
+      "type": "truefalse",
+      "prompt": "ウコンは、Curcuma longa の種子を基原とする生薬である。",
+      "answer": false,
+      "explanation": "ウコンは Curcuma longa の根茎を基原とします。種子を基原とするのは胡麻（Sesamum indicum）です。",
+      "sourcePage": "2024中間 問4"
+    },
+    {
+      "id": "q10",
+      "type": "choice",
+      "prompt": "テトラヒドロカンナビノールはどのようにして生成するか。",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cannabis sativa の種子を発酵させることで生成する"
+        },
+        {
+          "id": "b",
+          "text": "Curcuma longa の根茎を加熱処理することで生成する"
+        },
+        {
+          "id": "c",
+          "text": "Sesamum indicum の種子を加熱処理することで生成する"
+        },
+        {
+          "id": "d",
+          "text": "Cannabis sativa の未熟果穂を含む枝先および葉を加熱処理することで生成する"
+        }
+      ],
+      "answer": "d",
+      "explanation": "Cannabis sativa（アサ）の未熟果穂を含む枝先および葉を加熱処理することにより生成します。",
+      "sourcePage": "2024中間 問4"
+    },
+    {
+      "id": "q11",
+      "type": "choice",
+      "prompt": "テトラヒドロカンナビノールの元となる化合物の生合成経路はどれか。",
+      "options": [
+        {
+          "id": "a",
+          "text": "シキミ酸経路と酢酸－マロン酸経路の複合経路"
+        },
+        {
+          "id": "b",
+          "text": "シキミ酸経路のみ"
+        },
+        {
+          "id": "c",
+          "text": "酢酸－マロン酸経路とイソプレノイド経路の複合経路"
+        },
+        {
+          "id": "d",
+          "text": "酢酸－マロン酸経路のみ"
+        }
+      ],
+      "answer": "c",
+      "explanation": "酢酸－マロン酸経路とイソプレノイド経路の複合経路です。",
+      "sourcePage": "2024中間 問4"
+    },
+    {
+      "id": "q12",
+      "type": "truefalse",
+      "prompt": "テトラヒドロカンナビノールの元となる化合物を含む植物名は「アサ」、生薬名は「大麻」である。",
+      "answer": true,
+      "explanation": "植物名はアサ（Cannabis sativa）、生薬名は大麻です。",
+      "sourcePage": "2024中間 問4"
+    },
+    {
+      "id": "q13",
+      "type": "choice",
+      "prompt": "化合物と生合成経路の組み合わせとして正しいものはどれか。",
+      "options": [
+        {
+          "id": "a",
+          "text": "セサミン ― シキミ酸経路"
+        },
+        {
+          "id": "b",
+          "text": "クルクミン ― シキミ酸経路のみ"
+        },
+        {
+          "id": "c",
+          "text": "テトラヒドロカンナビノールの元の化合物 ― シキミ酸経路と酢酸－マロン酸経路の複合経路"
+        },
+        {
+          "id": "d",
+          "text": "セサミン ― イソプレノイド経路"
+        }
+      ],
+      "answer": "a",
+      "explanation": "セサミン＝シキミ酸経路、クルクミン＝シキミ酸経路＋酢酸－マロン酸経路、THC の元の化合物＝酢酸－マロン酸経路＋イソプレノイド経路です。",
+      "sourcePage": "2024中間 問4"
+    }
+  ]
+}

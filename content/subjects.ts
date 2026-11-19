@@ -17,9 +17,7 @@ export const SUBJECTS: Subject[] = [
   { id: "natural-products", name: "天然物化学", emoji: "🌿", color: "mint" },
   { id: "basic-pharmacology", name: "基礎薬理学", emoji: "💊", color: "pink" },
   { id: "immunology", name: "免疫学", emoji: "🛡️", color: "sky" },
-  { id: "biochemistry", name: "生化学", emoji: "🧬", color: "purple" },
   { id: "organic-chemistry", name: "有機化学", emoji: "⚗️", color: "yellow" },
-  { id: "physical-chemistry", name: "物理化学", emoji: "📐", color: "sky" },
   // ↓ 動作確認用。本番運用で不要になったら README の「サンプルの削除」を参照
   { id: "sample", name: "動作確認用サンプル", emoji: "🧪", color: "yellow", isSample: true },
 ];

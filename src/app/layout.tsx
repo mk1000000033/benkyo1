@@ -6,7 +6,7 @@ import { Decor } from "@/components/ui";
 
 export const metadata: Metadata = {
   title: "みんなの薬学クイズ",
-  description: "授業資料から作った15問クイズで、楽しく薬学の試験対策",
+  description: "授業資料から作ったまとめとクイズで、楽しく薬学の試験対策",
   appleWebApp: { capable: true, title: "薬学クイズ", statusBarStyle: "default" },
   formatDetection: { telephone: false },
   robots: { index: false, follow: false },
