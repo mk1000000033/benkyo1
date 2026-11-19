@@ -141,3 +141,18 @@ test("まとめの検査：サンプルは合格・壊れたデータは不合�
   assert.ok(errs.some((e) => e.includes("列数")));
   assert.ok(errs.some((e) => e.includes('"video"')));
 });
+
+import { groupSets, titleInGroup } from "../src/lib/groups";
+
+test("年度フォルダ：新しい年度が上・フォルダなしは最後", () => {
+  const sets = [
+    { id: "a", group: "2023年度 中間試験" }, { id: "b", group: "2024年度 中間試験" },
+    { id: "c", group: null }, { id: "d", group: "2023年度 中間試験" }, { id: "e", group: "2024年度 期末試験" },
+  ];
+  const g = groupSets(sets);
+  assert.deepEqual(g.map((x) => x.name), ["2024年度 中間試験", "2024年度 期末試験", "2023年度 中間試験", null]);
+  assert.deepEqual(g[2].sets.map((x) => x.id), ["a", "d"]); // フォルダ内の順番は保つ
+  assert.equal(titleInGroup("2024年度 大問2 脂肪酸", "2024年度 中間試験"), "大問2 脂肪酸");
+  assert.equal(titleInGroup("2024年度 大問2 脂肪酸", "2023年度 中間試験"), "2024年度 大問2 脂肪酸");
+  assert.equal(titleInGroup("第6回 自律神経", null), "第6回 自律神経");
+});

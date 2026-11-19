@@ -48,6 +48,8 @@ export interface QuizSetFile {
   subjectId: string;
   title: string;
   lectureDate?: string | null;
+  /** フォルダ名（例: "2024年度 中間試験"）。同じ名前のセットが1つのフォルダにまとまる */
+  group?: string | null;
   published: boolean;
   isSample?: boolean;
   sourceMaterial?: string;
@@ -61,6 +63,7 @@ export interface QuizSetSummary {
   subjectId: string;
   title: string;
   lectureDate: string | null;
+  group: string | null;
   questionCount: number;
   isSample: boolean;
   /** まとめ（学習ノート）があるか */

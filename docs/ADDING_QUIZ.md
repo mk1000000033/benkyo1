@@ -37,6 +37,7 @@
   "subjectId": "basic-pharmacology",
   "title": "第6回 自律神経系の薬理",
   "lectureDate": "2026-11-14",
+  "group": "第6回〜第10回",
   "published": true,
   "sourceMaterial": "基礎薬理学 第6回 授業スライド",
   "questions": [
@@ -49,6 +50,7 @@
 
 | 項目 | ルール |
 |---|---|
+| group | フォルダ名。同じ名前のセットが1つのフォルダにまとまる（例：過去問は `"2024年度 中間試験"`）。不要なら null。フォルダは新しい順に並ぶ |
 | 問題数 | 10〜20問。内容に合わせて決める（出題順＝配列の順・固定） |
 | choice | 選択肢ちょうど4つ。`answer` は選択肢の `id` |
 | truefalse | `answer` は `true`（○）か `false`（×）。`options` は書かない |

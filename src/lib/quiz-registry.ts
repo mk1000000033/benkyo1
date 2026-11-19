@@ -72,6 +72,7 @@ export function toSummary(set: QuizSetFile): QuizSetSummary {
     subjectId: set.subjectId,
     title: set.title,
     lectureDate: set.lectureDate ?? null,
+    group: set.group?.trim() || null,
     questionCount: set.questions.length,
     isSample: !!set.isSample,
     hasNote: NOTES.has(set.id),

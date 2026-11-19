@@ -46,6 +46,7 @@ export function validateQuizSet(data: unknown, knownSubjectIds: string[]): strin
   if (typeof s.subjectId !== "string" || !knownSubjectIds.includes(s.subjectId)) errors.push(`${label}: subjectId "${String(s.subjectId)}" が content/subjects.ts にありません`);
   if (!isNonEmptyString(s.title)) errors.push(`${label}: title がありません`);
   if (s.lectureDate != null && (typeof s.lectureDate !== "string" || !/^\d{4}-\d{2}-\d{2}$/.test(s.lectureDate))) errors.push(`${label}: lectureDate は "YYYY-MM-DD" 形式か null にしてください`);
+  if (s.group != null && (typeof s.group !== "string" || !s.group.trim() || s.group.length > 30)) errors.push(`${label}: group は30文字以内の文字列か null にしてください`);
   if (typeof s.published !== "boolean") errors.push(`${label}: published は true / false にしてください`);
 
   const qs = s.questions;
