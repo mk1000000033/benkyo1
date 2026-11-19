@@ -3,7 +3,8 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import type { SubjectColor } from "@content/subjects";
 import type { QuizSetSummary } from "@/lib/quiz-types";
-import { loadProgress, loadRecord, type Progress, type SetRecord } from "@/lib/records";
+import { lastCompletedAt, loadProgress, loadRecord, type Progress, type SetRecord } from "@/lib/records";
+import { formatLastDate } from "@/lib/dates";
 import { formatPercent } from "@/lib/stats";
 import { COLOR } from "@/lib/colors";
 import { formatDateJa } from "@/components/ui";
@@ -46,6 +47,8 @@ export function SetListView({ subject, sets }: Props) {
           const rec = local?.[s.id]?.record;
           const progress = local?.[s.id]?.progress;
           const resumable = progress && progress.version === s.version;
+          const lastAt = lastCompletedAt(rec ?? null);
+          const last = lastAt ? formatLastDate(lastAt) : null;
           return (
             <li key={s.id} className="card p-5">
               <div className="flex items-start gap-3">
@@ -68,8 +71,19 @@ export function SetListView({ subject, sets }: Props) {
                   </p>
                 </div>
                 <div className="rounded-2xl bg-candy-sky-soft p-2">
-                  <p className="text-xs font-bold text-ink-soft">挑戦回数</p>
+                  <p className="text-xs font-bold text-ink-soft">取り組んだ回数</p>
                   <p className="text-xl font-extrabold text-candy-sky-deep">{local ? `${rec?.attemptsCount ?? 0}回` : "…"}</p>
+                </div>
+                <div className="col-span-2 rounded-2xl bg-candy-purple-soft p-2">
+                  <p className="text-xs font-bold text-ink-soft">📅 最後に取り組んだ日</p>
+                  <p className="flex items-center justify-center gap-2">
+                    <span className="whitespace-nowrap text-lg font-extrabold text-candy-purple-deep">
+                      {!local ? "…" : last ? last.date : "まだありません"}
+                    </span>
+                    {last && (
+                      <span className="whitespace-nowrap rounded-full bg-white px-2 py-0.5 text-xs font-bold text-candy-purple-deep">{last.relative}</span>
+                    )}
+                  </p>
                 </div>
               </div>
 

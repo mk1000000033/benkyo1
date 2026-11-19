@@ -30,6 +30,8 @@ export interface AttemptRecord {
 }
 
 export interface SetRecord extends Totals {
+  /** 最後に挑戦を完了した日時（ISO文字列） */
+  lastCompletedAt?: string;
   /** 復習用に直近の挑戦の詳細を保存（古いものから削除。累計値は削除しない） */
   attempts: AttemptRecord[];
 }
@@ -80,6 +82,7 @@ export function addCompletedAttempt(
       attemptsCount: base.attemptsCount + 1,
       totalCorrect: base.totalCorrect + score,
       totalQuestions: base.totalQuestions + progress.questionCount,
+      lastCompletedAt: completedAt,
       attempts: [...base.attempts, attempt].slice(-MAX_STORED_ATTEMPTS),
     },
   };
@@ -89,6 +92,12 @@ export function addCompletedAttempt(
 export function addAnswer(p: Progress, a: StoredAnswer): Progress {
   if (a.index !== p.currentIndex || p.answers.some((x) => x.index === a.index)) return p;
   return { ...p, answers: [...p.answers, a] };
+}
+
+/** 最後に取り組んだ日時（古い形式の記録にも対応） */
+export function lastCompletedAt(r: SetRecord | null): string | null {
+  if (!r) return null;
+  return r.lastCompletedAt ?? r.attempts[r.attempts.length - 1]?.completedAt ?? null;
 }
 
 // ---------------- ブラウザ保存（localStorage） ----------------

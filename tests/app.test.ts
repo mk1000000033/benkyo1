@@ -97,3 +97,27 @@ test("問題データの検査：サンプルは合格・壊れたデータは�
   assert.ok(errs.some((e) => e.includes("[[blank]]")));
   assert.ok(errs.some((e) => e.includes("15問")));
 });
+
+import { formatLastDate } from "../src/lib/dates";
+import { lastCompletedAt } from "../src/lib/records";
+
+test("取り組んだ回数と最後に取り組んだ日", () => {
+  const r1 = addCompletedAttempt(null, finished("1", 10), "2026-11-17T10:00:00+09:00").record;
+  const r2 = addCompletedAttempt(r1, finished("2", 12), "2026-11-19T09:00:00+09:00").record;
+  assert.equal(r2.attemptsCount, 2);
+  assert.equal(lastCompletedAt(r2), "2026-11-19T09:00:00+09:00");
+  // 古い形式（lastCompletedAt なし）の記録でも最後の挑戦から求める
+  const { lastCompletedAt: _, ...old } = r2;
+  assert.equal(lastCompletedAt(old as SetRecord), "2026-11-19T09:00:00+09:00");
+  assert.equal(lastCompletedAt(null), null);
+});
+
+test("日付の表示（今日・昨日・N日前・年またぎ）", () => {
+  // 端末のタイムゾーンに依存しないよう、ローカル時刻で日付を作る
+  const local = (y: number, m: number, d: number, h: number, min = 0) => new Date(y, m - 1, d, h, min).toISOString();
+  const now = new Date(2026, 10, 19, 20, 0);
+  assert.deepEqual(formatLastDate(local(2026, 11, 19, 0, 30), now), { date: "11月19日（木）", relative: "今日" });
+  assert.deepEqual(formatLastDate(local(2026, 11, 18, 23, 59), now), { date: "11月18日（水）", relative: "昨日" });
+  assert.equal(formatLastDate(local(2026, 11, 12, 12), now).relative, "7日前");
+  assert.equal(formatLastDate(local(2025, 12, 31, 12), now).date, "2025年12月31日（水）");
+});
