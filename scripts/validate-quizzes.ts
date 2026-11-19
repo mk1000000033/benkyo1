@@ -7,6 +7,7 @@ import { readFileSync, readdirSync } from "node:fs";
 import { join } from "node:path";
 import { SUBJECTS } from "../content/subjects";
 import { validateQuizSet } from "../src/lib/quiz-validate";
+import { validateNote } from "../src/lib/note-validate";
 
 const dir = join(process.cwd(), "content", "quiz-sets");
 const indexSrc = readFileSync(join(dir, "index.ts"), "utf8");
@@ -54,8 +55,42 @@ for (const m of indexSrc.matchAll(/from\s+"\.\/([^"]+\.json)"/g)) {
   }
 }
 
+// ---- まとめ（content/notes） ----
+const noteDir = join(process.cwd(), "content", "notes");
+const noteIndex = readFileSync(join(noteDir, "index.ts"), "utf8");
+const noteFiles = readdirSync(noteDir).filter((f) => f.endsWith(".json")).sort();
+const setIds = Object.keys(counts);
+for (const file of noteFiles) {
+  let data: unknown;
+  try {
+    data = JSON.parse(readFileSync(join(noteDir, file), "utf8"));
+  } catch (e) {
+    console.error(`✗ notes/${file}: JSONとして読み込めません (${(e as Error).message})`);
+    failed = true;
+    continue;
+  }
+  const errors = validateNote(data, setIds);
+  const id = (data as { setId?: string }).setId;
+  if (file !== `${id}.json`) errors.push(`ファイル名は "${id}.json" にしてください`);
+  if (!noteIndex.includes(`./${file}`)) errors.push(`content/notes/index.ts に登録されていません`);
+  if (errors.length) {
+    failed = true;
+    console.error(`✗ notes/${file}`);
+    for (const e of errors) console.error(`   - ${e}`);
+  } else {
+    const n = data as { sections: unknown[] };
+    console.log(`✓ notes/${file}  (${n.sections.length}セクション)`);
+  }
+}
+for (const m of noteIndex.matchAll(/from\s+"\.\/([^"]+\.json)"/g)) {
+  if (!noteFiles.includes(m[1])) {
+    console.error(`✗ notes/index.ts が存在しないファイルを読み込んでいます: ${m[1]}`);
+    failed = true;
+  }
+}
+
 if (failed) {
   console.error("\n問題データにエラーがあります。上のメッセージを確認してください。");
   process.exit(1);
 }
-console.log(`\nOK：${files.length}ファイル（${Object.keys(counts).length}セット）を確認しました。`);
+console.log(`\nOK：問題 ${files.length}ファイル（${Object.keys(counts).length}セット）・まとめ ${noteFiles.length}ファイルを確認しました。`);

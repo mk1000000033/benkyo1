@@ -63,6 +63,8 @@ export interface QuizSetSummary {
   lectureDate: string | null;
   questionCount: number;
   isSample: boolean;
+  /** まとめ（学習ノート）があるか */
+  hasNote: boolean;
 }
 
 export const BLANK_TOKEN = "[[blank]]";

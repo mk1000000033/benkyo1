@@ -93,9 +93,16 @@ export function SetListView({ subject, sets }: Props) {
                 </p>
               )}
 
-              <Link href={`/quiz/${s.id}`} className={`btn-pop ${resumable ? "pop-yellow" : "pop-pink"} mt-4 w-full`}>
-                {resumable ? "▶ 続きから再開" : "▶ クイズ開始"}
-              </Link>
+              <div className={`mt-4 grid gap-3 ${s.hasNote ? "grid-cols-2" : "grid-cols-1"}`}>
+                {s.hasNote && (
+                  <Link href={`/notes/${s.id}`} className="btn-pop pop-mint">
+                    📖 まとめ
+                  </Link>
+                )}
+                <Link href={`/quiz/${s.id}`} className={`btn-pop ${resumable ? "pop-yellow" : "pop-pink"}`}>
+                  {resumable ? "▶ 続きから" : "▶ クイズ"}
+                </Link>
+              </div>
             </li>
           );
         })}

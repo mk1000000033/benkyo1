@@ -11,6 +11,7 @@ iPhone の Safari を最優先に作っています。
 
 ## 1. できること
 
+- 📖 まとめ：授業資料を絵文字多めでやさしくまとめた学習ノート（表・公式・覚え方・ひっかけ注意・キーワード集）。読み終わったらそのままクイズへ
 - 科目一覧 → 問題セット一覧 → 15問クイズ（4択・○×・穴埋め、出題順は固定）
 - 1問ごとに正解・不正解と解説を表示。確定した回答は変更不可
 - 途中で Safari を閉じても、同じ端末なら「続きから再開」／「最初からやり直す」を選べる
@@ -35,6 +36,9 @@ content/
   quiz-sets/
     index.ts                  問題セットの登録簿
     <id>.v<版>.json           問題・選択肢・正答・解説
+  notes/
+    index.ts                  まとめの登録簿
+    <id>.json                 まとめ（学習ノート）
 src/
   app/                        画面
   components/                 部品（問題表示・ボタン・演出）
@@ -90,8 +94,8 @@ docs/ADDING_QUIZ.md           問題追加の詳しい手順（Claude向け）
 ## 4. 新しい問題セットの追加
 
 1. Claude のチャットに授業資料（PDFなど）を送り、「この授業資料から15問のクイズを作成して追加して」と依頼。
-2. Claude が15問（問題・選択肢・正答・解説・根拠ページ）を一覧で提示 → **あなたが全問確認**。
-3. 公開を許可すると、Claude が `content/quiz-sets/` に JSON を追加し `index.ts` に登録。
+2. Claude が **まとめ** と15問（問題・選択肢・正答・解説・根拠ページ）を提示 → **あなたが全部確認**。
+3. 公開を許可すると、Claude が `content/quiz-sets/` と `content/notes/` に JSON を追加して登録。
 4. `npm run validate:quizzes` で形式チェック（`npm run build` でも自動実行。エラーがあると公開されません）。
 5. GitHub に push → Vercel が自動更新。
 
@@ -127,4 +131,4 @@ npm run typecheck         # 型チェック
 サンプル（科目「動作確認用サンプル」）は本番の問題と区別して表示されています。
 
 - **非表示にするだけ**：Vercel の Settings → Environment Variables に `HIDE_SAMPLE_SETS` = `true` を追加して再デプロイ。
-- **完全に削除**：`content/quiz-sets/sample-pharmacology-basics.v1.json` を削除し、`index.ts` の該当2行と、`content/subjects.ts` の `sample` の行を削除。
+- **完全に削除**：`content/quiz-sets/sample-pharmacology-basics.v1.json` と `content/notes/sample-pharmacology-basics.json` を削除し、それぞれの `index.ts` の該当2行と、`content/subjects.ts` の `sample` の行を削除。

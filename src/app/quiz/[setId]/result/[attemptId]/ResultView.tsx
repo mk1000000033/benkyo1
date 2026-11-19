@@ -67,7 +67,19 @@ const MESSAGES: Record<Direction, { emoji: string; title: string; body: string; 
   down: { emoji: "🌱", title: "今回はちょっと苦戦…でも大丈夫！", body: "間違えた問題は伸びしろ。下の復習で解説を確認して、もう一度挑戦してみよう！", cls: "bg-candy-pink-soft" },
 };
 
-export function ResultView({ versions, subjectId, subjectName, attemptId }: { versions: QuizSetFile[]; subjectId: string; subjectName: string; attemptId: string }) {
+export function ResultView({
+  versions,
+  subjectId,
+  subjectName,
+  attemptId,
+  hasNote = false,
+}: {
+  versions: QuizSetFile[];
+  subjectId: string;
+  subjectName: string;
+  attemptId: string;
+  hasNote?: boolean;
+}) {
   const [attempt, setAttempt] = useState<AttemptRecord | null | undefined>(undefined);
   const [open, setOpen] = useState<Record<number, boolean>>({});
 
@@ -145,6 +157,11 @@ export function ResultView({ versions, subjectId, subjectName, attemptId }: { ve
         <p className="text-3xl">{msg.emoji}</p>
         <p className="mt-1 text-lg font-extrabold">{msg.title}</p>
         <p className="mt-1 text-sm font-bold text-ink-soft">{msg.body}</p>
+        {hasNote && wrongCount > 0 && (
+          <Link href={`/notes/${setId}`} className="btn-pop pop-mint mt-3 text-sm">
+            📖 まとめで復習する
+          </Link>
+        )}
       </section>
 
       <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">

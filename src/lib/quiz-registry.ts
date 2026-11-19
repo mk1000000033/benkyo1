@@ -2,8 +2,11 @@
 //   "server-only" により、全セットのデータがブラウザ用コードに丸ごと入ることを防ぎます。
 import "server-only";
 import { QUIZ_SET_FILES } from "@content/quiz-sets";
+import { NOTE_FILES } from "@content/notes";
 import { SUBJECTS, findSubject, type Subject } from "@content/subjects";
 import { validateQuizSet, asQuizSet } from "@/lib/quiz-validate";
+import { validateNote } from "@/lib/note-validate";
+import type { NoteFile } from "@/lib/note-types";
 import type { QuizSetFile, QuizSetSummary } from "@/lib/quiz-types";
 
 const HIDE_SAMPLES = process.env.HIDE_SAMPLE_SETS === "true";
@@ -25,6 +28,26 @@ function loadAll(): QuizSetFile[] {
 }
 
 const ALL_SETS = loadAll();
+
+function loadNotes(): Map<string, NoteFile> {
+  const ids = Array.from(new Set(ALL_SETS.map((s) => s.id)));
+  const map = new Map<string, NoteFile>();
+  for (const raw of NOTE_FILES) {
+    const errors = validateNote(raw, ids);
+    if (errors.length) throw new Error(`まとめデータにエラーがあります:\n${errors.join("\n")}`);
+    const note = raw as NoteFile;
+    if (map.has(note.setId)) throw new Error(`同じ問題セットのまとめが重複しています: ${note.setId}`);
+    map.set(note.setId, note);
+  }
+  return map;
+}
+
+const NOTES = loadNotes();
+
+/** 公開中の問題セットのまとめ（なければ undefined） */
+export function getNote(setId: string): NoteFile | undefined {
+  return getActiveSet(setId) ? NOTES.get(setId) : undefined;
+}
 
 function isVisible(set: QuizSetFile): boolean {
   return set.published && !(HIDE_SAMPLES && set.isSample);
@@ -51,6 +74,7 @@ export function toSummary(set: QuizSetFile): QuizSetSummary {
     lectureDate: set.lectureDate ?? null,
     questionCount: set.questions.length,
     isSample: !!set.isSample,
+    hasNote: NOTES.has(set.id),
   };
 }
 

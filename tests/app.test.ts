@@ -121,3 +121,17 @@ test("日付の表示（今日・昨日・N日前・年またぎ）", () => {
   assert.equal(formatLastDate(local(2026, 11, 12, 12), now).relative, "7日前");
   assert.equal(formatLastDate(local(2025, 12, 31, 12), now).date, "2025年12月31日（水）");
 });
+
+import { validateNote } from "../src/lib/note-validate";
+import sampleNote from "../content/notes/sample-pharmacology-basics.json";
+
+test("まとめの検査：サンプルは合格・壊れたデータは不合格", () => {
+  assert.deepEqual(validateNote(sampleNote, ["sample-pharmacology-basics"]), []);
+  assert.ok(validateNote(sampleNote, ["other"]).some((e) => e.includes("setId")));
+  const broken = structuredClone(sampleNote) as any;
+  broken.sections[0].blocks[1].rows[0] = ["列が足りない"];
+  broken.sections[1].blocks.push({ type: "video", url: "x" });
+  const errs = validateNote(broken, ["sample-pharmacology-basics"]);
+  assert.ok(errs.some((e) => e.includes("列数")));
+  assert.ok(errs.some((e) => e.includes('"video"')));
+});
