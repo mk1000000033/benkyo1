@@ -28,7 +28,11 @@
       ],
       "answer": "a",
       "explanation": "黄芩の主活性成分はバイカリンです（問6 [A]）。",
-      "sourcePage": "2023中間 問6"
+      "sourcePage": "2023中間 問6",
+      "tags": [
+        "mechanism",
+        "origin"
+      ]
     },
     {
       "id": "q02",
@@ -36,7 +40,10 @@
       "prompt": "バイカリンは、緩下・利尿・抗炎症作用を有する。",
       "answer": true,
       "explanation": "正しい記述です。",
-      "sourcePage": "2023中間 問6"
+      "sourcePage": "2023中間 問6",
+      "tags": [
+        "mechanism"
+      ]
     },
     {
       "id": "q03",
@@ -62,7 +69,10 @@
       ],
       "answer": "a",
       "explanation": "大麻の主活性成分は THC です（問6 [B]）。",
-      "sourcePage": "2023中間 問6"
+      "sourcePage": "2023中間 問6",
+      "tags": [
+        "origin"
+      ]
     },
     {
       "id": "q04",
@@ -70,7 +80,10 @@
       "prompt": "THC は、時間や空間感覚の変調をもたらし、記憶障害、多幸感、鎮痛、幻覚などの精神神経反応を引き起こす。",
       "answer": true,
       "explanation": "正しい記述です。",
-      "sourcePage": "2023中間 問6"
+      "sourcePage": "2023中間 問6",
+      "tags": [
+        "mechanism"
+      ]
     },
     {
       "id": "q05",
@@ -92,7 +105,11 @@
       ],
       "answer": "a",
       "explanation": "マイトマイシンC は抗がん（抗腫瘍）性抗生物質です（問6 [C]）。",
-      "sourcePage": "2023中間 問6"
+      "sourcePage": "2023中間 問6",
+      "tags": [
+        "origin",
+        "antibiotic"
+      ]
     },
     {
       "id": "q06",
@@ -118,7 +135,11 @@
       ],
       "answer": "b",
       "explanation": "β-グルカン類は免疫賦活作用を有するので、化学療法などと併用されます（問6 [D]）。",
-      "sourcePage": "2023中間 問6"
+      "sourcePage": "2023中間 問6",
+      "tags": [
+        "mechanism",
+        "origin"
+      ]
     },
     {
       "id": "q07",
@@ -144,7 +165,10 @@
       ],
       "answer": "a",
       "explanation": "エリスロマイシンはマクロライド系抗生物質です（問6 [E]）。",
-      "sourcePage": "2023中間 問6"
+      "sourcePage": "2023中間 問6",
+      "tags": [
+        "antibiotic"
+      ]
     },
     {
       "id": "q08",
@@ -152,7 +176,10 @@
       "prompt": "エリスロマイシンは、グラム陽性球菌、リケッチア、クラミジアなどに有効である。",
       "answer": true,
       "explanation": "正しい記述です。",
-      "sourcePage": "2023中間 問6"
+      "sourcePage": "2023中間 問6",
+      "tags": [
+        "antibiotic"
+      ]
     },
     {
       "id": "q09",
@@ -160,7 +187,10 @@
       "prompt": "リファンピシンは、リファマイシンから半合成される、結核に有効なマクロライド系抗生物質である。",
       "answer": false,
       "explanation": "リファンピシンはアンサマイシン系抗生物質です。",
-      "sourcePage": "2023中間 問6"
+      "sourcePage": "2023中間 問6",
+      "tags": [
+        "antibiotic"
+      ]
     },
     {
       "id": "q10",
@@ -186,7 +216,10 @@
       ],
       "answer": "b",
       "explanation": "D-マンニトールは浸透圧性利尿薬として用いられます（問6 [F]）。",
-      "sourcePage": "2023中間 問6"
+      "sourcePage": "2023中間 問6",
+      "tags": [
+        "mechanism"
+      ]
     },
     {
       "id": "q11",
@@ -212,7 +245,10 @@
       ],
       "answer": "a",
       "explanation": "キシリトール＝虫歯予防の代用甘味料、D-ソルビトール＝食品添加物の甘味料、D-マンニトール＝浸透圧性利尿薬です。",
-      "sourcePage": "2023中間 問6"
+      "sourcePage": "2023中間 問6",
+      "tags": [
+        "mechanism"
+      ]
     }
   ]
 }

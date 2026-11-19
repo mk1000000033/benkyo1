@@ -32,7 +32,10 @@
       ],
       "answer": "a",
       "explanation": "Sesamum indicum の種子を基原とする生薬は胡麻（ゴマ）で、主要成分はセサミンです。",
-      "sourcePage": "2024中間 問4"
+      "sourcePage": "2024中間 問4",
+      "tags": [
+        "origin"
+      ]
     },
     {
       "id": "q02",
@@ -58,7 +61,10 @@
       ],
       "answer": "d",
       "explanation": "セサミンはリグナンに分類されます。",
-      "sourcePage": "2024中間 問4"
+      "sourcePage": "2024中間 問4",
+      "tags": [
+        "structure"
+      ]
     },
     {
       "id": "q03",
@@ -66,7 +72,10 @@
       "prompt": "セサミンはシキミ酸経路で生合成される。",
       "answer": true,
       "explanation": "セサミンの生合成経路はシキミ酸経路です。",
-      "sourcePage": "2024中間 問4"
+      "sourcePage": "2024中間 問4",
+      "tags": [
+        "pathway"
+      ]
     },
     {
       "id": "q04",
@@ -88,7 +97,10 @@
       ],
       "answer": "b",
       "explanation": "セサミンに期待される作用は過酸化脂質生成抑制です。",
-      "sourcePage": "2024中間 問4"
+      "sourcePage": "2024中間 問4",
+      "tags": [
+        "mechanism"
+      ]
     },
     {
       "id": "q05",
@@ -114,7 +126,11 @@
       ],
       "answer": "a",
       "explanation": "Curcuma longa の根茎を基原とする生薬（ウコン）の主要成分はクルクミンです。",
-      "sourcePage": "2024中間 問4"
+      "sourcePage": "2024中間 問4",
+      "tags": [
+        "mechanism",
+        "origin"
+      ]
     },
     {
       "id": "q06",
@@ -140,7 +156,10 @@
       ],
       "answer": "d",
       "explanation": "クルクミンはジアリルヘプタノイドに分類されます。",
-      "sourcePage": "2024中間 問4"
+      "sourcePage": "2024中間 問4",
+      "tags": [
+        "structure"
+      ]
     },
     {
       "id": "q07",
@@ -166,7 +185,10 @@
       ],
       "answer": "c",
       "explanation": "クルクミンはシキミ酸経路と酢酸－マロン酸経路の複合経路で生合成されます。",
-      "sourcePage": "2024中間 問4"
+      "sourcePage": "2024中間 問4",
+      "tags": [
+        "pathway"
+      ]
     },
     {
       "id": "q08",
@@ -192,7 +214,10 @@
       ],
       "answer": "b",
       "explanation": "Curcuma longa はショウガ科（Zingiberaceae）です。",
-      "sourcePage": "2024中間 問4"
+      "sourcePage": "2024中間 問4",
+      "tags": [
+        "origin"
+      ]
     },
     {
       "id": "q09",
@@ -200,7 +225,10 @@
       "prompt": "ウコンは、Curcuma longa の種子を基原とする生薬である。",
       "answer": false,
       "explanation": "ウコンは Curcuma longa の根茎を基原とします。種子を基原とするのは胡麻（Sesamum indicum）です。",
-      "sourcePage": "2024中間 問4"
+      "sourcePage": "2024中間 問4",
+      "tags": [
+        "origin"
+      ]
     },
     {
       "id": "q10",
@@ -226,7 +254,10 @@
       ],
       "answer": "d",
       "explanation": "Cannabis sativa（アサ）の未熟果穂を含む枝先および葉を加熱処理することにより生成します。",
-      "sourcePage": "2024中間 問4"
+      "sourcePage": "2024中間 問4",
+      "tags": [
+        "origin"
+      ]
     },
     {
       "id": "q11",
@@ -252,7 +283,10 @@
       ],
       "answer": "c",
       "explanation": "酢酸－マロン酸経路とイソプレノイド経路の複合経路です。",
-      "sourcePage": "2024中間 問4"
+      "sourcePage": "2024中間 問4",
+      "tags": [
+        "pathway"
+      ]
     },
     {
       "id": "q12",
@@ -260,7 +294,10 @@
       "prompt": "テトラヒドロカンナビノールの元となる化合物を含む植物名は「アサ」、生薬名は「大麻」である。",
       "answer": true,
       "explanation": "植物名はアサ（Cannabis sativa）、生薬名は大麻です。",
-      "sourcePage": "2024中間 問4"
+      "sourcePage": "2024中間 問4",
+      "tags": [
+        "origin"
+      ]
     },
     {
       "id": "q13",
@@ -286,7 +323,10 @@
       ],
       "answer": "a",
       "explanation": "セサミン＝シキミ酸経路、クルクミン＝シキミ酸経路＋酢酸－マロン酸経路、THC の元の化合物＝酢酸－マロン酸経路＋イソプレノイド経路です。",
-      "sourcePage": "2024中間 問4"
+      "sourcePage": "2024中間 問4",
+      "tags": [
+        "pathway"
+      ]
     }
   ]
 }

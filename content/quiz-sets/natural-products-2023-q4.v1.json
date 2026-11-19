@@ -32,7 +32,10 @@
       ],
       "answer": "a",
       "explanation": "免疫抑制薬です。試験では「抗寄生虫薬」が誤りとして出されました。",
-      "sourcePage": "2023中間 問4"
+      "sourcePage": "2023中間 問4",
+      "tags": [
+        "mechanism"
+      ]
     },
     {
       "id": "q02",
@@ -40,7 +43,10 @@
       "prompt": "タクロリムス水和物の母骨格は、酢酸－マロン酸経路で生合成される。",
       "answer": true,
       "explanation": "正しい記述です（試験の選択肢 C）。",
-      "sourcePage": "2023中間 問4"
+      "sourcePage": "2023中間 問4",
+      "tags": [
+        "pathway"
+      ]
     },
     {
       "id": "q03",
@@ -48,7 +54,10 @@
       "prompt": "タクロリムス水和物の構造には、テトラヒドロフラン環が含まれる。",
       "answer": false,
       "explanation": "含まれるのはテトラヒドロピラン環です。試験では「テトラヒドロフラン環」が誤りとして出されました。",
-      "sourcePage": "2023中間 問4"
+      "sourcePage": "2023中間 問4",
+      "tags": [
+        "structure"
+      ]
     },
     {
       "id": "q04",
@@ -56,7 +65,10 @@
       "prompt": "タクロリムス水和物の構造において、シクロヘキサン環が結合した二重結合の立体配置は E である。",
       "answer": true,
       "explanation": "正しい記述です（試験の選択肢 E）。",
-      "sourcePage": "2023中間 問4"
+      "sourcePage": "2023中間 問4",
+      "tags": [
+        "stereo"
+      ]
     },
     {
       "id": "q05",
@@ -64,7 +76,10 @@
       "prompt": "タクロリムス水和物の構造において、ピペリジン環にある指定された不斉炭素の絶対立体配置は R である。",
       "answer": false,
       "explanation": "模範解答では S です。試験では「R」が誤りとして出されました。",
-      "sourcePage": "2023中間 問4"
+      "sourcePage": "2023中間 問4",
+      "tags": [
+        "stereo"
+      ]
     },
     {
       "id": "q06",
@@ -90,7 +105,11 @@
       ],
       "answer": "d",
       "explanation": "抗菌薬です。試験では「抗腫瘍薬」が誤りとして出されました。",
-      "sourcePage": "2023中間 問4"
+      "sourcePage": "2023中間 問4",
+      "tags": [
+        "mechanism",
+        "antibiotic"
+      ]
     },
     {
       "id": "q07",
@@ -116,7 +135,11 @@
       ],
       "answer": "c",
       "explanation": "テトラサイクリン塩酸塩は放線菌 Streptomyces 属によって生産されます。",
-      "sourcePage": "2023中間 問4"
+      "sourcePage": "2023中間 問4",
+      "tags": [
+        "origin",
+        "antibiotic"
+      ]
     },
     {
       "id": "q08",
@@ -142,7 +165,10 @@
       ],
       "answer": "b",
       "explanation": "酢酸－マロン酸経路です。試験では「シキミ酸経路」が誤りとして出されました。",
-      "sourcePage": "2023中間 問4"
+      "sourcePage": "2023中間 問4",
+      "tags": [
+        "pathway"
+      ]
     },
     {
       "id": "q09",
@@ -168,7 +194,10 @@
       ],
       "answer": "a",
       "explanation": "不斉炭素は 5 個です（試験の選択肢 E は正しい記述）。",
-      "sourcePage": "2023中間 問4"
+      "sourcePage": "2023中間 問4",
+      "tags": [
+        "stereo"
+      ]
     },
     {
       "id": "q10",
@@ -176,7 +205,10 @@
       "prompt": "テトラサイクリン塩酸塩の構造において、ジメチルアミノ基が結合している母骨格の不斉炭素の絶対立体配置は R である。",
       "answer": false,
       "explanation": "模範解答では S です。試験では「R」が誤りとして出されました。",
-      "sourcePage": "2023中間 問4"
+      "sourcePage": "2023中間 問4",
+      "tags": [
+        "stereo"
+      ]
     },
     {
       "id": "q11",
@@ -202,7 +234,12 @@
       ],
       "answer": "c",
       "explanation": "生合成経路は共通（酢酸－マロン酸経路）ですが、用途はタクロリムス＝免疫抑制薬、テトラサイクリン＝抗菌薬と異なります。",
-      "sourcePage": "2023中間 問4"
+      "sourcePage": "2023中間 問4",
+      "tags": [
+        "pathway",
+        "mechanism",
+        "antibiotic"
+      ]
     }
   ]
 }

@@ -32,7 +32,10 @@
       ],
       "answer": "d",
       "explanation": "ワルファリンカリウムは抗凝血薬です。試験では「2型糖尿病治療薬」が誤りとして出されました。",
-      "sourcePage": "2024中間 問3"
+      "sourcePage": "2024中間 問3",
+      "tags": [
+        "mechanism"
+      ]
     },
     {
       "id": "q02",
@@ -58,7 +61,10 @@
       ],
       "answer": "c",
       "explanation": "ビタミンK活性化の阻害です。試験では「ビタミンD」が誤りとして出されました。",
-      "sourcePage": "2024中間 問3"
+      "sourcePage": "2024中間 問3",
+      "tags": [
+        "mechanism"
+      ]
     },
     {
       "id": "q03",
@@ -84,7 +90,10 @@
       ],
       "answer": "b",
       "explanation": "母骨格はクマリンです。試験では「クロマン」が誤りとして出されました。",
-      "sourcePage": "2024中間 問3"
+      "sourcePage": "2024中間 問3",
+      "tags": [
+        "structure"
+      ]
     },
     {
       "id": "q04",
@@ -92,7 +101,10 @@
       "prompt": "ワルファリンカリウムの開発の基となった化合物は、スウィートクローバーの腐敗物から見つかったジクマロールである。",
       "answer": true,
       "explanation": "正しい記述です（試験の選択肢 E）。",
-      "sourcePage": "2024中間 問3"
+      "sourcePage": "2024中間 問3",
+      "tags": [
+        "origin"
+      ]
     },
     {
       "id": "q05",
@@ -118,7 +130,10 @@
       ],
       "answer": "d",
       "explanation": "プラバスタチンナトリウムは HMG-CoA還元酵素を阻害します。",
-      "sourcePage": "2024中間 問3"
+      "sourcePage": "2024中間 問3",
+      "tags": [
+        "mechanism"
+      ]
     },
     {
       "id": "q06",
@@ -126,7 +141,10 @@
       "prompt": "プラバスタチンナトリウムの母骨格は、イソプレノイド経路で生合成される。",
       "answer": false,
       "explanation": "母骨格は酢酸－マロン酸経路で生合成されます。試験ではここが誤りとして出されました。",
-      "sourcePage": "2024中間 問3"
+      "sourcePage": "2024中間 問3",
+      "tags": [
+        "pathway"
+      ]
     },
     {
       "id": "q07",
@@ -152,7 +170,10 @@
       ],
       "answer": "b",
       "explanation": "脂質異常症治療薬です。試験では「抗アレルギー薬」が誤りとして出されました。",
-      "sourcePage": "2024中間 問3"
+      "sourcePage": "2024中間 問3",
+      "tags": [
+        "mechanism"
+      ]
     },
     {
       "id": "q08",
@@ -160,7 +181,10 @@
       "prompt": "プラバスタチンナトリウムの構造で、2-メチルブタン酸が結合している母骨格の不斉炭素の絶対立体配置は R である。",
       "answer": false,
       "explanation": "模範解答では S 配置です。試験では「R」が誤りとして出されました。",
-      "sourcePage": "2024中間 問3"
+      "sourcePage": "2024中間 問3",
+      "tags": [
+        "stereo"
+      ]
     },
     {
       "id": "q09",
@@ -186,7 +210,10 @@
       ],
       "answer": "d",
       "explanation": "アカルボースは 2型糖尿病治療薬です。試験では「脂質異常症治療薬」が誤りとして出されました。",
-      "sourcePage": "2024中間 問3"
+      "sourcePage": "2024中間 問3",
+      "tags": [
+        "mechanism"
+      ]
     },
     {
       "id": "q10",
@@ -208,7 +235,10 @@
       ],
       "answer": "a",
       "explanation": "α-グルコシダーゼ阻害です。試験では「β」が誤りとして出されました。α と β の入れ替えに注意。",
-      "sourcePage": "2024中間 問3"
+      "sourcePage": "2024中間 問3",
+      "tags": [
+        "mechanism"
+      ]
     },
     {
       "id": "q11",
@@ -216,7 +246,10 @@
       "prompt": "アカルボースの構造には、マルトースの構造が含まれる。",
       "answer": true,
       "explanation": "正しい記述です（試験の選択肢 D）。",
-      "sourcePage": "2024中間 問3"
+      "sourcePage": "2024中間 問3",
+      "tags": [
+        "structure"
+      ]
     },
     {
       "id": "q12",
@@ -224,7 +257,10 @@
       "prompt": "アカルボースの左端のシクロヘキセン環で、窒素原子が結合した不斉炭素の絶対立体配置は R である。",
       "answer": false,
       "explanation": "模範解答では S 配置です。試験では「R」が誤りとして出されました。",
-      "sourcePage": "2024中間 問3"
+      "sourcePage": "2024中間 問3",
+      "tags": [
+        "stereo"
+      ]
     },
     {
       "id": "q13",
@@ -250,7 +286,10 @@
       ],
       "answer": "d",
       "explanation": "ワルファリン＝ビタミンK活性化阻害、プラバスタチン＝HMG-CoA還元酵素阻害、アカルボース＝α-グルコシダーゼ阻害です。",
-      "sourcePage": "2024中間 問3"
+      "sourcePage": "2024中間 問3",
+      "tags": [
+        "mechanism"
+      ]
     }
   ]
 }

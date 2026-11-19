@@ -32,7 +32,10 @@
       ],
       "answer": "c",
       "explanation": "オカダ酸はポリエーテル系化合物です。試験では「ポリエステル系」が誤りとして出されました。",
-      "sourcePage": "2024中間 問6"
+      "sourcePage": "2024中間 問6",
+      "tags": [
+        "structure"
+      ]
     },
     {
       "id": "q02",
@@ -40,7 +43,10 @@
       "prompt": "オカダ酸は、プロテインホスファターゼ阻害による発癌プロモーター活性を有する。",
       "answer": true,
       "explanation": "正しい記述です。",
-      "sourcePage": "2024中間 問6"
+      "sourcePage": "2024中間 問6",
+      "tags": [
+        "mechanism"
+      ]
     },
     {
       "id": "q03",
@@ -66,7 +72,10 @@
       ],
       "answer": "a",
       "explanation": "オカダ酸はクロイソカイメンなどから単離されました。",
-      "sourcePage": "2024中間 問6"
+      "sourcePage": "2024中間 問6",
+      "tags": [
+        "origin"
+      ]
     },
     {
       "id": "q04",
@@ -88,7 +97,10 @@
       ],
       "answer": "a",
       "explanation": "生薬名はオウゴンです。試験では「オウバク」が誤りとして出されました。",
-      "sourcePage": "2024中間 問6"
+      "sourcePage": "2024中間 問6",
+      "tags": [
+        "origin"
+      ]
     },
     {
       "id": "q05",
@@ -114,7 +126,10 @@
       ],
       "answer": "c",
       "explanation": "コガネバナはシソ科植物です。",
-      "sourcePage": "2024中間 問6"
+      "sourcePage": "2024中間 問6",
+      "tags": [
+        "origin"
+      ]
     },
     {
       "id": "q06",
@@ -122,7 +137,10 @@
       "prompt": "バイカリンは、緩下、利尿、抗炎症、抗アレルギー作用を有する。",
       "answer": true,
       "explanation": "正しい記述です。",
-      "sourcePage": "2024中間 問6"
+      "sourcePage": "2024中間 問6",
+      "tags": [
+        "mechanism"
+      ]
     },
     {
       "id": "q07",
@@ -148,7 +166,10 @@
       ],
       "answer": "a",
       "explanation": "シアル酸の誘導体です。試験では「シキミ酸」が誤りとして出されました。",
-      "sourcePage": "2024中間 問6"
+      "sourcePage": "2024中間 問6",
+      "tags": [
+        "structure"
+      ]
     },
     {
       "id": "q08",
@@ -174,7 +195,10 @@
       ],
       "answer": "d",
       "explanation": "ノイラミニダーゼを選択的に阻害し、ウイルスが感染細胞表面から遊離するのを阻止して、他の細胞への感染・増殖を抑えます。",
-      "sourcePage": "2024中間 問6"
+      "sourcePage": "2024中間 問6",
+      "tags": [
+        "mechanism"
+      ]
     },
     {
       "id": "q09",
@@ -182,7 +206,10 @@
       "prompt": "オセルタミビルの商品名はリレンザ、ザナミビルの商品名はタミフルである。",
       "answer": false,
       "explanation": "逆です。オセルタミビル＝タミフル、ザナミビル＝リレンザです。",
-      "sourcePage": "2024中間 問6"
+      "sourcePage": "2024中間 問6",
+      "tags": [
+        "mechanism"
+      ]
     },
     {
       "id": "q10",
@@ -208,7 +235,11 @@
       ],
       "answer": "b",
       "explanation": "エリスロマイシンはマクロライド系抗生物質です。試験では「アミノグリコシド系」が誤りとして出されました。",
-      "sourcePage": "2024中間 問6"
+      "sourcePage": "2024中間 問6",
+      "tags": [
+        "antibiotic",
+        "structure"
+      ]
     },
     {
       "id": "q11",
@@ -230,7 +261,10 @@
       ],
       "answer": "a",
       "explanation": "リファンピシンはアンサマイシン系抗生物質です。",
-      "sourcePage": "2024中間 問6"
+      "sourcePage": "2024中間 問6",
+      "tags": [
+        "antibiotic"
+      ]
     },
     {
       "id": "q12",
@@ -256,7 +290,10 @@
       ],
       "answer": "d",
       "explanation": "ストレプトマイシン・カナマイシン＝抗結核菌、ゲンタマイシン＝抗緑膿菌、アルベカシン＝抗MRSA です。",
-      "sourcePage": "2024中間 問6"
+      "sourcePage": "2024中間 問6",
+      "tags": [
+        "antibiotic"
+      ]
     },
     {
       "id": "q13",
@@ -264,7 +301,11 @@
       "prompt": "ストレプトマイシン、カナマイシン、ゲンタマイシン、アルベカシンは、いずれもマクロライド系抗生物質に分類される。",
       "answer": false,
       "explanation": "4つともアミノグリコシド系抗生物質です。試験では「マクロライド系」が誤りとして出されました。",
-      "sourcePage": "2024中間 問6"
+      "sourcePage": "2024中間 問6",
+      "tags": [
+        "antibiotic",
+        "structure"
+      ]
     },
     {
       "id": "q14",
@@ -290,7 +331,10 @@
       ],
       "answer": "b",
       "explanation": "フラボノイドはシキミ酸経路と酢酸－マロン酸経路の複合経路で生合成されます。試験では「イソプレノイド経路」が誤りとして出されました。",
-      "sourcePage": "2024中間 問6"
+      "sourcePage": "2024中間 問6",
+      "tags": [
+        "pathway"
+      ]
     },
     {
       "id": "q15",
@@ -312,7 +356,10 @@
       ],
       "answer": "a",
       "explanation": "フラボノイドの基本骨格はジフェニルプロパンです。",
-      "sourcePage": "2024中間 問6"
+      "sourcePage": "2024中間 問6",
+      "tags": [
+        "structure"
+      ]
     }
   ]
 }

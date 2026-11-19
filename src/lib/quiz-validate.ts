@@ -67,6 +67,9 @@ export function validateQuizSet(data: unknown, knownSubjectIds: string[]): strin
     if (!isNonEmptyString(q.prompt)) errors.push(`${where}: prompt（問題文）がありません`);
     if (!isNonEmptyString(q.explanation)) errors.push(`${where}: explanation（解説）がありません`);
     if (q.sourcePage != null && typeof q.sourcePage !== "string") errors.push(`${where}: sourcePage は文字列か null にしてください`);
+    if (q.tags !== undefined && (!Array.isArray(q.tags) || !q.tags.every((t) => typeof t === "string" && t.length > 0))) {
+      errors.push(`${where}: tags は文字列の配列にしてください`);
+    }
     types.add(String(q.type));
 
     switch (q.type) {

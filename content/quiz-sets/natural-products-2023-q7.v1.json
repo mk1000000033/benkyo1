@@ -32,7 +32,10 @@
       ],
       "answer": "d",
       "explanation": "グレープフルーツジュースです。試験では「オレンジジュース」が誤りとして出されました。",
-      "sourcePage": "2023中間 問7"
+      "sourcePage": "2023中間 問7",
+      "tags": [
+        "origin"
+      ]
     },
     {
       "id": "q02",
@@ -54,7 +57,10 @@
       ],
       "answer": "b",
       "explanation": "ベルガモチンは CYP3A4 の特異的阻害物質です。",
-      "sourcePage": "2023中間 問7"
+      "sourcePage": "2023中間 問7",
+      "tags": [
+        "mechanism"
+      ]
     },
     {
       "id": "q03",
@@ -62,7 +68,10 @@
       "prompt": "CYP3A4 が阻害されると、ジヒドロピリジン系カルシウム拮抗薬の血中濃度が上昇する恐れがある。",
       "answer": true,
       "explanation": "正しい記述です。",
-      "sourcePage": "2023中間 問7"
+      "sourcePage": "2023中間 問7",
+      "tags": [
+        "mechanism"
+      ]
     },
     {
       "id": "q04",
@@ -88,7 +97,10 @@
       ],
       "answer": "a",
       "explanation": "ベルガモチンはフラノクマリンです。",
-      "sourcePage": "2023中間 問7"
+      "sourcePage": "2023中間 問7",
+      "tags": [
+        "structure"
+      ]
     },
     {
       "id": "q05",
@@ -114,7 +126,10 @@
       ],
       "answer": "d",
       "explanation": "ミカン科です。試験では「セリ科」が誤りとして出されました。",
-      "sourcePage": "2023中間 問7"
+      "sourcePage": "2023中間 問7",
+      "tags": [
+        "origin"
+      ]
     },
     {
       "id": "q06",
@@ -136,7 +151,10 @@
       ],
       "answer": "b",
       "explanation": "ナリンギンやヘスペリジンはフラバノン配糖体です。",
-      "sourcePage": "2023中間 問7"
+      "sourcePage": "2023中間 問7",
+      "tags": [
+        "structure"
+      ]
     },
     {
       "id": "q07",
@@ -144,7 +162,10 @@
       "prompt": "ナリンギンやヘスペリジンは苦味を有するが、それらのアグリコンは無味である。",
       "answer": true,
       "explanation": "正しい記述です。",
-      "sourcePage": "2023中間 問7"
+      "sourcePage": "2023中間 問7",
+      "tags": [
+        "structure"
+      ]
     },
     {
       "id": "q08",
@@ -170,7 +191,11 @@
       ],
       "answer": "a",
       "explanation": "レスベラトロールはスチルベンです。試験では「カテキン」が誤りとして出されました。",
-      "sourcePage": "2023中間 問7"
+      "sourcePage": "2023中間 問7",
+      "tags": [
+        "origin",
+        "structure"
+      ]
     },
     {
       "id": "q09",
@@ -178,7 +203,10 @@
       "prompt": "レスベラトロールには、抗菌、抗カビ、抗酸化、抗炎症作用や癌予防効果などがあるとされる。",
       "answer": true,
       "explanation": "正しい記述です。",
-      "sourcePage": "2023中間 問7"
+      "sourcePage": "2023中間 問7",
+      "tags": [
+        "mechanism"
+      ]
     },
     {
       "id": "q10",
@@ -204,7 +232,10 @@
       ],
       "answer": "c",
       "explanation": "これらはフタリドです。試験では「フラボノイド」が誤りとして出されました。",
-      "sourcePage": "2023中間 問7"
+      "sourcePage": "2023中間 問7",
+      "tags": [
+        "structure"
+      ]
     },
     {
       "id": "q11",
@@ -230,7 +261,11 @@
       ],
       "answer": "b",
       "explanation": "トウキ、センキュウの特異な芳香の成分です。",
-      "sourcePage": "2023中間 問7"
+      "sourcePage": "2023中間 問7",
+      "tags": [
+        "origin",
+        "structure"
+      ]
     },
     {
       "id": "q12",
@@ -238,7 +273,11 @@
       "prompt": "リグスチリド、ブチリデンフタリド、クニジリドは、中枢性筋弛緩作用、抗コリン作用を示す。",
       "answer": true,
       "explanation": "正しい記述です。",
-      "sourcePage": "2023中間 問7"
+      "sourcePage": "2023中間 問7",
+      "tags": [
+        "mechanism",
+        "structure"
+      ]
     },
     {
       "id": "q13",
@@ -264,7 +303,11 @@
       ],
       "answer": "d",
       "explanation": "瀉下薬です。試験では「止瀉薬」が誤りとして出されました。",
-      "sourcePage": "2023中間 問7"
+      "sourcePage": "2023中間 問7",
+      "tags": [
+        "mechanism",
+        "origin"
+      ]
     },
     {
       "id": "q14",
@@ -286,7 +329,10 @@
       ],
       "answer": "b",
       "explanation": "センノシド類は腸内細菌で単量体のアンスロン型となって作用します。",
-      "sourcePage": "2023中間 問7"
+      "sourcePage": "2023中間 問7",
+      "tags": [
+        "origin"
+      ]
     }
   ]
 }

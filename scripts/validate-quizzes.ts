@@ -8,6 +8,7 @@ import { join } from "node:path";
 import { SUBJECTS } from "../content/subjects";
 import { validateQuizSet } from "../src/lib/quiz-validate";
 import { validateNote } from "../src/lib/note-validate";
+import { themesOf } from "../content/themes";
 
 const dir = join(process.cwd(), "content", "quiz-sets");
 const indexSrc = readFileSync(join(dir, "index.ts"), "utf8");
@@ -33,6 +34,10 @@ for (const file of files) {
   if (seen.has(key)) errors.push(`${file}: ${key} は ${seen.get(key)} と重複しています`);
   seen.set(key, file);
   if (!indexSrc.includes(`./${file}`)) errors.push(`${file}: content/quiz-sets/index.ts に登録されていません`);
+  const themeIds = themesOf((data as { subjectId?: string }).subjectId ?? "").map((t) => t.id);
+  for (const q of (data as { questions?: { id: string; tags?: string[] }[] }).questions ?? []) {
+    for (const t of q.tags ?? []) if (!themeIds.includes(t)) errors.push(`${file} ${q.id}: テーマ "${t}" が content/themes.ts にありません`);
+  }
   const expectedName = `${d.id}.v${d.version}.json`;
   if (file !== expectedName) errors.push(`${file}: ファイル名は "${expectedName}" にしてください`);
 

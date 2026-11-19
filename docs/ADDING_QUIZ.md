@@ -41,7 +41,7 @@
   "published": true,
   "sourceMaterial": "基礎薬理学 第6回 授業スライド",
   "questions": [
-    { "id": "q01", "type": "choice", "prompt": "…", "options": [{"id":"a","text":"…"},{"id":"b","text":"…"},{"id":"c","text":"…"},{"id":"d","text":"…"}], "answer": "b", "explanation": "…", "sourcePage": "p.3" },
+    { "id": "q01", "type": "choice", "tags": ["mechanism"], "prompt": "…", "options": [{"id":"a","text":"…"},{"id":"b","text":"…"},{"id":"c","text":"…"},{"id":"d","text":"…"}], "answer": "b", "explanation": "…", "sourcePage": "p.3" },
     { "id": "q02", "type": "truefalse", "prompt": "…", "answer": false, "explanation": "…", "sourcePage": "p.5" },
     { "id": "q03", "type": "fill", "prompt": "…は [[blank]] を活性化する。", "options": [{"id":"a","text":"…"},{"id":"b","text":"…"},{"id":"c","text":"…"}], "answer": "a", "explanation": "…", "sourcePage": null }
   ]
@@ -56,6 +56,7 @@
 | truefalse | `answer` は `true`（○）か `false`（×）。`options` は書かない |
 | fill | `prompt` に `[[blank]]` をちょうど1つ。選択肢3〜6個 |
 | explanation | 必須 |
+| tags | テーマ（`content/themes.ts` の id）を1つ以上。テーマ別ミックスと暗記カードで使う。採点に関係しないので公開後に付け直してもOK |
 | ファイル名 | `<id>.v<version>.json` |
 
 ## 4. 公開済みの問題を修正するとき（重要）
@@ -128,3 +129,10 @@
 | 文章の装飾 | `**太字**` と `==マーカー==` のみ |
 
 `npm run validate:quizzes` でまとめの形式もチェックされます。
+
+## 7. テーマ（tags）の付け方
+
+- テーマは科目ごとに `content/themes.ts` で決めています（天然物化学：生合成経路／作用機序・用途／生薬・植物・由来／抗生物質・抗腫瘍／構造・分類／立体配置／分離・糖・脂肪酸）。
+- 問題を作ったら、各問題に当てはまるテーマを付けます（複数可。1問に1つ以上）。
+- 新しい科目のテーマは、その科目の内容を見てから `content/themes.ts` に追加します。
+- `npm run validate:quizzes` で、存在しないテーマが付いていないかチェックされます。

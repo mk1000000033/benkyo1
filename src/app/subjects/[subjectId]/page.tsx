@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import { getSubject, listActiveSummaries } from "@/lib/quiz-registry";
+import { getSubject, listActiveSummaries, listThemes } from "@/lib/quiz-registry";
 import { SetListView } from "./SetListView";
 
 export default async function SubjectPage({ params }: { params: Promise<{ subjectId: string }> }) {
@@ -10,6 +10,7 @@ export default async function SubjectPage({ params }: { params: Promise<{ subjec
     <SetListView
       subject={{ id: subject.id, name: subject.name, emoji: subject.emoji, color: subject.color }}
       sets={listActiveSummaries(subject.id)}
+      themes={listThemes(subject.id).map(({ id, name, emoji, count }) => ({ id, name, emoji, count }))}
     />
   );
 }

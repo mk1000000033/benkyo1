@@ -4,10 +4,12 @@ import "server-only";
 import { QUIZ_SET_FILES } from "@content/quiz-sets";
 import { NOTE_FILES } from "@content/notes";
 import { SUBJECTS, findSubject, type Subject } from "@content/subjects";
+import { themesOf, type Theme } from "@content/themes";
 import { validateQuizSet, asQuizSet } from "@/lib/quiz-validate";
 import { validateNote } from "@/lib/note-validate";
 import type { NoteFile } from "@/lib/note-types";
-import type { QuizSetFile, QuizSetSummary } from "@/lib/quiz-types";
+import { questionToCard, type FlashCard } from "@/lib/cards";
+import type { Question, QuizSetFile, QuizSetSummary } from "@/lib/quiz-types";
 
 const HIDE_SAMPLES = process.env.HIDE_SAMPLE_SETS === "true";
 
@@ -28,6 +30,16 @@ function loadAll(): QuizSetFile[] {
 }
 
 const ALL_SETS = loadAll();
+
+// テーマのタグが content/themes.ts に存在するか確認
+for (const set of ALL_SETS) {
+  const ids = themesOf(set.subjectId).map((t) => t.id);
+  for (const q of set.questions) {
+    for (const t of q.tags ?? []) {
+      if (!ids.includes(t)) throw new Error(`${set.id}@v${set.version} ${q.id}: テーマ "${t}" が content/themes.ts にありません`);
+    }
+  }
+}
 
 function loadNotes(): Map<string, NoteFile> {
   const ids = Array.from(new Set(ALL_SETS.map((s) => s.id)));
@@ -112,4 +124,62 @@ export function getSubject(id: string): Subject | undefined {
 /** 同じセットの全バージョン（過去の挑戦の復習用） */
 export function getAllVersions(id: string): QuizSetFile[] {
   return ALL_SETS.filter((s) => s.id === id);
+}
+
+// ---------------- テーマ別ミックス・暗記カード ----------------
+
+/** テーマに入る1問（どのセットの問題かを添える） */
+export interface ThemeItem {
+  key: string;
+  setId: string;
+  setTitle: string;
+  question: Question;
+}
+
+/** 公開中のセットから、そのテーマのタグが付いた問題を集める */
+export function getThemeItems(subjectId: string, themeId: string): ThemeItem[] {
+  return listActiveSummaries(subjectId).flatMap((sum) => {
+    const set = getActiveSet(sum.id)!;
+    return set.questions
+      .filter((q) => q.tags?.includes(themeId))
+      .map((q) => ({ key: `${set.id}:${q.id}`, setId: set.id, setTitle: set.title, question: q }));
+  });
+}
+
+export interface ThemeWithCount extends Theme {
+  count: number;
+}
+
+/** 科目のテーマ一覧（問題が1問以上あるものだけ） */
+export function listThemes(subjectId: string): ThemeWithCount[] {
+  return themesOf(subjectId)
+    .map((t) => ({ ...t, count: getThemeItems(subjectId, t.id).length }))
+    .filter((t) => t.count > 0);
+}
+
+export function getTheme(subjectId: string, themeId: string): Theme | undefined {
+  return themesOf(subjectId).find((t) => t.id === themeId);
+}
+
+// ---------------- 暗記カード ----------------
+
+/** 問題セットのカード：まとめのキーワード → 各問題 */
+export function buildSetDeck(setId: string): FlashCard[] {
+  const set = getActiveSet(setId);
+  if (!set) return [];
+  const note = NOTES.get(setId);
+  const keywordCards: FlashCard[] = (note?.keywords ?? []).map((k, i) => ({
+    id: `${setId}:kw${i}`,
+    kind: "keyword",
+    front: k.term,
+    back: k.desc,
+    detail: null,
+    source: set.title,
+  }));
+  return [...keywordCards, ...set.questions.map((q) => questionToCard(`${setId}:${q.id}`, q, set.title))];
+}
+
+/** テーマのカード：そのテーマのタグが付いた問題 */
+export function buildThemeDeck(subjectId: string, themeId: string): FlashCard[] {
+  return getThemeItems(subjectId, themeId).map((it) => questionToCard(it.key, it.question, it.setTitle));
 }

@@ -186,3 +186,44 @@ test("これまでの挑戦から日ごとの記録を補完", () => {
   assert.deepEqual(log["2026-11-17"], { answered: 15, correct: 12 });
   assert.deepEqual(log["2026-11-18"], { answered: 15, correct: 9 });
 });
+
+import { shuffle } from "../src/lib/shuffle";
+import { questionToCard } from "../src/lib/cards";
+import { cardsComment, greeting, resultComment } from "../src/lib/iincho";
+
+test("シャッフル：同じ中身で順番だけ変わる", () => {
+  const a = Array.from({ length: 30 }, (_, i) => i);
+  const b = shuffle(a);
+  assert.deepEqual([...b].sort((x, y) => x - y), a);
+  assert.notDeepEqual(b, a); // 30! 分の1 で偶然一致するだけ
+  assert.deepEqual(a[0], 0); // 元の配列は変えない
+});
+
+test("暗記カード：問題をカードにする", () => {
+  const set = sample as unknown as QuizSetFile;
+  const fill = set.questions.find((q) => q.type === "fill")!;
+  const card = questionToCard("x", fill, "セット");
+  assert.ok(card.front.includes("（　　）") && !card.front.includes("[[blank]]"));
+  assert.ok(card.back.length > 0);
+  const tf = questionToCard("y", set.questions.find((q) => q.type === "truefalse")!, "セット");
+  assert.match(tf.back, /^[○×]/);
+});
+
+test("委員長：点数でセリフと表情が変わる・同じ挑戦なら同じセリフ", () => {
+  assert.equal(resultComment(100, "a").mood, "proud");
+  assert.equal(resultComment(85, "a").mood, "proud");
+  assert.equal(resultComment(70, "a").mood, "ok");
+  assert.equal(resultComment(30, "a").mood, "worried");
+  assert.equal(resultComment(70, "abc").line, resultComment(70, "abc").line);
+  assert.equal(greeting(new Date(2026, 10, 19, 2), 0).mood, "sleepy");
+  assert.match(greeting(new Date(2026, 10, 19, 15), 5).line, /5日連続/);
+  assert.equal(cardsComment(10, 10, "s").mood, "proud");
+});
+
+test("すべての問題にテーマが付いている（天然物化学）", async () => {
+  const { readdirSync, readFileSync } = await import("node:fs");
+  for (const f of readdirSync("content/quiz-sets").filter((x) => x.startsWith("natural-products") && x.endsWith(".json"))) {
+    const d = JSON.parse(readFileSync(`content/quiz-sets/${f}`, "utf8"));
+    for (const q of d.questions) assert.ok(q.tags?.length > 0, `${f} ${q.id} にテーマがない`);
+  }
+});

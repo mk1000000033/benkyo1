@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { SubjectColor } from "@content/subjects";
 import { COLOR } from "@/lib/colors";
+import { HomeGreeting } from "@/components/HomeGreeting";
 
 interface SubjectItem {
   id: string;
@@ -24,6 +25,8 @@ export function HomeView({ subjects }: { subjects: SubjectItem[] }) {
         </h1>
         <p className="relative mt-1 text-sm text-ink-soft">まとめを読んで、クイズを解いて、再試を回避しよう 🛡️ 何度でも挑戦して平均正答率を上げよう✨</p>
       </section>
+
+      <HomeGreeting />
 
       <section>
         <h2 className="mb-3 flex items-center gap-2 text-lg font-extrabold">

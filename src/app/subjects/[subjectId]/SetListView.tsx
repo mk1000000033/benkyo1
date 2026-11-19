@@ -13,13 +13,14 @@ import { groupSets, titleInGroup } from "@/lib/groups";
 interface Props {
   subject: { id: string; name: string; emoji: string; color: SubjectColor };
   sets: QuizSetSummary[];
+  themes?: { id: string; name: string; emoji: string; count: number }[];
 }
 
 type Local = Record<string, { record: SetRecord | null; progress: Progress | null }>;
 
 const OTHER = "__other__";
 
-export function SetListView({ subject, sets }: Props) {
+export function SetListView({ subject, sets, themes = [] }: Props) {
   const c = COLOR[subject.color];
   // 端末の記録は表示後に読み込む（サーバー側の描画には存在しないため）
   const [local, setLocal] = useState<Local | null>(null);
@@ -69,6 +70,30 @@ export function SetListView({ subject, sets }: Props) {
           <p className="text-sm font-bold text-ink-soft">問題セット {sets.length}個</p>
         </div>
       </header>
+
+      {themes.length > 0 && (
+        <section className="card p-4">
+          <h2 className="font-extrabold">🎲 テーマ別ミックス</h2>
+          <p className="text-xs font-bold text-ink-soft">年度をまたいで、同じテーマの問題をランダムに出題します</p>
+          <div className="mt-3 grid grid-cols-2 gap-2">
+            {themes.map((t) => (
+              <Link
+                key={t.id}
+                href={`/themes/${subject.id}/${t.id}`}
+                className={`flex items-center gap-2 rounded-2xl border-2 border-[#ece6f8] bg-white px-3 py-2.5 active:scale-[0.98] ${c.text}`}
+              >
+                <span className="text-xl" aria-hidden>
+                  {t.emoji}
+                </span>
+                <span className="min-w-0 flex-1">
+                  <span className="block text-sm font-extrabold leading-tight text-ink">{t.name}</span>
+                  <span className="block text-xs font-bold">{t.count}問</span>
+                </span>
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
 
       {sets.length === 0 && <p className="card p-6 text-center font-bold text-ink-soft">まだ問題セットがありません。お楽しみに！</p>}
 
@@ -179,13 +204,16 @@ function SetCard({ s, index, title, local, c }: CardProps) {
         </p>
       )}
 
-      <div className={`mt-4 grid gap-3 ${s.hasNote ? "grid-cols-2" : "grid-cols-1"}`}>
+      <div className={`mt-4 grid gap-2 ${s.hasNote ? "grid-cols-3" : "grid-cols-2"}`}>
         {s.hasNote && (
-          <Link href={`/notes/${s.id}`} className="btn-pop pop-mint">
+          <Link href={`/notes/${s.id}`} className="btn-pop pop-mint px-2 text-sm">
             📖 まとめ
           </Link>
         )}
-        <Link href={`/quiz/${s.id}`} className={`btn-pop ${resumable ? "pop-yellow" : "pop-pink"}`}>
+        <Link href={`/cards/${s.id}`} className="btn-pop pop-yellow px-2 text-sm">
+          🃏 カード
+        </Link>
+        <Link href={`/quiz/${s.id}`} className={`btn-pop ${resumable ? "pop-purple" : "pop-pink"} px-2 text-sm`}>
           {resumable ? "▶ 続きから" : "▶ クイズ"}
         </Link>
       </div>

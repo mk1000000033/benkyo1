@@ -32,7 +32,10 @@
       ],
       "answer": "c",
       "explanation": "1回目の分配（有機溶媒＋炭酸水素ナトリウム水溶液）では、サリチル酸メチルが有機層に分離されます。",
-      "sourcePage": "2023中間 問2"
+      "sourcePage": "2023中間 問2",
+      "tags": [
+        "basics"
+      ]
     },
     {
       "id": "q02",
@@ -40,7 +43,10 @@
       "prompt": "1回目の分配（有機溶媒＋炭酸水素ナトリウム水溶液）では、アスピリンに相当する成分は水層側に分離される。",
       "answer": true,
       "explanation": "正しい記述です。この水層を次の分配に使います。",
-      "sourcePage": "2023中間 問2"
+      "sourcePage": "2023中間 問2",
+      "tags": [
+        "basics"
+      ]
     },
     {
       "id": "q03",
@@ -62,7 +68,10 @@
       ],
       "answer": "c",
       "explanation": "2回目は有機溶媒と酸性水溶液（希塩酸や希酢酸など）で分配し、アセチルサリチル酸を有機層に回収します。",
-      "sourcePage": "2023中間 問2"
+      "sourcePage": "2023中間 問2",
+      "tags": [
+        "basics"
+      ]
     },
     {
       "id": "q04",
@@ -88,7 +97,10 @@
       ],
       "answer": "d",
       "explanation": "解答図では、アスピリンはカルボン酸、サリチル酸メチルはフェノール性物質として扱われています。",
-      "sourcePage": "2023中間 問2"
+      "sourcePage": "2023中間 問2",
+      "tags": [
+        "basics"
+      ]
     },
     {
       "id": "q05",
@@ -96,7 +108,10 @@
       "prompt": "アスピリンの別名はアセチルサリチル酸である。",
       "answer": true,
       "explanation": "正しい記述です。",
-      "sourcePage": "2023中間 問2"
+      "sourcePage": "2023中間 問2",
+      "tags": [
+        "basics"
+      ]
     },
     {
       "id": "q06",
@@ -122,7 +137,10 @@
       ],
       "answer": "b",
       "explanation": "2 位エピマーは β-D-マンノース、4 位エピマーは β-D-ガラクトースです。",
-      "sourcePage": "2023中間 問2"
+      "sourcePage": "2023中間 問2",
+      "tags": [
+        "basics"
+      ]
     },
     {
       "id": "q07",
@@ -130,7 +148,10 @@
       "prompt": "β-D-ガラクトースは、β-D-グルコースの 2 位エピマーである。",
       "answer": false,
       "explanation": "β-D-ガラクトースは 4 位エピマーです。2 位エピマーは β-D-マンノースです。",
-      "sourcePage": "2023中間 問2"
+      "sourcePage": "2023中間 問2",
+      "tags": [
+        "basics"
+      ]
     },
     {
       "id": "q08",
@@ -156,7 +177,10 @@
       ],
       "answer": "d",
       "explanation": "DHA（ドコサヘキサエン酸）は炭素数 22、二重結合 6 個です。",
-      "sourcePage": "2023中間 問2"
+      "sourcePage": "2023中間 問2",
+      "tags": [
+        "basics"
+      ]
     },
     {
       "id": "q09",
@@ -182,7 +206,10 @@
       ],
       "answer": "c",
       "explanation": "EPA（イコサペンタエン酸）は炭素数 20、二重結合 5 個です。",
-      "sourcePage": "2023中間 問2"
+      "sourcePage": "2023中間 問2",
+      "tags": [
+        "basics"
+      ]
     },
     {
       "id": "q10",
@@ -190,7 +217,11 @@
       "prompt": "DHA と EPA はどちらも ω3 脂肪酸であり、示された二重結合の立体配置はすべて Z である。",
       "answer": true,
       "explanation": "正しい記述です。",
-      "sourcePage": "2023中間 問2"
+      "sourcePage": "2023中間 問2",
+      "tags": [
+        "basics",
+        "stereo"
+      ]
     },
     {
       "id": "q11",
@@ -212,7 +243,10 @@
       ],
       "answer": "c",
       "explanation": "EPA は (5Z,8Z,11Z,14Z,17Z)-icosa-5,8,11,14,17-pentaenoic acid です。19 位まであるのは DHA です。",
-      "sourcePage": "2023中間 問2"
+      "sourcePage": "2023中間 問2",
+      "tags": [
+        "basics"
+      ]
     },
     {
       "id": "q12",
@@ -238,7 +272,10 @@
       ],
       "answer": "d",
       "explanation": "設問では L-フェニルアラニン、L-チロシン、L-トリプトファンの 3 種が問われました。",
-      "sourcePage": "2023中間 問2"
+      "sourcePage": "2023中間 問2",
+      "tags": [
+        "basics"
+      ]
     },
     {
       "id": "q13",
@@ -246,7 +283,11 @@
       "prompt": "設問では、L-アミノ酸の立体表示は 2R 体と指定されていた。",
       "answer": false,
       "explanation": "L-アミノ酸は 2S 体と指定されていました。",
-      "sourcePage": "2023中間 問2"
+      "sourcePage": "2023中間 問2",
+      "tags": [
+        "basics",
+        "stereo"
+      ]
     },
     {
       "id": "q14",
@@ -268,7 +309,10 @@
       ],
       "answer": "c",
       "explanation": "L-トリプトファンは窒素を含む縮合芳香族環、L-チロシンはヒドロキシ基をもつ芳香環、L-フェニルアラニンはベンゼン環をもちます。",
-      "sourcePage": "2023中間 問2"
+      "sourcePage": "2023中間 問2",
+      "tags": [
+        "basics"
+      ]
     }
   ]
 }

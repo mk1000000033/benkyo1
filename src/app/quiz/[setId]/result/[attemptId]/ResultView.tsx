@@ -6,6 +6,8 @@ import { findAttempt, type AttemptRecord } from "@/lib/records";
 import { compareRates, formatDelta, formatPercent } from "@/lib/stats";
 import { Confetti, LoadingScreen } from "@/components/ui";
 import { ShareButtons } from "@/components/ShareButtons";
+import { IinchoSays } from "@/components/Iincho";
+import { resultComment } from "@/lib/iincho";
 import { siteUrl } from "@/lib/share";
 import { QuestionBody, TYPE_LABEL, answerLabel } from "@/components/QuestionBody";
 
@@ -130,6 +132,11 @@ export function ResultView({
           {Array.from({ length: 5 }, (_, i) => (i < Math.round((data.score / data.questionCount) * 5) ? "⭐" : "☆")).join("")}
         </div>
       </section>
+
+      {(() => {
+        const ic = resultComment((data.score / data.questionCount) * 100, attemptId);
+        return <IinchoSays mood={ic.mood} line={ic.line} title={`委員長の判定｜再試回避率 ${data.thisPercentText}%`} />;
+      })()}
 
       {/* 平均正答率（過去を含む） */}
       <section className="card overflow-hidden">
