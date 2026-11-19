@@ -1,0 +1,14 @@
+node_modules/
+.next/
+out/
+build/
+.vercel/
+*.tsbuildinfo
+next-env.d.ts
+.DS_Store
+npm-debug.log*
+
+# 環境変数（秘密情報）は絶対にコミットしない
+.env
+.env.local
+.env.*.local
