@@ -1,0 +1,291 @@
+{
+  "id": "natural-products-2023-q7",
+  "version": 1,
+  "subjectId": "natural-products",
+  "title": "2023年度 大問7 ベルガモチン・フラバノン配糖体・レスベラトロール・フタリド・センノシド",
+  "lectureDate": null,
+  "published": true,
+  "sourceMaterial": "2023年度 天然物化学 中間試験（問題用紙・模範解答）とユーザー作成の知識データ",
+  "questions": [
+    {
+      "id": "q01",
+      "type": "choice",
+      "prompt": "ベルガモチンが単離されたのはどれか。",
+      "options": [
+        {
+          "id": "a",
+          "text": "オレンジジュース"
+        },
+        {
+          "id": "b",
+          "text": "緑茶"
+        },
+        {
+          "id": "c",
+          "text": "ワイン"
+        },
+        {
+          "id": "d",
+          "text": "グレープフルーツジュース"
+        }
+      ],
+      "answer": "d",
+      "explanation": "グレープフルーツジュースです。試験では「オレンジジュース」が誤りとして出されました。",
+      "sourcePage": "2023中間 問7"
+    },
+    {
+      "id": "q02",
+      "type": "fill",
+      "prompt": "ベルガモチンは、薬物代謝酵素 [[blank]] の特異的阻害物質である。",
+      "options": [
+        {
+          "id": "a",
+          "text": "HMG-CoA還元酵素"
+        },
+        {
+          "id": "b",
+          "text": "CYP3A4"
+        },
+        {
+          "id": "c",
+          "text": "α-グルコシダーゼ"
+        }
+      ],
+      "answer": "b",
+      "explanation": "ベルガモチンは CYP3A4 の特異的阻害物質です。",
+      "sourcePage": "2023中間 問7"
+    },
+    {
+      "id": "q03",
+      "type": "truefalse",
+      "prompt": "CYP3A4 が阻害されると、ジヒドロピリジン系カルシウム拮抗薬の血中濃度が上昇する恐れがある。",
+      "answer": true,
+      "explanation": "正しい記述です。",
+      "sourcePage": "2023中間 問7"
+    },
+    {
+      "id": "q04",
+      "type": "choice",
+      "prompt": "ベルガモチンはどの化合物群に分類されるか。",
+      "options": [
+        {
+          "id": "a",
+          "text": "フラノクマリン"
+        },
+        {
+          "id": "b",
+          "text": "スチルベン"
+        },
+        {
+          "id": "c",
+          "text": "フタリド"
+        },
+        {
+          "id": "d",
+          "text": "フラバノン配糖体"
+        }
+      ],
+      "answer": "a",
+      "explanation": "ベルガモチンはフラノクマリンです。",
+      "sourcePage": "2023中間 問7"
+    },
+    {
+      "id": "q05",
+      "type": "choice",
+      "prompt": "ナリンギンやヘスペリジンを含む生薬（トウヒ、チンピ、キジツ、キコクなど）の基原植物の科はどれか。",
+      "options": [
+        {
+          "id": "a",
+          "text": "セリ科"
+        },
+        {
+          "id": "b",
+          "text": "シソ科"
+        },
+        {
+          "id": "c",
+          "text": "メギ科"
+        },
+        {
+          "id": "d",
+          "text": "ミカン科"
+        }
+      ],
+      "answer": "d",
+      "explanation": "ミカン科です。試験では「セリ科」が誤りとして出されました。",
+      "sourcePage": "2023中間 問7"
+    },
+    {
+      "id": "q06",
+      "type": "fill",
+      "prompt": "ナリンギンやヘスペリジンは [[blank]] 配糖体である。",
+      "options": [
+        {
+          "id": "a",
+          "text": "スチルベン"
+        },
+        {
+          "id": "b",
+          "text": "フラバノン"
+        },
+        {
+          "id": "c",
+          "text": "フタリド"
+        }
+      ],
+      "answer": "b",
+      "explanation": "ナリンギンやヘスペリジンはフラバノン配糖体です。",
+      "sourcePage": "2023中間 問7"
+    },
+    {
+      "id": "q07",
+      "type": "truefalse",
+      "prompt": "ナリンギンやヘスペリジンは苦味を有するが、それらのアグリコンは無味である。",
+      "answer": true,
+      "explanation": "正しい記述です。",
+      "sourcePage": "2023中間 問7"
+    },
+    {
+      "id": "q08",
+      "type": "choice",
+      "prompt": "ブドウやワイン等に含まれるレスベラトロールの分類はどれか。",
+      "options": [
+        {
+          "id": "a",
+          "text": "スチルベン"
+        },
+        {
+          "id": "b",
+          "text": "カテキン"
+        },
+        {
+          "id": "c",
+          "text": "フタリド"
+        },
+        {
+          "id": "d",
+          "text": "フラノクマリン"
+        }
+      ],
+      "answer": "a",
+      "explanation": "レスベラトロールはスチルベンです。試験では「カテキン」が誤りとして出されました。",
+      "sourcePage": "2023中間 問7"
+    },
+    {
+      "id": "q09",
+      "type": "truefalse",
+      "prompt": "レスベラトロールには、抗菌、抗カビ、抗酸化、抗炎症作用や癌予防効果などがあるとされる。",
+      "answer": true,
+      "explanation": "正しい記述です。",
+      "sourcePage": "2023中間 問7"
+    },
+    {
+      "id": "q10",
+      "type": "choice",
+      "prompt": "リグスチリド、ブチリデンフタリド、クニジリドの分類はどれか。",
+      "options": [
+        {
+          "id": "a",
+          "text": "フラボノイド"
+        },
+        {
+          "id": "b",
+          "text": "スチルベン"
+        },
+        {
+          "id": "c",
+          "text": "フタリド"
+        },
+        {
+          "id": "d",
+          "text": "リグナン"
+        }
+      ],
+      "answer": "c",
+      "explanation": "これらはフタリドです。試験では「フラボノイド」が誤りとして出されました。",
+      "sourcePage": "2023中間 問7"
+    },
+    {
+      "id": "q11",
+      "type": "choice",
+      "prompt": "リグスチリドやブチリデンフタリドを、特異な芳香の成分として含む生薬はどれか。",
+      "options": [
+        {
+          "id": "a",
+          "text": "トウヒ・チンピ"
+        },
+        {
+          "id": "b",
+          "text": "トウキ・センキュウ"
+        },
+        {
+          "id": "c",
+          "text": "ダイオウ・センナ"
+        },
+        {
+          "id": "d",
+          "text": "丁子・茴香"
+        }
+      ],
+      "answer": "b",
+      "explanation": "トウキ、センキュウの特異な芳香の成分です。",
+      "sourcePage": "2023中間 問7"
+    },
+    {
+      "id": "q12",
+      "type": "truefalse",
+      "prompt": "リグスチリド、ブチリデンフタリド、クニジリドは、中枢性筋弛緩作用、抗コリン作用を示す。",
+      "answer": true,
+      "explanation": "正しい記述です。",
+      "sourcePage": "2023中間 問7"
+    },
+    {
+      "id": "q13",
+      "type": "choice",
+      "prompt": "ダイオウやセンナはどの薬に分類されるか。",
+      "options": [
+        {
+          "id": "a",
+          "text": "止瀉薬"
+        },
+        {
+          "id": "b",
+          "text": "浸透圧性利尿薬"
+        },
+        {
+          "id": "c",
+          "text": "抗菌薬"
+        },
+        {
+          "id": "d",
+          "text": "瀉下薬"
+        }
+      ],
+      "answer": "d",
+      "explanation": "瀉下薬です。試験では「止瀉薬」が誤りとして出されました。",
+      "sourcePage": "2023中間 問7"
+    },
+    {
+      "id": "q14",
+      "type": "fill",
+      "prompt": "ダイオウ・センナの活性本態は二量体型のセンノシド類であり、腸内細菌により単量体の [[blank]] 型となって作用する。",
+      "options": [
+        {
+          "id": "a",
+          "text": "フラバノン"
+        },
+        {
+          "id": "b",
+          "text": "アンスロン"
+        },
+        {
+          "id": "c",
+          "text": "スチルベン"
+        }
+      ],
+      "answer": "b",
+      "explanation": "センノシド類は腸内細菌で単量体のアンスロン型となって作用します。",
+      "sourcePage": "2023中間 問7"
+    }
+  ]
+}

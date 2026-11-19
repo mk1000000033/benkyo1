@@ -1,0 +1,295 @@
+{
+  "id": "natural-products-2023-q5",
+  "version": 1,
+  "subjectId": "natural-products",
+  "title": "2023年度 大問5 プラバスタチン・エピガロカテキンガレート・アカルボース",
+  "lectureDate": null,
+  "published": true,
+  "sourceMaterial": "2023年度 天然物化学 中間試験（問題用紙・模範解答）とユーザー作成の知識データ",
+  "questions": [
+    {
+      "id": "q01",
+      "type": "choice",
+      "prompt": "カビ Penicillium citrinum が生産する中間体を原料に、放線菌がその 6 位をヒドロキシル化することで生産される医薬品はどれか。",
+      "options": [
+        {
+          "id": "a",
+          "text": "アカルボース"
+        },
+        {
+          "id": "b",
+          "text": "プラバスタチンナトリウム"
+        },
+        {
+          "id": "c",
+          "text": "エピガロカテキンガレート"
+        },
+        {
+          "id": "d",
+          "text": "テトラサイクリン塩酸塩"
+        }
+      ],
+      "answer": "b",
+      "explanation": "化合物 I はプラバスタチンナトリウムです。",
+      "sourcePage": "2023中間 問5"
+    },
+    {
+      "id": "q02",
+      "type": "choice",
+      "prompt": "プラバスタチンナトリウムの薬効用途はどれか。",
+      "options": [
+        {
+          "id": "a",
+          "text": "高脂血症治療薬（脂質異常症治療薬）"
+        },
+        {
+          "id": "b",
+          "text": "2型糖尿病治療薬"
+        },
+        {
+          "id": "c",
+          "text": "免疫抑制薬"
+        },
+        {
+          "id": "d",
+          "text": "抗菌薬"
+        }
+      ],
+      "answer": "a",
+      "explanation": "高脂血症（脂質異常症）治療薬です。",
+      "sourcePage": "2023中間 問5"
+    },
+    {
+      "id": "q03",
+      "type": "fill",
+      "prompt": "プラバスタチンナトリウムの作用機序は [[blank]] 阻害である。",
+      "options": [
+        {
+          "id": "a",
+          "text": "α-グルコシダーゼ"
+        },
+        {
+          "id": "b",
+          "text": "CYP3A4"
+        },
+        {
+          "id": "c",
+          "text": "HMG-CoA還元酵素"
+        }
+      ],
+      "answer": "c",
+      "explanation": "HMG-CoA還元酵素を阻害します。",
+      "sourcePage": "2023中間 問5"
+    },
+    {
+      "id": "q04",
+      "type": "truefalse",
+      "prompt": "プラバスタチンナトリウムの 6 位の不斉炭素の絶対立体配置は R である。",
+      "answer": false,
+      "explanation": "模範解答では S です。",
+      "sourcePage": "2023中間 問5"
+    },
+    {
+      "id": "q05",
+      "type": "choice",
+      "prompt": "プラバスタチンナトリウムと同様の医薬品として挙げられたもののうち、「合成薬」とされていたものはどれか。",
+      "options": [
+        {
+          "id": "a",
+          "text": "ロバスタチン"
+        },
+        {
+          "id": "b",
+          "text": "アトルバスタチン"
+        },
+        {
+          "id": "c",
+          "text": "シンバスタチン"
+        },
+        {
+          "id": "d",
+          "text": "アカルボース"
+        }
+      ],
+      "answer": "b",
+      "explanation": "問題文では、ロバスタチン、シンバスタチン、合成薬のアトルバスタチンが挙げられていました。",
+      "sourcePage": "2023中間 問5"
+    },
+    {
+      "id": "q06",
+      "type": "choice",
+      "prompt": "エピガロカテキンガレート（EGCG）が豊富に含まれる飲料はどれか。",
+      "options": [
+        {
+          "id": "a",
+          "text": "緑茶"
+        },
+        {
+          "id": "b",
+          "text": "グレープフルーツジュース"
+        },
+        {
+          "id": "c",
+          "text": "ワイン"
+        },
+        {
+          "id": "d",
+          "text": "オレンジジュース"
+        }
+      ],
+      "answer": "a",
+      "explanation": "EGCG は緑茶に豊富に含まれます。",
+      "sourcePage": "2023中間 問5"
+    },
+    {
+      "id": "q07",
+      "type": "choice",
+      "prompt": "エピガロカテキンガレートの 2 位と 3 位の不斉炭素の絶対立体配置の組み合わせはどれか。",
+      "options": [
+        {
+          "id": "a",
+          "text": "2S・3S"
+        },
+        {
+          "id": "b",
+          "text": "2R・3S"
+        },
+        {
+          "id": "c",
+          "text": "2S・3R"
+        },
+        {
+          "id": "d",
+          "text": "2R・3R"
+        }
+      ],
+      "answer": "d",
+      "explanation": "模範解答は 2R、3R です。",
+      "sourcePage": "2023中間 問5"
+    },
+    {
+      "id": "q08",
+      "type": "truefalse",
+      "prompt": "エピガロカテキンガレートの母骨格は、シキミ酸経路と酢酸－マロン酸経路の複合経路で生合成される。",
+      "answer": true,
+      "explanation": "正しい記述です。",
+      "sourcePage": "2023中間 問5"
+    },
+    {
+      "id": "q09",
+      "type": "fill",
+      "prompt": "エピガロカテキンガレートの構造で、エステル結合しているカルボン酸の名称は [[blank]] である。",
+      "options": [
+        {
+          "id": "a",
+          "text": "サリチル酸"
+        },
+        {
+          "id": "b",
+          "text": "シキミ酸"
+        },
+        {
+          "id": "c",
+          "text": "没食子酸"
+        }
+      ],
+      "answer": "c",
+      "explanation": "3 位の酸素を介して没食子酸がエステル結合しています。",
+      "sourcePage": "2023中間 問5"
+    },
+    {
+      "id": "q10",
+      "type": "choice",
+      "prompt": "アカルボースが発見されたのは、何の培養液からか。",
+      "options": [
+        {
+          "id": "a",
+          "text": "放線菌 Actinoplanes 属"
+        },
+        {
+          "id": "b",
+          "text": "放線菌 Streptomyces carbiphilus"
+        },
+        {
+          "id": "c",
+          "text": "カビ Penicillium citrinum"
+        },
+        {
+          "id": "d",
+          "text": "シイタケ"
+        }
+      ],
+      "answer": "a",
+      "explanation": "アカルボースは放線菌 Actinoplanes 属の培養液から発見されました。",
+      "sourcePage": "2023中間 問5"
+    },
+    {
+      "id": "q11",
+      "type": "truefalse",
+      "prompt": "アカルボースは 2型糖尿病治療薬であり、α-グルコシダーゼ阻害作用を示す。",
+      "answer": true,
+      "explanation": "正しい記述です。",
+      "sourcePage": "2023中間 問5"
+    },
+    {
+      "id": "q12",
+      "type": "choice",
+      "prompt": "アカルボースの構造で、破線で囲まれた部分の結合様式はどれか。",
+      "options": [
+        {
+          "id": "a",
+          "text": "β1→4 結合"
+        },
+        {
+          "id": "b",
+          "text": "α1→6 結合"
+        },
+        {
+          "id": "c",
+          "text": "α1→4 結合"
+        },
+        {
+          "id": "d",
+          "text": "β1→6 結合"
+        }
+      ],
+      "answer": "c",
+      "explanation": "模範解答は α1→4 結合です。",
+      "sourcePage": "2023中間 問5"
+    },
+    {
+      "id": "q13",
+      "type": "truefalse",
+      "prompt": "アカルボースの構造で、* で示された不斉炭素の絶対立体配置は R である。",
+      "answer": false,
+      "explanation": "模範解答では S です。",
+      "sourcePage": "2023中間 問5"
+    },
+    {
+      "id": "q14",
+      "type": "choice",
+      "prompt": "アカルボースはどのような化合物として紹介されていたか。",
+      "options": [
+        {
+          "id": "a",
+          "text": "疑似オリゴ糖類"
+        },
+        {
+          "id": "b",
+          "text": "糖アルコール"
+        },
+        {
+          "id": "c",
+          "text": "フラバノン配糖体"
+        },
+        {
+          "id": "d",
+          "text": "リグナン"
+        }
+      ],
+      "answer": "a",
+      "explanation": "アカルボースは医薬品として用いられている疑似オリゴ糖類です。",
+      "sourcePage": "2023中間 問5"
+    }
+  ]
+}

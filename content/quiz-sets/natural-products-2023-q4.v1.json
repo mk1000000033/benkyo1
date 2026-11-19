@@ -1,0 +1,207 @@
+{
+  "id": "natural-products-2023-q4",
+  "version": 1,
+  "subjectId": "natural-products",
+  "title": "2023年度 大問4 タクロリムス水和物・テトラサイクリン塩酸塩",
+  "lectureDate": null,
+  "published": true,
+  "sourceMaterial": "2023年度 天然物化学 中間試験（問題用紙・模範解答）とユーザー作成の知識データ",
+  "questions": [
+    {
+      "id": "q01",
+      "type": "choice",
+      "prompt": "タクロリムス水和物の用途として正しいものはどれか。",
+      "options": [
+        {
+          "id": "a",
+          "text": "免疫抑制薬"
+        },
+        {
+          "id": "b",
+          "text": "抗寄生虫薬"
+        },
+        {
+          "id": "c",
+          "text": "抗菌薬"
+        },
+        {
+          "id": "d",
+          "text": "抗腫瘍薬"
+        }
+      ],
+      "answer": "a",
+      "explanation": "免疫抑制薬です。試験では「抗寄生虫薬」が誤りとして出されました。",
+      "sourcePage": "2023中間 問4"
+    },
+    {
+      "id": "q02",
+      "type": "truefalse",
+      "prompt": "タクロリムス水和物の母骨格は、酢酸－マロン酸経路で生合成される。",
+      "answer": true,
+      "explanation": "正しい記述です（試験の選択肢 C）。",
+      "sourcePage": "2023中間 問4"
+    },
+    {
+      "id": "q03",
+      "type": "truefalse",
+      "prompt": "タクロリムス水和物の構造には、テトラヒドロフラン環が含まれる。",
+      "answer": false,
+      "explanation": "含まれるのはテトラヒドロピラン環です。試験では「テトラヒドロフラン環」が誤りとして出されました。",
+      "sourcePage": "2023中間 問4"
+    },
+    {
+      "id": "q04",
+      "type": "truefalse",
+      "prompt": "タクロリムス水和物の構造において、シクロヘキサン環が結合した二重結合の立体配置は E である。",
+      "answer": true,
+      "explanation": "正しい記述です（試験の選択肢 E）。",
+      "sourcePage": "2023中間 問4"
+    },
+    {
+      "id": "q05",
+      "type": "truefalse",
+      "prompt": "タクロリムス水和物の構造において、ピペリジン環にある指定された不斉炭素の絶対立体配置は R である。",
+      "answer": false,
+      "explanation": "模範解答では S です。試験では「R」が誤りとして出されました。",
+      "sourcePage": "2023中間 問4"
+    },
+    {
+      "id": "q06",
+      "type": "choice",
+      "prompt": "テトラサイクリン塩酸塩の用途として正しいものはどれか。",
+      "options": [
+        {
+          "id": "a",
+          "text": "抗腫瘍薬"
+        },
+        {
+          "id": "b",
+          "text": "免疫抑制薬"
+        },
+        {
+          "id": "c",
+          "text": "抗寄生虫薬"
+        },
+        {
+          "id": "d",
+          "text": "抗菌薬"
+        }
+      ],
+      "answer": "d",
+      "explanation": "抗菌薬です。試験では「抗腫瘍薬」が誤りとして出されました。",
+      "sourcePage": "2023中間 問4"
+    },
+    {
+      "id": "q07",
+      "type": "choice",
+      "prompt": "テトラサイクリン塩酸塩を生産する生物はどれか。",
+      "options": [
+        {
+          "id": "a",
+          "text": "カビ Penicillium citrinum"
+        },
+        {
+          "id": "b",
+          "text": "シイタケ"
+        },
+        {
+          "id": "c",
+          "text": "放線菌 Streptomyces 属"
+        },
+        {
+          "id": "d",
+          "text": "放線菌 Actinoplanes 属"
+        }
+      ],
+      "answer": "c",
+      "explanation": "テトラサイクリン塩酸塩は放線菌 Streptomyces 属によって生産されます。",
+      "sourcePage": "2023中間 問4"
+    },
+    {
+      "id": "q08",
+      "type": "choice",
+      "prompt": "テトラサイクリン塩酸塩の母骨格の生合成経路はどれか。",
+      "options": [
+        {
+          "id": "a",
+          "text": "シキミ酸経路"
+        },
+        {
+          "id": "b",
+          "text": "酢酸－マロン酸経路"
+        },
+        {
+          "id": "c",
+          "text": "シキミ酸経路と酢酸－マロン酸経路の複合経路"
+        },
+        {
+          "id": "d",
+          "text": "イソプレノイド経路"
+        }
+      ],
+      "answer": "b",
+      "explanation": "酢酸－マロン酸経路です。試験では「シキミ酸経路」が誤りとして出されました。",
+      "sourcePage": "2023中間 問4"
+    },
+    {
+      "id": "q09",
+      "type": "fill",
+      "prompt": "テトラサイクリン塩酸塩の構造には、不斉炭素が [[blank]] 個存在する。",
+      "options": [
+        {
+          "id": "a",
+          "text": "5"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "6"
+        },
+        {
+          "id": "d",
+          "text": "3"
+        }
+      ],
+      "answer": "a",
+      "explanation": "不斉炭素は 5 個です（試験の選択肢 E は正しい記述）。",
+      "sourcePage": "2023中間 問4"
+    },
+    {
+      "id": "q10",
+      "type": "truefalse",
+      "prompt": "テトラサイクリン塩酸塩の構造において、ジメチルアミノ基が結合している母骨格の不斉炭素の絶対立体配置は R である。",
+      "answer": false,
+      "explanation": "模範解答では S です。試験では「R」が誤りとして出されました。",
+      "sourcePage": "2023中間 問4"
+    },
+    {
+      "id": "q11",
+      "type": "choice",
+      "prompt": "タクロリムス水和物とテトラサイクリン塩酸塩について、正しい記述はどれか。",
+      "options": [
+        {
+          "id": "a",
+          "text": "タクロリムス水和物は抗菌薬、テトラサイクリン塩酸塩は免疫抑制薬である"
+        },
+        {
+          "id": "b",
+          "text": "どちらも母骨格はシキミ酸経路で生合成される"
+        },
+        {
+          "id": "c",
+          "text": "どちらも母骨格は酢酸－マロン酸経路で生合成される"
+        },
+        {
+          "id": "d",
+          "text": "どちらも抗腫瘍薬として用いられる"
+        }
+      ],
+      "answer": "c",
+      "explanation": "生合成経路は共通（酢酸－マロン酸経路）ですが、用途はタクロリムス＝免疫抑制薬、テトラサイクリン＝抗菌薬と異なります。",
+      "sourcePage": "2023中間 問4"
+    }
+  ]
+}
