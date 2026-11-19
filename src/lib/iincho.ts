@@ -65,9 +65,3 @@ export function greeting(now: Date, streakDays: number): { mood: Mood; line: str
   return { mood: "ok", line: pick(["夜の部へようこそ。まとめを読んでからクイズへ進みたまえ。", "今日の締めに1セット、どうだね。"], seed) };
 }
 
-/** 暗記カードを最後までめくったとき */
-export function cardsComment(known: number, total: number, seed: string): { mood: Mood; line: string } {
-  if (total > 0 && known === total) return { mood: "proud", line: pick(["全部「覚えた」か。委員会はその記憶力を称える。", "完璧だ。次はクイズで本当に覚えたか確かめたまえ。"], seed) };
-  if (known / Math.max(1, total) >= 0.6) return { mood: "ok", line: "半分以上クリア。「まだ」のカードだけもう一周しよう。" };
-  return { mood: "worried", line: "焦らなくていい。覚えるまでめくるのが委員会のやり方だ。" };
-}

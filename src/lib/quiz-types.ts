@@ -17,7 +17,7 @@ interface QuestionBase {
   explanation: string;
   /** 根拠となる授業資料のページ（例: "p.12", "スライド8"）。不明なら null */
   sourcePage?: string | null;
-  /** テーマ（content/themes.ts の id）。テーマ別ミックスと暗記カードで使う */
+  /** テーマ（content/themes.ts の id）。テーマ別ミックスで使う */
   tags?: string[];
 }
 

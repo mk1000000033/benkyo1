@@ -68,9 +68,6 @@ export function MixPlayer({ subject, theme, items }: { subject: { id: string; na
             <button className={`btn-pop ${sizes.length ? "pop-white" : "pop-pink text-lg"} w-full`} onClick={() => start(items.length)}>
               ▶ 全部（{items.length}問）
             </button>
-            <Link href={`/cards/theme/${subject.id}/${theme.id}`} className="btn-pop pop-mint w-full">
-              🃏 暗記カードで覚える
-            </Link>
           </div>
           <p className="mt-4 text-xs text-ink-soft">出題順は毎回ランダムです。ミックスの結果は各問題セットの平均正答率には入りません。</p>
         </section>

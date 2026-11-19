@@ -8,7 +8,6 @@ import { themesOf, type Theme } from "@content/themes";
 import { validateQuizSet, asQuizSet } from "@/lib/quiz-validate";
 import { validateNote } from "@/lib/note-validate";
 import type { NoteFile } from "@/lib/note-types";
-import { questionToCard, type FlashCard } from "@/lib/cards";
 import type { Question, QuizSetFile, QuizSetSummary } from "@/lib/quiz-types";
 
 const HIDE_SAMPLES = process.env.HIDE_SAMPLE_SETS === "true";
@@ -126,7 +125,7 @@ export function getAllVersions(id: string): QuizSetFile[] {
   return ALL_SETS.filter((s) => s.id === id);
 }
 
-// ---------------- テーマ別ミックス・暗記カード ----------------
+// ---------------- テーマ別ミックス ----------------
 
 /** テーマに入る1問（どのセットの問題かを添える） */
 export interface ThemeItem {
@@ -161,25 +160,3 @@ export function getTheme(subjectId: string, themeId: string): Theme | undefined 
   return themesOf(subjectId).find((t) => t.id === themeId);
 }
 
-// ---------------- 暗記カード ----------------
-
-/** 問題セットのカード：まとめのキーワード → 各問題 */
-export function buildSetDeck(setId: string): FlashCard[] {
-  const set = getActiveSet(setId);
-  if (!set) return [];
-  const note = NOTES.get(setId);
-  const keywordCards: FlashCard[] = (note?.keywords ?? []).map((k, i) => ({
-    id: `${setId}:kw${i}`,
-    kind: "keyword",
-    front: k.term,
-    back: k.desc,
-    detail: null,
-    source: set.title,
-  }));
-  return [...keywordCards, ...set.questions.map((q) => questionToCard(`${setId}:${q.id}`, q, set.title))];
-}
-
-/** テーマのカード：そのテーマのタグが付いた問題 */
-export function buildThemeDeck(subjectId: string, themeId: string): FlashCard[] {
-  return getThemeItems(subjectId, themeId).map((it) => questionToCard(it.key, it.question, it.setTitle));
-}

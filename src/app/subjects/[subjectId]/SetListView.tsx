@@ -204,16 +204,13 @@ function SetCard({ s, index, title, local, c }: CardProps) {
         </p>
       )}
 
-      <div className={`mt-4 grid gap-2 ${s.hasNote ? "grid-cols-3" : "grid-cols-2"}`}>
+      <div className={`mt-4 grid gap-3 ${s.hasNote ? "grid-cols-2" : "grid-cols-1"}`}>
         {s.hasNote && (
-          <Link href={`/notes/${s.id}`} className="btn-pop pop-mint px-2 text-sm">
+          <Link href={`/notes/${s.id}`} className="btn-pop pop-mint">
             📖 まとめ
           </Link>
         )}
-        <Link href={`/cards/${s.id}`} className="btn-pop pop-yellow px-2 text-sm">
-          🃏 カード
-        </Link>
-        <Link href={`/quiz/${s.id}`} className={`btn-pop ${resumable ? "pop-purple" : "pop-pink"} px-2 text-sm`}>
+        <Link href={`/quiz/${s.id}`} className={`btn-pop ${resumable ? "pop-yellow" : "pop-pink"}`}>
           {resumable ? "▶ 続きから" : "▶ クイズ"}
         </Link>
       </div>

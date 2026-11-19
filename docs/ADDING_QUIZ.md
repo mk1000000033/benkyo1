@@ -56,7 +56,7 @@
 | truefalse | `answer` は `true`（○）か `false`（×）。`options` は書かない |
 | fill | `prompt` に `[[blank]]` をちょうど1つ。選択肢3〜6個 |
 | explanation | 必須 |
-| tags | テーマ（`content/themes.ts` の id）を1つ以上。テーマ別ミックスと暗記カードで使う。採点に関係しないので公開後に付け直してもOK |
+| tags | テーマ（`content/themes.ts` の id）を1つ以上。テーマ別ミックスで使う。採点に関係しないので公開後に付け直してもOK |
 | ファイル名 | `<id>.v<version>.json` |
 
 ## 4. 公開済みの問題を修正するとき（重要）

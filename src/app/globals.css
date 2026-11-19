@@ -171,20 +171,6 @@ button:disabled { cursor: default; }
 
 .safe-top { padding-top: max(0.5rem, env(safe-area-inset-top)); }
 
-/* ---------- 暗記カード（タップでめくる） ---------- */
-.flip-card { perspective: 1200px; }
-.flip-inner {
-  display: grid;
-  transition: transform 0.45s ease;
-  transform-style: preserve-3d;
-}
-.flip-card.is-flipped .flip-inner { transform: rotateY(180deg); }
-.flip-face {
-  grid-area: 1 / 1;
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-}
-.flip-back { transform: rotateY(180deg); }
 
 }
 
