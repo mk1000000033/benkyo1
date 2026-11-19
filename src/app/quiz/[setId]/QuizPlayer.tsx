@@ -4,6 +4,7 @@ import { useRouter } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import type { AnswerValue, QuizSetFile } from "@/lib/quiz-types";
 import { gradeAnswer } from "@/lib/grade";
+import { recordDailyAnswer } from "@/lib/daily";
 import { addAnswer, completeAndSave, loadProgress, newAttemptId, saveProgress, type Progress } from "@/lib/records";
 import { LoadingScreen, ProgressBar, StarBurst } from "@/components/ui";
 import { QuestionBody, TYPE_LABEL, answerLabel } from "@/components/QuestionBody";
@@ -119,7 +120,10 @@ export function QuizPlayer({ set, subjectName, forceNew }: { set: QuizSetFile; s
     if (!p || selected === null || mine) return; // 確定後は変更できない
     const isCorrect = gradeAnswer(q, selected);
     if (isCorrect === null) return;
-    persist(addAnswer(p, { index: idx, answer: selected, isCorrect }));
+    const next = addAnswer(p, { index: idx, answer: selected, isCorrect });
+    if (next === p) return; // 二重タップなど
+    persist(next);
+    recordDailyAnswer(isCorrect); // 日ごとの学習記録（グラフ用）
   }
 
   function goNext() {

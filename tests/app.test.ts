@@ -156,3 +156,33 @@ test("年度フォルダ：新しい年度が上・フォルダなしは最後",
   assert.equal(titleInGroup("2024年度 大問2 脂肪酸", "2023年度 中間試験"), "2024年度 大問2 脂肪酸");
   assert.equal(titleInGroup("第6回 自律神経", null), "第6回 自律神経");
 });
+
+import { addToLog, dateKey, logFromRecords, series, streak, totals } from "../src/lib/daily";
+
+test("日ごとの学習記録：集計・空白日・連続日数", () => {
+  const d = (y: number, m: number, day: number) => new Date(y, m - 1, day, 12);
+  let log = {};
+  log = addToLog(log, dateKey(d(2026, 11, 17)), true);
+  log = addToLog(log, dateKey(d(2026, 11, 17)), false);
+  log = addToLog(log, dateKey(d(2026, 11, 18)), true);
+  log = addToLog(log, dateKey(d(2026, 11, 19)), true);
+  const pts = series(log, d(2026, 11, 19), 5);
+  assert.deepEqual(pts.map((p) => p.date), ["2026-11-15", "2026-11-16", "2026-11-17", "2026-11-18", "2026-11-19"]);
+  assert.deepEqual(pts.map((p) => p.answered), [0, 0, 2, 1, 1]);
+  assert.equal(pts[2].rate, 50);
+  assert.equal(pts[0].rate, null);
+  assert.deepEqual(totals(pts), { answered: 4, correct: 3, activeDays: 3 });
+  assert.equal(streak(log, d(2026, 11, 19)), 3);
+  assert.equal(streak(log, d(2026, 11, 20)), 3); // 今日まだでも昨日まで続いていれば連続中
+  assert.equal(streak(log, d(2026, 11, 21)), 0);
+  // 月をまたぐ
+  assert.deepEqual(series({}, d(2026, 12, 2), 3).map((p) => p.date), ["2026-11-30", "2026-12-01", "2026-12-02"]);
+});
+
+test("これまでの挑戦から日ごとの記録を補完", () => {
+  const r1 = addCompletedAttempt(null, finished("1", 12), new Date(2026, 10, 17, 21).toISOString()).record;
+  const r2 = addCompletedAttempt(r1, finished("2", 9), new Date(2026, 10, 18, 8).toISOString()).record;
+  const log = logFromRecords([r2]);
+  assert.deepEqual(log["2026-11-17"], { answered: 15, correct: 12 });
+  assert.deepEqual(log["2026-11-18"], { answered: 15, correct: 9 });
+});

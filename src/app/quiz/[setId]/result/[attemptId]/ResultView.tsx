@@ -5,6 +5,8 @@ import type { QuestionType, QuizOption, QuizSetFile, AnswerValue } from "@/lib/q
 import { findAttempt, type AttemptRecord } from "@/lib/records";
 import { compareRates, formatDelta, formatPercent } from "@/lib/stats";
 import { Confetti, LoadingScreen } from "@/components/ui";
+import { ShareButtons } from "@/components/ShareButtons";
+import { siteUrl } from "@/lib/share";
 import { QuestionBody, TYPE_LABEL, answerLabel } from "@/components/QuestionBody";
 
 type Direction = "first" | "up" | "down" | "same";
@@ -162,6 +164,16 @@ export function ResultView({
             📖 まとめで復習する
           </Link>
         )}
+      </section>
+
+      <section className="card space-y-3 p-4">
+        <h2 className="font-extrabold">📣 結果をシェア</h2>
+        <ShareButtons
+          text={`【再試回避委員会】\n${subjectName}｜${data.title}\n今回 ${data.score}/${data.questionCount}問（${data.thisPercentText}%）🎯\n平均正答率 ${data.average.percentText}%（${data.average.attemptsCount}回目）\n${siteUrl()}`}
+        />
+        <Link href="/stats" className="block text-center text-sm font-bold text-candy-purple-deep">
+          📊 日ごとの学習グラフを見る ▶
+        </Link>
       </section>
 
       <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">
