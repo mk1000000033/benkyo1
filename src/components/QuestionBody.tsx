@@ -1,7 +1,7 @@
 "use client";
 // 問題の表示（4択・○×・穴埋め）。クイズ画面と復習の両方で使う。
 import { useState } from "react";
-import { BLANK_JOIN, BLANK_TOKEN, type AnswerValue, type FillBlank, type QuestionImage, type QuestionType, type QuizOption } from "@/lib/quiz-types";
+import { BLANK_JOIN, BLANK_TOKEN, SKIP_ANSWER, type AnswerValue, type FillBlank, type QuestionImage, type QuestionType, type QuizOption } from "@/lib/quiz-types";
 
 export interface QuestionView {
   type: QuestionType;
@@ -25,6 +25,7 @@ export const TYPE_LABEL: Record<QuestionType, { text: string; cls: string }> = {
 
 export function answerLabel(q: QuestionView, value: AnswerValue | null | undefined): string {
   if (value === null || value === undefined) return "—";
+  if (value === SKIP_ANSWER) return "🤔 わからない（答えを見た）";
   if (q.type === "truefalse") return value === true ? "○（正しい）" : "×（誤り）";
   if (q.blanks && q.blanks.length > 1 && typeof value === "string") {
     return value.split(BLANK_JOIN).map((id, i) => q.blanks![i]?.options.find((o) => o.id === id)?.text ?? "—").join(" ／ ");
@@ -128,7 +129,8 @@ function MultiFillBody({
   const locked = !!reveal || !onSelect;
   const [picks, setPicks] = useState<(string | null)[]>(() => blanks.map(() => null));
   const [open, setOpen] = useState<number | null>(null);
-  const shown: (string | null)[] = reveal && typeof reveal.answer === "string" ? reveal.answer.split(BLANK_JOIN) : picks;
+  const skipped = reveal?.answer === SKIP_ANSWER;
+  const shown: (string | null)[] = skipped ? blanks.map(() => null) : reveal && typeof reveal.answer === "string" ? reveal.answer.split(BLANK_JOIN) : picks;
   const correct: string[] = reveal && typeof reveal.correctAnswer === "string" ? reveal.correctAnswer.split(BLANK_JOIN) : [];
   const parts = q.prompt.split(BLANK_TOKEN);
   const promptCls = compact ? "text-base" : "text-lg";
@@ -151,7 +153,7 @@ function MultiFillBody({
             {i < blanks.length && (() => {
               const id = shown[i];
               const st = reveal ? (id === correct[i] ? "correct" : "wrong") : open === i ? "selected" : id != null ? "selected" : "idle";
-              const label = id != null ? blanks[i].options.find((o) => o.id === id)?.text ?? "—" : `${CIRCLED[i]} タップ`;
+              const label = id != null ? blanks[i].options.find((o) => o.id === id)?.text ?? "—" : reveal ? `${CIRCLED[i]} ？` : `${CIRCLED[i]} タップ`;
               return (
                 <button
                   type="button"

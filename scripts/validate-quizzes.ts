@@ -80,6 +80,11 @@ for (const file of noteFiles) {
   const id = (data as { setId?: string }).setId;
   if (file !== `${id}.json`) errors.push(`ファイル名は "${id}.json" にしてください`);
   if (!noteIndex.includes(`./${file}`)) errors.push(`content/notes/index.ts に登録されていません`);
+  for (const sec of (data as { sections?: { blocks?: { type?: string; src?: string }[] }[] }).sections ?? []) {
+    for (const b of sec.blocks ?? []) {
+      if (b.type === "image" && b.src && !existsSync(join(process.cwd(), "public", b.src))) errors.push(`画像 public${b.src} がありません`);
+    }
+  }
   if (errors.length) {
     failed = true;
     console.error(`✗ notes/${file}`);

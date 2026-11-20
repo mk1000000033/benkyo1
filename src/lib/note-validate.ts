@@ -55,8 +55,12 @@ export function validateNote(data: unknown, knownSetIds: string[]): string[] {
         case "formula":
           if (!str(b.formula)) errors.push(`${w}: formula がありません`);
           break;
+        case "image":
+          if (!str(b.src) || !/^\/structures\/[\w\-/]+\.(png|jpg|webp)$/.test(String(b.src))) errors.push(`${w}: src は "/structures/〜.png" の形にしてください`);
+          if (!str(b.alt)) errors.push(`${w}: alt（画像の説明）がありません`);
+          break;
         default:
-          errors.push(`${w}: type "${String(b.type)}" は使えません（text / points / steps / table / tip / caution / formula）`);
+          errors.push(`${w}: type "${String(b.type)}" は使えません（text / points / steps / table / tip / caution / formula / image）`);
       }
     });
   });

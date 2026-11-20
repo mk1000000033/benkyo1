@@ -16,6 +16,8 @@ export type NoteBlock =
   | { type: "tip"; text: string; label?: string }
   /** ひっかけ・注意（label 省略時「⚠️ ひっかけ注意」） */
   | { type: "caution"; text: string; label?: string }
+  /** 画像（構造式など）。src は public/ からのパス */
+  | { type: "image"; src: string; alt: string; caption?: string }
   /** 公式（example に計算例） */
   | { type: "formula"; formula: string; note?: string; example?: string };
 

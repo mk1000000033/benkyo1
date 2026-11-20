@@ -95,3 +95,6 @@ export interface QuizSetSummary {
 }
 
 export const BLANK_TOKEN = "[[blank]]";
+
+/** 「わからない」で答えを見たときの回答（不正解として記録） */
+export const SKIP_ANSWER = "__skip__";

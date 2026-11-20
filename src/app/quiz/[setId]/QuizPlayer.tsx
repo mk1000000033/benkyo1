@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
-import type { AnswerValue, QuizSetFile } from "@/lib/quiz-types";
+import { SKIP_ANSWER, type AnswerValue, type QuizSetFile } from "@/lib/quiz-types";
 import { gradeAnswer } from "@/lib/grade";
 import { recordDailyAnswer } from "@/lib/daily";
 import { addAnswer, completeAndSave, loadProgress, newAttemptId, saveProgress, type Progress } from "@/lib/records";
@@ -126,6 +126,15 @@ export function QuizPlayer({ set, subjectName, forceNew }: { set: QuizSetFile; s
     recordDailyAnswer(isCorrect); // 日ごとの学習記録（グラフ用）
   }
 
+  /** わからないときは答えを見る（不正解として記録） */
+  function giveUp() {
+    if (!p || mine) return;
+    const next = addAnswer(p, { index: idx, answer: SKIP_ANSWER, isCorrect: false });
+    if (next === p) return;
+    persist(next);
+    recordDailyAnswer(false);
+  }
+
   function goNext() {
     if (!p || !mine || finishing.current) return;
     if (isLast) {
@@ -171,9 +180,18 @@ export function QuizPlayer({ set, subjectName, forceNew }: { set: QuizSetFile; s
       </section>
 
       {!mine ? (
-        <button className="btn-pop pop-pink w-full text-lg" disabled={selected === null} onClick={submit}>
-          {selected === null ? "答えを選んでね" : "これで回答する！"}
-        </button>
+        <div className="space-y-2">
+          <button className="btn-pop pop-pink w-full text-lg" disabled={selected === null} onClick={submit}>
+            {selected === null ? "答えを選んでね" : "これで回答する！"}
+          </button>
+          <button
+            type="button"
+            onClick={giveUp}
+            className="w-full rounded-2xl border-2 border-dashed border-[#d9cff2] bg-white/70 py-3 text-sm font-extrabold text-ink-soft active:scale-[0.98]"
+          >
+            🤔 わからない…答えを見る（不正解になります）
+          </button>
+        </div>
       ) : (
         <section
           className={`card relative overflow-hidden p-5 ${mine.isCorrect ? "animate-pop-in border-candy-mint bg-candy-mint-soft/50" : "animate-wiggle border-oops/50 bg-oops-soft"}`}
@@ -183,6 +201,7 @@ export function QuizPlayer({ set, subjectName, forceNew }: { set: QuizSetFile; s
           <p className={`relative text-2xl font-extrabold ${mine.isCorrect ? "text-candy-mint-deep" : "text-oops-deep"}`}>
             {mine.isCorrect ? `⭕ ${PRAISE[idx % PRAISE.length]}` : `🌱 ${CHEER[idx % CHEER.length]}`}
           </p>
+          {mine.answer === SKIP_ANSWER && <p className="relative mt-1 text-sm font-bold text-ink-soft">答えを見たので、この問題は不正解として記録したよ。次はいける！</p>}
           {!mine.isCorrect && (
             <p className="relative mt-2 font-bold">
               正解は <span className="rounded-lg bg-white px-2 py-0.5 text-candy-mint-deep">{answerLabel(qView, q.answer)}</span>

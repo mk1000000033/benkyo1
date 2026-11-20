@@ -20,10 +20,21 @@ export interface News {
 
 export const NEWS: News[] = [
   {
-    id: "2026-11-21-structure-quiz",
+    id: "2026-11-21-structure-quiz-2",
     date: "2026年11月21日",
     line: "委員会より新機能のお知らせだ。再試回避の武器が増えたぞ。",
     items: [
+      {
+        emoji: "🤔",
+        title: "わからない…答えを見る",
+        text: "わからない問題は、回答ボタンの下のボタンをタップ1回で答えと解説が見られます（その問題は不正解として記録）。",
+      },
+      {
+        emoji: "📖",
+        title: "構造式まとめ",
+        text: "構造式クイズにまとめが付きました。構造式ごとに、名前・分類・生合成経路・何の薬か・由来をまとめています。",
+        href: "/subjects/natural-products",
+      },
       {
         emoji: "🧪",
         title: "構造式クイズ",
