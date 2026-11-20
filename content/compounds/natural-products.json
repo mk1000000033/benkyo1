@@ -16,6 +16,12 @@
         2023,
         2024,
         2025
+      ],
+      "images": [
+        {
+          "src": "/structures/2024/q7-a.png",
+          "caption": "2024年度 問7 A"
+        }
       ]
     },
     {
@@ -31,7 +37,8 @@
       "years": [
         2023,
         2025
-      ]
+      ],
+      "images": []
     },
     {
       "name": "D-マンニトール",
@@ -46,6 +53,16 @@
       "years": [
         2023,
         2025
+      ],
+      "images": [
+        {
+          "src": "/structures/2025/q7-a.png",
+          "caption": "2025年度 問7 A"
+        },
+        {
+          "src": "/structures/2023/q8-a.png",
+          "caption": "2023年度 問8 A"
+        }
       ]
     },
     {
@@ -62,7 +79,8 @@
         2023,
         2024,
         2025
-      ]
+      ],
+      "images": []
     },
     {
       "name": "アカルボース",
@@ -79,6 +97,24 @@
         2023,
         2024,
         2025
+      ],
+      "images": [
+        {
+          "src": "/structures/2025/q3-3.png",
+          "caption": "2025年度 問3【3】"
+        },
+        {
+          "src": "/structures/2024/q3-3.png",
+          "caption": "2024年度 問3【3】"
+        },
+        {
+          "src": "/structures/2023/q5-3.png",
+          "caption": "2023年度 問5【3】"
+        },
+        {
+          "src": "/structures/2022/q9-h.png",
+          "caption": "2022年度 問9 H"
+        }
       ]
     },
     {
@@ -95,7 +131,8 @@
         2022,
         2023,
         2024
-      ]
+      ],
+      "images": []
     },
     {
       "name": "アネトール",
@@ -111,6 +148,16 @@
         2022,
         2023,
         2025
+      ],
+      "images": [
+        {
+          "src": "/structures/2025/q2-anethole.png",
+          "caption": "2025年度 問2"
+        },
+        {
+          "src": "/structures/2023/q3-anethole.png",
+          "caption": "2023年度 問3"
+        }
       ]
     },
     {
@@ -125,6 +172,12 @@
       "kind": "natural",
       "years": [
         2024
+      ],
+      "images": [
+        {
+          "src": "/structures/2024/q7-c.png",
+          "caption": "2024年度 問7 C"
+        }
       ]
     },
     {
@@ -139,6 +192,12 @@
       "kind": "antibiotic",
       "years": [
         2022
+      ],
+      "images": [
+        {
+          "src": "/structures/2022/q9-n.png",
+          "caption": "2022年度 問9 N"
+        }
       ]
     },
     {
@@ -153,7 +212,8 @@
       "kind": "antibiotic",
       "years": [
         2024
-      ]
+      ],
+      "images": []
     },
     {
       "name": "アンレキサノクス",
@@ -169,7 +229,8 @@
         2022,
         2023,
         2024
-      ]
+      ],
+      "images": []
     },
     {
       "name": "エトポシド",
@@ -186,6 +247,16 @@
         2023,
         2024,
         2025
+      ],
+      "images": [
+        {
+          "src": "/structures/2025/q2-etoposide.png",
+          "caption": "2025年度 問2"
+        },
+        {
+          "src": "/structures/2023/q3-etoposide.png",
+          "caption": "2023年度 問3"
+        }
       ]
     },
     {
@@ -201,6 +272,16 @@
       "years": [
         2023,
         2025
+      ],
+      "images": [
+        {
+          "src": "/structures/2025/q7-k.png",
+          "caption": "2025年度 問7 K"
+        },
+        {
+          "src": "/structures/2023/q5-2.png",
+          "caption": "2023年度 問5【2】"
+        }
       ]
     },
     {
@@ -217,7 +298,8 @@
         2022,
         2023,
         2025
-      ]
+      ],
+      "images": []
     },
     {
       "name": "エリスロマイシン",
@@ -234,6 +316,20 @@
         2023,
         2024,
         2025
+      ],
+      "images": [
+        {
+          "src": "/structures/2024/q7-n.png",
+          "caption": "2024年度 問7 N"
+        },
+        {
+          "src": "/structures/2023/q8-r.png",
+          "caption": "2023年度 問8 R"
+        },
+        {
+          "src": "/structures/2022/q9-m.png",
+          "caption": "2022年度 問9 M"
+        }
       ]
     },
     {
@@ -250,6 +346,16 @@
         2023,
         2024,
         2025
+      ],
+      "images": [
+        {
+          "src": "/structures/2025/q2-eugenol.png",
+          "caption": "2025年度 問2"
+        },
+        {
+          "src": "/structures/2023/q3-eugenol.png",
+          "caption": "2023年度 問3"
+        }
       ]
     },
     {
@@ -265,6 +371,16 @@
       "years": [
         2024,
         2025
+      ],
+      "images": [
+        {
+          "src": "/structures/2025/q7-o.png",
+          "caption": "2025年度 問7 O"
+        },
+        {
+          "src": "/structures/2024/q7-o.png",
+          "caption": "2024年度 問7 O"
+        }
       ]
     },
     {
@@ -281,6 +397,20 @@
         2022,
         2024,
         2025
+      ],
+      "images": [
+        {
+          "src": "/structures/2025/q3-1.png",
+          "caption": "2025年度 問3【1】"
+        },
+        {
+          "src": "/structures/2024/q7-g.png",
+          "caption": "2024年度 問7 G"
+        },
+        {
+          "src": "/structures/2022/q6-1.png",
+          "caption": "2022年度 問6【1】"
+        }
       ]
     },
     {
@@ -296,6 +426,16 @@
       "years": [
         2022,
         2024
+      ],
+      "images": [
+        {
+          "src": "/structures/2024/q7-m.png",
+          "caption": "2024年度 問7 M（試験では「ストレプトマイシン・カナマイシン」として出題）"
+        },
+        {
+          "src": "/structures/2022/q9-o.png",
+          "caption": "2022年度 問9 O（試験では「ストレプトマイシン・カナマイシン」として出題）"
+        }
       ]
     },
     {
@@ -312,6 +452,16 @@
         2023,
         2024,
         2025
+      ],
+      "images": [
+        {
+          "src": "/structures/2025/q2-xanthotoxin.png",
+          "caption": "2025年度 問2"
+        },
+        {
+          "src": "/structures/2023/q3-xanthotoxin.png",
+          "caption": "2023年度 問3"
+        }
       ]
     },
     {
@@ -328,7 +478,8 @@
         2022,
         2023,
         2025
-      ]
+      ],
+      "images": []
     },
     {
       "name": "ギンゲロール類",
@@ -343,6 +494,12 @@
       "years": [
         2022,
         2025
+      ],
+      "images": [
+        {
+          "src": "/structures/2022/q9-c.png",
+          "caption": "2022年度 問9 C"
+        }
       ]
     },
     {
@@ -359,6 +516,12 @@
         2022,
         2024,
         2025
+      ],
+      "images": [
+        {
+          "src": "/structures/2024/q4-2.png",
+          "caption": "2024年度 問4【2】"
+        }
       ]
     },
     {
@@ -373,6 +536,12 @@
       "kind": "drug",
       "years": [
         2022
+      ],
+      "images": [
+        {
+          "src": "/structures/2022/q9-d.png",
+          "caption": "2022年度 問9 D"
+        }
       ]
     },
     {
@@ -389,7 +558,8 @@
         2022,
         2023,
         2025
-      ]
+      ],
+      "images": []
     },
     {
       "name": "ゲンタマイシン",
@@ -403,7 +573,8 @@
       "kind": "antibiotic",
       "years": [
         2024
-      ]
+      ],
+      "images": []
     },
     {
       "name": "コレステロール",
@@ -420,7 +591,8 @@
         2023,
         2024,
         2025
-      ]
+      ],
+      "images": []
     },
     {
       "name": "サリシン",
@@ -436,6 +608,12 @@
         2023,
         2024,
         2025
+      ],
+      "images": [
+        {
+          "src": "/structures/2024/q7-b.png",
+          "caption": "2024年度 問7 B"
+        }
       ]
     },
     {
@@ -452,7 +630,8 @@
         2022,
         2024,
         2025
-      ]
+      ],
+      "images": []
     },
     {
       "name": "シコニン",
@@ -467,6 +646,12 @@
       "years": [
         2022,
         2025
+      ],
+      "images": [
+        {
+          "src": "/structures/2025/q7-c.png",
+          "caption": "2025年度 問7 C"
+        }
       ]
     },
     {
@@ -483,6 +668,12 @@
         2022,
         2024,
         2025
+      ],
+      "images": [
+        {
+          "src": "/structures/2025/q3-2.png",
+          "caption": "2025年度 問3【2】"
+        }
       ]
     },
     {
@@ -498,7 +689,8 @@
       "years": [
         2023,
         2025
-      ]
+      ],
+      "images": []
     },
     {
       "name": "ジクマロール",
@@ -514,6 +706,12 @@
         2022,
         2024,
         2025
+      ],
+      "images": [
+        {
+          "src": "/structures/2025/q7-b.png",
+          "caption": "2025年度 問7 B"
+        }
       ]
     },
     {
@@ -531,6 +729,20 @@
         2023,
         2024,
         2025
+      ],
+      "images": [
+        {
+          "src": "/structures/2025/q7-m.png",
+          "caption": "2025年度 問7 M"
+        },
+        {
+          "src": "/structures/2024/q7-m.png",
+          "caption": "2024年度 問7 M（試験では「ストレプトマイシン・カナマイシン」として出題）"
+        },
+        {
+          "src": "/structures/2022/q9-o.png",
+          "caption": "2022年度 問9 O（試験では「ストレプトマイシン・カナマイシン」として出題）"
+        }
       ]
     },
     {
@@ -548,6 +760,16 @@
         2023,
         2024,
         2025
+      ],
+      "images": [
+        {
+          "src": "/structures/2024/q4-1.png",
+          "caption": "2024年度 問4【1】"
+        },
+        {
+          "src": "/structures/2022/q9-j.png",
+          "caption": "2022年度 問9 J"
+        }
       ]
     },
     {
@@ -565,6 +787,20 @@
         2023,
         2024,
         2025
+      ],
+      "images": [
+        {
+          "src": "/structures/2025/q4-2.png",
+          "caption": "2025年度 問4【2】"
+        },
+        {
+          "src": "/structures/2023/q8-o.png",
+          "caption": "2023年度 問8 O"
+        },
+        {
+          "src": "/structures/2022/q9-l.png",
+          "caption": "2022年度 問9 L"
+        }
       ]
     },
     {
@@ -581,6 +817,16 @@
         2023,
         2024,
         2025
+      ],
+      "images": [
+        {
+          "src": "/structures/2025/q7-n.png",
+          "caption": "2025年度 問7 N"
+        },
+        {
+          "src": "/structures/2023/q4-1.png",
+          "caption": "2023年度 問4【1】"
+        }
       ]
     },
     {
@@ -597,6 +843,12 @@
         2022,
         2023,
         2025
+      ],
+      "images": [
+        {
+          "src": "/structures/2023/q4-2.png",
+          "caption": "2023年度 問4【2】"
+        }
       ]
     },
     {
@@ -614,6 +866,24 @@
         2023,
         2024,
         2025
+      ],
+      "images": [
+        {
+          "src": "/structures/2025/q7-j.png",
+          "caption": "2025年度 問7 J"
+        },
+        {
+          "src": "/structures/2024/q4-3.png",
+          "caption": "2024年度 問4【3】"
+        },
+        {
+          "src": "/structures/2023/q8-j.png",
+          "caption": "2023年度 問8 J"
+        },
+        {
+          "src": "/structures/2022/q9-e.png",
+          "caption": "2022年度 問9 E"
+        }
       ]
     },
     {
@@ -630,6 +900,16 @@
         2022,
         2023,
         2025
+      ],
+      "images": [
+        {
+          "src": "/structures/2025/q4-1.png",
+          "caption": "2025年度 問4【1】"
+        },
+        {
+          "src": "/structures/2022/q5-1.png",
+          "caption": "2022年度 問5【1】"
+        }
       ]
     },
     {
@@ -645,6 +925,12 @@
       "years": [
         2023,
         2024
+      ],
+      "images": [
+        {
+          "src": "/structures/2023/q8-f.png",
+          "caption": "2023年度 問8 F"
+        }
       ]
     },
     {
@@ -659,7 +945,8 @@
       "kind": "natural",
       "years": [
         2024
-      ]
+      ],
+      "images": []
     },
     {
       "name": "バイカリン",
@@ -676,6 +963,20 @@
         2023,
         2024,
         2025
+      ],
+      "images": [
+        {
+          "src": "/structures/2024/q7-h.png",
+          "caption": "2024年度 問7 H"
+        },
+        {
+          "src": "/structures/2023/q8-h.png",
+          "caption": "2023年度 問8 H"
+        },
+        {
+          "src": "/structures/2022/q6-2.png",
+          "caption": "2022年度 問6【2】"
+        }
       ]
     },
     {
@@ -690,7 +991,8 @@
       "kind": "natural",
       "years": [
         2024
-      ]
+      ],
+      "images": []
     },
     {
       "name": "パルミチン酸・ステアリン酸",
@@ -704,7 +1006,8 @@
       "kind": "natural",
       "years": [
         2024
-      ]
+      ],
+      "images": []
     },
     {
       "name": "フタリド類（リグスチリドなど）",
@@ -718,6 +1021,12 @@
       "kind": "natural",
       "years": [
         2023
+      ],
+      "images": [
+        {
+          "src": "/structures/2023/q8-g.png",
+          "caption": "2023年度 問8 G"
+        }
       ]
     },
     {
@@ -735,6 +1044,24 @@
         2023,
         2024,
         2025
+      ],
+      "images": [
+        {
+          "src": "/structures/2025/q7-e.png",
+          "caption": "2025年度 問7 E"
+        },
+        {
+          "src": "/structures/2024/q3-2.png",
+          "caption": "2024年度 問3【2】"
+        },
+        {
+          "src": "/structures/2023/q5-1.png",
+          "caption": "2023年度 問5【1】"
+        },
+        {
+          "src": "/structures/2022/q5-2.png",
+          "caption": "2022年度 問5【2】"
+        }
       ]
     },
     {
@@ -751,6 +1078,16 @@
         2023,
         2024,
         2025
+      ],
+      "images": [
+        {
+          "src": "/structures/2025/q7-h.png",
+          "caption": "2025年度 問7 H"
+        },
+        {
+          "src": "/structures/2023/q8-i.png",
+          "caption": "2023年度 問8 I"
+        }
       ]
     },
     {
@@ -768,6 +1105,16 @@
         2023,
         2024,
         2025
+      ],
+      "images": [
+        {
+          "src": "/structures/2024/q7-i.png",
+          "caption": "2024年度 問7 I"
+        },
+        {
+          "src": "/structures/2022/q9-k.png",
+          "caption": "2022年度 問9 K"
+        }
       ]
     },
     {
@@ -783,6 +1130,16 @@
       "years": [
         2023,
         2024
+      ],
+      "images": [
+        {
+          "src": "/structures/2024/q7-d.png",
+          "caption": "2024年度 問7 D"
+        },
+        {
+          "src": "/structures/2023/q8-m.png",
+          "caption": "2023年度 問8 M"
+        }
       ]
     },
     {
@@ -797,7 +1154,8 @@
       "kind": "drug",
       "years": [
         2024
-      ]
+      ],
+      "images": []
     },
     {
       "name": "リファンピシン",
@@ -813,7 +1171,8 @@
         2022,
         2023,
         2024
-      ]
+      ],
+      "images": []
     },
     {
       "name": "レスベラトロール",
@@ -828,6 +1187,16 @@
       "years": [
         2023,
         2025
+      ],
+      "images": [
+        {
+          "src": "/structures/2025/q7-g.png",
+          "caption": "2025年度 問7 G"
+        },
+        {
+          "src": "/structures/2023/q8-e.png",
+          "caption": "2023年度 問8 E"
+        }
       ]
     },
     {
@@ -844,6 +1213,16 @@
         2022,
         2024,
         2025
+      ],
+      "images": [
+        {
+          "src": "/structures/2024/q3-1.png",
+          "caption": "2024年度 問3【1】"
+        },
+        {
+          "src": "/structures/2022/q6-3.png",
+          "caption": "2022年度 問6【3】"
+        }
       ]
     }
   ]

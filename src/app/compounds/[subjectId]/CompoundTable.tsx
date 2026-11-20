@@ -45,6 +45,8 @@ export function CompoundTable({ subject, file }: { subject: { id: string; name: 
   const [year, setYear] = useState<number | "all">("all");
   const [q, setQ] = useState("");
   const [open, setOpen] = useState<string | null>(null);
+  const [onlyImg, setOnlyImg] = useState(false);
+  const [zoom, setZoom] = useState<{ src: string; caption: string; name: string } | null>(null);
 
   const groups = useMemo(() => {
     const g = Array.from(new Set(all.map((c) => c.group))).filter((x) => x !== "その他");
@@ -64,15 +66,16 @@ export function CompoundTable({ subject, file }: { subject: { id: string; name: 
       if (path === NO_PATH ? s !== "—" : s !== path) return false;
     }
     if (year !== "all" && !c.years.includes(year)) return false;
+    if (onlyImg && c.images.length === 0) return false;
     const t = q.trim();
     if (t && ![c.name, c.cls, c.use, c.base, c.origin, c.path].some((x) => x.includes(t))) return false;
     return true;
   });
 
   function reset() {
-    setKind("all"); setGroup("all"); setPath("all"); setYear("all"); setQ("");
+    setKind("all"); setGroup("all"); setPath("all"); setYear("all"); setQ(""); setOnlyImg(false);
   }
-  const filtered = kind !== "all" || group !== "all" || path !== "all" || year !== "all" || q.trim() !== "";
+  const filtered = kind !== "all" || group !== "all" || path !== "all" || year !== "all" || q.trim() !== "" || onlyImg;
 
   return (
     <div className="space-y-4">
@@ -82,7 +85,7 @@ export function CompoundTable({ subject, file }: { subject: { id: string; name: 
       <header className="card p-5">
         <h1 className="text-2xl font-extrabold">🧾 化合物いちらん</h1>
         <p className="mt-1 text-sm text-ink-soft">
-          試験に出た化合物を、化合物群・生合成経路・何の薬かで一覧にしました。行をタップすると「分類の見分け方」が開きます。
+          試験に出た化合物を、化合物群・生合成経路・何の薬かで一覧にしました。行をタップすると、構造式（🧪 マークのもの）と「分類の見分け方」が開きます。
         </p>
         <p className="mt-1 text-xs font-bold text-ink-soft">📄 {file.note}。空欄は資料に書かれていない（または確定していない）ところです。</p>
       </header>
@@ -130,6 +133,9 @@ export function CompoundTable({ subject, file }: { subject: { id: string; name: 
             ))}
           </div>
         </div>
+        <div className="flex flex-wrap gap-1.5">
+          <Chip on={onlyImg} onClick={() => setOnlyImg((v) => !v)}>🧪 構造式があるものだけ</Chip>
+        </div>
       </section>
 
       <div className="flex items-center justify-between px-1">
@@ -165,7 +171,10 @@ export function CompoundTable({ subject, file }: { subject: { id: string; name: 
                     aria-expanded={isOpen}
                   >
                     <th scope="row" className={`sticky left-0 z-10 w-[9.5em] max-w-[9.5em] px-3 py-2 font-extrabold ${isOpen ? "bg-[#fffbe6]" : "bg-white"}`}>
-                      <span className="block">{c.name}</span>
+                      <span className="block">
+                        {c.name}
+                        {c.images.length > 0 && <span className="ml-1 text-xs" aria-label="構造式あり">🧪</span>}
+                      </span>
                       {c.kind === "antibiotic" && <span className="mt-0.5 inline-block rounded bg-candy-pink-soft px-1 text-[10px] text-candy-pink-deep">抗生物質</span>}
                       {c.kind === "drug" && <span className="mt-0.5 inline-block rounded bg-candy-sky-soft px-1 text-[10px] text-candy-sky-deep">薬</span>}
                     </th>
@@ -180,12 +189,35 @@ export function CompoundTable({ subject, file }: { subject: { id: string; name: 
                     </td>
                     <td className="whitespace-nowrap px-3 py-2 text-xs font-bold text-ink-soft">{c.years.map((y) => `${y % 100}`).join("・")}</td>
                   </tr>
-                  {isOpen && c.why && (
+                  {isOpen && (c.why || c.images.length > 0) && (
                     <tr className="bg-[#fffbe6]">
                       <td colSpan={6} className="px-3 pb-3">
-                        <div className="sticky left-3 max-w-[calc(100vw-4rem)] rounded-2xl bg-white p-3 text-sm leading-relaxed sm:max-w-xl">
-                          <p className="text-xs font-extrabold text-candy-yellow-deep">🔍 分類の見分け方</p>
-                          <RichText text={c.why} />
+                        <div className="sticky left-3 max-w-[calc(100vw-4rem)] space-y-3 rounded-2xl bg-white p-3 text-sm leading-relaxed sm:max-w-xl">
+                          {c.images.length > 0 && (
+                            <div>
+                              <p className="text-xs font-extrabold text-candy-purple-deep">🧪 構造式（タップで拡大）</p>
+                              <div className="mt-1 space-y-2">
+                                {c.images.map((im) => (
+                                  <button
+                                    key={im.src}
+                                    type="button"
+                                    onClick={(e: { stopPropagation: () => void }) => { e.stopPropagation(); setZoom({ ...im, name: c.name }); }}
+                                    className="block w-full rounded-xl border-2 border-[#ece6f8] bg-white p-2"
+                                  >
+                                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                                    <img src={im.src} alt={`${c.name}の構造式`} loading="lazy" className="mx-auto h-auto max-h-48 w-auto max-w-full object-contain" />
+                                    <span className="mt-1 block text-center text-[11px] font-bold text-ink-soft">{im.caption}</span>
+                                  </button>
+                                ))}
+                              </div>
+                            </div>
+                          )}
+                          {c.why && (
+                            <div>
+                              <p className="text-xs font-extrabold text-candy-yellow-deep">🔍 分類の見分け方</p>
+                              <RichText text={c.why} />
+                            </div>
+                          )}
                         </div>
                       </td>
                     </tr>
@@ -202,6 +234,18 @@ export function CompoundTable({ subject, file }: { subject: { id: string; name: 
         </table>
       </div>
       <p className="px-1 text-xs text-ink-soft">👉 表は横にスクロールできます（化合物名は左に固定）</p>
+
+      {zoom && (
+        <div role="dialog" aria-label={`${zoom.name}の構造式`} className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 p-3" onClick={() => setZoom(null)}>
+          <div className="max-h-full w-full max-w-3xl overflow-auto rounded-2xl bg-white p-3">
+            <p className="text-center font-extrabold">{zoom.name}</p>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src={zoom.src} alt={`${zoom.name}の構造式`} className="mx-auto mt-2 h-auto w-full" />
+            <p className="mt-1 text-center text-xs font-bold text-ink-soft">{zoom.caption}</p>
+            <p className="mt-2 text-center text-sm font-bold text-ink-soft">タップで閉じる</p>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

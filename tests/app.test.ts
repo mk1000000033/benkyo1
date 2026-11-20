@@ -242,3 +242,9 @@ test("化合物いちらん：必要な項目がそろっていて、名前が�
     assert.ok(c.group, c.name);
   }
 });
+
+test("化合物いちらん：構造式の画像ファイルが存在する", async () => {
+  const { existsSync } = await import("node:fs");
+  const f = (await import("../content/compounds/natural-products.json")).default as { compounds: { name: string; images: { src: string }[] }[] };
+  for (const c of f.compounds) for (const im of c.images) assert.ok(existsSync(`public${im.src}`), `${c.name}: ${im.src}`);
+});

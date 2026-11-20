@@ -21,6 +21,8 @@ export interface Compound {
   kind: CompoundKind;
   /** 出題された年度 */
   years: number[];
+  /** 構造式の画像（新しい年度から） */
+  images: { src: string; caption: string }[];
 }
 
 export interface CompoundFile {
