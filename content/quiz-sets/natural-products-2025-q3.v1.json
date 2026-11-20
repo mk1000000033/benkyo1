@@ -34,7 +34,7 @@
         }
       ],
       "answer": "d",
-      "explanation": "化合物 I はオセルタミビルリン酸塩です。",
+      "explanation": "化合物 I は==オセルタミビルリン酸塩==です。",
       "sourcePage": "2025中間 問3"
     },
     {
@@ -63,7 +63,7 @@
         }
       ],
       "answer": "c",
-      "explanation": "抗インフルエンザウイルス薬です。",
+      "explanation": "==抗インフルエンザウイルス薬==です。",
       "sourcePage": "2025中間 問3"
     },
     {
@@ -88,7 +88,7 @@
         }
       ],
       "answer": "a",
-      "explanation": "シアル酸です。シキミ酸は合成の原料です。",
+      "explanation": "==シアル酸==です。シキミ酸は合成の原料です。",
       "sourcePage": "2025中間 問3"
     },
     {
@@ -99,7 +99,7 @@
         "stereo"
       ],
       "answer": true,
-      "explanation": "正しい記述です。",
+      "explanation": "**⭕ 正しい記述です**。",
       "sourcePage": "2025中間 問3"
     },
     {
@@ -110,7 +110,7 @@
         "mechanism"
       ],
       "answer": true,
-      "explanation": "正しい記述です。",
+      "explanation": "**⭕ 正しい記述です**。",
       "sourcePage": "2025中間 問3"
     },
     {
@@ -139,7 +139,7 @@
         }
       ],
       "answer": "c",
-      "explanation": "化合物 II はショーガオールです。",
+      "explanation": "化合物 II は==ショーガオール==です。",
       "sourcePage": "2025中間 問3"
     },
     {
@@ -168,7 +168,7 @@
         }
       ],
       "answer": "b",
-      "explanation": "シキミ酸経路と酢酸－マロン酸経路の複合経路です。",
+      "explanation": "==シキミ酸経路と酢酸－マロン酸経路の複合経路==です。",
       "sourcePage": "2025中間 問3"
     },
     {
@@ -193,7 +193,7 @@
         }
       ],
       "answer": "a",
-      "explanation": "生薬は乾姜です。",
+      "explanation": "生薬は==乾姜==です。",
       "sourcePage": "2025中間 問3"
     },
     {
@@ -222,7 +222,7 @@
         }
       ],
       "answer": "d",
-      "explanation": "基原植物はショウガ、科はショウガ科です。",
+      "explanation": "基原植物は==ショウガ==、科はショウガ科です。",
       "sourcePage": "2025中間 問3"
     },
     {
@@ -262,7 +262,7 @@
         }
       ],
       "answer": "b",
-      "explanation": "化合物 III はアカルボースです。",
+      "explanation": "化合物 III は==アカルボース==です。",
       "sourcePage": "2025中間 問3"
     },
     {
@@ -291,7 +291,7 @@
         }
       ],
       "answer": "a",
-      "explanation": "2型糖尿病治療薬です。",
+      "explanation": "==2型糖尿病治療薬==です。",
       "sourcePage": "2025中間 問3"
     },
     {
@@ -316,7 +316,7 @@
         }
       ],
       "answer": "a",
-      "explanation": "α-グリコシダーゼ阻害です。",
+      "explanation": "==α-グリコシダーゼ==阻害です。",
       "sourcePage": "2025中間 問3"
     },
     {
@@ -345,7 +345,7 @@
         }
       ],
       "answer": "c",
-      "explanation": "α-(1→4) 結合です。",
+      "explanation": "==α-(1→4) 結合==です。",
       "sourcePage": "2025中間 問3"
     },
     {
@@ -356,7 +356,7 @@
         "stereo"
       ],
       "answer": true,
-      "explanation": "正しい記述です（模範解答 S）。",
+      "explanation": "**⭕ 正しい記述です**（模範解答 S）。",
       "sourcePage": "2025中間 問3"
     }
   ]

@@ -31,7 +31,7 @@
         }
       ],
       "answer": "b",
-      "explanation": "化合物 I はプラバスタチンナトリウムです。",
+      "explanation": "化合物 I は==プラバスタチンナトリウム==です。",
       "sourcePage": "2023中間 問5",
       "tags": [
         "origin"
@@ -60,7 +60,7 @@
         }
       ],
       "answer": "a",
-      "explanation": "高脂血症（脂質異常症）治療薬です。",
+      "explanation": "**高脂血症（脂質異常症）治療薬です。**",
       "sourcePage": "2023中間 問5",
       "tags": [
         "mechanism"
@@ -85,7 +85,7 @@
         }
       ],
       "answer": "c",
-      "explanation": "HMG-CoA還元酵素を阻害します。",
+      "explanation": "==HMG-CoA還元酵素==を阻害します。",
       "sourcePage": "2023中間 問5",
       "tags": [
         "mechanism"
@@ -96,7 +96,7 @@
       "type": "truefalse",
       "prompt": "プラバスタチンナトリウムの 6 位の不斉炭素の絶対立体配置は R である。",
       "answer": false,
-      "explanation": "模範解答では S です。",
+      "explanation": "**❌ 模範解答では S です。**",
       "sourcePage": "2023中間 問5",
       "tags": [
         "stereo"
@@ -125,7 +125,7 @@
         }
       ],
       "answer": "b",
-      "explanation": "問題文では、ロバスタチン、シンバスタチン、合成薬のアトルバスタチンが挙げられていました。",
+      "explanation": "問題文では、ロバスタチン、シンバスタチン、合成薬の==アトルバスタチン==が挙げられていました。",
       "sourcePage": "2023中間 問5",
       "tags": [
         "origin"
@@ -154,7 +154,7 @@
         }
       ],
       "answer": "a",
-      "explanation": "EGCG は緑茶に豊富に含まれます。",
+      "explanation": "EGCG は==緑茶==に豊富に含まれます。",
       "sourcePage": "2023中間 問5",
       "tags": [
         "origin"
@@ -183,7 +183,7 @@
         }
       ],
       "answer": "d",
-      "explanation": "模範解答は 2R、3R です。",
+      "explanation": "模範解答は ==2R==、3R です。",
       "sourcePage": "2023中間 問5",
       "tags": [
         "stereo"
@@ -194,7 +194,7 @@
       "type": "truefalse",
       "prompt": "エピガロカテキンガレートの母骨格は、シキミ酸経路と酢酸－マロン酸経路の複合経路で生合成される。",
       "answer": true,
-      "explanation": "正しい記述です。",
+      "explanation": "**⭕ 正しい記述です**。",
       "sourcePage": "2023中間 問5",
       "tags": [
         "pathway"
@@ -219,7 +219,7 @@
         }
       ],
       "answer": "c",
-      "explanation": "3 位の酸素を介して没食子酸がエステル結合しています。",
+      "explanation": "3 位の酸素を介して==没食子酸==がエステル結合しています。",
       "sourcePage": "2023中間 問5",
       "tags": [
         "structure"
@@ -248,7 +248,7 @@
         }
       ],
       "answer": "a",
-      "explanation": "アカルボースは放線菌 Actinoplanes 属の培養液から発見されました。",
+      "explanation": "アカルボースは==放線菌 Actinoplanes 属==の培養液から発見されました。",
       "sourcePage": "2023中間 問5",
       "tags": [
         "origin"
@@ -259,7 +259,7 @@
       "type": "truefalse",
       "prompt": "アカルボースは 2型糖尿病治療薬であり、α-グルコシダーゼ阻害作用を示す。",
       "answer": true,
-      "explanation": "正しい記述です。",
+      "explanation": "**⭕ 正しい記述です**。",
       "sourcePage": "2023中間 問5",
       "tags": [
         "mechanism"
@@ -288,7 +288,7 @@
         }
       ],
       "answer": "c",
-      "explanation": "模範解答は α1→4 結合です。",
+      "explanation": "模範解答は ==α1→4 結合==です。",
       "sourcePage": "2023中間 問5",
       "tags": [
         "structure"
@@ -299,7 +299,7 @@
       "type": "truefalse",
       "prompt": "アカルボースの構造で、* で示された不斉炭素の絶対立体配置は R である。",
       "answer": false,
-      "explanation": "模範解答では S です。",
+      "explanation": "**❌ 模範解答では S です。**",
       "sourcePage": "2023中間 問5",
       "tags": [
         "stereo"
@@ -328,7 +328,7 @@
         }
       ],
       "answer": "a",
-      "explanation": "アカルボースは医薬品として用いられている疑似オリゴ糖類です。",
+      "explanation": "アカルボースは医薬品として用いられている==疑似オリゴ糖類==です。",
       "sourcePage": "2023中間 問5",
       "tags": [
         "mechanism",

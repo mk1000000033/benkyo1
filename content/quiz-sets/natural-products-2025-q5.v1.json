@@ -30,7 +30,7 @@
         }
       ],
       "answer": "c",
-      "explanation": "D-マンニトールです（問5 [A]）。",
+      "explanation": "D-==マンニトール==です（問5 [A]）。",
       "sourcePage": "2025中間 問5"
     },
     {
@@ -59,7 +59,7 @@
         }
       ],
       "answer": "a",
-      "explanation": "キシリトール＝代用甘味料（虫歯予防）、D-ソルビトール＝甘味料（食品添加物）、D-マンニトール＝浸透圧性利尿薬です。",
+      "explanation": "==キシリトール==＝代用甘味料（虫歯予防）、D-ソルビトール＝甘味料（食品添加物）、D-マンニトール＝浸透圧性利尿薬です。",
       "sourcePage": "2025中間 問5"
     },
     {
@@ -88,7 +88,7 @@
         }
       ],
       "answer": "d",
-      "explanation": "タクロリムスです（問5 [B]）。",
+      "explanation": "==タクロリムス==です（問5 [B]）。",
       "sourcePage": "2025中間 問5"
     },
     {
@@ -117,7 +117,7 @@
         }
       ],
       "answer": "c",
-      "explanation": "臓器移植や自己免疫疾患の治療に使われます。",
+      "explanation": "==臓器移植や自己免疫疾患の治療==に使われます。",
       "sourcePage": "2025中間 問5"
     },
     {
@@ -128,7 +128,7 @@
         "mechanism"
       ],
       "answer": true,
-      "explanation": "正しい記述です。",
+      "explanation": "**⭕ 正しい記述です**。",
       "sourcePage": "2025中間 問5"
     },
     {
@@ -157,7 +157,7 @@
         }
       ],
       "answer": "a",
-      "explanation": "プラバスタチンです（問5 [C]）。",
+      "explanation": "==プラバスタチン==です（問5 [C]）。",
       "sourcePage": "2025中間 問5"
     },
     {
@@ -186,7 +186,7 @@
         }
       ],
       "answer": "d",
-      "explanation": "プラバスタチンは酢酸－マロン酸経路で生合成されます。",
+      "explanation": "プラバスタチンは==酢酸－マロン酸経路==で生合成されます。",
       "sourcePage": "2025中間 問5"
     },
     {
@@ -215,7 +215,7 @@
         }
       ],
       "answer": "c",
-      "explanation": "コレステロールはイソプレノイド（メバロン酸）経路で生合成されます。",
+      "explanation": "**コレステロールはイソプレノイド（メバロン酸）経路で生合成されます。**",
       "sourcePage": "2025中間 問5"
     },
     {
@@ -226,7 +226,7 @@
         "mechanism"
       ],
       "answer": true,
-      "explanation": "正しい記述です。",
+      "explanation": "**⭕ 正しい記述です**。",
       "sourcePage": "2025中間 問5"
     },
     {
@@ -251,7 +251,7 @@
         }
       ],
       "answer": "c",
-      "explanation": "脂質異常症の治療薬です（問5 [F]）。",
+      "explanation": "==脂質異常症==の治療薬です（問5 [F]）。",
       "sourcePage": "2025中間 問5"
     },
     {
@@ -280,7 +280,7 @@
         }
       ],
       "answer": "d",
-      "explanation": "ストレプトマイシンです（問5 [G]）。",
+      "explanation": "==ストレプトマイシン==です（問5 [G]）。",
       "sourcePage": "2025中間 問5"
     },
     {
@@ -291,7 +291,7 @@
         "antibiotic"
       ],
       "answer": true,
-      "explanation": "正しい記述です。",
+      "explanation": "**⭕ 正しい記述です**。",
       "sourcePage": "2025中間 問5"
     },
     {
@@ -320,7 +320,7 @@
         }
       ],
       "answer": "b",
-      "explanation": "テトラヒドロカンナビノール（THC）です（問5 [H]）。",
+      "explanation": "==テトラヒドロカンナビノール==（THC）です（問5 [H]）。",
       "sourcePage": "2025中間 問5"
     },
     {
@@ -349,7 +349,7 @@
         }
       ],
       "answer": "a",
-      "explanation": "ムラサキウマゴヤシなどの牧草が腐敗したときに生成します。",
+      "explanation": "==ムラサキウマゴヤシなどの牧草が腐敗したとき==に生成します。",
       "sourcePage": "2025中間 問5"
     },
     {
@@ -374,7 +374,7 @@
         }
       ],
       "answer": "c",
-      "explanation": "血液凝固阻害作用です（問5 [I]）。",
+      "explanation": "==血液凝固阻害==作用です（問5 [I]）。",
       "sourcePage": "2025中間 問5"
     }
   ]

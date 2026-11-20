@@ -31,7 +31,7 @@
         }
       ],
       "answer": "d",
-      "explanation": "構造式 A は 1-デオキシノジリマイシンです。",
+      "explanation": "構造式 A は ==1-デオキシノジリマイシン==です。",
       "sourcePage": "2024中間 問7",
       "tags": [
         "structure"
@@ -60,7 +60,7 @@
         }
       ],
       "answer": "c",
-      "explanation": "構造式 B はサリシンです。",
+      "explanation": "構造式 B は==サリシン==です。",
       "sourcePage": "2024中間 問7",
       "tags": [
         "structure"
@@ -89,7 +89,7 @@
         }
       ],
       "answer": "b",
-      "explanation": "構造式 I はポドフィロトキシンです。",
+      "explanation": "構造式 I は==ポドフィロトキシン==です。",
       "sourcePage": "2024中間 問7",
       "tags": [
         "structure"
@@ -118,7 +118,7 @@
         }
       ],
       "answer": "a",
-      "explanation": "構造式 N はエリスロマイシンです。",
+      "explanation": "構造式 N は==エリスロマイシン==です。",
       "sourcePage": "2024中間 問7",
       "tags": [
         "structure"
@@ -147,7 +147,7 @@
         }
       ],
       "answer": "d",
-      "explanation": "構造式 O はオカダ酸です。大問6の「ポリエーテル系化合物」とつなげて覚えましょう。",
+      "explanation": "構造式 O は==オカダ酸==です。大問6の「ポリエーテル系化合物」とつなげて覚えましょう。",
       "sourcePage": "2024中間 問7",
       "tags": [
         "structure"
@@ -158,7 +158,7 @@
       "type": "truefalse",
       "prompt": "オセルタミビルの構造（試験の構造式 G）には、二重結合を含む六員炭素環、窒素含有置換基、エステル構造が含まれる。",
       "answer": true,
-      "explanation": "正しい記述です。",
+      "explanation": "**⭕ 正しい記述です**。",
       "sourcePage": "2024中間 問7",
       "tags": [
         "structure"
@@ -183,7 +183,7 @@
         }
       ],
       "answer": "b",
-      "explanation": "バイカリンの糖部分はカルボキシル基を含みます。",
+      "explanation": "バイカリンの糖部分は==カルボキシル基==を含みます。",
       "sourcePage": "2024中間 問7",
       "tags": [
         "structure"
@@ -212,7 +212,7 @@
         }
       ],
       "answer": "a",
-      "explanation": "ポドフィロトキシンの母骨格はシキミ酸経路で生合成されます（B群 3）。",
+      "explanation": "ポドフィロトキシンの母骨格は==シキミ酸経路==で生合成されます（B群 3）。",
       "sourcePage": "2024中間 問7",
       "tags": [
         "pathway"
@@ -241,7 +241,7 @@
         }
       ],
       "answer": "d",
-      "explanation": "オカダ酸の母骨格は酢酸－マロン酸経路で生合成されます（B群 1）。",
+      "explanation": "オカダ酸の母骨格は==酢酸－マロン酸経路==で生合成されます（B群 1）。",
       "sourcePage": "2024中間 問7",
       "tags": [
         "pathway"
@@ -270,7 +270,7 @@
         }
       ],
       "answer": "c",
-      "explanation": "バイカリンの母骨格はシキミ酸経路と酢酸－マロン酸経路の複合経路です（B群 6）。",
+      "explanation": "バイカリンの母骨格は==シキミ酸経路と酢酸－マロン酸経路の複合経路==です（B群 6）。",
       "sourcePage": "2024中間 問7",
       "tags": [
         "pathway"
@@ -281,7 +281,7 @@
       "type": "truefalse",
       "prompt": "サリシンの母骨格は、シキミ酸経路で生合成される。",
       "answer": true,
-      "explanation": "正しい記述です（B群 3）。",
+      "explanation": "**⭕ 正しい記述です**（B群 3）。",
       "sourcePage": "2024中間 問7",
       "tags": [
         "pathway"
@@ -292,7 +292,7 @@
       "type": "truefalse",
       "prompt": "エリスロマイシンの母骨格は、イソプレノイド経路で生合成される。",
       "answer": false,
-      "explanation": "エリスロマイシンの母骨格は酢酸－マロン酸経路で生合成されます（B群 1）。",
+      "explanation": "**❌ エリスロマイシンの母骨格は酢酸－マロン酸経路で生合成されます（B群 1）。**",
       "sourcePage": "2024中間 問7",
       "tags": [
         "pathway"
@@ -317,7 +317,7 @@
         }
       ],
       "answer": "b",
-      "explanation": "構造式 C はアフラトキシンです。",
+      "explanation": "構造式 C は==アフラトキシン==です。",
       "sourcePage": "2024中間 問7",
       "tags": [
         "structure"
@@ -346,7 +346,7 @@
         }
       ],
       "answer": "c",
-      "explanation": "構造式 M はストレプトマイシンです。",
+      "explanation": "構造式 M は==ストレプトマイシン==です。",
       "sourcePage": "2024中間 問7",
       "tags": [
         "structure"

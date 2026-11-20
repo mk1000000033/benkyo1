@@ -34,7 +34,7 @@
         }
       ],
       "answer": "d",
-      "explanation": "構造式 A は D-マンニトール〈1〉です。環をもたない鎖状構造です。",
+      "explanation": "構造式 A は D-==マンニトール==〈1〉です。環をもたない鎖状構造です。",
       "sourcePage": "2025中間 問7"
     },
     {
@@ -63,7 +63,7 @@
         }
       ],
       "answer": "c",
-      "explanation": "構造式 N はタクロリムス〈2〉です。",
+      "explanation": "構造式 N は==タクロリムス==〈2〉です。",
       "sourcePage": "2025中間 問7"
     },
     {
@@ -92,7 +92,7 @@
         }
       ],
       "answer": "b",
-      "explanation": "構造式 E はプラバスタチン〈3〉です。",
+      "explanation": "構造式 E は==プラバスタチン==〈3〉です。",
       "sourcePage": "2025中間 問7"
     },
     {
@@ -121,7 +121,7 @@
         }
       ],
       "answer": "a",
-      "explanation": "構造式 M はストレプトマイシン〈4〉です。",
+      "explanation": "構造式 M は==ストレプトマイシン==〈4〉です。",
       "sourcePage": "2025中間 問7"
     },
     {
@@ -161,7 +161,7 @@
         }
       ],
       "answer": "c",
-      "explanation": "構造式 B はジクマロール〈6〉です。",
+      "explanation": "構造式 B は==ジクマロール==〈6〉です。",
       "sourcePage": "2025中間 問7"
     },
     {
@@ -190,7 +190,7 @@
         }
       ],
       "answer": "b",
-      "explanation": "構造式 H はベルガモチン〈7〉です。",
+      "explanation": "構造式 H は==ベルガモチン==〈7〉です。",
       "sourcePage": "2025中間 問7"
     },
     {
@@ -219,7 +219,7 @@
         }
       ],
       "answer": "a",
-      "explanation": "構造式 G はレスベラトロール〈8〉（スチルベン）です。",
+      "explanation": "構造式 G は==レスベラトロール==〈8〉（スチルベン）です。",
       "sourcePage": "2025中間 問7"
     },
     {
@@ -248,7 +248,7 @@
         }
       ],
       "answer": "d",
-      "explanation": "構造式 C はシコニン〈9〉です。",
+      "explanation": "構造式 C は==シコニン==〈9〉です。",
       "sourcePage": "2025中間 問7"
     },
     {
@@ -277,7 +277,7 @@
         }
       ],
       "answer": "c",
-      "explanation": "構造式 O はオカダ酸〈10〉（ポリエーテル化合物）です。",
+      "explanation": "構造式 O は==オカダ酸==〈10〉（ポリエーテル化合物）です。",
       "sourcePage": "2025中間 問7"
     },
     {
@@ -302,7 +302,7 @@
         }
       ],
       "answer": "b",
-      "explanation": "構造式 K は EGCG〈11〉です。",
+      "explanation": "構造式 K は ==EGCG==〈11〉です。",
       "sourcePage": "2025中間 問7"
     },
     {
@@ -331,7 +331,7 @@
         }
       ],
       "answer": "a",
-      "explanation": "タクロリムス・オカダ酸は B群 1（酢酸－マロン酸経路）です。",
+      "explanation": "**タクロリムス・オカダ酸は B群 1（酢酸－マロン酸経路）です。**",
       "sourcePage": "2025中間 問7"
     },
     {
@@ -360,7 +360,7 @@
         }
       ],
       "answer": "d",
-      "explanation": "B群 4：複合経路（イソプレノイド経路＋酢酸－マロン酸経路）です。",
+      "explanation": "B群 4：==複合経路（イソプレノイド経路＋酢酸－マロン酸経路）==です。",
       "sourcePage": "2025中間 問7"
     },
     {
@@ -389,7 +389,7 @@
         }
       ],
       "answer": "c",
-      "explanation": "B群 3：シキミ酸経路です。",
+      "explanation": "B群 3：==シキミ酸経路==です。",
       "sourcePage": "2025中間 問7"
     },
     {
@@ -400,7 +400,7 @@
         "pathway"
       ],
       "answer": true,
-      "explanation": "正しい記述です（どちらも B群 6）。",
+      "explanation": "**⭕ 正しい記述です**（どちらも B群 6）。",
       "sourcePage": "2025中間 問7"
     },
     {
@@ -411,7 +411,7 @@
         "pathway"
       ],
       "answer": false,
-      "explanation": "オカダ酸は B群 1：酢酸－マロン酸経路です。",
+      "explanation": "**❌ オカダ酸は B群 1：酢酸－マロン酸経路です。**",
       "sourcePage": "2025中間 問7"
     }
   ]

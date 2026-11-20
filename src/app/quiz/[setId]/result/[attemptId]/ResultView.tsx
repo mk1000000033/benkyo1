@@ -1,4 +1,5 @@
 "use client";
+import { RichText } from "@/components/RichText";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import type { FillBlank, QuestionImage, QuestionType, QuizOption, QuizSetFile, AnswerValue } from "@/lib/quiz-types";
@@ -250,7 +251,7 @@ export function ResultView({
                     </dl>
                     <div className="rounded-2xl bg-candy-purple-soft/50 p-3">
                       <p className="text-sm font-extrabold text-candy-purple-deep">💡 解説</p>
-                      <p className="mt-1 whitespace-pre-wrap text-sm leading-relaxed">{r.explanation}</p>
+                      <p className="mt-1 whitespace-pre-wrap text-sm leading-relaxed"><RichText text={r.explanation} /></p>
                       {r.sourcePage && <p className="mt-1 text-xs font-bold text-ink-soft">📄 授業資料：{r.sourcePage}</p>}
                     </div>
                   </div>

@@ -70,6 +70,17 @@ export function SetListView({ subject, sets }: Props) {
         </div>
       </header>
 
+      {subject.id === "natural-products" && (
+        <Link href={`/compounds/${subject.id}`} className="card flex items-center gap-3 p-4 active:scale-[0.99]">
+          <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-candy-yellow-soft text-2xl" aria-hidden>🧾</span>
+          <span className="min-w-0 flex-1">
+            <span className="block font-extrabold">化合物いちらん</span>
+            <span className="block text-xs font-bold text-ink-soft">化合物群・生合成経路・抗生物質などで絞り込める表</span>
+          </span>
+          <span className="font-extrabold text-candy-purple" aria-hidden>▶</span>
+        </Link>
+      )}
+
       {sets.length === 0 && <p className="card p-6 text-center font-bold text-ink-soft">まだ問題セットがありません。お楽しみに！</p>}
 
       <ul className="space-y-4">

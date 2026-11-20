@@ -231,3 +231,14 @@ test("複数空欄の穴埋め：全部合っていれば正解・形式が違�
   broken.questions[0].answer = "x";
   assert.ok(validateQuizSet(broken, ["natural-products"]).some((e) => e.includes("つないだもの")));
 });
+
+test("化合物いちらん：必要な項目がそろっていて、名前が重複していない", async () => {
+  const f = (await import("../content/compounds/natural-products.json")).default as { compounds: { name: string; kind: string; years: number[]; group: string }[] };
+  const names = f.compounds.map((c) => c.name);
+  assert.equal(new Set(names).size, names.length);
+  for (const c of f.compounds) {
+    assert.ok(["antibiotic", "drug", "natural"].includes(c.kind), c.name);
+    assert.ok(c.years.length > 0, `${c.name} の年度がない`);
+    assert.ok(c.group, c.name);
+  }
+});

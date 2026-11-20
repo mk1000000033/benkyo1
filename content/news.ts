@@ -20,10 +20,21 @@ export interface News {
 
 export const NEWS: News[] = [
   {
-    id: "2026-11-21-structure-quiz-2",
+    id: "2026-11-21-compounds",
     date: "2026年11月21日",
     line: "委員会より新機能のお知らせだ。再試回避の武器が増えたぞ。",
     items: [
+      {
+        emoji: "🧾",
+        title: "化合物いちらん",
+        text: "試験に出た化合物を、化合物群・生合成経路・何の薬か・もとになる物質で一覧に。抗生物質だけ・経路ごと・年度ごとに絞り込めます。",
+        href: "/compounds/natural-products",
+      },
+      {
+        emoji: "🖍️",
+        title: "解説にマーカー",
+        text: "クイズの解説の大事なところにマーカーと太字。構造式クイズには「分類の見分け方」も付きました。",
+      },
       {
         emoji: "🤔",
         title: "わからない…答えを見る",

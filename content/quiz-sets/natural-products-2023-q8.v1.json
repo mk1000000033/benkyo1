@@ -31,7 +31,7 @@
         }
       ],
       "answer": "a",
-      "explanation": "構造式 E はレスベラトロール（スチルベン）です。",
+      "explanation": "構造式 E は==レスベラトロール==（スチルベン）です。",
       "sourcePage": "2023中間 問8",
       "tags": [
         "structure"
@@ -60,7 +60,7 @@
         }
       ],
       "answer": "d",
-      "explanation": "構造式 A は糖アルコールの D-マンニトールです。",
+      "explanation": "構造式 A は糖アルコールの ==D-マンニトール==です。",
       "sourcePage": "2023中間 問8",
       "tags": [
         "structure"
@@ -89,7 +89,7 @@
         }
       ],
       "answer": "c",
-      "explanation": "構造式 O はセンノシド類です。「二量体型」なので似た構造が 2 つあります。",
+      "explanation": "構造式 O は==センノシド類==です。「二量体型」なので似た構造が 2 つあります。",
       "sourcePage": "2023中間 問8",
       "tags": [
         "structure"
@@ -118,7 +118,7 @@
         }
       ],
       "answer": "b",
-      "explanation": "構造式 I はベルガモチンです。",
+      "explanation": "構造式 I は==ベルガモチン==です。",
       "sourcePage": "2023中間 問8",
       "tags": [
         "structure"
@@ -143,7 +143,7 @@
         }
       ],
       "answer": "c",
-      "explanation": "構造式 R はマクロライド系抗生物質のエリスロマイシンです。",
+      "explanation": "構造式 R はマクロライド系抗生物質の==エリスロマイシン==です。",
       "sourcePage": "2023中間 問8",
       "tags": [
         "structure"
@@ -154,7 +154,7 @@
       "type": "truefalse",
       "prompt": "バイカリンの構造（試験の構造式 H）は、カルボキシ基と複数のヒドロキシ基をもつ糖部分を含む。",
       "answer": true,
-      "explanation": "正しい記述です。",
+      "explanation": "**⭕ 正しい記述です**。",
       "sourcePage": "2023中間 問8",
       "tags": [
         "structure"
@@ -183,7 +183,7 @@
         }
       ],
       "answer": "c",
-      "explanation": "レスベラトロールは複合経路（B群 6）です。",
+      "explanation": "**レスベラトロールは複合経路（B群 6）です。**",
       "sourcePage": "2023中間 問8",
       "tags": [
         "pathway"
@@ -212,7 +212,7 @@
         }
       ],
       "answer": "b",
-      "explanation": "センノシド類は酢酸－マロン酸経路（B群 1）です。",
+      "explanation": "センノシド類は==酢酸－マロン酸経路==（B群 1）です。",
       "sourcePage": "2023中間 問8",
       "tags": [
         "pathway"
@@ -223,7 +223,7 @@
       "type": "truefalse",
       "prompt": "設問〈9〉のフタリド類の母骨格は、酢酸－マロン酸経路で生合成される。",
       "answer": true,
-      "explanation": "正しい記述です（B群 1）。",
+      "explanation": "**⭕ 正しい記述です**（B群 1）。",
       "sourcePage": "2023中間 問8",
       "tags": [
         "pathway"
@@ -234,7 +234,7 @@
       "type": "truefalse",
       "prompt": "バイカリンの母骨格は、シキミ酸経路のみで生合成される。",
       "answer": false,
-      "explanation": "バイカリンはシキミ酸経路と酢酸－マロン酸経路の複合経路（B群 6）です。",
+      "explanation": "**❌ バイカリンはシキミ酸経路と酢酸－マロン酸経路の複合経路（B群 6）です。**",
       "sourcePage": "2023中間 問8",
       "tags": [
         "pathway"
@@ -263,7 +263,7 @@
         }
       ],
       "answer": "c",
-      "explanation": "バイカリン・レスベラトロール・ナリンギン等（設問〈7〉）は複合経路、エリスロマイシン・フタリド類・センノシド類は酢酸－マロン酸経路です。",
+      "explanation": "**バイカリン・レスベラトロール・ナリンギン等（設問〈7〉）は複合経路、エリスロマイシン・フタリド類・センノシド類は酢酸－マロン酸経路です。**",
       "sourcePage": "2023中間 問8",
       "tags": [
         "pathway"
@@ -288,7 +288,7 @@
         }
       ],
       "answer": "c",
-      "explanation": "エリスロマイシンは酢酸－マロン酸経路（B群 1）です。",
+      "explanation": "エリスロマイシンは==酢酸－マロン酸経路==（B群 1）です。",
       "sourcePage": "2023中間 問8",
       "tags": [
         "pathway"

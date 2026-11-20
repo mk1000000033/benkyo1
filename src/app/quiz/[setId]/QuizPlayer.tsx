@@ -1,4 +1,5 @@
 "use client";
+import { RichText } from "@/components/RichText";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
@@ -209,7 +210,7 @@ export function QuizPlayer({ set, subjectName, forceNew }: { set: QuizSetFile; s
           )}
           <div className="relative mt-4 rounded-2xl bg-white p-4">
             <p className="text-sm font-extrabold text-candy-purple-deep">💡 解説</p>
-            <p className="mt-1 whitespace-pre-wrap leading-relaxed">{q.explanation}</p>
+            <p className="mt-1 whitespace-pre-wrap leading-relaxed"><RichText text={q.explanation} /></p>
             {q.sourcePage && <p className="mt-2 text-xs font-bold text-ink-soft">📄 授業資料：{q.sourcePage}</p>}
           </div>
           <button className={`btn-pop ${isLast ? "pop-purple" : "pop-sky"} relative mt-4 w-full text-lg`} onClick={goNext}>

@@ -34,7 +34,7 @@
         }
       ],
       "answer": "c",
-      "explanation": "化合物 I はオセルタミビルリン酸塩です。",
+      "explanation": "化合物 I は==オセルタミビルリン酸塩==です。",
       "sourcePage": "2022中間 問6"
     },
     {
@@ -63,7 +63,7 @@
         }
       ],
       "answer": "b",
-      "explanation": "抗インフルエンザ薬です。",
+      "explanation": "==抗インフルエンザ薬==です。",
       "sourcePage": "2022中間 問6"
     },
     {
@@ -88,7 +88,7 @@
         }
       ],
       "answer": "a",
-      "explanation": "ノイラミニダーゼを阻害します。",
+      "explanation": "==ノイラミニダーゼ==を阻害します。",
       "sourcePage": "2022中間 問6"
     },
     {
@@ -117,7 +117,7 @@
         }
       ],
       "answer": "d",
-      "explanation": "シアル酸の構造を模して開発されました。",
+      "explanation": "==シアル酸==の構造を模して開発されました。",
       "sourcePage": "2022中間 問6"
     },
     {
@@ -128,7 +128,7 @@
         "stereo"
       ],
       "answer": true,
-      "explanation": "正しい記述です（模範解答：エーテル結合の不斉炭素 R、二重結合 E）。",
+      "explanation": "**⭕ 正しい記述です**（模範解答：エーテル結合の不斉炭素 R、二重結合 E）。",
       "sourcePage": "2022中間 問6"
     },
     {
@@ -139,7 +139,7 @@
         "mechanism"
       ],
       "answer": true,
-      "explanation": "正しい記述です。",
+      "explanation": "**⭕ 正しい記述です**。",
       "sourcePage": "2022中間 問6"
     },
     {
@@ -168,7 +168,7 @@
         }
       ],
       "answer": "a",
-      "explanation": "バイカリンは黄芩の主要成分です。",
+      "explanation": "バイカリンは==黄芩==の主要成分です。",
       "sourcePage": "2022中間 問6"
     },
     {
@@ -197,7 +197,7 @@
         }
       ],
       "answer": "d",
-      "explanation": "シソ科コガネバナ（Scutellaria baicalensis）の周皮を除いた根を基原とします。",
+      "explanation": "**シソ科コガネバナ（Scutellaria baicalensis）の周皮を除いた根を基原とします。**",
       "sourcePage": "2022中間 問6"
     },
     {
@@ -222,7 +222,7 @@
         }
       ],
       "answer": "a",
-      "explanation": "母骨格はフラボンです。",
+      "explanation": "母骨格は==フラボン==です。",
       "sourcePage": "2022中間 問6"
     },
     {
@@ -251,7 +251,7 @@
         }
       ],
       "answer": "b",
-      "explanation": "グルクロン酸が結合しています。",
+      "explanation": "==グルクロン酸==が結合しています。",
       "sourcePage": "2022中間 問6"
     },
     {
@@ -262,7 +262,7 @@
         "origin"
       ],
       "answer": true,
-      "explanation": "正しい記述です。",
+      "explanation": "**⭕ 正しい記述です**。",
       "sourcePage": "2022中間 問6"
     },
     {
@@ -291,7 +291,7 @@
         }
       ],
       "answer": "d",
-      "explanation": "化合物 III はワルファリンカリウムです。",
+      "explanation": "化合物 III は==ワルファリンカリウム==です。",
       "sourcePage": "2022中間 問6"
     },
     {
@@ -320,7 +320,7 @@
         }
       ],
       "answer": "c",
-      "explanation": "抗凝血薬（抗血栓薬）です。",
+      "explanation": "==抗凝血薬（抗血栓薬）==です。",
       "sourcePage": "2022中間 問6"
     },
     {
@@ -345,7 +345,7 @@
         }
       ],
       "answer": "a",
-      "explanation": "ジクマロールの母骨格はクマリンです。",
+      "explanation": "ジクマロールの母骨格は==クマリン==です。",
       "sourcePage": "2022中間 問6"
     },
     {
@@ -374,7 +374,7 @@
         }
       ],
       "answer": "a",
-      "explanation": "ジクマロールの生合成経路はシキミ酸経路です。",
+      "explanation": "ジクマロールの生合成経路は==シキミ酸経路==です。",
       "sourcePage": "2022中間 問6"
     },
     {
@@ -385,7 +385,7 @@
         "pathway"
       ],
       "answer": false,
-      "explanation": "合成原料がシキミ酸であることと、医薬品自体の生合成経路は別の話です。混同しないようにしましょう。",
+      "explanation": "**❌ 合成原料がシキミ酸であることと、医薬品自体の生合成経路は別の話です。**混同しないようにしましょう。",
       "sourcePage": "2022中間 問6"
     }
   ]
