@@ -26,6 +26,12 @@ import natural_products_2022_q6_v1 from "./natural-products-2022-q6.v1.json";
 import natural_products_2022_q7_v1 from "./natural-products-2022-q7.v1.json";
 import natural_products_2022_q8_v1 from "./natural-products-2022-q8.v1.json";
 import natural_products_2022_q9_v1 from "./natural-products-2022-q9.v1.json";
+import natural_products_2025_q2_v1 from "./natural-products-2025-q2.v1.json";
+import natural_products_2025_q3_v1 from "./natural-products-2025-q3.v1.json";
+import natural_products_2025_q4_v1 from "./natural-products-2025-q4.v1.json";
+import natural_products_2025_q5_v1 from "./natural-products-2025-q5.v1.json";
+import natural_products_2025_q6_v1 from "./natural-products-2025-q6.v1.json";
+import natural_products_2025_q7_v1 from "./natural-products-2025-q7.v1.json";
 
 export const QUIZ_SET_FILES: unknown[] = [
   natural_products_2024_q2_v1,
@@ -48,5 +54,11 @@ export const QUIZ_SET_FILES: unknown[] = [
   natural_products_2022_q7_v1,
   natural_products_2022_q8_v1,
   natural_products_2022_q9_v1,
+  natural_products_2025_q2_v1,
+  natural_products_2025_q3_v1,
+  natural_products_2025_q4_v1,
+  natural_products_2025_q5_v1,
+  natural_products_2025_q6_v1,
+  natural_products_2025_q7_v1,
   // ↑ ここに新しい問題セットを追加
 ];

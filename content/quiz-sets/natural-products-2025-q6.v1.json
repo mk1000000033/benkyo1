@@ -1,0 +1,335 @@
+{
+  "id": "natural-products-2025-q6",
+  "version": 1,
+  "subjectId": "natural-products",
+  "title": "2025年度 大問6 ベルガモチン・レスベラトロール・シコニン ほか（正誤訂正）",
+  "lectureDate": null,
+  "group": "2025年度 中間試験",
+  "published": true,
+  "sourceMaterial": "2025年度 天然物化学 中間試験（問題用紙・模範解答）とユーザー作成の知識データ",
+  "questions": [
+    {
+      "id": "q01",
+      "type": "choice",
+      "prompt": "CYP3A4 の特異的阻害物質としてベルガモチンが単離されたのはどれか。",
+      "tags": [
+        "origin"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "オレンジジュース"
+        },
+        {
+          "id": "b",
+          "text": "赤ワイン"
+        },
+        {
+          "id": "c",
+          "text": "グレープフルーツジュース"
+        },
+        {
+          "id": "d",
+          "text": "緑茶"
+        }
+      ],
+      "answer": "c",
+      "explanation": "グレープフルーツジュースです。試験では「オレンジジュース」が誤りとして出されました。",
+      "sourcePage": "2025中間 問6"
+    },
+    {
+      "id": "q02",
+      "type": "choice",
+      "prompt": "ベルガモチンの構造分類はどれか。",
+      "tags": [
+        "structure"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "スチルベン"
+        },
+        {
+          "id": "b",
+          "text": "フラノクマリン"
+        },
+        {
+          "id": "c",
+          "text": "ナフトキノン"
+        },
+        {
+          "id": "d",
+          "text": "ポリエーテル"
+        }
+      ],
+      "answer": "b",
+      "explanation": "フラノクマリンです。",
+      "sourcePage": "2025中間 問6"
+    },
+    {
+      "id": "q03",
+      "type": "truefalse",
+      "prompt": "CYP3A4 が阻害されると、ジヒドロピリジン系カルシウム拮抗薬の血中濃度が上昇する恐れがある。",
+      "tags": [
+        "mechanism"
+      ],
+      "answer": true,
+      "explanation": "正しい記述です。",
+      "sourcePage": "2025中間 問6"
+    },
+    {
+      "id": "q04",
+      "type": "choice",
+      "prompt": "赤ワインに含まれるレスベラトロールの構造分類はどれか。",
+      "tags": [
+        "structure"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "カテキン"
+        },
+        {
+          "id": "b",
+          "text": "クマリン"
+        },
+        {
+          "id": "c",
+          "text": "ナフトキノン"
+        },
+        {
+          "id": "d",
+          "text": "スチルベン"
+        }
+      ],
+      "answer": "d",
+      "explanation": "スチルベンです。試験では「カテキン」が誤りとして出されました。",
+      "sourcePage": "2025中間 問6"
+    },
+    {
+      "id": "q05",
+      "type": "truefalse",
+      "prompt": "レスベラトロールには、抗菌、抗カビ、抗酸化、抗炎症作用や癌予防効果などがあるとされる。",
+      "tags": [
+        "mechanism"
+      ],
+      "answer": true,
+      "explanation": "正しい記述です。",
+      "sourcePage": "2025中間 問6"
+    },
+    {
+      "id": "q06",
+      "type": "choice",
+      "prompt": "ムラサキの根の赤紫色素であるシコニンがもつ構造はどれか。",
+      "tags": [
+        "structure"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "アントラキノン構造"
+        },
+        {
+          "id": "b",
+          "text": "ナフトキノン構造"
+        },
+        {
+          "id": "c",
+          "text": "スチルベン構造"
+        },
+        {
+          "id": "d",
+          "text": "フラノクマリン構造"
+        }
+      ],
+      "answer": "b",
+      "explanation": "ナフトキノン構造です。試験では「アントラキノン」が誤りとして出されました。",
+      "sourcePage": "2025中間 問6"
+    },
+    {
+      "id": "q07",
+      "type": "fill",
+      "prompt": "シコニンを含む生薬・紫根を含む [[blank]] は、火傷などに用いられる。",
+      "tags": [
+        "origin"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "紫雲膏"
+        },
+        {
+          "id": "b",
+          "text": "ポドフィルム脂"
+        },
+        {
+          "id": "c",
+          "text": "乾姜"
+        }
+      ],
+      "answer": "a",
+      "explanation": "紫雲膏です。",
+      "sourcePage": "2025中間 問6"
+    },
+    {
+      "id": "q08",
+      "type": "truefalse",
+      "prompt": "シコニンには、抗炎症作用や抗殺菌作用などが知られている。",
+      "tags": [
+        "mechanism"
+      ],
+      "answer": true,
+      "explanation": "正しい記述です。",
+      "sourcePage": "2025中間 問6"
+    },
+    {
+      "id": "q09",
+      "type": "choice",
+      "prompt": "下痢性貝毒の原因物質であるオカダ酸の化合物分類はどれか。",
+      "tags": [
+        "structure"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "ポリエステル化合物"
+        },
+        {
+          "id": "b",
+          "text": "スチルベン"
+        },
+        {
+          "id": "c",
+          "text": "ポリエーテル化合物"
+        },
+        {
+          "id": "d",
+          "text": "フラノクマリン"
+        }
+      ],
+      "answer": "c",
+      "explanation": "ポリエーテル化合物です。試験では「ポリエステル化合物」が誤りとして出されました。",
+      "sourcePage": "2025中間 問6"
+    },
+    {
+      "id": "q10",
+      "type": "truefalse",
+      "prompt": "オカダ酸は、クロイソカイメンなどから単離された。",
+      "tags": [
+        "origin"
+      ],
+      "answer": true,
+      "explanation": "正しい記述です。",
+      "sourcePage": "2025中間 問6"
+    },
+    {
+      "id": "q11",
+      "type": "choice",
+      "prompt": "オカダ酸の作用として正しいものはどれか。",
+      "tags": [
+        "mechanism"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "プロテインホスファターゼ阻害による発癌プロモーター活性"
+        },
+        {
+          "id": "b",
+          "text": "CYP3A4 の特異的阻害"
+        },
+        {
+          "id": "c",
+          "text": "カルシニューリン阻害による免疫抑制"
+        },
+        {
+          "id": "d",
+          "text": "HMG-CoA還元酵素の阻害"
+        }
+      ],
+      "answer": "a",
+      "explanation": "プロテインホスファターゼ阻害による発癌プロモーター活性をもちます。",
+      "sourcePage": "2025中間 問6"
+    },
+    {
+      "id": "q12",
+      "type": "choice",
+      "prompt": "エピガロカテキンガレート（EGCG）は何の渋み成分か。",
+      "tags": [
+        "origin"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "紅茶"
+        },
+        {
+          "id": "b",
+          "text": "赤ワイン"
+        },
+        {
+          "id": "c",
+          "text": "グレープフルーツ"
+        },
+        {
+          "id": "d",
+          "text": "緑茶"
+        }
+      ],
+      "answer": "d",
+      "explanation": "緑茶の渋み成分です。試験では「紅茶」が誤りとして出されました。",
+      "sourcePage": "2025中間 問6"
+    },
+    {
+      "id": "q13",
+      "type": "truefalse",
+      "prompt": "EGCG は、タンニン様の性質と抗酸化作用をもつ。",
+      "tags": [
+        "mechanism"
+      ],
+      "answer": true,
+      "explanation": "正しい記述です。",
+      "sourcePage": "2025中間 問6"
+    },
+    {
+      "id": "q14",
+      "type": "choice",
+      "prompt": "多糖成分とキノコの組み合わせとして正しいものはどれか。",
+      "tags": [
+        "origin"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "クレスチン ― シイタケ"
+        },
+        {
+          "id": "b",
+          "text": "レンチナン ― シイタケ"
+        },
+        {
+          "id": "c",
+          "text": "シゾフィラン ― カワラタケ"
+        },
+        {
+          "id": "d",
+          "text": "レンチナン ― スエヒロタケ"
+        }
+      ],
+      "answer": "b",
+      "explanation": "クレスチン＝カワラタケ、レンチナン＝シイタケ、シゾフィラン＝スエヒロタケです。",
+      "sourcePage": "2025中間 問6"
+    },
+    {
+      "id": "q15",
+      "type": "truefalse",
+      "prompt": "クレスチン・レンチナン・シゾフィランは、BRM（Biological Response Modifier）として免疫抑制作用を示す。",
+      "tags": [
+        "mechanism"
+      ],
+      "answer": false,
+      "explanation": "免疫賦活作用です。試験では「免疫抑制作用」が誤りとして出されました。",
+      "sourcePage": "2025中間 問6"
+    }
+  ]
+}

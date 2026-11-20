@@ -1,0 +1,363 @@
+{
+  "id": "natural-products-2025-q3",
+  "version": 1,
+  "subjectId": "natural-products",
+  "title": "2025年度 大問3 オセルタミビル・ショーガオール・アカルボース",
+  "lectureDate": null,
+  "group": "2025年度 中間試験",
+  "published": true,
+  "sourceMaterial": "2025年度 天然物化学 中間試験（問題用紙・模範解答）とユーザー作成の知識データ",
+  "questions": [
+    {
+      "id": "q01",
+      "type": "choice",
+      "prompt": "八角（大茴香）に含まれるシキミ酸から合成され、ノイラミニダーゼを阻害する医薬品（化合物 I）はどれか。",
+      "tags": [
+        "origin"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "ザナミビル"
+        },
+        {
+          "id": "b",
+          "text": "アカルボース"
+        },
+        {
+          "id": "c",
+          "text": "ショーガオール"
+        },
+        {
+          "id": "d",
+          "text": "オセルタミビルリン酸塩"
+        }
+      ],
+      "answer": "d",
+      "explanation": "化合物 I はオセルタミビルリン酸塩です。",
+      "sourcePage": "2025中間 問3"
+    },
+    {
+      "id": "q02",
+      "type": "choice",
+      "prompt": "オセルタミビルリン酸塩の薬効用途はどれか。",
+      "tags": [
+        "mechanism"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "2型糖尿病治療薬"
+        },
+        {
+          "id": "b",
+          "text": "脂質異常症治療薬"
+        },
+        {
+          "id": "c",
+          "text": "抗インフルエンザウイルス薬"
+        },
+        {
+          "id": "d",
+          "text": "抗がん剤"
+        }
+      ],
+      "answer": "c",
+      "explanation": "抗インフルエンザウイルス薬です。",
+      "sourcePage": "2025中間 問3"
+    },
+    {
+      "id": "q03",
+      "type": "fill",
+      "prompt": "オセルタミビルリン酸塩は、動物界に存在する酸性糖 [[blank]] の構造を模して開発された。",
+      "tags": [
+        "structure"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "シアル酸"
+        },
+        {
+          "id": "b",
+          "text": "シキミ酸"
+        },
+        {
+          "id": "c",
+          "text": "グルクロン酸"
+        }
+      ],
+      "answer": "a",
+      "explanation": "シアル酸です。シキミ酸は合成の原料です。",
+      "sourcePage": "2025中間 問3"
+    },
+    {
+      "id": "q04",
+      "type": "truefalse",
+      "prompt": "オセルタミビルリン酸塩のエーテル結合している不斉炭素の立体配置は R、二重結合の立体配置は E である。",
+      "tags": [
+        "stereo"
+      ],
+      "answer": true,
+      "explanation": "正しい記述です。",
+      "sourcePage": "2025中間 問3"
+    },
+    {
+      "id": "q05",
+      "type": "truefalse",
+      "prompt": "ザナミビル（商品名：リレンザ）は、オセルタミビルリン酸塩と同様のメカニズムで同じ薬理作用を示す。",
+      "tags": [
+        "mechanism"
+      ],
+      "answer": true,
+      "explanation": "正しい記述です。",
+      "sourcePage": "2025中間 問3"
+    },
+    {
+      "id": "q06",
+      "type": "choice",
+      "prompt": "Zingiber officinale の根茎を基原とする生薬の主要成分（化合物 II）はどれか。",
+      "tags": [
+        "origin"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "シンナムアルデヒド"
+        },
+        {
+          "id": "b",
+          "text": "オイゲノール"
+        },
+        {
+          "id": "c",
+          "text": "ショーガオール"
+        },
+        {
+          "id": "d",
+          "text": "アネトール"
+        }
+      ],
+      "answer": "c",
+      "explanation": "化合物 II はショーガオールです。",
+      "sourcePage": "2025中間 問3"
+    },
+    {
+      "id": "q07",
+      "type": "choice",
+      "prompt": "ショーガオールの生合成経路はどれか。",
+      "tags": [
+        "pathway"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "シキミ酸経路"
+        },
+        {
+          "id": "b",
+          "text": "シキミ酸経路と酢酸－マロン酸経路の複合経路"
+        },
+        {
+          "id": "c",
+          "text": "酢酸－マロン酸経路"
+        },
+        {
+          "id": "d",
+          "text": "イソプレノイド経路（メバロン酸経路）"
+        }
+      ],
+      "answer": "b",
+      "explanation": "シキミ酸経路と酢酸－マロン酸経路の複合経路です。",
+      "sourcePage": "2025中間 問3"
+    },
+    {
+      "id": "q08",
+      "type": "fill",
+      "prompt": "ショーガオールを含む生薬は [[blank]] である。",
+      "tags": [
+        "origin"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "乾姜（カンキョウ）"
+        },
+        {
+          "id": "b",
+          "text": "桂皮"
+        },
+        {
+          "id": "c",
+          "text": "八角"
+        }
+      ],
+      "answer": "a",
+      "explanation": "生薬は乾姜です。",
+      "sourcePage": "2025中間 問3"
+    },
+    {
+      "id": "q09",
+      "type": "choice",
+      "prompt": "ショーガオールを含む生薬の基原植物と科の組み合わせはどれか。",
+      "tags": [
+        "origin"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "ショウガ ― セリ科"
+        },
+        {
+          "id": "b",
+          "text": "ポドフィルム ― メギ科"
+        },
+        {
+          "id": "c",
+          "text": "ムラサキ ― ショウガ科"
+        },
+        {
+          "id": "d",
+          "text": "ショウガ ― ショウガ科"
+        }
+      ],
+      "answer": "d",
+      "explanation": "基原植物はショウガ、科はショウガ科です。",
+      "sourcePage": "2025中間 問3"
+    },
+    {
+      "id": "q10",
+      "type": "truefalse",
+      "prompt": "ショーガオールの構造には、メトキシ基とフェノール性ヒドロキシ基をもつ芳香環があり、炭素鎖にはカルボニル基と炭素－炭素二重結合がある。",
+      "tags": [
+        "structure"
+      ],
+      "answer": true,
+      "explanation": "問題用紙の構造式 II のとおりです。",
+      "sourcePage": "2025中間 問3"
+    },
+    {
+      "id": "q11",
+      "type": "choice",
+      "prompt": "放線菌 Actinoplanes 属の培養液から発見され、医薬品として用いられる疑似オリゴ糖類（化合物 III）はどれか。",
+      "tags": [
+        "origin"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "ストレプトマイシン"
+        },
+        {
+          "id": "b",
+          "text": "アカルボース"
+        },
+        {
+          "id": "c",
+          "text": "マンニトール"
+        },
+        {
+          "id": "d",
+          "text": "タクロリムス"
+        }
+      ],
+      "answer": "b",
+      "explanation": "化合物 III はアカルボースです。",
+      "sourcePage": "2025中間 問3"
+    },
+    {
+      "id": "q12",
+      "type": "choice",
+      "prompt": "アカルボースの薬効用途はどれか。",
+      "tags": [
+        "mechanism"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "2型糖尿病治療薬"
+        },
+        {
+          "id": "b",
+          "text": "抗インフルエンザウイルス薬"
+        },
+        {
+          "id": "c",
+          "text": "浸透圧性利尿薬"
+        },
+        {
+          "id": "d",
+          "text": "抗結核薬"
+        }
+      ],
+      "answer": "a",
+      "explanation": "2型糖尿病治療薬です。",
+      "sourcePage": "2025中間 問3"
+    },
+    {
+      "id": "q13",
+      "type": "fill",
+      "prompt": "アカルボースの作用機序は [[blank]] 阻害である（解答用紙の表記）。",
+      "tags": [
+        "mechanism"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "α-グリコシダーゼ"
+        },
+        {
+          "id": "b",
+          "text": "β-グリコシダーゼ"
+        },
+        {
+          "id": "c",
+          "text": "ノイラミニダーゼ"
+        }
+      ],
+      "answer": "a",
+      "explanation": "α-グリコシダーゼ阻害です。",
+      "sourcePage": "2025中間 問3"
+    },
+    {
+      "id": "q14",
+      "type": "choice",
+      "prompt": "アカルボースの構造で、破線で囲まれた部分の結合様式（配置・結合位置）はどれか。",
+      "tags": [
+        "structure"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "β-(1→4) 結合"
+        },
+        {
+          "id": "b",
+          "text": "α-(1→6) 結合"
+        },
+        {
+          "id": "c",
+          "text": "α-(1→4) 結合"
+        },
+        {
+          "id": "d",
+          "text": "β-(1→6) 結合"
+        }
+      ],
+      "answer": "c",
+      "explanation": "α-(1→4) 結合です。",
+      "sourcePage": "2025中間 問3"
+    },
+    {
+      "id": "q15",
+      "type": "truefalse",
+      "prompt": "アカルボースの構造で、* で示した不斉炭素の絶対立体配置は S である。",
+      "tags": [
+        "stereo"
+      ],
+      "answer": true,
+      "explanation": "正しい記述です（模範解答 S）。",
+      "sourcePage": "2025中間 問3"
+    }
+  ]
+}

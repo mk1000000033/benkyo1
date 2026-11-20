@@ -1,0 +1,381 @@
+{
+  "id": "natural-products-2025-q5",
+  "version": 1,
+  "subjectId": "natural-products",
+  "title": "2025年度 大問5 マンニトール・タクロリムス・プラバスタチン ほか",
+  "lectureDate": null,
+  "group": "2025年度 中間試験",
+  "published": true,
+  "sourceMaterial": "2025年度 天然物化学 中間試験（問題用紙・模範解答）とユーザー作成の知識データ",
+  "questions": [
+    {
+      "id": "q01",
+      "type": "fill",
+      "prompt": "D-[[blank]] は、浸透圧性利尿薬として用いられる糖アルコールである。",
+      "tags": [
+        "basics"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "ソルビトール"
+        },
+        {
+          "id": "b",
+          "text": "キシリトール"
+        },
+        {
+          "id": "c",
+          "text": "マンニトール"
+        }
+      ],
+      "answer": "c",
+      "explanation": "D-マンニトールです（問5 [A]）。",
+      "sourcePage": "2025中間 問5"
+    },
+    {
+      "id": "q02",
+      "type": "choice",
+      "prompt": "虫歯予防の目的で代用甘味料として用いられる糖アルコールはどれか。",
+      "tags": [
+        "basics"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "キシリトール"
+        },
+        {
+          "id": "b",
+          "text": "D-ソルビトール"
+        },
+        {
+          "id": "c",
+          "text": "D-マンニトール"
+        },
+        {
+          "id": "d",
+          "text": "シアル酸"
+        }
+      ],
+      "answer": "a",
+      "explanation": "キシリトール＝代用甘味料（虫歯予防）、D-ソルビトール＝甘味料（食品添加物）、D-マンニトール＝浸透圧性利尿薬です。",
+      "sourcePage": "2025中間 問5"
+    },
+    {
+      "id": "q03",
+      "type": "choice",
+      "prompt": "カルシニューリンのホスファターゼ活性を阻害してサイトカイン遺伝子の発現を抑制する、マクロライド系抗生物質はどれか。",
+      "tags": [
+        "antibiotic"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "エリスロマイシン"
+        },
+        {
+          "id": "b",
+          "text": "ストレプトマイシン"
+        },
+        {
+          "id": "c",
+          "text": "プラバスタチン"
+        },
+        {
+          "id": "d",
+          "text": "タクロリムス"
+        }
+      ],
+      "answer": "d",
+      "explanation": "タクロリムスです（問5 [B]）。",
+      "sourcePage": "2025中間 問5"
+    },
+    {
+      "id": "q04",
+      "type": "choice",
+      "prompt": "タクロリムスの使用目的として正しいものはどれか。",
+      "tags": [
+        "mechanism"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "結核の治療"
+        },
+        {
+          "id": "b",
+          "text": "脂質異常症の治療"
+        },
+        {
+          "id": "c",
+          "text": "臓器移植や自己免疫疾患の治療"
+        },
+        {
+          "id": "d",
+          "text": "浸透圧性利尿"
+        }
+      ],
+      "answer": "c",
+      "explanation": "臓器移植や自己免疫疾患の治療に使われます。",
+      "sourcePage": "2025中間 問5"
+    },
+    {
+      "id": "q05",
+      "type": "truefalse",
+      "prompt": "タクロリムスは、カルシニューリンのホスファターゼ活性を阻害して、サイトカイン遺伝子の発現を抑制する。",
+      "tags": [
+        "mechanism"
+      ],
+      "answer": true,
+      "explanation": "正しい記述です。",
+      "sourcePage": "2025中間 問5"
+    },
+    {
+      "id": "q06",
+      "type": "choice",
+      "prompt": "試験でスタチン系と呼ばれる抗生物質として出題された化合物はどれか。",
+      "tags": [
+        "antibiotic"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "プラバスタチン"
+        },
+        {
+          "id": "b",
+          "text": "タクロリムス"
+        },
+        {
+          "id": "c",
+          "text": "ジクマロール"
+        },
+        {
+          "id": "d",
+          "text": "ストレプトマイシン"
+        }
+      ],
+      "answer": "a",
+      "explanation": "プラバスタチンです（問5 [C]）。",
+      "sourcePage": "2025中間 問5"
+    },
+    {
+      "id": "q07",
+      "type": "choice",
+      "prompt": "プラバスタチン自体の生合成経路はどれか（問5 [D]）。",
+      "tags": [
+        "pathway"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "イソプレノイド経路（メバロン酸経路）"
+        },
+        {
+          "id": "b",
+          "text": "シキミ酸経路"
+        },
+        {
+          "id": "c",
+          "text": "複合経路（シキミ酸経路＋酢酸－マロン酸経路）"
+        },
+        {
+          "id": "d",
+          "text": "酢酸－マロン酸経路"
+        }
+      ],
+      "answer": "d",
+      "explanation": "プラバスタチンは酢酸－マロン酸経路で生合成されます。",
+      "sourcePage": "2025中間 問5"
+    },
+    {
+      "id": "q08",
+      "type": "choice",
+      "prompt": "コレステロールの生合成経路はどれか（問5 [E]）。",
+      "tags": [
+        "pathway"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "酢酸－マロン酸経路"
+        },
+        {
+          "id": "b",
+          "text": "シキミ酸経路"
+        },
+        {
+          "id": "c",
+          "text": "イソプレノイド経路（メバロン酸経路）"
+        },
+        {
+          "id": "d",
+          "text": "複合経路（シキミ酸経路＋酢酸－マロン酸経路）"
+        }
+      ],
+      "answer": "c",
+      "explanation": "コレステロールはイソプレノイド（メバロン酸）経路で生合成されます。",
+      "sourcePage": "2025中間 問5"
+    },
+    {
+      "id": "q09",
+      "type": "truefalse",
+      "prompt": "プラバスタチンが阻害する HMG-CoA還元酵素は、コレステロールの生合成の初期段階にある。",
+      "tags": [
+        "mechanism"
+      ],
+      "answer": true,
+      "explanation": "正しい記述です。",
+      "sourcePage": "2025中間 問5"
+    },
+    {
+      "id": "q10",
+      "type": "fill",
+      "prompt": "プラバスタチンは [[blank]] の治療薬として用いられる。",
+      "tags": [
+        "mechanism"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "2型糖尿病"
+        },
+        {
+          "id": "b",
+          "text": "結核"
+        },
+        {
+          "id": "c",
+          "text": "脂質異常症"
+        }
+      ],
+      "answer": "c",
+      "explanation": "脂質異常症の治療薬です（問5 [F]）。",
+      "sourcePage": "2025中間 問5"
+    },
+    {
+      "id": "q11",
+      "type": "choice",
+      "prompt": "放線菌 Streptomyces griseus から最初に単離されたアミノグリコシド系抗生物質はどれか。",
+      "tags": [
+        "antibiotic"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "タクロリムス"
+        },
+        {
+          "id": "b",
+          "text": "アカルボース"
+        },
+        {
+          "id": "c",
+          "text": "エリスロマイシン"
+        },
+        {
+          "id": "d",
+          "text": "ストレプトマイシン"
+        }
+      ],
+      "answer": "d",
+      "explanation": "ストレプトマイシンです（問5 [G]）。",
+      "sourcePage": "2025中間 問5"
+    },
+    {
+      "id": "q12",
+      "type": "truefalse",
+      "prompt": "ストレプトマイシンは、結核菌などに対して有効な殺菌作用を示す。",
+      "tags": [
+        "antibiotic"
+      ],
+      "answer": true,
+      "explanation": "正しい記述です。",
+      "sourcePage": "2025中間 問5"
+    },
+    {
+      "id": "q13",
+      "type": "choice",
+      "prompt": "大麻の主活性成分で、時間や空間感覚の変調、記憶障害、多幸感、鎮痛、幻覚などを引き起こす化合物はどれか。",
+      "tags": [
+        "origin"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "シコニン"
+        },
+        {
+          "id": "b",
+          "text": "テトラヒドロカンナビノール"
+        },
+        {
+          "id": "c",
+          "text": "レスベラトロール"
+        },
+        {
+          "id": "d",
+          "text": "ベルガモチン"
+        }
+      ],
+      "answer": "b",
+      "explanation": "テトラヒドロカンナビノール（THC）です（問5 [H]）。",
+      "sourcePage": "2025中間 問5"
+    },
+    {
+      "id": "q14",
+      "type": "choice",
+      "prompt": "2025年度の試験で、ジクマロールが生成するとされたのはどれか。",
+      "tags": [
+        "origin"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "ムラサキウマゴヤシなどの牧草が腐敗したとき"
+        },
+        {
+          "id": "b",
+          "text": "大麻を加熱したとき"
+        },
+        {
+          "id": "c",
+          "text": "八角を発酵させたとき"
+        },
+        {
+          "id": "d",
+          "text": "ムラサキの根を乾燥させたとき"
+        }
+      ],
+      "answer": "a",
+      "explanation": "ムラサキウマゴヤシなどの牧草が腐敗したときに生成します。",
+      "sourcePage": "2025中間 問5"
+    },
+    {
+      "id": "q15",
+      "type": "fill",
+      "prompt": "ジクマロールは [[blank]] 作用を示すので、これをもとにワーファリン（ワルファリンカリウム）が創製された。",
+      "tags": [
+        "mechanism"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "免疫抑制"
+        },
+        {
+          "id": "b",
+          "text": "浸透圧性利尿"
+        },
+        {
+          "id": "c",
+          "text": "血液凝固阻害"
+        }
+      ],
+      "answer": "c",
+      "explanation": "血液凝固阻害作用です（問5 [I]）。",
+      "sourcePage": "2025中間 問5"
+    }
+  ]
+}

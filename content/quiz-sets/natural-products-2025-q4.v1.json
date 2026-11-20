@@ -1,0 +1,300 @@
+{
+  "id": "natural-products-2025-q4",
+  "version": 1,
+  "subjectId": "natural-products",
+  "title": "2025年度 大問4 ドキソルビシン・センノシド（誤り訂正）",
+  "lectureDate": null,
+  "group": "2025年度 中間試験",
+  "published": true,
+  "sourceMaterial": "2025年度 天然物化学 中間試験（問題用紙・模範解答）とユーザー作成の知識データ",
+  "questions": [
+    {
+      "id": "q01",
+      "type": "choice",
+      "prompt": "試験 問4【1】で「テトラサイクリン塩酸塩」と書かれていた化合物の、正しい名称はどれか。",
+      "tags": [
+        "antibiotic"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "ドキソルビシン"
+        },
+        {
+          "id": "b",
+          "text": "テトラサイクリン"
+        },
+        {
+          "id": "c",
+          "text": "センノシド"
+        },
+        {
+          "id": "d",
+          "text": "エモジン"
+        }
+      ],
+      "answer": "a",
+      "explanation": "正しくはドキソルビシン（塩酸塩）です。",
+      "sourcePage": "2025中間 問4"
+    },
+    {
+      "id": "q02",
+      "type": "choice",
+      "prompt": "ドキソルビシンの用途はどれか。",
+      "tags": [
+        "mechanism",
+        "antibiotic"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "抗菌薬"
+        },
+        {
+          "id": "b",
+          "text": "緩下剤"
+        },
+        {
+          "id": "c",
+          "text": "抗凝血薬"
+        },
+        {
+          "id": "d",
+          "text": "抗がん薬"
+        }
+      ],
+      "answer": "d",
+      "explanation": "抗がん薬です。試験では「抗菌薬」が誤りとして出されました。",
+      "sourcePage": "2025中間 問4"
+    },
+    {
+      "id": "q03",
+      "type": "truefalse",
+      "prompt": "ドキソルビシンの母骨格は、酢酸－マロン酸経路で生合成される。",
+      "tags": [
+        "pathway"
+      ],
+      "answer": true,
+      "explanation": "正しい記述です（試験の選択肢 C）。",
+      "sourcePage": "2025中間 問4"
+    },
+    {
+      "id": "q04",
+      "type": "choice",
+      "prompt": "ドキソルビシンの構造中に含まれる骨格はどれか。",
+      "tags": [
+        "structure"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "ナフトキノン"
+        },
+        {
+          "id": "b",
+          "text": "アントラキノン"
+        },
+        {
+          "id": "c",
+          "text": "クマリン"
+        },
+        {
+          "id": "d",
+          "text": "スチルベン"
+        }
+      ],
+      "answer": "b",
+      "explanation": "アントラキノンです。試験では「ナフトキノン」が誤りとして出されました。",
+      "sourcePage": "2025中間 問4"
+    },
+    {
+      "id": "q05",
+      "type": "fill",
+      "prompt": "ドキソルビシンの構造には、不斉炭素が [[blank]] 個存在する。",
+      "tags": [
+        "stereo"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "6"
+        },
+        {
+          "id": "b",
+          "text": "5"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        },
+        {
+          "id": "d",
+          "text": "7"
+        }
+      ],
+      "answer": "a",
+      "explanation": "6 個です（試験の選択肢 E は正しい記述）。",
+      "sourcePage": "2025中間 問4"
+    },
+    {
+      "id": "q06",
+      "type": "truefalse",
+      "prompt": "ドキソルビシンのアミノ糖が結合している母骨格の不斉炭素の絶対立体配置は S である。",
+      "tags": [
+        "stereo"
+      ],
+      "answer": true,
+      "explanation": "正しい記述です（試験の選択肢 F）。",
+      "sourcePage": "2025中間 問4"
+    },
+    {
+      "id": "q07",
+      "type": "choice",
+      "prompt": "試験 問4【2】で「エモジン」と書かれていた化合物（グルコースが 2 つ結合した二量体）の、正しい名称はどれか。",
+      "tags": [
+        "origin"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "エモジン"
+        },
+        {
+          "id": "b",
+          "text": "ドキソルビシン"
+        },
+        {
+          "id": "c",
+          "text": "センノシド"
+        },
+        {
+          "id": "d",
+          "text": "シコニン"
+        }
+      ],
+      "answer": "c",
+      "explanation": "正しくはセンノシドです。",
+      "sourcePage": "2025中間 問4"
+    },
+    {
+      "id": "q08",
+      "type": "truefalse",
+      "prompt": "センノシドは、生薬の大黄に含まれる。",
+      "tags": [
+        "origin"
+      ],
+      "answer": true,
+      "explanation": "正しい記述です（試験の選択肢 B）。",
+      "sourcePage": "2025中間 問4"
+    },
+    {
+      "id": "q09",
+      "type": "truefalse",
+      "prompt": "センノシドは、緩下剤として用いられる。",
+      "tags": [
+        "mechanism"
+      ],
+      "answer": true,
+      "explanation": "正しい記述です（試験の選択肢 C）。",
+      "sourcePage": "2025中間 問4"
+    },
+    {
+      "id": "q10",
+      "type": "choice",
+      "prompt": "センノシドの骨格はどれか。",
+      "tags": [
+        "structure"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "アントラキノンの単量体"
+        },
+        {
+          "id": "b",
+          "text": "ナフトキノンの二量体"
+        },
+        {
+          "id": "c",
+          "text": "クマリンの二量体"
+        },
+        {
+          "id": "d",
+          "text": "アンスロンの二量体"
+        }
+      ],
+      "answer": "d",
+      "explanation": "アンスロンの二量体です（試験の選択肢 D は正しい記述）。",
+      "sourcePage": "2025中間 問4"
+    },
+    {
+      "id": "q11",
+      "type": "choice",
+      "prompt": "センノシドの骨格の生合成経路はどれか。",
+      "tags": [
+        "pathway"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "シキミ酸経路"
+        },
+        {
+          "id": "b",
+          "text": "イソプレノイド経路（メバロン酸経路）"
+        },
+        {
+          "id": "c",
+          "text": "酢酸－マロン酸経路"
+        },
+        {
+          "id": "d",
+          "text": "複合経路（シキミ酸経路＋酢酸－マロン酸経路）"
+        }
+      ],
+      "answer": "c",
+      "explanation": "酢酸－マロン酸経路です。試験では「シキミ酸経路」が誤りとして出されました。",
+      "sourcePage": "2025中間 問4"
+    },
+    {
+      "id": "q12",
+      "type": "truefalse",
+      "prompt": "センノシドの構造で、★印（*）を付けた不斉炭素の絶対立体配置は S である。",
+      "tags": [
+        "stereo"
+      ],
+      "answer": false,
+      "explanation": "模範解答では R です。",
+      "sourcePage": "2025中間 問4"
+    },
+    {
+      "id": "q13",
+      "type": "choice",
+      "prompt": "試験の誤った語句と、正しい訂正の組み合わせとして正しいものはどれか。",
+      "tags": [
+        "structure"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "ナフトキノン → アントラキノン"
+        },
+        {
+          "id": "b",
+          "text": "大黄 → センナ"
+        },
+        {
+          "id": "c",
+          "text": "酢酸－マロン酸経路 → シキミ酸経路"
+        },
+        {
+          "id": "d",
+          "text": "R → S"
+        }
+      ],
+      "answer": "a",
+      "explanation": "訂正は【1】テトラサイクリン→ドキソルビシン、抗菌薬→抗がん薬、ナフトキノン→アントラキノン、【2】エモジン→センノシド、シキミ酸経路→酢酸－マロン酸経路、S→R です。",
+      "sourcePage": "2025中間 問4"
+    }
+  ]
+}
