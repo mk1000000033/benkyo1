@@ -1,0 +1,339 @@
+{
+  "id": "natural-products-2022-q7",
+  "version": 1,
+  "subjectId": "natural-products",
+  "title": "2022年度 大問7 センノシド・ポドフィロトキシン・セサミン・クロモグリク酸・アムホテリシンB",
+  "lectureDate": null,
+  "group": "2022年度 中間試験",
+  "published": true,
+  "sourceMaterial": "2022年度 天然物化学 中間試験（問題用紙・模範解答）とユーザー作成の知識データ",
+  "questions": [
+    {
+      "id": "q01",
+      "type": "fill",
+      "prompt": "エモジンはダイオウ、センナなどの瀉下薬に含まれるが作用は弱い。活性本態は二量体型の [[blank]] 類である。",
+      "tags": [
+        "origin"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "エモジン"
+        },
+        {
+          "id": "b",
+          "text": "センノシド"
+        },
+        {
+          "id": "c",
+          "text": "アンスロン"
+        }
+      ],
+      "answer": "b",
+      "explanation": "活性本態は二量体型のセンノシド類です（問7 [A]）。",
+      "sourcePage": "2022中間 問7"
+    },
+    {
+      "id": "q02",
+      "type": "choice",
+      "prompt": "センノシド類は、腸内細菌により何型となって作用するか。",
+      "tags": [
+        "structure"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "フラボン型"
+        },
+        {
+          "id": "b",
+          "text": "クマリン型"
+        },
+        {
+          "id": "c",
+          "text": "アンスロン型"
+        },
+        {
+          "id": "d",
+          "text": "リグナン型"
+        }
+      ],
+      "answer": "c",
+      "explanation": "腸内細菌によりアンスロン型となって作用します（問7 [B]）。",
+      "sourcePage": "2022中間 問7"
+    },
+    {
+      "id": "q03",
+      "type": "truefalse",
+      "prompt": "エモジンは、ダイオウやセンナの瀉下作用の活性本態であり、強い作用をもつ。",
+      "tags": [
+        "mechanism"
+      ],
+      "answer": false,
+      "explanation": "エモジンの作用は弱く、活性本態は二量体型のセンノシド類です。",
+      "sourcePage": "2022中間 問7"
+    },
+    {
+      "id": "q04",
+      "type": "choice",
+      "prompt": "抗癌剤エトポシドの開発の基となった、メギ科植物 Podophyllum peltatum に含まれる化合物はどれか。",
+      "tags": [
+        "origin",
+        "antibiotic"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "ポドフィロトキシン"
+        },
+        {
+          "id": "b",
+          "text": "セサミン"
+        },
+        {
+          "id": "c",
+          "text": "ケリン"
+        },
+        {
+          "id": "d",
+          "text": "エモジン"
+        }
+      ],
+      "answer": "a",
+      "explanation": "ポドフィロトキシンです（問7 [C]）。",
+      "sourcePage": "2022中間 問7"
+    },
+    {
+      "id": "q05",
+      "type": "choice",
+      "prompt": "エトポシドの作用機序はどれか。",
+      "tags": [
+        "mechanism",
+        "antibiotic"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "ノイラミニダーゼの阻害"
+        },
+        {
+          "id": "b",
+          "text": "HMG-CoA還元酵素の阻害"
+        },
+        {
+          "id": "c",
+          "text": "エルゴステロールへの結合"
+        },
+        {
+          "id": "d",
+          "text": "DNAトポイソメラーゼIIの阻害"
+        }
+      ],
+      "answer": "d",
+      "explanation": "エトポシドは DNAトポイソメラーゼII を阻害します。",
+      "sourcePage": "2022中間 問7"
+    },
+    {
+      "id": "q06",
+      "type": "truefalse",
+      "prompt": "エトポシドの作用は、もとのポドフィロトキシンの作用と同じである。",
+      "tags": [
+        "mechanism",
+        "antibiotic"
+      ],
+      "answer": false,
+      "explanation": "もとの化合物とは異なる作用です。",
+      "sourcePage": "2022中間 問7"
+    },
+    {
+      "id": "q07",
+      "type": "fill",
+      "prompt": "ゴマ（Sesamum indicum）の種子油に含まれ、過酸化脂質の生成を抑制する化合物は [[blank]] である。",
+      "tags": [
+        "origin"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "ケリン"
+        },
+        {
+          "id": "b",
+          "text": "セサミン"
+        },
+        {
+          "id": "c",
+          "text": "ポドフィロトキシン"
+        }
+      ],
+      "answer": "b",
+      "explanation": "セサミンです（問7 [D]）。",
+      "sourcePage": "2022中間 問7"
+    },
+    {
+      "id": "q08",
+      "type": "choice",
+      "prompt": "試験の問題文で、Sesamum indicum が属するとされた科はどれか。",
+      "tags": [
+        "origin"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "ゴマ科"
+        },
+        {
+          "id": "b",
+          "text": "メギ科"
+        },
+        {
+          "id": "c",
+          "text": "セリ科"
+        },
+        {
+          "id": "d",
+          "text": "シソ科"
+        }
+      ],
+      "answer": "a",
+      "explanation": "ゴマ科ゴマ Sesamum indicum と書かれています。",
+      "sourcePage": "2022中間 問7"
+    },
+    {
+      "id": "q09",
+      "type": "choice",
+      "prompt": "アンミ実（Ammi bisnaga）に含まれ、平滑筋弛緩作用をもつ化合物はどれか。",
+      "tags": [
+        "origin"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "セサミン"
+        },
+        {
+          "id": "b",
+          "text": "エモジン"
+        },
+        {
+          "id": "c",
+          "text": "バイカリン"
+        },
+        {
+          "id": "d",
+          "text": "ケリン"
+        }
+      ],
+      "answer": "d",
+      "explanation": "アンミ実に含まれるケリンには平滑筋弛緩作用があります。",
+      "sourcePage": "2022中間 問7"
+    },
+    {
+      "id": "q10",
+      "type": "choice",
+      "prompt": "ケリンを基に創製された気管支喘息治療薬（抗アレルギー薬）はどれか。",
+      "tags": [
+        "origin"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "アンレキサノクス"
+        },
+        {
+          "id": "b",
+          "text": "アムホテリシンB"
+        },
+        {
+          "id": "c",
+          "text": "クロモグリク酸ナトリウム"
+        },
+        {
+          "id": "d",
+          "text": "エトポシド"
+        }
+      ],
+      "answer": "c",
+      "explanation": "クロモグリク酸ナトリウムです（問7 [E]）。",
+      "sourcePage": "2022中間 問7"
+    },
+    {
+      "id": "q11",
+      "type": "truefalse",
+      "prompt": "アンミ実（Ammi bisnaga）はセリ科の植物である。",
+      "tags": [
+        "origin"
+      ],
+      "answer": true,
+      "explanation": "正しい記述です。",
+      "sourcePage": "2022中間 問7"
+    },
+    {
+      "id": "q12",
+      "type": "choice",
+      "prompt": "アムホテリシンBの分類として正しいものはどれか。",
+      "tags": [
+        "antibiotic"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "ポリエンマクロライド系抗真菌性抗生物質"
+        },
+        {
+          "id": "b",
+          "text": "アミノグリコシド系抗生物質"
+        },
+        {
+          "id": "c",
+          "text": "アンサマイシン系抗生物質"
+        },
+        {
+          "id": "d",
+          "text": "抗悪性腫瘍薬"
+        }
+      ],
+      "answer": "a",
+      "explanation": "アムホテリシンB はポリエンマクロライド系抗真菌性抗生物質です（問7 [F]）。",
+      "sourcePage": "2022中間 問7"
+    },
+    {
+      "id": "q13",
+      "type": "fill",
+      "prompt": "アムホテリシンBは、真菌細胞膜中の [[blank]] に結合して障害を引き起こすことで作用を示す。",
+      "tags": [
+        "mechanism",
+        "antibiotic"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "シアル酸"
+        },
+        {
+          "id": "b",
+          "text": "エルゴステロール"
+        },
+        {
+          "id": "c",
+          "text": "グルクロン酸"
+        }
+      ],
+      "answer": "b",
+      "explanation": "エルゴステロールに結合して真菌細胞膜を障害します。",
+      "sourcePage": "2022中間 問7"
+    },
+    {
+      "id": "q14",
+      "type": "truefalse",
+      "prompt": "アムホテリシンBは、放線菌によって生産される。",
+      "tags": [
+        "origin",
+        "antibiotic"
+      ],
+      "answer": true,
+      "explanation": "正しい記述です。",
+      "sourcePage": "2022中間 問7"
+    }
+  ]
+}

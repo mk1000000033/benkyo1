@@ -1,0 +1,281 @@
+{
+  "id": "natural-products-2022-q8",
+  "version": 1,
+  "subjectId": "natural-products",
+  "title": "2022年度 大問8 クルクミン・抗生物質・THC・アカルボースの正誤訂正",
+  "lectureDate": null,
+  "group": "2022年度 中間試験",
+  "published": true,
+  "sourceMaterial": "2022年度 天然物化学 中間試験（問題用紙・模範解答）とユーザー作成の知識データ",
+  "questions": [
+    {
+      "id": "q01",
+      "type": "choice",
+      "prompt": "ジアリルヘプタノイドであるクルクミンを黄色色素成分として含む生薬はどれか。",
+      "tags": [
+        "origin"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "ウコン"
+        },
+        {
+          "id": "b",
+          "text": "トコン"
+        },
+        {
+          "id": "c",
+          "text": "カンキョウ"
+        },
+        {
+          "id": "d",
+          "text": "ショウキョウ"
+        }
+      ],
+      "answer": "a",
+      "explanation": "ウコンです。試験では「トコン」が誤りとして出されました。",
+      "sourcePage": "2022中間 問8"
+    },
+    {
+      "id": "q02",
+      "type": "fill",
+      "prompt": "ショーガオール類は [[blank]] の成分である。",
+      "tags": [
+        "origin"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "ショウキョウ"
+        },
+        {
+          "id": "b",
+          "text": "ウコン"
+        },
+        {
+          "id": "c",
+          "text": "カンキョウ"
+        }
+      ],
+      "answer": "c",
+      "explanation": "ショーガオール類＝カンキョウ、ギンゲロール類＝ショウキョウです。",
+      "sourcePage": "2022中間 問8"
+    },
+    {
+      "id": "q03",
+      "type": "choice",
+      "prompt": "ギンゲロール類を含む生薬はどれか。",
+      "tags": [
+        "origin"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "カンキョウ"
+        },
+        {
+          "id": "b",
+          "text": "ウコン"
+        },
+        {
+          "id": "c",
+          "text": "ショウキョウ"
+        },
+        {
+          "id": "d",
+          "text": "トコン"
+        }
+      ],
+      "answer": "c",
+      "explanation": "ギンゲロール類はショウキョウに含まれます。",
+      "sourcePage": "2022中間 問8"
+    },
+    {
+      "id": "q04",
+      "type": "truefalse",
+      "prompt": "クルクミンはジアリルヘプタノイドである。",
+      "tags": [
+        "structure"
+      ],
+      "answer": true,
+      "explanation": "正しい記述です。",
+      "sourcePage": "2022中間 問8"
+    },
+    {
+      "id": "q05",
+      "type": "choice",
+      "prompt": "グラム陽性球菌、リケッチア、クラミジアなどに有効なエリスロマイシンの分類はどれか。",
+      "tags": [
+        "antibiotic"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "マクロライド系抗生物質"
+        },
+        {
+          "id": "b",
+          "text": "ポリエーテル系抗生物質"
+        },
+        {
+          "id": "c",
+          "text": "アミノグリコシド系抗生物質"
+        },
+        {
+          "id": "d",
+          "text": "アンサマイシン系抗生物質"
+        }
+      ],
+      "answer": "a",
+      "explanation": "マクロライド系です。試験では「ポリエーテル系」が誤りとして出されました。",
+      "sourcePage": "2022中間 問8"
+    },
+    {
+      "id": "q06",
+      "type": "truefalse",
+      "prompt": "リファンピシンは、リファマイシンから半合成される、結核に有効なアンサマイシン系抗生物質である。",
+      "tags": [
+        "antibiotic"
+      ],
+      "answer": true,
+      "explanation": "正しい記述です。",
+      "sourcePage": "2022中間 問8"
+    },
+    {
+      "id": "q07",
+      "type": "choice",
+      "prompt": "テトラヒドロカンナビノールは何の主活性成分か。",
+      "tags": [
+        "origin"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "ケシ"
+        },
+        {
+          "id": "b",
+          "text": "ウコン"
+        },
+        {
+          "id": "c",
+          "text": "大麻（アサ）"
+        },
+        {
+          "id": "d",
+          "text": "ショウキョウ"
+        }
+      ],
+      "answer": "c",
+      "explanation": "大麻（アサ）です。試験では「ケシ」が誤りとして出されました。",
+      "sourcePage": "2022中間 問8"
+    },
+    {
+      "id": "q08",
+      "type": "truefalse",
+      "prompt": "テトラヒドロカンナビノールは、時間や空間感覚の変調をもたらし、記憶障害、多幸感、鎮痛、幻覚などの精神神経反応を引き起こす。",
+      "tags": [
+        "mechanism"
+      ],
+      "answer": true,
+      "explanation": "正しい記述です。",
+      "sourcePage": "2022中間 問8"
+    },
+    {
+      "id": "q09",
+      "type": "choice",
+      "prompt": "ストレプトマイシンやカナマイシンの分類はどれか。",
+      "tags": [
+        "antibiotic"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "アミノグリコシド系"
+        },
+        {
+          "id": "b",
+          "text": "マクロライド系"
+        },
+        {
+          "id": "c",
+          "text": "ポリエンマクロライド系"
+        },
+        {
+          "id": "d",
+          "text": "アンサマイシン系"
+        }
+      ],
+      "answer": "a",
+      "explanation": "アミノグリコシド系です。試験では「マクロライド系」が誤りとして出されました。",
+      "sourcePage": "2022中間 問8"
+    },
+    {
+      "id": "q10",
+      "type": "truefalse",
+      "prompt": "ストレプトマイシンやカナマイシンは、Streptomyces 属の放線菌類が生産する抗生物質であり、抗結核菌作用を示す。",
+      "tags": [
+        "origin",
+        "antibiotic"
+      ],
+      "answer": true,
+      "explanation": "正しい記述です。",
+      "sourcePage": "2022中間 問8"
+    },
+    {
+      "id": "q11",
+      "type": "fill",
+      "prompt": "オリゴ糖構造を有するアカルボースは、[[blank]] 阻害作用を有する（試験の表記）。",
+      "tags": [
+        "mechanism"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "β-グリコシダーゼ"
+        },
+        {
+          "id": "b",
+          "text": "HMG-CoA還元酵素"
+        },
+        {
+          "id": "c",
+          "text": "α-グリコシダーゼ"
+        }
+      ],
+      "answer": "c",
+      "explanation": "α-グリコシダーゼ阻害作用です。試験では「β」が誤りとして出されました。",
+      "sourcePage": "2022中間 問8"
+    },
+    {
+      "id": "q12",
+      "type": "choice",
+      "prompt": "アカルボースについて正しい記述はどれか。",
+      "tags": [
+        "mechanism"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "食後の服用により食前の低血糖を改善する"
+        },
+        {
+          "id": "b",
+          "text": "食直前の服用により食後の過血糖を改善するので、糖尿病治療薬として用いられる"
+        },
+        {
+          "id": "c",
+          "text": "抗結核菌作用を示すアミノグリコシド系抗生物質である"
+        },
+        {
+          "id": "d",
+          "text": "真菌細胞膜のエルゴステロールに結合して作用する"
+        }
+      ],
+      "answer": "b",
+      "explanation": "アカルボースは食直前の服用で食後の過血糖を改善する糖尿病治療薬です。",
+      "sourcePage": "2022中間 問8"
+    }
+  ]
+}

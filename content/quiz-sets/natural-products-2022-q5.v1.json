@@ -1,0 +1,260 @@
+{
+  "id": "natural-products-2022-q5",
+  "version": 1,
+  "subjectId": "natural-products",
+  "title": "2022年度 大問5 ドキソルビシン塩酸塩・プラバスタチンナトリウム",
+  "lectureDate": null,
+  "group": "2022年度 中間試験",
+  "published": true,
+  "sourceMaterial": "2022年度 天然物化学 中間試験（問題用紙・模範解答）とユーザー作成の知識データ",
+  "questions": [
+    {
+      "id": "q01",
+      "type": "choice",
+      "prompt": "試験 問5【1】で「テトラサイクリン塩酸塩」と書かれていた化合物の、正しい名称はどれか。",
+      "tags": [
+        "antibiotic"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "テトラサイクリン塩酸塩"
+        },
+        {
+          "id": "b",
+          "text": "ドキソルビシン塩酸塩"
+        },
+        {
+          "id": "c",
+          "text": "プラバスタチンナトリウム"
+        },
+        {
+          "id": "d",
+          "text": "ワルファリンカリウム"
+        }
+      ],
+      "answer": "b",
+      "explanation": "正しくはドキソルビシン塩酸塩です。名称そのものが誤りとして出された問題でした。",
+      "sourcePage": "2022中間 問5"
+    },
+    {
+      "id": "q02",
+      "type": "choice",
+      "prompt": "ドキソルビシン塩酸塩の用途はどれか。",
+      "tags": [
+        "mechanism",
+        "antibiotic"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "抗悪性腫瘍薬（抗がん剤）"
+        },
+        {
+          "id": "b",
+          "text": "抗菌薬"
+        },
+        {
+          "id": "c",
+          "text": "脂質異常症治療薬"
+        },
+        {
+          "id": "d",
+          "text": "免疫抑制剤"
+        }
+      ],
+      "answer": "a",
+      "explanation": "抗悪性腫瘍薬（抗がん剤）です。試験では「抗菌薬」が誤りとして出されました。",
+      "sourcePage": "2022中間 問5"
+    },
+    {
+      "id": "q03",
+      "type": "truefalse",
+      "prompt": "ドキソルビシン塩酸塩の母骨格は、シキミ酸経路で生合成される。",
+      "tags": [
+        "pathway"
+      ],
+      "answer": false,
+      "explanation": "酢酸－マロン酸経路です。試験では「シキミ酸経路」が誤りとして出されました。",
+      "sourcePage": "2022中間 問5"
+    },
+    {
+      "id": "q04",
+      "type": "fill",
+      "prompt": "ドキソルビシン塩酸塩の構造には、不斉炭素が [[blank]] 個存在する。",
+      "tags": [
+        "stereo"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "5"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "6"
+        },
+        {
+          "id": "d",
+          "text": "7"
+        }
+      ],
+      "answer": "c",
+      "explanation": "不斉炭素は 6 個です（試験の選択肢 D は正しい記述）。",
+      "sourcePage": "2022中間 問5"
+    },
+    {
+      "id": "q05",
+      "type": "truefalse",
+      "prompt": "ドキソルビシン塩酸塩の構造において、アミノ糖が結合している母骨格の不斉炭素の絶対立体配置は S である。",
+      "tags": [
+        "stereo"
+      ],
+      "answer": true,
+      "explanation": "正しい記述です（試験の選択肢 E）。",
+      "sourcePage": "2022中間 問5"
+    },
+    {
+      "id": "q06",
+      "type": "choice",
+      "prompt": "プラバスタチンナトリウムの用途はどれか。",
+      "tags": [
+        "mechanism"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "脂質異常症治療薬（抗高脂血症治療薬）"
+        },
+        {
+          "id": "b",
+          "text": "免疫抑制剤"
+        },
+        {
+          "id": "c",
+          "text": "抗菌薬"
+        },
+        {
+          "id": "d",
+          "text": "抗悪性腫瘍薬"
+        }
+      ],
+      "answer": "a",
+      "explanation": "脂質異常症治療薬です。試験では「免疫抑制剤」が誤りとして出されました。",
+      "sourcePage": "2022中間 問5"
+    },
+    {
+      "id": "q07",
+      "type": "truefalse",
+      "prompt": "プラバスタチンナトリウムの作用機序は、HMG-CoA還元酵素阻害である。",
+      "tags": [
+        "mechanism"
+      ],
+      "answer": true,
+      "explanation": "正しい記述です（試験の選択肢 C）。",
+      "sourcePage": "2022中間 問5"
+    },
+    {
+      "id": "q08",
+      "type": "choice",
+      "prompt": "プラバスタチンナトリウムの母骨格の生合成経路はどれか。",
+      "tags": [
+        "pathway"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "メバロン酸経路"
+        },
+        {
+          "id": "b",
+          "text": "シキミ酸経路"
+        },
+        {
+          "id": "c",
+          "text": "酢酸－マロン酸経路"
+        },
+        {
+          "id": "d",
+          "text": "シキミ酸経路と酢酸－マロン酸経路の複合経路"
+        }
+      ],
+      "answer": "c",
+      "explanation": "酢酸－マロン酸経路です。試験では「メバロン酸経路」が誤りとして出されました。",
+      "sourcePage": "2022中間 問5"
+    },
+    {
+      "id": "q09",
+      "type": "truefalse",
+      "prompt": "プラバスタチンナトリウムの構造において、2-メチルブタン酸がエステル結合している母骨格の不斉炭素の立体配置は R である。",
+      "tags": [
+        "stereo"
+      ],
+      "answer": false,
+      "explanation": "模範解答では S です。試験では「R」が誤りとして出されました。",
+      "sourcePage": "2022中間 問5"
+    },
+    {
+      "id": "q10",
+      "type": "choice",
+      "prompt": "ドキソルビシン塩酸塩とプラバスタチンナトリウムに共通することはどれか。",
+      "tags": [
+        "pathway"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "母骨格が酢酸－マロン酸経路で生合成される"
+        },
+        {
+          "id": "b",
+          "text": "抗悪性腫瘍薬として用いられる"
+        },
+        {
+          "id": "c",
+          "text": "HMG-CoA還元酵素を阻害する"
+        },
+        {
+          "id": "d",
+          "text": "アミノ糖が結合している"
+        }
+      ],
+      "answer": "a",
+      "explanation": "どちらも母骨格は酢酸－マロン酸経路です。用途は異なります。",
+      "sourcePage": "2022中間 問5"
+    },
+    {
+      "id": "q11",
+      "type": "choice",
+      "prompt": "試験の誤った語句と、正しい訂正の組み合わせとして正しいものはどれか。",
+      "tags": [
+        "pathway"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "抗菌薬 → 免疫抑制剤"
+        },
+        {
+          "id": "b",
+          "text": "S → R"
+        },
+        {
+          "id": "c",
+          "text": "ドキソルビシン塩酸塩 → テトラサイクリン塩酸塩"
+        },
+        {
+          "id": "d",
+          "text": "メバロン酸経路 → 酢酸－マロン酸経路"
+        }
+      ],
+      "answer": "d",
+      "explanation": "訂正は、テトラサイクリン塩酸塩→ドキソルビシン塩酸塩、抗菌薬→抗悪性腫瘍薬、シキミ酸経路→酢酸－マロン酸経路、免疫抑制剤→脂質異常症治療薬、メバロン酸経路→酢酸－マロン酸経路、R→S です。",
+      "sourcePage": "2022中間 問5"
+    }
+  ]
+}

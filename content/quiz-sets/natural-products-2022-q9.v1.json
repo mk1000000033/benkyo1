@@ -1,0 +1,302 @@
+{
+  "id": "natural-products-2022-q9",
+  "version": 1,
+  "subjectId": "natural-products",
+  "title": "2022年度 大問9 構造式の特徴と生合成経路",
+  "lectureDate": null,
+  "group": "2022年度 中間試験",
+  "published": true,
+  "sourceMaterial": "2022年度 天然物化学 中間試験（問題用紙・模範解答）とユーザー作成の知識データ",
+  "questions": [
+    {
+      "id": "q01",
+      "type": "choice",
+      "prompt": "類似した 2 つの多環構造と、2 つの糖部分をもつ構造（試験の構造式 L）の化合物はどれか。",
+      "tags": [
+        "structure"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "エリスロマイシン"
+        },
+        {
+          "id": "b",
+          "text": "センノシド類"
+        },
+        {
+          "id": "c",
+          "text": "アムホテリシンB"
+        },
+        {
+          "id": "d",
+          "text": "セサミン"
+        }
+      ],
+      "answer": "b",
+      "explanation": "構造式 L はセンノシド類です（二量体型）。",
+      "sourcePage": "2022中間 問9"
+    },
+    {
+      "id": "q02",
+      "type": "choice",
+      "prompt": "大きな環状構造に、連続する複数の炭素－炭素二重結合、多数のヒドロキシ基、糖部分をもつ構造（試験の構造式 N）の化合物はどれか。",
+      "tags": [
+        "structure"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "アムホテリシンB"
+        },
+        {
+          "id": "b",
+          "text": "エリスロマイシン"
+        },
+        {
+          "id": "c",
+          "text": "センノシド類"
+        },
+        {
+          "id": "d",
+          "text": "ポドフィロトキシン"
+        }
+      ],
+      "answer": "a",
+      "explanation": "構造式 N はアムホテリシンB（ポリエンマクロライド）です。",
+      "sourcePage": "2022中間 問9"
+    },
+    {
+      "id": "q03",
+      "type": "choice",
+      "prompt": "2 つの酸素含有環状部分、NaO₂C と表示された部分 2 つ、中央にヒドロキシ基をもつ構造（試験の構造式 D）の化合物はどれか。",
+      "tags": [
+        "structure"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "セサミン"
+        },
+        {
+          "id": "b",
+          "text": "アカルボース"
+        },
+        {
+          "id": "c",
+          "text": "ギンゲロール類"
+        },
+        {
+          "id": "d",
+          "text": "クロモグリク酸ナトリウム"
+        }
+      ],
+      "answer": "d",
+      "explanation": "構造式 D はクロモグリク酸ナトリウムです。",
+      "sourcePage": "2022中間 問9"
+    },
+    {
+      "id": "q04",
+      "type": "fill",
+      "prompt": "メトキシ基とヒドロキシ基をもつ芳香環に、カルボニル基・ヒドロキシ基・炭素鎖がつながった構造（試験の構造式 C）は [[blank]] である。",
+      "tags": [
+        "structure"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "ギンゲロール類"
+        },
+        {
+          "id": "b",
+          "text": "セサミン"
+        },
+        {
+          "id": "c",
+          "text": "アカルボース"
+        }
+      ],
+      "answer": "a",
+      "explanation": "構造式 C はギンゲロール類です。",
+      "sourcePage": "2022中間 問9"
+    },
+    {
+      "id": "q05",
+      "type": "choice",
+      "prompt": "2 つの芳香環と、複数の酸素含有環状部分をもつ構造（試験の構造式 J）の化合物はどれか。",
+      "tags": [
+        "structure"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "クロモグリク酸ナトリウム"
+        },
+        {
+          "id": "b",
+          "text": "セサミン"
+        },
+        {
+          "id": "c",
+          "text": "ギンゲロール類"
+        },
+        {
+          "id": "d",
+          "text": "エリスロマイシン"
+        }
+      ],
+      "answer": "b",
+      "explanation": "構造式 J はセサミンです。",
+      "sourcePage": "2022中間 問9"
+    },
+    {
+      "id": "q06",
+      "type": "choice",
+      "prompt": "大きな環状エステル部分と複数の糖部分をもつ構造（試験の構造式 M）の化合物はどれか。",
+      "tags": [
+        "structure"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "エリスロマイシン"
+        },
+        {
+          "id": "b",
+          "text": "クロモグリク酸ナトリウム"
+        },
+        {
+          "id": "c",
+          "text": "セサミン"
+        },
+        {
+          "id": "d",
+          "text": "ギンゲロール類"
+        }
+      ],
+      "answer": "a",
+      "explanation": "構造式 M はエリスロマイシンです。",
+      "sourcePage": "2022中間 問9"
+    },
+    {
+      "id": "q07",
+      "type": "choice",
+      "prompt": "センノシド類の母骨格の生合成経路はどれか。",
+      "tags": [
+        "pathway"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "シキミ酸経路"
+        },
+        {
+          "id": "b",
+          "text": "シキミ酸経路と酢酸－マロン酸経路の複合経路"
+        },
+        {
+          "id": "c",
+          "text": "メバロン酸経路"
+        },
+        {
+          "id": "d",
+          "text": "酢酸－マロン酸経路"
+        }
+      ],
+      "answer": "d",
+      "explanation": "センノシド類は酢酸－マロン酸経路（B群 1）です。",
+      "sourcePage": "2022中間 問9"
+    },
+    {
+      "id": "q08",
+      "type": "choice",
+      "prompt": "ギンゲロール類の母骨格の生合成経路はどれか。",
+      "tags": [
+        "pathway"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "酢酸－マロン酸経路"
+        },
+        {
+          "id": "b",
+          "text": "シキミ酸経路"
+        },
+        {
+          "id": "c",
+          "text": "シキミ酸経路と酢酸－マロン酸経路の複合経路"
+        },
+        {
+          "id": "d",
+          "text": "メバロン酸経路"
+        }
+      ],
+      "answer": "c",
+      "explanation": "ギンゲロール類は複合経路（B群 6）です。",
+      "sourcePage": "2022中間 問9"
+    },
+    {
+      "id": "q09",
+      "type": "truefalse",
+      "prompt": "アムホテリシンBの母骨格は、酢酸－マロン酸経路で生合成される。",
+      "tags": [
+        "pathway"
+      ],
+      "answer": true,
+      "explanation": "正しい記述です（B群 1）。",
+      "sourcePage": "2022中間 問9"
+    },
+    {
+      "id": "q10",
+      "type": "truefalse",
+      "prompt": "セサミンの母骨格は、シキミ酸経路で生合成される。",
+      "tags": [
+        "pathway"
+      ],
+      "answer": true,
+      "explanation": "正しい記述です（B群 3）。",
+      "sourcePage": "2022中間 問9"
+    },
+    {
+      "id": "q11",
+      "type": "truefalse",
+      "prompt": "ポドフィロトキシンの母骨格は、酢酸－マロン酸経路で生合成される。",
+      "tags": [
+        "pathway"
+      ],
+      "answer": false,
+      "explanation": "ポドフィロトキシンはシキミ酸経路（B群 3）です。",
+      "sourcePage": "2022中間 問9"
+    },
+    {
+      "id": "q12",
+      "type": "choice",
+      "prompt": "母骨格がどちらもシキミ酸経路で生合成される化合物の組み合わせはどれか。",
+      "tags": [
+        "pathway"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "センノシド類とエリスロマイシン"
+        },
+        {
+          "id": "b",
+          "text": "ギンゲロール類とセサミン"
+        },
+        {
+          "id": "c",
+          "text": "ポドフィロトキシンとセサミン"
+        },
+        {
+          "id": "d",
+          "text": "アムホテリシンBとポドフィロトキシン"
+        }
+      ],
+      "answer": "c",
+      "explanation": "シキミ酸経路＝ポドフィロトキシン・セサミン、酢酸－マロン酸経路＝センノシド類・アムホテリシンB・エリスロマイシン、複合経路＝ギンゲロール類です。",
+      "sourcePage": "2022中間 問9"
+    }
+  ]
+}
