@@ -1,5 +1,5 @@
 // 問題セットJSONの形式チェック（ビルド時スクリプトとサーバー起動時の両方で使う）
-import { BLANK_TOKEN, type Question, type QuizSetFile } from "./quiz-types";
+import { BLANK_JOIN, BLANK_TOKEN, type Question, type QuizSetFile } from "./quiz-types";
 
 /** 1セットの問題数（内容に合わせてこの範囲で決める） */
 export const MIN_QUESTIONS = 10;
@@ -70,6 +70,13 @@ export function validateQuizSet(data: unknown, knownSubjectIds: string[]): strin
     if (q.tags !== undefined && (!Array.isArray(q.tags) || !q.tags.every((t) => typeof t === "string" && t.length > 0))) {
       errors.push(`${where}: tags は文字列の配列にしてください`);
     }
+    if (q.image != null) {
+      const im = q.image as Record<string, unknown>;
+      if (typeof im !== "object" || !isNonEmptyString(im.src) || !/^\/structures\/[\w\-/]+\.(png|jpg|webp)$/.test(String(im.src))) {
+        errors.push(`${where}: image.src は "/structures/〜.png" の形にしてください`);
+      }
+      if (typeof im !== "object" || !isNonEmptyString(im.alt)) errors.push(`${where}: image.alt（画像の説明）がありません`);
+    }
     types.add(String(q.type));
 
     switch (q.type) {
@@ -79,9 +86,27 @@ export function validateQuizSet(data: unknown, knownSubjectIds: string[]): strin
         break;
       }
       case "fill": {
+        const count = typeof q.prompt === "string" ? q.prompt.split(BLANK_TOKEN).length - 1 : 0;
+        if (q.blanks != null) {
+          // 空欄が複数ある穴埋め
+          const blanks = q.blanks as Record<string, unknown>[];
+          if (!Array.isArray(blanks) || blanks.length < 2) { errors.push(`${where}: blanks は2つ以上の空欄の配列にしてください`); break; }
+          if (count !== blanks.length) errors.push(`${where}: prompt の ${BLANK_TOKEN} の数（${count}）と blanks の数（${blanks.length}）が合いません`);
+          const all: string[] = []; const answers: string[] = [];
+          blanks.forEach((b, bi) => {
+            const ids = checkOptions(b, `${where} 空欄${bi + 1}`, errors);
+            if (typeof b.answer !== "string" || !ids.includes(b.answer)) errors.push(`${where} 空欄${bi + 1}: answer が選択肢IDのどれとも一致しません`);
+            all.push(...ids); answers.push(String(b.answer));
+          });
+          if (new Set(all).size !== all.length) errors.push(`${where}: 空欄どうしで選択肢IDが重複しています`);
+          if (all.some((id) => id.includes(BLANK_JOIN))) errors.push(`${where}: 選択肢IDに "${BLANK_JOIN}" は使えません`);
+          const optIds = Array.isArray(q.options) ? (q.options as { id?: unknown }[]).map((o) => o?.id) : [];
+          if (optIds.join(",") !== all.join(",")) errors.push(`${where}: options は全空欄の選択肢をつなげたものにしてください`);
+          if (q.answer !== answers.join(BLANK_JOIN)) errors.push(`${where}: answer は各空欄の正解IDを "${BLANK_JOIN}" でつないだものにしてください`);
+          break;
+        }
         const ids = checkOptions(q, where, errors);
         if (typeof q.answer !== "string" || !ids.includes(q.answer)) errors.push(`${where}: answer が選択肢IDのどれとも一致しません`);
-        const count = typeof q.prompt === "string" ? q.prompt.split(BLANK_TOKEN).length - 1 : 0;
         if (count !== 1) errors.push(`${where}: 穴埋め問題の prompt には ${BLANK_TOKEN} をちょうど1つ入れてください（現在${count}個）`);
         break;
       }
@@ -95,7 +120,7 @@ export function validateQuizSet(data: unknown, knownSubjectIds: string[]): strin
   });
 
   // 基本は3種類を混ぜる。ただし横断まとめなど、形式をしぼったセットは2種類以上でよい
-  if (types.size < 2) errors.push(`${label}: 問題形式を2種類以上混ぜてください`);
+  if (types.size < 2 && s.singleTypeOk !== true) errors.push(`${label}: 問題形式を2種類以上混ぜてください`);
   return errors;
 }
 

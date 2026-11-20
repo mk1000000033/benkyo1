@@ -3,7 +3,7 @@
 //   ・すべての JSON が content/quiz-sets/index.ts に登録されているか
 //   ・同じ id/version の重複がないか
 // ビルド（npm run build）の前にも自動で実行され、エラーがあれば公開されません。
-import { readFileSync, readdirSync } from "node:fs";
+import { existsSync, readFileSync, readdirSync } from "node:fs";
 import { join } from "node:path";
 import { SUBJECTS } from "../content/subjects";
 import { validateQuizSet } from "../src/lib/quiz-validate";
@@ -35,8 +35,10 @@ for (const file of files) {
   seen.set(key, file);
   if (!indexSrc.includes(`./${file}`)) errors.push(`${file}: content/quiz-sets/index.ts に登録されていません`);
   const themeIds = themesOf((data as { subjectId?: string }).subjectId ?? "").map((t) => t.id);
-  for (const q of (data as { questions?: { id: string; tags?: string[] }[] }).questions ?? []) {
+  for (const q of (data as { questions?: { id: string; tags?: string[]; image?: { src?: string } | null }[] }).questions ?? []) {
     for (const t of q.tags ?? []) if (!themeIds.includes(t)) errors.push(`${file} ${q.id}: テーマ "${t}" が content/themes.ts にありません`);
+    const src = q.image?.src;
+    if (src && !existsSync(join(process.cwd(), "public", src))) errors.push(`${file} ${q.id}: 画像 public${src} がありません`);
   }
   const expectedName = `${d.id}.v${d.version}.json`;
   if (file !== expectedName) errors.push(`${file}: ファイル名は "${expectedName}" にしてください`);

@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import type { QuestionType, QuizOption, QuizSetFile, AnswerValue } from "@/lib/quiz-types";
+import type { FillBlank, QuestionImage, QuestionType, QuizOption, QuizSetFile, AnswerValue } from "@/lib/quiz-types";
 import { findAttempt, type AttemptRecord } from "@/lib/records";
 import { compareRates, formatDelta, formatPercent } from "@/lib/stats";
 import { Confetti, LoadingScreen } from "@/components/ui";
@@ -17,6 +17,8 @@ interface ReviewItem {
   index: number;
   type: QuestionType;
   prompt: string;
+  image: QuestionImage | null;
+  blanks: FillBlank[] | null;
   options: QuizOption[] | null;
   answer: AnswerValue;
   correctAnswer: AnswerValue;
@@ -42,6 +44,8 @@ function buildResult(a: AttemptRecord, versions: QuizSetFile[]) {
       index: ans.index,
       type: q.type,
       prompt: q.prompt,
+      image: q.image ?? null,
+      blanks: q.type === "fill" ? q.blanks ?? null : null,
       options: q.type === "truefalse" ? null : q.options,
       answer: ans.answer,
       correctAnswer: q.answer,
@@ -209,7 +213,7 @@ export function ResultView({
         <ul className="space-y-3">
           {data.review.map((r) => {
             const isOpen = !!open[r.index];
-            const qv = { type: r.type, prompt: r.prompt, options: r.options };
+            const qv = { type: r.type, prompt: r.prompt, options: r.options, image: r.image, blanks: r.blanks };
             return (
               <li key={r.index} className={`card overflow-hidden ${r.isCorrect ? "" : "border-oops/40"}`}>
                 <button
@@ -229,7 +233,7 @@ export function ResultView({
                     <span className="text-xs font-extrabold text-ink-soft">
                       Q{r.index + 1}・<span className={`rounded px-1 ${TYPE_LABEL[r.type].cls}`}>{TYPE_LABEL[r.type].text}</span>
                     </span>
-                    <span className="block truncate font-bold">{r.prompt.replace("[[blank]]", "（　　）")}</span>
+                    <span className="block truncate font-bold">{r.prompt.split("[[blank]]").join("（　　）")}</span>
                   </span>
                   <span aria-hidden className={`text-ink-soft transition ${isOpen ? "rotate-180" : ""}`}>▼</span>
                 </button>

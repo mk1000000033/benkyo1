@@ -114,7 +114,7 @@ export function QuizPlayer({ set, subjectName, forceNew }: { set: QuizSetFile; s
   const correctCount = p.answers.filter((a) => a.isCorrect).length;
   const isLast = idx >= p.questionCount - 1;
   const type = TYPE_LABEL[q.type];
-  const qView = { type: q.type, prompt: q.prompt, options: q.type === "truefalse" ? null : q.options };
+  const qView = { type: q.type, prompt: q.prompt, options: q.type === "truefalse" ? null : q.options, image: q.image ?? null, blanks: q.type === "fill" ? q.blanks ?? null : null };
 
   function submit() {
     if (!p || selected === null || mine) return; // 確定後は変更できない

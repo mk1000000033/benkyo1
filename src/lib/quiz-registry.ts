@@ -99,7 +99,9 @@ export function listActiveSummaries(subjectId?: string): QuizSetSummary[] {
     .sort((a, b) => {
       if (a.lectureDate && b.lectureDate && a.lectureDate !== b.lectureDate) return a.lectureDate < b.lectureDate ? -1 : 1;
       if (!!a.lectureDate !== !!b.lectureDate) return a.lectureDate ? -1 : 1;
-      return a.title.localeCompare(b.title, "ja");
+      // まとめ付きのセット（大問ごと）を先に、構造式クイズなど問題だけのセットを後に
+      if (a.hasNote !== b.hasNote) return a.hasNote ? -1 : 1;
+      return a.title.localeCompare(b.title, "ja", { numeric: true });
     });
 }
 

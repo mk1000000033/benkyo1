@@ -215,3 +215,19 @@ test("すべての問題にテーマが付いている（天然物化学）", as
     for (const q of d.questions) assert.ok(q.tags?.length > 0, `${f} ${q.id} にテーマがない`);
   }
 });
+
+test("複数空欄の穴埋め：全部合っていれば正解・形式が違えば null", async () => {
+  const s = (await import("../content/quiz-sets/natural-products-2025-structure.v1.json")).default as unknown as QuizSetFile;
+  assert.deepEqual(validateQuizSet(s, ["natural-products"]), []);
+  const q = s.questions[0];
+  if (q.type !== "fill" || !q.blanks) throw new Error("multi fill expected");
+  assert.equal(gradeAnswer(q, q.answer), true);
+  const parts = q.answer.split("|");
+  const wrongId = q.blanks[0].options.find((o) => o.id !== parts[0])!.id;
+  assert.equal(gradeAnswer(q, [wrongId, ...parts.slice(1)].join("|")), false);
+  assert.equal(gradeAnswer(q, parts[0]), null); // 空欄の数が足りない
+  assert.equal(gradeAnswer(q, [parts[1], parts[0], ...parts.slice(2)].join("|")), null); // 別の空欄の選択肢
+  const broken = structuredClone(s) as any;
+  broken.questions[0].answer = "x";
+  assert.ok(validateQuizSet(broken, ["natural-products"]).some((e) => e.includes("つないだもの")));
+});

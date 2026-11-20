@@ -119,7 +119,7 @@ export function MixPlayer({ subject, theme, items }: { subject: { id: string; na
             {deck.map((it, i) => {
               const q = it.question;
               const a = answers[i];
-              const qv = { type: q.type, prompt: q.prompt, options: q.type === "truefalse" ? null : q.options };
+              const qv = { type: q.type, prompt: q.prompt, options: q.type === "truefalse" ? null : q.options, image: q.image ?? null, blanks: q.type === "fill" ? q.blanks ?? null : null };
               const isOpen = !!open[i];
               return (
                 <li key={it.key} className={`card overflow-hidden ${a.isCorrect ? "" : "border-oops/40"}`}>
@@ -129,7 +129,7 @@ export function MixPlayer({ subject, theme, items }: { subject: { id: string; na
                     </span>
                     <span className="min-w-0 flex-1">
                       <span className="block text-xs font-bold text-ink-soft">{it.setTitle}</span>
-                      <span className="block truncate font-bold">{q.prompt.replace("[[blank]]", "（　　）")}</span>
+                      <span className="block truncate font-bold">{q.prompt.split("[[blank]]").join("（　　）")}</span>
                     </span>
                     <span aria-hidden className={`text-ink-soft transition ${isOpen ? "rotate-180" : ""}`}>▼</span>
                   </button>
@@ -157,7 +157,7 @@ export function MixPlayer({ subject, theme, items }: { subject: { id: string; na
   const item = deck[idx];
   const q = item.question;
   const mine = answers[idx];
-  const qView = { type: q.type, prompt: q.prompt, options: q.type === "truefalse" ? null : q.options };
+  const qView = { type: q.type, prompt: q.prompt, options: q.type === "truefalse" ? null : q.options, image: q.image ?? null, blanks: q.type === "fill" ? q.blanks ?? null : null };
   const type = TYPE_LABEL[q.type];
 
   function submit() {

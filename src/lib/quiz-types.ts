@@ -19,6 +19,14 @@ interface QuestionBase {
   sourcePage?: string | null;
   /** テーマ（content/themes.ts の id）。テーマ別ミックスで使う */
   tags?: string[];
+  /** 問題に添える画像（構造式など）。src は public/ からのパス（例: "/structures/2025/q7-a.png"） */
+  image?: QuestionImage | null;
+}
+
+export interface QuestionImage {
+  src: string;
+  /** 画像の説明（読み上げ用）。答えになる名前は書かない */
+  alt: string;
 }
 
 /** 4択問題 */
@@ -37,9 +45,21 @@ export interface TrueFalseQuestion extends QuestionBase {
 /** 穴埋め問題（空欄をタップして選択肢から選ぶ） */
 export interface FillQuestion extends QuestionBase {
   type: "fill";
+  /** 空欄が1つのときの選択肢。空欄が複数（blanks あり）のときは、全空欄の選択肢をつなげたもの */
+  options: QuizOption[];
+  /** 空欄が1つのときは選択肢ID。複数のときは各空欄の正解IDを "|" でつないだもの（例: "1b|2a|3c"） */
+  answer: string;
+  /** 空欄が2つ以上のとき：空欄ごとの選択肢と正解（prompt の [[blank]] と同じ順番・同じ数） */
+  blanks?: FillBlank[] | null;
+}
+
+export interface FillBlank {
   options: QuizOption[];
   answer: string;
 }
+
+/** 複数空欄の回答をつなぐ記号 */
+export const BLANK_JOIN = "|";
 
 export type Question = ChoiceQuestion | TrueFalseQuestion | FillQuestion;
 
@@ -55,6 +75,8 @@ export interface QuizSetFile {
   published: boolean;
   isSample?: boolean;
   sourceMaterial?: string;
+  /** true のとき、問題形式が1種類だけでもよい（構造式クイズなど） */
+  singleTypeOk?: boolean;
   questions: Question[];
 }
 
