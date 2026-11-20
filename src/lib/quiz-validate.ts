@@ -94,9 +94,8 @@ export function validateQuizSet(data: unknown, knownSubjectIds: string[]): strin
     }
   });
 
-  for (const t of ["choice", "truefalse", "fill"]) {
-    if (!types.has(t)) errors.push(`${label}: 3種類の問題形式を混ぜてください（"${t}" が0問です）`);
-  }
+  // 基本は3種類を混ぜる。ただし横断まとめなど、形式をしぼったセットは2種類以上でよい
+  if (types.size < 2) errors.push(`${label}: 問題形式を2種類以上混ぜてください`);
   return errors;
 }
 
