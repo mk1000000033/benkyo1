@@ -17,7 +17,7 @@ interface QuestionBase {
   explanation: string;
   /** 根拠となる授業資料のページ（例: "p.12", "スライド8"）。不明なら null */
   sourcePage?: string | null;
-  /** テーマ（content/themes.ts の id）。テーマ別ミックスで使う */
+  /** テーマ（content/themes.ts の id）。問題の分類用 */
   tags?: string[];
   /** 問題に添える画像（構造式など）。src は public/ からのパス（例: "/structures/2025/q7-a.png"） */
   image?: QuestionImage | null;

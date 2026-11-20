@@ -4,7 +4,7 @@ import "server-only";
 import { QUIZ_SET_FILES } from "@content/quiz-sets";
 import { NOTE_FILES } from "@content/notes";
 import { SUBJECTS, findSubject, type Subject } from "@content/subjects";
-import { themesOf, type Theme } from "@content/themes";
+import { themesOf } from "@content/themes";
 import { validateQuizSet, asQuizSet } from "@/lib/quiz-validate";
 import { validateNote } from "@/lib/note-validate";
 import type { NoteFile } from "@/lib/note-types";
@@ -125,40 +125,5 @@ export function getSubject(id: string): Subject | undefined {
 /** 同じセットの全バージョン（過去の挑戦の復習用） */
 export function getAllVersions(id: string): QuizSetFile[] {
   return ALL_SETS.filter((s) => s.id === id);
-}
-
-// ---------------- テーマ別ミックス ----------------
-
-/** テーマに入る1問（どのセットの問題かを添える） */
-export interface ThemeItem {
-  key: string;
-  setId: string;
-  setTitle: string;
-  question: Question;
-}
-
-/** 公開中のセットから、そのテーマのタグが付いた問題を集める */
-export function getThemeItems(subjectId: string, themeId: string): ThemeItem[] {
-  return listActiveSummaries(subjectId).flatMap((sum) => {
-    const set = getActiveSet(sum.id)!;
-    return set.questions
-      .filter((q) => q.tags?.includes(themeId))
-      .map((q) => ({ key: `${set.id}:${q.id}`, setId: set.id, setTitle: set.title, question: q }));
-  });
-}
-
-export interface ThemeWithCount extends Theme {
-  count: number;
-}
-
-/** 科目のテーマ一覧（問題が1問以上あるものだけ） */
-export function listThemes(subjectId: string): ThemeWithCount[] {
-  return themesOf(subjectId)
-    .map((t) => ({ ...t, count: getThemeItems(subjectId, t.id).length }))
-    .filter((t) => t.count > 0);
-}
-
-export function getTheme(subjectId: string, themeId: string): Theme | undefined {
-  return themesOf(subjectId).find((t) => t.id === themeId);
 }
 

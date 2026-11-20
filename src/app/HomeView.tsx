@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { SubjectColor } from "@content/subjects";
 import { COLOR } from "@/lib/colors";
 import { HomeGreeting } from "@/components/HomeGreeting";
+import { NewsPopup } from "@/components/NewsPopup";
 
 interface SubjectItem {
   id: string;
@@ -27,6 +28,8 @@ export function HomeView({ subjects }: { subjects: SubjectItem[] }) {
       </section>
 
       <HomeGreeting />
+
+      <NewsPopup />
 
       <section>
         <h2 className="mb-3 flex items-center gap-2 text-lg font-extrabold">
