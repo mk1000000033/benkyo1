@@ -33,6 +33,8 @@ import natural_products_2025_q5_v1 from "./natural-products-2025-q5.v1.json";
 import natural_products_2025_q6_v1 from "./natural-products-2025-q6.v1.json";
 import natural_products_2025_q7_v1 from "./natural-products-2025-q7.v1.json";
 import natural_products_cross_pathway_v1 from "./natural-products-cross-pathway.v1.json";
+import natural_products_cross_antibiotics_v1 from "./natural-products-cross-antibiotics.v1.json";
+import natural_products_cross_drugs_v1 from "./natural-products-cross-drugs.v1.json";
 
 export const QUIZ_SET_FILES: unknown[] = [
   natural_products_2024_q2_v1,
@@ -62,5 +64,7 @@ export const QUIZ_SET_FILES: unknown[] = [
   natural_products_2025_q6_v1,
   natural_products_2025_q7_v1,
   natural_products_cross_pathway_v1,
+  natural_products_cross_antibiotics_v1,
+  natural_products_cross_drugs_v1,
   // ↑ ここに新しい問題セットを追加
 ];

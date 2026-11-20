@@ -1,0 +1,490 @@
+{
+  "id": "natural-products-cross-antibiotics",
+  "version": 1,
+  "subjectId": "natural-products",
+  "title": "抗生物質まとめ（2022〜2025年度）",
+  "lectureDate": null,
+  "group": "横断まとめ",
+  "published": true,
+  "sourceMaterial": "2022〜2025年度 天然物化学 中間試験（問題用紙・模範解答）とユーザー作成の知識データ",
+  "questions": [
+    {
+      "id": "q01",
+      "type": "choice",
+      "prompt": "エリスロマイシンの系統はどれか。",
+      "tags": [
+        "antibiotic"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "アミノグリコシド系"
+        },
+        {
+          "id": "b",
+          "text": "マクロライド系"
+        },
+        {
+          "id": "c",
+          "text": "アンサマイシン系"
+        },
+        {
+          "id": "d",
+          "text": "ポリエーテル系"
+        }
+      ],
+      "answer": "b",
+      "explanation": "マクロライド系です。試験では「ポリエーテル系」（2022）「アミノグリコシド系」（2024）が誤りとして出されました。",
+      "sourcePage": "2022中間 問8／2023中間 問6／2024中間 問6"
+    },
+    {
+      "id": "q02",
+      "type": "choice",
+      "prompt": "エリスロマイシンが有効な相手として、試験に書かれていたのはどれか。",
+      "tags": [
+        "antibiotic"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "グラム陽性球菌・リケッチア・クラミジア"
+        },
+        {
+          "id": "b",
+          "text": "結核菌"
+        },
+        {
+          "id": "c",
+          "text": "真菌"
+        },
+        {
+          "id": "d",
+          "text": "緑膿菌"
+        }
+      ],
+      "answer": "a",
+      "explanation": "グラム陽性球菌・リケッチア・クラミジアなどに有効です。",
+      "sourcePage": "2022中間 問8／2023中間 問6／2024中間 問6"
+    },
+    {
+      "id": "q03",
+      "type": "truefalse",
+      "prompt": "エリスロマイシンはアミノグリコシド系抗生物質である。",
+      "tags": [
+        "antibiotic"
+      ],
+      "answer": false,
+      "explanation": "マクロライド系です。2024年度はエリスロマイシンとストレプトマイシンの系統を入れ替えたひっかけが出ました。",
+      "sourcePage": "2024中間 問6"
+    },
+    {
+      "id": "q04",
+      "type": "fill",
+      "prompt": "リファンピシンは、[[blank]] から半合成されるアンサマイシン系抗生物質である。",
+      "tags": [
+        "antibiotic"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "エリスロマイシン"
+        },
+        {
+          "id": "b",
+          "text": "リファマイシン"
+        },
+        {
+          "id": "c",
+          "text": "カナマイシン"
+        }
+      ],
+      "answer": "b",
+      "explanation": "リファマイシンから半合成されます。",
+      "sourcePage": "2022中間 問8／2023中間 問6／2024中間 問6"
+    },
+    {
+      "id": "q05",
+      "type": "truefalse",
+      "prompt": "リファンピシンは結核に有効である。",
+      "tags": [
+        "antibiotic"
+      ],
+      "answer": true,
+      "explanation": "正しい記述です。",
+      "sourcePage": "2022中間 問8／2023中間 問6／2024中間 問6"
+    },
+    {
+      "id": "q06",
+      "type": "choice",
+      "prompt": "ストレプトマイシン・カナマイシンの系統はどれか。",
+      "tags": [
+        "antibiotic"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "アミノグリコシド系"
+        },
+        {
+          "id": "b",
+          "text": "マクロライド系"
+        },
+        {
+          "id": "c",
+          "text": "アンサマイシン系"
+        },
+        {
+          "id": "d",
+          "text": "ポリエンマクロライド系"
+        }
+      ],
+      "answer": "a",
+      "explanation": "アミノグリコシド系です。試験では「マクロライド系」が誤りとして出されました（2022・2024）。",
+      "sourcePage": "2022中間 問8／2024中間 問6／2025中間 問5"
+    },
+    {
+      "id": "q07",
+      "type": "choice",
+      "prompt": "ストレプトマイシンが最初に単離された生物はどれか。",
+      "tags": [
+        "origin",
+        "antibiotic"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "カビ Penicillium citrinum"
+        },
+        {
+          "id": "b",
+          "text": "放線菌 Actinoplanes 属"
+        },
+        {
+          "id": "c",
+          "text": "クロイソカイメン"
+        },
+        {
+          "id": "d",
+          "text": "放線菌 Streptomyces griseus"
+        }
+      ],
+      "answer": "d",
+      "explanation": "放線菌 Streptomyces griseus です。結核菌などに有効な殺菌作用を示します。",
+      "sourcePage": "2025中間 問5"
+    },
+    {
+      "id": "q08",
+      "type": "choice",
+      "prompt": "アミノグリコシド系抗生物質と、試験に書かれていた作用の組み合わせとして正しいものはどれか。",
+      "tags": [
+        "antibiotic"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "アルベカシン ― 抗真菌"
+        },
+        {
+          "id": "b",
+          "text": "カナマイシン ― 抗MRSA"
+        },
+        {
+          "id": "c",
+          "text": "ゲンタマイシン ― 抗緑膿菌"
+        },
+        {
+          "id": "d",
+          "text": "ストレプトマイシン ― 抗クラミジア"
+        }
+      ],
+      "answer": "c",
+      "explanation": "ストレプトマイシン・カナマイシン＝抗結核菌、ゲンタマイシン＝抗緑膿菌、アルベカシン＝抗MRSA です（2024年度 問6）。",
+      "sourcePage": "2024中間 問6"
+    },
+    {
+      "id": "q09",
+      "type": "fill",
+      "prompt": "アミノグリコシド系のアルベカシンは、抗 [[blank]] 作用を示す。",
+      "tags": [
+        "antibiotic"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "緑膿菌"
+        },
+        {
+          "id": "b",
+          "text": "MRSA"
+        },
+        {
+          "id": "c",
+          "text": "真菌"
+        }
+      ],
+      "answer": "b",
+      "explanation": "抗MRSA 作用です。",
+      "sourcePage": "2024中間 問6"
+    },
+    {
+      "id": "q10",
+      "type": "choice",
+      "prompt": "アムホテリシンBの分類はどれか。",
+      "tags": [
+        "antibiotic"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "ポリエンマクロライド系抗真菌性抗生物質"
+        },
+        {
+          "id": "b",
+          "text": "アミノグリコシド系抗生物質"
+        },
+        {
+          "id": "c",
+          "text": "アンサマイシン系抗生物質"
+        },
+        {
+          "id": "d",
+          "text": "抗腫瘍性抗生物質"
+        }
+      ],
+      "answer": "a",
+      "explanation": "ポリエンマクロライド系抗真菌性抗生物質で、放線菌が生産します。",
+      "sourcePage": "2022中間 問7"
+    },
+    {
+      "id": "q11",
+      "type": "fill",
+      "prompt": "アムホテリシンBは、真菌細胞膜中の [[blank]] に結合して障害を引き起こす。",
+      "tags": [
+        "mechanism",
+        "antibiotic"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "コレステロール"
+        },
+        {
+          "id": "b",
+          "text": "エルゴステロール"
+        },
+        {
+          "id": "c",
+          "text": "シアル酸"
+        }
+      ],
+      "answer": "b",
+      "explanation": "エルゴステロールに結合して真菌細胞膜を障害します。",
+      "sourcePage": "2022中間 問7"
+    },
+    {
+      "id": "q12",
+      "type": "choice",
+      "prompt": "テトラサイクリン塩酸塩の用途はどれか。",
+      "tags": [
+        "antibiotic"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "抗腫瘍薬"
+        },
+        {
+          "id": "b",
+          "text": "免疫抑制薬"
+        },
+        {
+          "id": "c",
+          "text": "抗菌薬"
+        },
+        {
+          "id": "d",
+          "text": "抗真菌薬"
+        }
+      ],
+      "answer": "c",
+      "explanation": "抗菌薬です。2023年度は「抗腫瘍薬」が誤りとして出されました。",
+      "sourcePage": "2023中間 問4"
+    },
+    {
+      "id": "q13",
+      "type": "truefalse",
+      "prompt": "テトラサイクリン塩酸塩は、放線菌 Streptomyces 属が生産する。",
+      "tags": [
+        "origin",
+        "antibiotic"
+      ],
+      "answer": true,
+      "explanation": "正しい記述です（2023年度 問4）。",
+      "sourcePage": "2023中間 問4"
+    },
+    {
+      "id": "q14",
+      "type": "choice",
+      "prompt": "マイトマイシンCについて正しいものはどれか。",
+      "tags": [
+        "mechanism",
+        "antibiotic"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "放線菌がつくる抗腫瘍性抗生物質で、DNA をアルキル化する"
+        },
+        {
+          "id": "b",
+          "text": "カビがつくる抗真菌性抗生物質で、エルゴステロールに結合する"
+        },
+        {
+          "id": "c",
+          "text": "放線菌がつくる抗結核薬で、リファマイシンから半合成される"
+        },
+        {
+          "id": "d",
+          "text": "植物がつくる抗菌薬で、グラム陽性球菌に有効である"
+        }
+      ],
+      "answer": "a",
+      "explanation": "放線菌がつくる抗腫瘍（抗がん）性抗生物質で、DNA アルキル化によって作用します。",
+      "sourcePage": "2023中間 問6／2024中間 問5"
+    },
+    {
+      "id": "q15",
+      "type": "choice",
+      "prompt": "タクロリムスの用途はどれか。",
+      "tags": [
+        "mechanism"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "抗寄生虫薬"
+        },
+        {
+          "id": "b",
+          "text": "抗菌薬"
+        },
+        {
+          "id": "c",
+          "text": "抗腫瘍薬"
+        },
+        {
+          "id": "d",
+          "text": "免疫抑制薬（臓器移植・自己免疫疾患）"
+        }
+      ],
+      "answer": "d",
+      "explanation": "免疫抑制薬です。2023年度は「抗寄生虫薬」が誤りとして出されました。",
+      "sourcePage": "2023中間 問4／2025中間 問5"
+    },
+    {
+      "id": "q16",
+      "type": "fill",
+      "prompt": "タクロリムスは、[[blank]] のホスファターゼ活性を阻害してサイトカイン遺伝子の発現を抑制する。",
+      "tags": [
+        "mechanism"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "HMG-CoA還元酵素"
+        },
+        {
+          "id": "b",
+          "text": "カルシニューリン"
+        },
+        {
+          "id": "c",
+          "text": "ノイラミニダーゼ"
+        }
+      ],
+      "answer": "b",
+      "explanation": "カルシニューリンです。",
+      "sourcePage": "2025中間 問5"
+    },
+    {
+      "id": "q17",
+      "type": "truefalse",
+      "prompt": "タクロリムスは、マクロライド系抗生物質である。",
+      "tags": [
+        "antibiotic"
+      ],
+      "answer": true,
+      "explanation": "正しい記述です（2025年度 問5）。",
+      "sourcePage": "2025中間 問5"
+    },
+    {
+      "id": "q18",
+      "type": "choice",
+      "prompt": "エリスロマイシン・アムホテリシンB・テトラサイクリン塩酸塩・タクロリムスの母骨格に共通する生合成経路はどれか。",
+      "tags": [
+        "pathway"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "酢酸－マロン酸経路"
+        },
+        {
+          "id": "b",
+          "text": "シキミ酸経路"
+        },
+        {
+          "id": "c",
+          "text": "複合経路（シキミ酸経路＋酢酸－マロン酸経路）"
+        },
+        {
+          "id": "d",
+          "text": "イソプレノイド経路（メバロン酸経路）"
+        }
+      ],
+      "answer": "a",
+      "explanation": "どれも酢酸－マロン酸経路です。",
+      "sourcePage": "2022中間 問9／2023中間 問4・問8／2025中間 問7"
+    },
+    {
+      "id": "q19",
+      "type": "truefalse",
+      "prompt": "テトラサイクリン塩酸塩のジメチルアミノ基が結合した不斉炭素の立体配置は S である。",
+      "tags": [
+        "stereo"
+      ],
+      "answer": true,
+      "explanation": "正しい記述です。2023年度は「R」が誤りとして出されました（不斉炭素は 5 個）。",
+      "sourcePage": "2023中間 問4"
+    },
+    {
+      "id": "q20",
+      "type": "choice",
+      "prompt": "試験で「テトラサイクリン塩酸塩」「抗菌薬」と誤って書かれていた化合物（2022・2025年度）の、正しい名称と用途はどれか。",
+      "tags": [
+        "antibiotic"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "テトラサイクリン塩酸塩 ― 抗菌薬"
+        },
+        {
+          "id": "b",
+          "text": "マイトマイシンC ― 抗菌薬"
+        },
+        {
+          "id": "c",
+          "text": "ドキソルビシン塩酸塩 ― 抗がん薬"
+        },
+        {
+          "id": "d",
+          "text": "エリスロマイシン ― 抗がん薬"
+        }
+      ],
+      "answer": "c",
+      "explanation": "ドキソルビシン塩酸塩で、抗がん薬（抗悪性腫瘍薬）です。名前と用途をまとめてすり替えるひっかけでした。",
+      "sourcePage": "2022中間 問5／2025中間 問4"
+    }
+  ]
+}

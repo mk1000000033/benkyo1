@@ -31,6 +31,8 @@ import natural_products_2025_q5 from "./natural-products-2025-q5.json";
 import natural_products_2025_q6 from "./natural-products-2025-q6.json";
 import natural_products_2025_q7 from "./natural-products-2025-q7.json";
 import natural_products_cross_pathway from "./natural-products-cross-pathway.json";
+import natural_products_cross_antibiotics from "./natural-products-cross-antibiotics.json";
+import natural_products_cross_drugs from "./natural-products-cross-drugs.json";
 
 export const NOTE_FILES: unknown[] = [
   natural_products_2024_q2,
@@ -60,5 +62,7 @@ export const NOTE_FILES: unknown[] = [
   natural_products_2025_q6,
   natural_products_2025_q7,
   natural_products_cross_pathway,
+  natural_products_cross_antibiotics,
+  natural_products_cross_drugs,
   // ↑ ここに新しいまとめを追加
 ];
