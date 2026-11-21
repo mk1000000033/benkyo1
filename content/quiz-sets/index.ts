@@ -39,6 +39,7 @@ import natural_products_2025_structure_v1 from "./natural-products-2025-structur
 import natural_products_cross_pathway_v1 from "./natural-products-cross-pathway.v1.json";
 import natural_products_cross_antibiotics_v1 from "./natural-products-cross-antibiotics.v1.json";
 import natural_products_cross_drugs_v1 from "./natural-products-cross-drugs.v1.json";
+import natural_products_cross_antibiotic_structures_v1 from "./natural-products-cross-antibiotic-structures.v1.json";
 
 export const QUIZ_SET_FILES: unknown[] = [
   natural_products_2024_q2_v1,
@@ -74,5 +75,6 @@ export const QUIZ_SET_FILES: unknown[] = [
   natural_products_cross_pathway_v1,
   natural_products_cross_antibiotics_v1,
   natural_products_cross_drugs_v1,
+  natural_products_cross_antibiotic_structures_v1,
   // ↑ ここに新しい問題セットを追加
 ];
