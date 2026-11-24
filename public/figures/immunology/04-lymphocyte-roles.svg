@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 420" width="720" height="840" font-family="'Hiragino Maru Gothic ProN','Hiragino Sans','Noto Sans JP',sans-serif">
+  <rect width="360" height="420" fill="#ffffff"/>
+  <rect x="10" y="10" width="340" height="186" rx="16" fill="#f6f2ff" stroke="#c9bbff" stroke-width="1.2"/>
+  <text x="26" y="34" font-size="15" font-weight="700" fill="#4a2fb0">T細胞 <tspan font-size="12" font-weight="400" fill="#6a48d6">胸腺で成熟</tspan></text>
+  <rect x="22" y="46" width="316" height="42" rx="12" fill="#dff7ee" stroke="#3fbf93"/>
+  <text x="36" y="72" font-size="14" font-weight="700" fill="#0f7a58">ヘルパーT細胞</text>
+  <text x="326" y="72" text-anchor="end" font-size="12" fill="#0f7a58">助ける（サイトカイン）</text>
+  <rect x="22" y="96" width="316" height="42" rx="12" fill="#ffe3dc" stroke="#e58a6e"/>
+  <text x="36" y="122" font-size="14" font-weight="700" fill="#a3402a">キラーT細胞</text>
+  <text x="326" y="122" text-anchor="end" font-size="12" fill="#a3402a">感染細胞・がん細胞をこわす</text>
+  <rect x="22" y="146" width="316" height="42" rx="12" fill="#efedf3" stroke="#a29bb5"/>
+  <text x="36" y="172" font-size="14" font-weight="700" fill="#4d4762">制御性T細胞</text>
+  <text x="326" y="172" text-anchor="end" font-size="12" fill="#4d4762">抑える（ブレーキ役）</text>
+
+  <rect x="10" y="208" width="340" height="88" rx="16" fill="#f6f2ff" stroke="#c9bbff" stroke-width="1.2"/>
+  <text x="26" y="232" font-size="15" font-weight="700" fill="#4a2fb0">B細胞 <tspan font-size="12" font-weight="400" fill="#6a48d6">骨髄で成熟</tspan></text>
+  <rect x="22" y="244" width="316" height="42" rx="12" fill="#e1f3ff" stroke="#3a9be0"/>
+  <text x="36" y="270" font-size="14" font-weight="700" fill="#145a8c">形質細胞に分化</text>
+  <text x="326" y="270" text-anchor="end" font-size="12" fill="#145a8c">抗体をつくる</text>
+
+  <rect x="10" y="308" width="340" height="88" rx="16" fill="#f6f2ff" stroke="#c9bbff" stroke-width="1.2"/>
+  <text x="26" y="332" font-size="15" font-weight="700" fill="#4a2fb0">NK細胞 <tspan font-size="12" font-weight="400" fill="#6a48d6">自然免疫のリンパ球</tspan></text>
+  <rect x="22" y="344" width="316" height="42" rx="12" fill="#ffe3dc" stroke="#e58a6e"/>
+  <text x="36" y="370" font-size="14" font-weight="700" fill="#a3402a">前もって感作なし</text>
+  <text x="326" y="370" text-anchor="end" font-size="12" fill="#a3402a">感染細胞・がん細胞をこわす</text>
+  <text x="180" y="412" text-anchor="middle" font-size="11" fill="#7a7392">色 ＝ 役割（緑：助ける／赤：こわす／灰：抑える／青：抗体）</text>
+</svg>

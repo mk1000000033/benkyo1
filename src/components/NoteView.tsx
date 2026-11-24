@@ -22,7 +22,7 @@ function Block({ block, color }: { block: NoteBlock; color: NoteColor }) {
       return (
         <figure className="rounded-2xl border-2 border-[#ece6f8] bg-white p-3">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={block.src} alt={block.alt} className="mx-auto h-auto max-h-60 w-auto max-w-full object-contain" />
+          <img src={block.src} alt={block.alt} className={block.size === "large" ? "mx-auto h-auto w-full max-w-md" : "mx-auto h-auto max-h-60 w-auto max-w-full object-contain"} />
           {block.caption && <figcaption className="mt-1 text-center text-xs font-bold text-ink-soft">{block.caption}</figcaption>}
         </figure>
       );

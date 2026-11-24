@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 348" width="720" height="696" font-family="'Hiragino Maru Gothic ProN','Hiragino Sans','Noto Sans JP',sans-serif">
+  <defs><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M2 1L8 5L2 9" fill="none" stroke="#7a7392" stroke-width="1.6" stroke-linecap="round"/></marker></defs>
+  <rect width="360" height="348" fill="#ffffff"/>
+  <rect x="10" y="10" width="340" height="104" rx="16" fill="#f6f2ff" stroke="#9b7bff" stroke-width="1.5"/>
+  <text x="26" y="34" font-size="15" font-weight="700" fill="#4a2fb0">一次リンパ器官 <tspan font-size="12" font-weight="400" fill="#6a48d6">育てる場所</tspan></text>
+  <rect x="22" y="46" width="152" height="56" rx="12" fill="#ffffff" stroke="#b9a5ff"/>
+  <text x="98" y="70" text-anchor="middle" font-size="15" font-weight="700" fill="#4a2fb0">骨髄</text>
+  <text x="98" y="90" text-anchor="middle" font-size="12" fill="#6a48d6">B細胞が成熟</text>
+  <rect x="186" y="46" width="152" height="56" rx="12" fill="#ffffff" stroke="#b9a5ff"/>
+  <text x="262" y="70" text-anchor="middle" font-size="15" font-weight="700" fill="#4a2fb0">胸腺</text>
+  <text x="262" y="90" text-anchor="middle" font-size="12" fill="#6a48d6">T細胞が成熟</text>
+  <line x1="180" y1="116" x2="180" y2="148" stroke="#7a7392" stroke-width="1.6" marker-end="url(#ar)"/>
+  <text x="192" y="137" font-size="12" fill="#7a7392">育ったリンパ球が移動</text>
+  <rect x="10" y="152" width="340" height="184" rx="16" fill="#eef8ff" stroke="#3a9be0" stroke-width="1.5"/>
+  <text x="26" y="176" font-size="15" font-weight="700" fill="#145a8c">二次リンパ器官 <tspan font-size="12" font-weight="400" fill="#1f76b8">抗原と戦う場所</tspan></text>
+  <g font-size="14" font-weight="700" fill="#145a8c">
+    <rect x="22" y="188" width="316" height="42" rx="12" fill="#ffffff" stroke="#8cc8f0"/>
+    <text x="36" y="214">リンパ節</text>
+    <rect x="22" y="238" width="316" height="42" rx="12" fill="#ffffff" stroke="#8cc8f0"/>
+    <text x="36" y="264">脾臓</text>
+    <rect x="22" y="288" width="316" height="42" rx="12" fill="#ffffff" stroke="#8cc8f0"/>
+    <text x="36" y="314">粘膜関連リンパ組織</text>
+  </g>
+  <g font-size="12" fill="#1f76b8" text-anchor="end">
+    <text x="326" y="214">リンパ液の抗原をチェック</text>
+    <text x="326" y="264">血液の抗原をチェック</text>
+    <text x="326" y="314">パイエル板・扁桃など</text>
+  </g>
+</svg>

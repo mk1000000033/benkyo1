@@ -1,0 +1,336 @@
+{
+  "id": "immunology-01b",
+  "version": 1,
+  "subjectId": "immunology",
+  "title": "第1回② リンパ器官（一次・二次リンパ器官・脾臓）",
+  "lectureDate": null,
+  "group": "第1回",
+  "published": true,
+  "sourceMaterial": "免疫学 第1回 授業時間外課題",
+  "questions": [
+    {
+      "id": "q01",
+      "type": "choice",
+      "tags": [
+        "organs"
+      ],
+      "prompt": "一次リンパ器官の組み合わせはどれか。",
+      "options": [
+        {
+          "id": "a",
+          "text": "リンパ節と脾臓"
+        },
+        {
+          "id": "b",
+          "text": "扁桃とパイエル板"
+        },
+        {
+          "id": "c",
+          "text": "骨髄と胸腺"
+        },
+        {
+          "id": "d",
+          "text": "肝臓と腎臓"
+        }
+      ],
+      "answer": "c",
+      "explanation": "一次リンパ器官は ==骨髄== と ==胸腺==。リンパ球が **つくられて育つ（分化・成熟する）** 場所です。",
+      "sourcePage": "問7"
+    },
+    {
+      "id": "q02",
+      "type": "fill",
+      "tags": [
+        "organs"
+      ],
+      "prompt": "リンパ球がつくられ、分化・成熟する場所を [[blank]] リンパ器官という。",
+      "options": [
+        {
+          "id": "a",
+          "text": "二次"
+        },
+        {
+          "id": "b",
+          "text": "粘膜関連"
+        },
+        {
+          "id": "c",
+          "text": "一次"
+        }
+      ],
+      "answer": "c",
+      "explanation": "==一次リンパ器官==（骨髄・胸腺）です。育ったリンパ球が抗原と出会って働く場所が二次リンパ器官です。",
+      "sourcePage": "問7"
+    },
+    {
+      "id": "q03",
+      "type": "choice",
+      "tags": [
+        "organs"
+      ],
+      "prompt": "二次リンパ器官に含まれないものはどれか。",
+      "options": [
+        {
+          "id": "a",
+          "text": "胸腺"
+        },
+        {
+          "id": "b",
+          "text": "リンパ節"
+        },
+        {
+          "id": "c",
+          "text": "脾臓"
+        },
+        {
+          "id": "d",
+          "text": "粘膜関連リンパ組織"
+        }
+      ],
+      "answer": "a",
+      "explanation": "==胸腺== は一次リンパ器官です。二次リンパ器官は **リンパ節・脾臓・粘膜関連リンパ組織** です。",
+      "sourcePage": "問8"
+    },
+    {
+      "id": "q04",
+      "type": "fill",
+      "tags": [
+        "organs"
+      ],
+      "prompt": "胸腺で成熟する細胞は [[blank]] である。",
+      "options": [
+        {
+          "id": "a",
+          "text": "B細胞"
+        },
+        {
+          "id": "b",
+          "text": "NK細胞"
+        },
+        {
+          "id": "c",
+          "text": "T細胞"
+        }
+      ],
+      "answer": "c",
+      "explanation": "==T細胞== は胸腺（Thymus）で成熟します。B細胞は骨髄で成熟します。",
+      "sourcePage": "問7"
+    },
+    {
+      "id": "q05",
+      "type": "choice",
+      "tags": [
+        "organs"
+      ],
+      "prompt": "骨髄で成熟するリンパ球はどれか。",
+      "options": [
+        {
+          "id": "a",
+          "text": "T細胞"
+        },
+        {
+          "id": "b",
+          "text": "形質細胞"
+        },
+        {
+          "id": "c",
+          "text": "B細胞"
+        },
+        {
+          "id": "d",
+          "text": "マクロファージ"
+        }
+      ],
+      "answer": "c",
+      "explanation": "==B細胞== は骨髄（Bone marrow）で成熟します。T細胞は胸腺です。",
+      "sourcePage": "問7"
+    },
+    {
+      "id": "q06",
+      "type": "choice",
+      "tags": [
+        "organs"
+      ],
+      "prompt": "粘膜関連リンパ組織に分類される組織の組み合わせはどれか。",
+      "options": [
+        {
+          "id": "a",
+          "text": "胸腺と骨髄"
+        },
+        {
+          "id": "b",
+          "text": "パイエル板と扁桃"
+        },
+        {
+          "id": "c",
+          "text": "リンパ節と脾臓"
+        },
+        {
+          "id": "d",
+          "text": "肝臓と脾臓"
+        }
+      ],
+      "answer": "b",
+      "explanation": "粘膜関連リンパ組織（MALT）の代表は、小腸の ==パイエル板== とのどの ==扁桃== です。",
+      "sourcePage": "問9"
+    },
+    {
+      "id": "q07",
+      "type": "fill",
+      "tags": [
+        "organs"
+      ],
+      "prompt": "小腸の粘膜にある粘膜関連リンパ組織は [[blank]] である。",
+      "options": [
+        {
+          "id": "a",
+          "text": "扁桃"
+        },
+        {
+          "id": "b",
+          "text": "白脾髄"
+        },
+        {
+          "id": "c",
+          "text": "パイエル板"
+        }
+      ],
+      "answer": "c",
+      "explanation": "小腸にあるのは ==パイエル板== です。",
+      "sourcePage": "問9"
+    },
+    {
+      "id": "q08",
+      "type": "fill",
+      "tags": [
+        "organs"
+      ],
+      "prompt": "粘膜関連リンパ組織は英語の略で [[blank]] とよばれる。",
+      "options": [
+        {
+          "id": "a",
+          "text": "MHC"
+        },
+        {
+          "id": "b",
+          "text": "TLR"
+        },
+        {
+          "id": "c",
+          "text": "MALT"
+        }
+      ],
+      "answer": "c",
+      "explanation": "粘膜関連リンパ組織＝ ==MALT==（Mucosa-Associated Lymphoid Tissue）です。",
+      "sourcePage": "問9"
+    },
+    {
+      "id": "q09",
+      "type": "choice",
+      "tags": [
+        "organs"
+      ],
+      "prompt": "脾臓の役割の組み合わせとして正しいものはどれか。",
+      "options": [
+        {
+          "id": "a",
+          "text": "T細胞を成熟させる・B細胞を成熟させる"
+        },
+        {
+          "id": "b",
+          "text": "インスリンを分泌する・胆汁をつくる"
+        },
+        {
+          "id": "c",
+          "text": "古くなった赤血球を壊す・血液中の抗原に対して免疫応答を起こす"
+        },
+        {
+          "id": "d",
+          "text": "リンパ液をろ過する・抗体を分解する"
+        }
+      ],
+      "answer": "c",
+      "explanation": "脾臓は ==古くなった赤血球を壊す==（赤脾髄）ことと、==血液中の抗原に対して免疫応答を起こす==（白脾髄）ことが主な役割です。",
+      "sourcePage": "問10"
+    },
+    {
+      "id": "q10",
+      "type": "fill",
+      "tags": [
+        "organs"
+      ],
+      "prompt": "脾臓のうち、古くなった赤血球を処理する部分は [[blank]] である。",
+      "options": [
+        {
+          "id": "a",
+          "text": "白脾髄"
+        },
+        {
+          "id": "b",
+          "text": "胚中心"
+        },
+        {
+          "id": "c",
+          "text": "赤脾髄"
+        }
+      ],
+      "answer": "c",
+      "explanation": "==赤脾髄== で古い赤血球を処理し、==白脾髄== でリンパ球が免疫応答を起こします。",
+      "sourcePage": "問10"
+    },
+    {
+      "id": "q11",
+      "type": "fill",
+      "tags": [
+        "organs"
+      ],
+      "prompt": "リンパ節は主に [[blank]] から入ってくる抗原に、脾臓は主に血液中の抗原に対応する。",
+      "options": [
+        {
+          "id": "a",
+          "text": "血液"
+        },
+        {
+          "id": "b",
+          "text": "胆汁"
+        },
+        {
+          "id": "c",
+          "text": "リンパ液"
+        }
+      ],
+      "answer": "c",
+      "explanation": "==リンパ節はリンパ液==、==脾臓は血液== の中の抗原をチェックします。",
+      "sourcePage": "問8・問10"
+    },
+    {
+      "id": "q12",
+      "type": "choice",
+      "tags": [
+        "organs"
+      ],
+      "prompt": "器官と分類の組み合わせとして正しいものはどれか。",
+      "options": [
+        {
+          "id": "a",
+          "text": "骨髄 ― 二次リンパ器官"
+        },
+        {
+          "id": "b",
+          "text": "脾臓 ― 一次リンパ器官"
+        },
+        {
+          "id": "c",
+          "text": "扁桃 ― 一次リンパ器官"
+        },
+        {
+          "id": "d",
+          "text": "胸腺 ― 一次リンパ器官"
+        }
+      ],
+      "answer": "d",
+      "explanation": "一次＝==骨髄・胸腺==、二次＝==リンパ節・脾臓・粘膜関連リンパ組織（扁桃・パイエル板など）== です。",
+      "sourcePage": "問7・問8"
+    }
+  ]
+}

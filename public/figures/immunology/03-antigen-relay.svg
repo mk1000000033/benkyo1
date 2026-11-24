@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 356" width="720" height="712" font-family="'Hiragino Maru Gothic ProN','Hiragino Sans','Noto Sans JP',sans-serif">
+  <defs><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M2 1L8 5L2 9" fill="none" stroke="#7a7392" stroke-width="1.6" stroke-linecap="round"/></marker></defs>
+  <rect width="360" height="356" fill="#ffffff"/>
+  <rect x="70" y="12" width="220" height="56" rx="14" fill="#eee8ff" stroke="#9b7bff" stroke-width="1.5"/>
+  <text x="180" y="36" text-anchor="middle" font-size="15" font-weight="700" fill="#4a2fb0">① 樹状細胞</text>
+  <text x="180" y="56" text-anchor="middle" font-size="12" fill="#6a48d6">抗原を取り込む（食べる）</text>
+  <line x1="180" y1="70" x2="180" y2="106" stroke="#7a7392" stroke-width="1.6" marker-end="url(#ar)"/>
+  <text x="192" y="93" font-size="12" fill="#7a7392">抗原の断片を見せる（提示）</text>
+  <rect x="70" y="110" width="220" height="56" rx="14" fill="#dff7ee" stroke="#3fbf93" stroke-width="1.5"/>
+  <text x="180" y="134" text-anchor="middle" font-size="15" font-weight="700" fill="#0f7a58">② ヘルパーT細胞</text>
+  <text x="180" y="154" text-anchor="middle" font-size="12" fill="#0f7a58">サイトカインを出して助ける</text>
+  <path d="M180 168 L180 184 L94 184 L94 204" fill="none" stroke="#7a7392" stroke-width="1.6" marker-end="url(#ar)"/>
+  <path d="M180 184 L266 184 L266 204" fill="none" stroke="#7a7392" stroke-width="1.6" marker-end="url(#ar)"/>
+  <rect x="16" y="208" width="156" height="56" rx="14" fill="#e1f3ff" stroke="#3a9be0" stroke-width="1.5"/>
+  <text x="94" y="232" text-anchor="middle" font-size="15" font-weight="700" fill="#145a8c">③ B細胞</text>
+  <text x="94" y="252" text-anchor="middle" font-size="12" fill="#1f76b8">形質細胞に分化</text>
+  <rect x="188" y="208" width="156" height="56" rx="14" fill="#ffe3dc" stroke="#e58a6e" stroke-width="1.5"/>
+  <text x="266" y="232" text-anchor="middle" font-size="15" font-weight="700" fill="#a3402a">③ キラーT細胞</text>
+  <text x="266" y="252" text-anchor="middle" font-size="12" fill="#a3402a">感染細胞・がん細胞へ</text>
+  <line x1="94" y1="266" x2="94" y2="294" stroke="#7a7392" stroke-width="1.6" marker-end="url(#ar)"/>
+  <line x1="266" y1="266" x2="266" y2="294" stroke="#7a7392" stroke-width="1.6" marker-end="url(#ar)"/>
+  <rect x="16" y="298" width="156" height="44" rx="22" fill="#3a9be0"/>
+  <text x="94" y="325" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">抗体をつくる</text>
+  <rect x="188" y="298" width="156" height="44" rx="22" fill="#e0694a"/>
+  <text x="266" y="325" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">直接こわす</text>
+</svg>

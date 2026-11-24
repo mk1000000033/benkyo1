@@ -56,7 +56,8 @@ export function validateNote(data: unknown, knownSetIds: string[]): string[] {
           if (!str(b.formula)) errors.push(`${w}: formula がありません`);
           break;
         case "image":
-          if (!str(b.src) || !/^\/structures\/[\w\-/]+\.(png|jpg|webp)$/.test(String(b.src))) errors.push(`${w}: src は "/structures/〜.png" の形にしてください`);
+          if (!str(b.src) || !/^\/(structures\/[\w\-/]+\.(png|jpg|webp)|figures\/[\w\-/]+\.(svg|png|jpg|webp))$/.test(String(b.src))) errors.push(`${w}: src は "/structures/〜.png" か "/figures/〜.svg" の形にしてください`);
+          if (b.size !== undefined && b.size !== "large") errors.push(`${w}: size は "large" だけが使えます`);
           if (!str(b.alt)) errors.push(`${w}: alt（画像の説明）がありません`);
           break;
         default:

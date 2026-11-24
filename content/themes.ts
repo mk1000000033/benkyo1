@@ -19,6 +19,10 @@ export const THEMES: Record<string, Theme[]> = {
     { id: "stereo", name: "立体配置", emoji: "🧭", description: "R / S・E / Z の答え" },
     { id: "basics", name: "分離・糖・脂肪酸", emoji: "🧪", description: "液々分配・エピマー・DHA/EPA など" },
   ],
+  immunology: [
+    { id: "cells", name: "免疫細胞", emoji: "🧫", description: "食細胞・抗原提示細胞・リンパ球" },
+    { id: "organs", name: "リンパ器官", emoji: "🏫", description: "一次・二次リンパ器官・脾臓" },
+  ],
 };
 
 export function themesOf(subjectId: string): Theme[] {
