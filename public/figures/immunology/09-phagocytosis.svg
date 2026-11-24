@@ -20,14 +20,15 @@
   <circle cx="62" cy="316" r="17" fill="#ffd3e1" stroke="#d63d82" stroke-width="1.2"/>
   <g fill="#8fd6a8"><circle cx="56" cy="312" r="3"/><circle cx="66" cy="320" r="2.5"/><circle cx="62" cy="309" r="2"/><circle cx="55" cy="322" r="2"/></g>
   <g font-size="14" font-weight="700" fill="#4a2fb0">
-    <text x="120" y="40">① 取り込む（貪食）</text>
-    <text x="120" y="128">② ファゴソームができる</text>
+    <text x="120" y="32">① 受容体に結合→取り込む</text>
+    <text x="120" y="128">② 食胞（ファゴソーム）</text>
     <text x="120" y="216">③ リソソームと融合</text>
     <text x="120" y="308">④ 消化・殺菌</text>
   </g>
   <g font-size="12" fill="#5a5370">
-    <text x="120" y="60">細胞膜をのばして異物を包む</text>
-    <text x="120" y="148">異物を入れた袋＝ファゴソーム</text>
+    <text x="120" y="52">PAMPs やオプソニン化された異物</text>
+    <text x="120" y="68">細胞膜の突出・陥入で包む</text>
+    <text x="120" y="148">異物を包んだ袋ができる</text>
     <text x="120" y="236">消化酵素の袋（<tspan fill="#d63d82" font-weight="700">リソソーム</tspan>）が合体</text>
     <text x="120" y="254">→ <tspan font-weight="700">ファゴリソソーム</tspan></text>
     <text x="120" y="328">酵素や活性酸素で分解する</text>

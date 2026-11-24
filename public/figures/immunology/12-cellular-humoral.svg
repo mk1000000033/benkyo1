@@ -1,34 +1,30 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 344" width="720" height="688" font-family="'Hiragino Maru Gothic ProN','Hiragino Sans','Noto Sans JP',sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 404" width="720" height="808" font-family="'Hiragino Maru Gothic ProN','Hiragino Sans','Noto Sans JP',sans-serif">
   <defs><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M2 1L8 5L2 9" fill="none" stroke="#7a7392" stroke-width="1.6" stroke-linecap="round"/></marker></defs>
-  <rect width="360" height="344" fill="#ffffff"/>
-  <rect x="90" y="10" width="180" height="40" rx="12" fill="#dff7ee" stroke="#3fbf93" stroke-width="1.5"/>
-  <text x="180" y="35" text-anchor="middle" font-size="14" font-weight="700" fill="#0f7a58">ヘルパーT細胞</text>
-  <path d="M180 52 L180 64 L94 64 L94 80" fill="none" stroke="#7a7392" stroke-width="1.6" marker-end="url(#ar)"/>
-  <path d="M180 64 L266 64 L266 80" fill="none" stroke="#7a7392" stroke-width="1.6" marker-end="url(#ar)"/>
-  <rect x="14" y="84" width="160" height="40" rx="12" fill="#ffe3dc" stroke="#e58a6e" stroke-width="1.5"/>
-  <text x="94" y="109" text-anchor="middle" font-size="14" font-weight="700" fill="#a3402a">Th1細胞</text>
-  <rect x="186" y="84" width="160" height="40" rx="12" fill="#e1f3ff" stroke="#3a9be0" stroke-width="1.5"/>
-  <text x="266" y="109" text-anchor="middle" font-size="14" font-weight="700" fill="#145a8c">Th2細胞</text>
-  <rect x="14" y="134" width="160" height="196" rx="16" fill="#fff5f2" stroke="#e58a6e" stroke-dasharray="5 4"/>
-  <text x="94" y="158" text-anchor="middle" font-size="14" font-weight="700" fill="#b23a22">細胞性免疫</text>
-  <text x="94" y="176" text-anchor="middle" font-size="11" fill="#b23a22">細胞が直接たたかう</text>
-  <rect x="186" y="134" width="160" height="196" rx="16" fill="#f2f9ff" stroke="#3a9be0" stroke-dasharray="5 4"/>
-  <text x="266" y="158" text-anchor="middle" font-size="14" font-weight="700" fill="#145a8c">体液性免疫</text>
-  <text x="266" y="176" text-anchor="middle" font-size="11" fill="#145a8c">抗体がたたかう</text>
-  <g font-size="12" text-anchor="middle">
-    <rect x="26" y="190" width="136" height="50" rx="10" fill="#ffffff" stroke="#f0b3a2"/>
-    <text x="94" y="210" font-weight="700" fill="#a3402a">キラーT細胞</text>
-    <text x="94" y="228" font-size="10.5" fill="#a3402a">がん細胞・感染細胞を傷害</text>
-    <rect x="26" y="248" width="136" height="50" rx="10" fill="#ffffff" stroke="#f0b3a2"/>
-    <text x="94" y="268" font-weight="700" fill="#a3402a">マクロファージ</text>
-    <text x="94" y="286" font-size="10.5" fill="#a3402a">活性化して殺菌</text>
-    <rect x="198" y="190" width="136" height="50" rx="10" fill="#ffffff" stroke="#9fd1f3"/>
-    <text x="266" y="210" font-weight="700" fill="#145a8c">B細胞</text>
-    <text x="266" y="228" font-size="10.5" fill="#1f76b8">形質細胞に分化</text>
-    <rect x="198" y="248" width="136" height="50" rx="10" fill="#3a9be0"/>
-    <text x="266" y="268" font-weight="700" fill="#ffffff">抗体をつくる</text>
-    <text x="266" y="286" font-size="10.5" fill="#ffffff">中和・オプソニン化など</text>
+  <rect width="360" height="404" fill="#ffffff"/>
+  <rect x="60" y="10" width="240" height="48" rx="14" fill="#dff7ee" stroke="#3fbf93" stroke-width="1.5"/>
+  <text x="180" y="31" text-anchor="middle" font-size="14" font-weight="700" fill="#0f7a58">ナイーブCD4⁺T細胞</text>
+  <text x="180" y="49" text-anchor="middle" font-size="11" fill="#0f7a58">樹状細胞から抗原提示を受ける</text>
+  <path d="M40 58 L40 362" fill="none" stroke="#7a7392" stroke-width="1.6"/>
+  <path d="M60 34 L40 34 L40 58" fill="none" stroke="#7a7392" stroke-width="1.6"/>
+  <g stroke="#7a7392" stroke-width="1.6"><line x1="40" y1="110" x2="58" y2="110" marker-end="url(#ar)"/><line x1="40" y1="226" x2="58" y2="226" marker-end="url(#ar)"/><line x1="40" y1="334" x2="58" y2="334" marker-end="url(#ar)"/></g>
+  <g font-size="10.5" font-weight="700" fill="#6a48d6">
+    <text x="6" y="98">IL-12</text><text x="8" y="214">IL-4</text>
+    <text x="4" y="300">IL-6</text><text x="2" y="314">IL-23</text><text x="2" y="328">TGF-β</text>
   </g>
-  <line x1="266" y1="241" x2="266" y2="246" stroke="#7a7392" stroke-width="1.6"/>
-  <text x="94" y="318" text-anchor="middle" font-size="10.5" fill="#7a7392">NK細胞の傷害もこちら側</text>
+  <rect x="62" y="74" width="288" height="104" rx="14" fill="#fff5f2" stroke="#e58a6e" stroke-width="1.4"/>
+  <rect x="72" y="84" width="74" height="30" rx="15" fill="#e0694a"/><text x="109" y="104" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">Th1</text>
+  <text x="156" y="104" font-size="14" font-weight="700" fill="#b23a22">→ 細胞性免疫</text>
+  <text x="74" y="134" font-size="11.5" fill="#a3402a">攻撃を指示する相手：</text>
+  <text x="74" y="152" font-size="12" font-weight="700" fill="#a3402a">細胞傷害性T細胞・NK細胞・</text>
+  <text x="74" y="168" font-size="12" font-weight="700" fill="#a3402a">マクロファージ</text>
+  <rect x="62" y="190" width="288" height="96" rx="14" fill="#f2f9ff" stroke="#3a9be0" stroke-width="1.4"/>
+  <rect x="72" y="200" width="74" height="30" rx="15" fill="#3a9be0"/><text x="109" y="220" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">Th2</text>
+  <text x="156" y="220" font-size="14" font-weight="700" fill="#145a8c">→ 体液性免疫</text>
+  <text x="74" y="252" font-size="12" font-weight="700" fill="#145a8c">B細胞に抗体産生を指示</text>
+  <text x="74" y="272" font-size="11" fill="#1f76b8">好酸球（寄生虫）・肥満細胞（アレルギー）も</text>
+  <rect x="62" y="298" width="288" height="96" rx="14" fill="#fff9e6" stroke="#e0b23a" stroke-width="1.4"/>
+  <rect x="72" y="308" width="74" height="30" rx="15" fill="#d39a12"/><text x="109" y="328" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">Th17</text>
+  <text x="156" y="328" font-size="14" font-weight="700" fill="#8a6200">→ 急性炎症反応</text>
+  <text x="74" y="360" font-size="12" font-weight="700" fill="#8a6200">自然免疫反応を強化する</text>
+  <text x="74" y="380" font-size="11" fill="#8a6200">好中球・上皮細胞（抗菌物質の産生）</text>
 </svg>

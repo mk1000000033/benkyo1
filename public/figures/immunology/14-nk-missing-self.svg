@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 330" width="720" height="660" font-family="'Hiragino Maru Gothic ProN','Hiragino Sans','Noto Sans JP',sans-serif">
+  <defs><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M2 1L8 5L2 9" fill="none" stroke="#7a7392" stroke-width="1.6" stroke-linecap="round"/></marker></defs>
+  <rect width="360" height="330" fill="#ffffff"/>
+  <rect x="10" y="10" width="340" height="146" rx="16" fill="#f3fbf6" stroke="#3fbf93" stroke-width="1.2"/>
+  <circle cx="62" cy="72" r="34" fill="#fff3c4" stroke="#d39a12" stroke-width="1.6"/>
+  <text x="62" y="77" text-anchor="middle" font-size="13" font-weight="700" fill="#8a6200">NK細胞</text>
+  <circle cx="204" cy="72" r="38" fill="#ffffff" stroke="#7a7392" stroke-width="1.6"/>
+  <text x="204" y="70" text-anchor="middle" font-size="12" font-weight="700" fill="#3a3350">正常細胞</text>
+  <rect x="96" y="62" width="14" height="20" rx="3" fill="#6a48d6"/>
+  <rect x="154" y="62" width="12" height="20" rx="3" fill="#e25d97"/>
+  <path d="M110 72 L154 72" stroke="#6a48d6" stroke-width="2"/>
+  <text x="80" y="122" font-size="10" fill="#6a48d6">キラー阻止レセプター</text>
+  <text x="112" y="46" font-size="10" fill="#c03272">MHCクラスⅠ あり</text>
+  <line x1="246" y1="72" x2="262" y2="72" stroke="#7a7392" stroke-width="1.6" marker-end="url(#ar)"/>
+  <text x="268" y="68" font-size="12" font-weight="700" fill="#0f7a58">ブレーキON</text>
+  <text x="268" y="86" font-size="11" fill="#0f7a58">→ 攻撃しない</text>
+  <text x="24" y="140" font-size="11.5" fill="#0f7a58">MHCクラスⅠがある＝「自分」と確認 → 細胞傷害活性が抑制</text>
+  <rect x="10" y="168" width="340" height="152" rx="16" fill="#fff5f2" stroke="#e58a6e" stroke-width="1.2"/>
+  <circle cx="62" cy="230" r="34" fill="#fff3c4" stroke="#d39a12" stroke-width="1.6"/>
+  <text x="62" y="235" text-anchor="middle" font-size="13" font-weight="700" fill="#8a6200">NK細胞</text>
+  <circle cx="204" cy="230" r="38" fill="#ffe3dc" stroke="#e0694a" stroke-width="1.6"/>
+  <text x="204" y="226" text-anchor="middle" font-size="11.5" font-weight="700" fill="#a3402a">感染細胞</text>
+  <text x="204" y="242" text-anchor="middle" font-size="11.5" font-weight="700" fill="#a3402a">がん細胞</text>
+  <rect x="96" y="220" width="14" height="20" rx="3" fill="#6a48d6"/>
+  <rect x="154" y="220" width="12" height="20" rx="3" fill="none" stroke="#e25d97" stroke-dasharray="3 2"/>
+  <path d="M152 216 L168 244 M168 216 L152 244" stroke="#e0694a" stroke-width="2"/>
+  <text x="112" y="204" font-size="10" fill="#c03272">MHCクラスⅠ 低下</text>
+  <line x1="246" y1="230" x2="262" y2="230" stroke="#7a7392" stroke-width="1.6" marker-end="url(#ar)"/>
+  <text x="268" y="226" font-size="12" font-weight="700" fill="#b23a22">ブレーキOFF</text>
+  <text x="268" y="244" font-size="11" fill="#b23a22">→ 細胞傷害</text>
+  <text x="24" y="292" font-size="11.5" fill="#a3402a">「自分」の目印がない → 活性化して攻撃（除去）</text>
+  <text x="24" y="308" font-size="10.5" fill="#7a7392">キラーT細胞は MHCクラスⅠがないと認識できない</text>
+</svg>
