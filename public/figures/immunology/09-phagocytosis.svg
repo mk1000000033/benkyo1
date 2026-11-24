@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 372" width="720" height="744" font-family="'Hiragino Maru Gothic ProN','Hiragino Sans','Noto Sans JP',sans-serif">
+  <defs><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M2 1L8 5L2 9" fill="none" stroke="#7a7392" stroke-width="1.6" stroke-linecap="round"/></marker></defs>
+  <rect width="360" height="372" fill="#ffffff"/>
+  <g stroke="#7a7392" stroke-width="1.6">
+    <line x1="62" y1="80" x2="62" y2="94" marker-end="url(#ar)"/>
+    <line x1="62" y1="170" x2="62" y2="186" marker-end="url(#ar)"/>
+    <line x1="62" y1="262" x2="62" y2="278" marker-end="url(#ar)"/>
+  </g>
+  <circle cx="62" cy="46" r="32" fill="#f6f2ff" stroke="#9b7bff" stroke-width="1.6"/>
+  <path d="M44 20 Q40 6 52 4 M80 20 Q84 6 72 4" fill="none" stroke="#9b7bff" stroke-width="3" stroke-linecap="round"/>
+  <rect x="52" y="6" width="20" height="12" rx="6" fill="#8fd6a8" stroke="#3f9e6c"/>
+  <circle cx="62" cy="132" r="36" fill="#f6f2ff" stroke="#9b7bff" stroke-width="1.6"/>
+  <circle cx="62" cy="132" r="15" fill="#ffffff" stroke="#9b7bff" stroke-width="1.2" stroke-dasharray="3 2"/>
+  <rect x="52" y="126" width="20" height="12" rx="6" fill="#8fd6a8" stroke="#3f9e6c"/>
+  <circle cx="62" cy="224" r="36" fill="#f6f2ff" stroke="#9b7bff" stroke-width="1.6"/>
+  <circle cx="54" cy="224" r="15" fill="#ffffff" stroke="#9b7bff" stroke-width="1.2" stroke-dasharray="3 2"/>
+  <rect x="44" y="218" width="20" height="12" rx="6" fill="#8fd6a8" stroke="#3f9e6c"/>
+  <circle cx="78" cy="212" r="10" fill="#ff9bb8" stroke="#d63d82"/>
+  <circle cx="62" cy="316" r="36" fill="#f6f2ff" stroke="#9b7bff" stroke-width="1.6"/>
+  <circle cx="62" cy="316" r="17" fill="#ffd3e1" stroke="#d63d82" stroke-width="1.2"/>
+  <g fill="#8fd6a8"><circle cx="56" cy="312" r="3"/><circle cx="66" cy="320" r="2.5"/><circle cx="62" cy="309" r="2"/><circle cx="55" cy="322" r="2"/></g>
+  <g font-size="14" font-weight="700" fill="#4a2fb0">
+    <text x="120" y="40">① 取り込む（貪食）</text>
+    <text x="120" y="128">② ファゴソームができる</text>
+    <text x="120" y="216">③ リソソームと融合</text>
+    <text x="120" y="308">④ 消化・殺菌</text>
+  </g>
+  <g font-size="12" fill="#5a5370">
+    <text x="120" y="60">細胞膜をのばして異物を包む</text>
+    <text x="120" y="148">異物を入れた袋＝ファゴソーム</text>
+    <text x="120" y="236">消化酵素の袋（<tspan fill="#d63d82" font-weight="700">リソソーム</tspan>）が合体</text>
+    <text x="120" y="254">→ <tspan font-weight="700">ファゴリソソーム</tspan></text>
+    <text x="120" y="328">酵素や活性酸素で分解する</text>
+  </g>
+</svg>

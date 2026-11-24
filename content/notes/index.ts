@@ -40,6 +40,8 @@ import natural_products_2024_structure from "./natural-products-2024-structure.j
 import natural_products_2025_structure from "./natural-products-2025-structure.json";
 import immunology_01a from "./immunology-01a.json";
 import immunology_01b from "./immunology-01b.json";
+import immunology_02a from "./immunology-02a.json";
+import immunology_02b from "./immunology-02b.json";
 export const NOTE_FILES: unknown[] = [
   natural_products_2024_q2,
   natural_products_2024_q3,
@@ -76,5 +78,7 @@ export const NOTE_FILES: unknown[] = [
   natural_products_2025_structure,
   immunology_01a,
   immunology_01b,
+  immunology_02a,
+  immunology_02b,
   // ↑ ここに新しいまとめを追加
 ];

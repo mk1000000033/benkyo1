@@ -1,0 +1,472 @@
+{
+  "id": "immunology-02a",
+  "version": 1,
+  "subjectId": "immunology",
+  "title": "第2回① 自然免疫のしくみ（PRR・TLR・食作用・抗菌物質）",
+  "lectureDate": null,
+  "group": "第2回",
+  "published": true,
+  "sourceMaterial": "免疫学 第2回 授業時間外課題（令和8年10月6日配信）",
+  "questions": [
+    {
+      "id": "q01",
+      "type": "choice",
+      "tags": [
+        "innate"
+      ],
+      "prompt": "自然免疫に関する記述として正しいものはどれか。",
+      "options": [
+        {
+          "id": "a",
+          "text": "抗体を産生する"
+        },
+        {
+          "id": "b",
+          "text": "外敵を貪食する"
+        },
+        {
+          "id": "c",
+          "text": "T細胞抗原受容体（TCR）で抗原を認識する"
+        },
+        {
+          "id": "d",
+          "text": "メモリー（記憶）細胞を残す"
+        }
+      ],
+      "answer": "b",
+      "explanation": "自然免疫は ==食細胞が外敵を貪食する== など、すぐに働く防御です。抗体産生・TCRでの認識・記憶細胞は **獲得免疫** の特徴です。",
+      "sourcePage": "問1"
+    },
+    {
+      "id": "q02",
+      "type": "choice",
+      "tags": [
+        "innate"
+      ],
+      "prompt": "自然免疫の特徴として正しいものはどれか。",
+      "options": [
+        {
+          "id": "a",
+          "text": "生まれつき備わっていて、異物が侵入した初期からすぐに働く"
+        },
+        {
+          "id": "b",
+          "text": "異物に対する抗原特異性が高い"
+        },
+        {
+          "id": "c",
+          "text": "細胞性免疫と体液性免疫に分類される"
+        },
+        {
+          "id": "d",
+          "text": "2回目の感染では1回目より強く反応する"
+        }
+      ],
+      "answer": "a",
+      "explanation": "自然免疫は ==先天的== に備わっていて、==感染の初期== から働きます。ほかの3つは獲得免疫の特徴です。",
+      "sourcePage": "問1・問7"
+    },
+    {
+      "id": "q03",
+      "type": "choice",
+      "tags": [
+        "innate"
+      ],
+      "prompt": "パターン認識受容体（PRR）に関する記述として正しいものはどれか。",
+      "options": [
+        {
+          "id": "a",
+          "text": "主にT細胞に発現している"
+        },
+        {
+          "id": "b",
+          "text": "宿主に共通に存在し、微生物には存在しない分子構造を認識する"
+        },
+        {
+          "id": "c",
+          "text": "食作用を促進する"
+        },
+        {
+          "id": "d",
+          "text": "異物に対する抗原特異性が高い"
+        }
+      ],
+      "answer": "c",
+      "explanation": "PRR が病原体を見つけると ==食作用が促進== され、抗菌物質やサイトカインもつくられます。PRR は **食細胞など** にあり、認識するのは ==微生物に共通で宿主にない== 構造（PAMPs）です。",
+      "sourcePage": "問2"
+    },
+    {
+      "id": "q04",
+      "type": "fill",
+      "tags": [
+        "innate"
+      ],
+      "prompt": "パターン認識受容体が認識する、微生物に共通の分子構造を [[blank]] という。",
+      "options": [
+        {
+          "id": "a",
+          "text": "PAMPs"
+        },
+        {
+          "id": "b",
+          "text": "MHC"
+        },
+        {
+          "id": "c",
+          "text": "エピトープ"
+        }
+      ],
+      "answer": "a",
+      "explanation": "==PAMPs==（病原体関連分子パターン）は、細菌のLPSやウイルスのRNAなど、微生物に共通で宿主にはない構造です。",
+      "sourcePage": "問2・問3"
+    },
+    {
+      "id": "q05",
+      "type": "fill",
+      "tags": [
+        "innate"
+      ],
+      "prompt": "TLR2 が認識する PAMPs は [[blank]] である。",
+      "options": [
+        {
+          "id": "a",
+          "text": "リポタンパク質"
+        },
+        {
+          "id": "b",
+          "text": "LPS（リポ多糖）"
+        },
+        {
+          "id": "c",
+          "text": "フラジェリン"
+        },
+        {
+          "id": "d",
+          "text": "一本鎖RNA"
+        },
+        {
+          "id": "e",
+          "text": "非メチル化CpG DNA"
+        }
+      ],
+      "answer": "a",
+      "explanation": "==TLR2== は細菌の膜にある ==リポタンパク質==（ペプチドグリカン・リポテイコ酸なども）を認識します。",
+      "sourcePage": "問3"
+    },
+    {
+      "id": "q06",
+      "type": "fill",
+      "tags": [
+        "innate"
+      ],
+      "prompt": "TLR4 が認識する PAMPs は [[blank]] である。",
+      "options": [
+        {
+          "id": "a",
+          "text": "リポタンパク質"
+        },
+        {
+          "id": "b",
+          "text": "LPS（リポ多糖）"
+        },
+        {
+          "id": "c",
+          "text": "フラジェリン"
+        },
+        {
+          "id": "d",
+          "text": "一本鎖RNA"
+        },
+        {
+          "id": "e",
+          "text": "非メチル化CpG DNA"
+        }
+      ],
+      "answer": "b",
+      "explanation": "==TLR4== はグラム陰性菌の外膜にある ==LPS（リポ多糖）== を認識します。",
+      "sourcePage": "問3"
+    },
+    {
+      "id": "q07",
+      "type": "fill",
+      "tags": [
+        "innate"
+      ],
+      "prompt": "TLR5 が認識する PAMPs は [[blank]] である。",
+      "options": [
+        {
+          "id": "a",
+          "text": "リポタンパク質"
+        },
+        {
+          "id": "b",
+          "text": "LPS（リポ多糖）"
+        },
+        {
+          "id": "c",
+          "text": "フラジェリン"
+        },
+        {
+          "id": "d",
+          "text": "一本鎖RNA"
+        },
+        {
+          "id": "e",
+          "text": "非メチル化CpG DNA"
+        }
+      ],
+      "answer": "c",
+      "explanation": "==TLR5== は細菌のべん毛の成分 ==フラジェリン== を認識します。",
+      "sourcePage": "問3"
+    },
+    {
+      "id": "q08",
+      "type": "choice",
+      "tags": [
+        "innate"
+      ],
+      "prompt": "ウイルスの一本鎖RNAを、細胞の中（エンドソーム）で認識する TLR はどれか。",
+      "options": [
+        {
+          "id": "a",
+          "text": "TLR2"
+        },
+        {
+          "id": "b",
+          "text": "TLR4"
+        },
+        {
+          "id": "c",
+          "text": "TLR5"
+        },
+        {
+          "id": "d",
+          "text": "TLR7"
+        }
+      ],
+      "answer": "d",
+      "explanation": "==TLR7== はエンドソームでウイルスの ==一本鎖RNA== を認識します。",
+      "sourcePage": "問3"
+    },
+    {
+      "id": "q09",
+      "type": "fill",
+      "tags": [
+        "innate"
+      ],
+      "prompt": "TLR9 が認識する PAMPs は [[blank]] である。",
+      "options": [
+        {
+          "id": "a",
+          "text": "リポタンパク質"
+        },
+        {
+          "id": "b",
+          "text": "LPS（リポ多糖）"
+        },
+        {
+          "id": "c",
+          "text": "フラジェリン"
+        },
+        {
+          "id": "d",
+          "text": "一本鎖RNA"
+        },
+        {
+          "id": "e",
+          "text": "非メチル化CpG DNA"
+        }
+      ],
+      "answer": "e",
+      "explanation": "==TLR9== は細菌やウイルスのDNAに多い ==非メチル化CpG DNA== を、エンドソームで認識します。",
+      "sourcePage": "問3"
+    },
+    {
+      "id": "q10",
+      "type": "fill",
+      "tags": [
+        "innate"
+      ],
+      "prompt": "食作用の過程で、ファゴソームと融合して異物の消化に関与する細胞内小器官は [[blank]] である。",
+      "options": [
+        {
+          "id": "a",
+          "text": "リソソーム"
+        },
+        {
+          "id": "b",
+          "text": "ミトコンドリア"
+        },
+        {
+          "id": "c",
+          "text": "ゴルジ体"
+        },
+        {
+          "id": "d",
+          "text": "リボソーム"
+        }
+      ],
+      "answer": "a",
+      "explanation": "消化酵素の入った ==リソソーム== がファゴソームと融合し、異物を分解します。",
+      "sourcePage": "問4"
+    },
+    {
+      "id": "q11",
+      "type": "fill",
+      "tags": [
+        "innate"
+      ],
+      "prompt": "ファゴソームとリソソームが融合したものを [[blank]] という。",
+      "options": [
+        {
+          "id": "a",
+          "text": "ファゴリソソーム"
+        },
+        {
+          "id": "b",
+          "text": "エンドソーム"
+        },
+        {
+          "id": "c",
+          "text": "プロテアソーム"
+        }
+      ],
+      "answer": "a",
+      "explanation": "融合してできるのが ==ファゴリソソーム==。この中で異物が消化・殺菌されます。",
+      "sourcePage": "問4"
+    },
+    {
+      "id": "q12",
+      "type": "fill",
+      "tags": [
+        "innate"
+      ],
+      "prompt": "鉄と結合して、細菌が鉄を使えないようにする抗菌物質は [[blank]] である。",
+      "options": [
+        {
+          "id": "a",
+          "text": "ラクトフェリン"
+        },
+        {
+          "id": "b",
+          "text": "リゾチーム"
+        },
+        {
+          "id": "c",
+          "text": "ディフェンシン"
+        }
+      ],
+      "answer": "a",
+      "explanation": "==ラクトフェリン== は ==鉄と結合== し、細菌の増殖に必要な鉄を奪います。",
+      "sourcePage": "問5"
+    },
+    {
+      "id": "q13",
+      "type": "choice",
+      "tags": [
+        "innate"
+      ],
+      "prompt": "細菌の細胞膜に穴をあける（穿孔する）抗菌ペプチドはどれか。",
+      "options": [
+        {
+          "id": "a",
+          "text": "ディフェンシン"
+        },
+        {
+          "id": "b",
+          "text": "リゾチーム"
+        },
+        {
+          "id": "c",
+          "text": "ラクトフェリン"
+        },
+        {
+          "id": "d",
+          "text": "NADPHオキシダーゼ"
+        }
+      ],
+      "answer": "a",
+      "explanation": "==ディフェンシン== は細菌の ==細胞膜に穴をあけて== 殺菌する抗菌ペプチドです。",
+      "sourcePage": "問5"
+    },
+    {
+      "id": "q14",
+      "type": "fill",
+      "tags": [
+        "innate"
+      ],
+      "prompt": "細菌の細胞壁のペプチドグリカンを分解する酵素は [[blank]] である。",
+      "options": [
+        {
+          "id": "a",
+          "text": "リゾチーム"
+        },
+        {
+          "id": "b",
+          "text": "ラクトフェリン"
+        },
+        {
+          "id": "c",
+          "text": "ミエロペルオキシダーゼ"
+        }
+      ],
+      "answer": "a",
+      "explanation": "==リゾチーム== は ==ペプチドグリカン== を分解します。涙や唾液にも含まれます。",
+      "sourcePage": "問5"
+    },
+    {
+      "id": "q15",
+      "type": "choice",
+      "tags": [
+        "innate"
+      ],
+      "prompt": "過酸化水素から次亜塩素酸をつくる酵素はどれか。",
+      "options": [
+        {
+          "id": "a",
+          "text": "ミエロペルオキシダーゼ"
+        },
+        {
+          "id": "b",
+          "text": "NADPHオキシダーゼ"
+        },
+        {
+          "id": "c",
+          "text": "リゾチーム"
+        },
+        {
+          "id": "d",
+          "text": "ラクトフェリン"
+        }
+      ],
+      "answer": "a",
+      "explanation": "好中球の ==ミエロペルオキシダーゼ（MPO）== は、過酸化水素と塩化物イオンから ==次亜塩素酸== をつくります。",
+      "sourcePage": "問5"
+    },
+    {
+      "id": "q16",
+      "type": "fill",
+      "tags": [
+        "innate"
+      ],
+      "prompt": "スーパーオキシドアニオンを生成する酵素は [[blank]] である。",
+      "options": [
+        {
+          "id": "a",
+          "text": "NADPHオキシダーゼ"
+        },
+        {
+          "id": "b",
+          "text": "ミエロペルオキシダーゼ"
+        },
+        {
+          "id": "c",
+          "text": "リゾチーム"
+        }
+      ],
+      "answer": "a",
+      "explanation": "==NADPHオキシダーゼ== が酸素から ==スーパーオキシドアニオン== をつくります（活性酸素による殺菌の出発点）。",
+      "sourcePage": "問5"
+    }
+  ]
+}

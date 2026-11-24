@@ -42,6 +42,8 @@ import natural_products_cross_drugs_v1 from "./natural-products-cross-drugs.v1.j
 import natural_products_cross_antibiotic_structures_v1 from "./natural-products-cross-antibiotic-structures.v1.json";
 import immunology_01a_v1 from "./immunology-01a.v1.json";
 import immunology_01b_v1 from "./immunology-01b.v1.json";
+import immunology_02a_v1 from "./immunology-02a.v1.json";
+import immunology_02b_v1 from "./immunology-02b.v1.json";
 
 export const QUIZ_SET_FILES: unknown[] = [
   natural_products_2024_q2_v1,
@@ -80,5 +82,7 @@ export const QUIZ_SET_FILES: unknown[] = [
   natural_products_cross_antibiotic_structures_v1,
   immunology_01a_v1,
   immunology_01b_v1,
+  immunology_02a_v1,
+  immunology_02b_v1,
   // ↑ ここに新しい問題セットを追加
 ];

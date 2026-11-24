@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 340" width="720" height="680" font-family="'Hiragino Maru Gothic ProN','Hiragino Sans','Noto Sans JP',sans-serif">
+  <rect width="360" height="340" fill="#ffffff"/>
+  <text x="180" y="14" text-anchor="middle" font-size="11" fill="#7a7392">細胞の外（細菌の部品を見張る）</text>
+  <g text-anchor="middle">
+    <rect x="16" y="22" width="100" height="42" rx="10" fill="#ffe3dc" stroke="#e58a6e"/>
+    <text x="66" y="40" font-size="12" font-weight="700" fill="#a3402a">リポタンパク質</text>
+    <text x="66" y="56" font-size="10.5" fill="#a3402a">細菌の膜</text>
+    <rect x="130" y="22" width="100" height="42" rx="10" fill="#ffe3dc" stroke="#e58a6e"/>
+    <text x="180" y="40" font-size="12" font-weight="700" fill="#a3402a">LPS</text>
+    <text x="180" y="56" font-size="10.5" fill="#a3402a">グラム陰性菌</text>
+    <rect x="244" y="22" width="100" height="42" rx="10" fill="#ffe3dc" stroke="#e58a6e"/>
+    <text x="294" y="40" font-size="12" font-weight="700" fill="#a3402a">フラジェリン</text>
+    <text x="294" y="56" font-size="10.5" fill="#a3402a">細菌のべん毛</text>
+  </g>
+  <g stroke="#e58a6e" stroke-width="1.4" stroke-dasharray="3 3">
+    <line x1="66" y1="66" x2="66" y2="76"/><line x1="180" y1="66" x2="180" y2="76"/><line x1="294" y1="66" x2="294" y2="76"/>
+  </g>
+  <rect x="10" y="112" width="340" height="218" rx="26" fill="#f6f2ff" stroke="#9b7bff" stroke-width="2"/>
+  <g fill="#9b7bff">
+    <rect x="60" y="100" width="12" height="40" rx="4"/><rect x="174" y="100" width="12" height="40" rx="4"/><rect x="288" y="100" width="12" height="40" rx="4"/>
+  </g>
+  <g text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff">
+    <rect x="36" y="78" width="60" height="26" rx="13" fill="#6a48d6"/><text x="66" y="96">TLR2</text>
+    <rect x="150" y="78" width="60" height="26" rx="13" fill="#6a48d6"/><text x="180" y="96">TLR4</text>
+    <rect x="264" y="78" width="60" height="26" rx="13" fill="#6a48d6"/><text x="294" y="96">TLR5</text>
+  </g>
+  <text x="24" y="162" font-size="11" fill="#6a48d6">細胞（マクロファージ・樹状細胞など）</text>
+  <ellipse cx="180" cy="254" rx="150" ry="62" fill="#ffffff" stroke="#3a9be0" stroke-width="1.6"/>
+  <text x="180" y="212" text-anchor="middle" font-size="12" font-weight="700" fill="#1f76b8">細胞の中（エンドソーム）</text>
+  <g text-anchor="middle">
+    <rect x="90" y="224" width="60" height="26" rx="13" fill="#6a48d6"/><text x="120" y="242" font-size="13" font-weight="700" fill="#ffffff">TLR7</text>
+    <rect x="210" y="224" width="60" height="26" rx="13" fill="#6a48d6"/><text x="240" y="242" font-size="13" font-weight="700" fill="#ffffff">TLR9</text>
+    <text x="120" y="270" font-size="12" font-weight="700" fill="#145a8c">一本鎖RNA</text>
+    <text x="120" y="286" font-size="10.5" fill="#1f76b8">ウイルス</text>
+    <text x="240" y="270" font-size="12" font-weight="700" fill="#145a8c">CpG DNA</text>
+    <text x="240" y="286" font-size="10.5" fill="#1f76b8">細菌・ウイルスのDNA</text>
+  </g>
+</svg>

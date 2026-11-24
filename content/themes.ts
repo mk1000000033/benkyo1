@@ -22,6 +22,8 @@ export const THEMES: Record<string, Theme[]> = {
   immunology: [
     { id: "cells", name: "免疫細胞", emoji: "🧫", description: "食細胞・抗原提示細胞・リンパ球" },
     { id: "organs", name: "リンパ器官", emoji: "🏫", description: "一次・二次リンパ器官・脾臓" },
+    { id: "innate", name: "自然免疫", emoji: "📡", description: "PRR・TLR・食作用・抗菌物質" },
+    { id: "adaptive", name: "獲得免疫", emoji: "🎯", description: "細胞性・体液性免疫・免疫学的記憶" },
   ],
 };
 
