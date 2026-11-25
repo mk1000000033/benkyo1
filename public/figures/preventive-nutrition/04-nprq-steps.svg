@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 330" width="720" height="660" font-family="'Hiragino Maru Gothic ProN','Hiragino Sans','Noto Sans JP',sans-serif">
+<rect width="360" height="330" fill="#ffffff"/>
+<defs><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10z" fill="#7a7392"/></marker></defs>
+<g font-weight="900" fill="#3d3a50">
+<rect x="20" y="6" width="320" height="40" rx="10" fill="#f3f0f7"/><text x="180" y="31" font-size="14" text-anchor="middle">① 尿中窒素量を測る</text>
+<rect x="20" y="66" width="320" height="40" rx="10" fill="#f3f0f7"/><text x="180" y="91" font-size="14" text-anchor="middle">② × 6.25 → タンパク質燃焼量（g）</text>
+<rect x="20" y="126" width="320" height="52" rx="10" fill="#f3f0f7"/><text x="180" y="148" font-size="13" text-anchor="middle">③ タンパク質の分のガス</text><text x="180" y="168" font-size="13" text-anchor="middle">O₂ ＝ g×0.95 L　CO₂ ＝ g×0.76 L</text>
+<rect x="20" y="198" width="320" height="56" rx="10" fill="#2f9e7a"/><text x="180" y="221" font-size="13" fill="#fff" text-anchor="middle">④ NPRQ ＝（総CO₂ − タンパク質のCO₂）</text><text x="180" y="243" font-size="13" fill="#fff" text-anchor="middle">÷（総O₂ − タンパク質のO₂）</text>
+<path d="M180 46V62M180 106V122M180 178V194" stroke="#7a7392" stroke-width="2.5" marker-end="url(#ar)"/>
+<rect x="20" y="270" width="154" height="52" rx="10" fill="#f5b83d"/><text x="97" y="292" font-size="13" text-anchor="middle">0.7に近い</text><text x="97" y="312" font-size="13" text-anchor="middle">→ 🧈 脂質メイン</text>
+<rect x="186" y="270" width="154" height="52" rx="10" fill="#e0558a"/><text x="263" y="292" font-size="13" fill="#fff" text-anchor="middle">1.0に近い</text><text x="263" y="312" font-size="13" fill="#fff" text-anchor="middle">→ 🍚 糖質メイン</text>
+</g></svg>

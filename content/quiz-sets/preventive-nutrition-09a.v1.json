@@ -1,0 +1,422 @@
+{
+  "id": "preventive-nutrition-09a",
+  "version": 1,
+  "subjectId": "preventive-nutrition",
+  "title": "第9回① 利用エネルギー・呼吸商・食事誘発性熱産生",
+  "lectureDate": null,
+  "group": "第9回 エネルギー代謝",
+  "published": true,
+  "sourceMaterial": "予防栄養学 第9回 授業スライド（栄養と健康：(1)利用エネルギー (2)呼吸商 (3)食事誘発性熱産生）",
+  "questions": [
+    {
+      "id": "q01",
+      "type": "choice",
+      "tags": [
+        "energy"
+      ],
+      "prompt": "アトウォーター係数で、脂質1 gあたりの利用エネルギーは？",
+      "options": [
+        {
+          "id": "a",
+          "text": "4 kcal"
+        },
+        {
+          "id": "b",
+          "text": "7 kcal"
+        },
+        {
+          "id": "c",
+          "text": "9 kcal"
+        },
+        {
+          "id": "d",
+          "text": "0 kcal"
+        }
+      ],
+      "answer": "c",
+      "explanation": "糖質 **4**・タンパク質 **4**・脂質 **9** kcal/g（==しし・く==）。ビタミン・ミネラルは0 kcal/g。",
+      "sourcePage": "スライド3"
+    },
+    {
+      "id": "q02",
+      "type": "choice",
+      "tags": [
+        "energy"
+      ],
+      "prompt": "糖質50 g、タンパク質20 g、脂質10 gを含む食品の利用エネルギーは？",
+      "options": [
+        {
+          "id": "a",
+          "text": "280 kcal"
+        },
+        {
+          "id": "b",
+          "text": "370 kcal"
+        },
+        {
+          "id": "c",
+          "text": "450 kcal"
+        },
+        {
+          "id": "d",
+          "text": "530 kcal"
+        }
+      ],
+      "answer": "b",
+      "explanation": "50×4＋20×4＋10×9＝200＋80＋90＝==370 kcal==",
+      "sourcePage": "スライド4"
+    },
+    {
+      "id": "q03",
+      "type": "fill",
+      "tags": [
+        "energy"
+      ],
+      "prompt": "1 kcal ＝ [[blank]] kJ",
+      "options": [
+        {
+          "id": "a",
+          "text": "1.05"
+        },
+        {
+          "id": "b",
+          "text": "4.184"
+        },
+        {
+          "id": "c",
+          "text": "6.25"
+        },
+        {
+          "id": "d",
+          "text": "9.0"
+        }
+      ],
+      "answer": "b",
+      "explanation": "1 kcalは水1 kgを1気圧で1℃上げる熱量で、==4.184 kJ==。",
+      "sourcePage": "スライド3"
+    },
+    {
+      "id": "q04",
+      "type": "fill",
+      "tags": [
+        "energy"
+      ],
+      "prompt": "生理的燃焼値は、物理的燃焼値から [[blank]] のエネルギーを差し引き、消化吸収率で補正した値である。",
+      "options": [
+        {
+          "id": "a",
+          "text": "呼気"
+        },
+        {
+          "id": "b",
+          "text": "汗"
+        },
+        {
+          "id": "c",
+          "text": "尿排泄物"
+        },
+        {
+          "id": "d",
+          "text": "皮膚からの放熱"
+        }
+      ],
+      "answer": "c",
+      "explanation": "==尿に出る分==を引いて、消化吸収率で補正 → 利用エネルギー（アトウォーター係数）。",
+      "sourcePage": "スライド3"
+    },
+    {
+      "id": "q05",
+      "type": "choice",
+      "tags": [
+        "energy"
+      ],
+      "prompt": "消化吸収率が最も高い栄養素は？",
+      "options": [
+        {
+          "id": "a",
+          "text": "糖質"
+        },
+        {
+          "id": "b",
+          "text": "脂質"
+        },
+        {
+          "id": "c",
+          "text": "タンパク質"
+        },
+        {
+          "id": "d",
+          "text": "3つとも同じ"
+        }
+      ],
+      "answer": "a",
+      "explanation": "==糖質98%==＞脂質95%＞タンパク質92%。",
+      "sourcePage": "スライド3"
+    },
+    {
+      "id": "q06",
+      "type": "truefalse",
+      "tags": [
+        "rq"
+      ],
+      "prompt": "エネルギー産生量の直接法では、酸素摂取量と二酸化炭素排出量を測定する。",
+      "answer": false,
+      "explanation": "×。直接法は体から発散される==熱==を測る。O₂・CO₂・尿中窒素量を測るのは**間接法**（呼吸商も間接法の一種）。",
+      "sourcePage": "スライド5"
+    },
+    {
+      "id": "q07",
+      "type": "choice",
+      "tags": [
+        "rq"
+      ],
+      "prompt": "タンパク質が体内で酸化されたときに生じるものの組合せは？",
+      "options": [
+        {
+          "id": "a",
+          "text": "CO₂と水"
+        },
+        {
+          "id": "b",
+          "text": "CO₂と水と尿素"
+        },
+        {
+          "id": "c",
+          "text": "CO₂と尿酸"
+        },
+        {
+          "id": "d",
+          "text": "水と尿素のみ"
+        }
+      ],
+      "answer": "b",
+      "explanation": "糖質・脂質は CO₂＋水。タンパク質は窒素を含むので ==CO₂＋水＋尿素==。",
+      "sourcePage": "スライド5"
+    },
+    {
+      "id": "q08",
+      "type": "choice",
+      "tags": [
+        "rq"
+      ],
+      "prompt": "呼吸商（RQ）の定義として正しいのは？",
+      "options": [
+        {
+          "id": "a",
+          "text": "消費O₂量 ÷ 排出CO₂量"
+        },
+        {
+          "id": "b",
+          "text": "排出CO₂量 ÷ 消費O₂量"
+        },
+        {
+          "id": "c",
+          "text": "排出CO₂量 ÷ 尿中窒素量"
+        },
+        {
+          "id": "d",
+          "text": "消費O₂量 × 6.25"
+        }
+      ],
+      "answer": "b",
+      "explanation": "RQ＝==CO₂／O₂==（一定時間の体積比）。",
+      "sourcePage": "スライド6"
+    },
+    {
+      "id": "q09",
+      "type": "fill",
+      "tags": [
+        "rq"
+      ],
+      "prompt": "呼吸商は 糖質 1.0、脂質 [[blank]]、タンパク質 0.8 である。",
+      "options": [
+        {
+          "id": "a",
+          "text": "0.5"
+        },
+        {
+          "id": "b",
+          "text": "0.7"
+        },
+        {
+          "id": "c",
+          "text": "0.9"
+        },
+        {
+          "id": "d",
+          "text": "1.2"
+        }
+      ],
+      "answer": "b",
+      "explanation": "脂質 **0.7**・タンパク質 **0.8**・糖質 **1.0**。",
+      "sourcePage": "スライド6"
+    },
+    {
+      "id": "q10",
+      "type": "truefalse",
+      "tags": [
+        "rq"
+      ],
+      "prompt": "1 gあたりの酸素消費量と二酸化炭素排出量は、どちらも糖質が最も多い。",
+      "answer": false,
+      "explanation": "×。どちらも==脂質==が最も多い（O₂ 2.03 L/g、CO₂ 1.43 L/g）。",
+      "sourcePage": "スライド6"
+    },
+    {
+      "id": "q11",
+      "type": "choice",
+      "tags": [
+        "rq"
+      ],
+      "prompt": "窒素係数6.25の根拠となる、タンパク質の平均窒素含有率は？",
+      "options": [
+        {
+          "id": "a",
+          "text": "6.25%"
+        },
+        {
+          "id": "b",
+          "text": "12%"
+        },
+        {
+          "id": "c",
+          "text": "16%"
+        },
+        {
+          "id": "d",
+          "text": "25%"
+        }
+      ],
+      "answer": "c",
+      "explanation": "100÷**16**＝==6.25==。",
+      "sourcePage": "スライド7"
+    },
+    {
+      "id": "q12",
+      "type": "choice",
+      "tags": [
+        "rq"
+      ],
+      "prompt": "尿中窒素量が0.8 gのとき、燃焼したタンパク質量は？",
+      "options": [
+        {
+          "id": "a",
+          "text": "0.128 g"
+        },
+        {
+          "id": "b",
+          "text": "2.5 g"
+        },
+        {
+          "id": "c",
+          "text": "5.0 g"
+        },
+        {
+          "id": "d",
+          "text": "12.8 g"
+        }
+      ],
+      "answer": "c",
+      "explanation": "0.8×6.25＝==5.0 g==",
+      "sourcePage": "スライド7"
+    },
+    {
+      "id": "q13",
+      "type": "choice",
+      "tags": [
+        "rq"
+      ],
+      "prompt": "総O₂消費量24.75 L、総CO₂排出量19.8 L、尿中窒素量0.8 gのとき、非タンパク質呼吸商は？（タンパク質1 gあたり O₂ 0.95 L、CO₂ 0.76 L）",
+      "options": [
+        {
+          "id": "a",
+          "text": "0.70"
+        },
+        {
+          "id": "b",
+          "text": "0.75"
+        },
+        {
+          "id": "c",
+          "text": "0.80"
+        },
+        {
+          "id": "d",
+          "text": "0.95"
+        }
+      ],
+      "answer": "c",
+      "explanation": "タンパク質 0.8×6.25＝5 g → O₂ 4.75 L、CO₂ 3.8 L。(19.8−3.8)÷(24.75−4.75)＝16÷20＝==0.80==",
+      "sourcePage": "スライド8"
+    },
+    {
+      "id": "q14",
+      "type": "choice",
+      "tags": [
+        "rq"
+      ],
+      "prompt": "非タンパク質呼吸商が0.98だった。エネルギー源の中心は？",
+      "options": [
+        {
+          "id": "a",
+          "text": "糖質"
+        },
+        {
+          "id": "b",
+          "text": "脂質"
+        },
+        {
+          "id": "c",
+          "text": "タンパク質"
+        },
+        {
+          "id": "d",
+          "text": "判断できない"
+        }
+      ],
+      "answer": "a",
+      "explanation": "==1.0に近ければ糖質==メイン、0.7に近ければ脂質メイン。",
+      "sourcePage": "スライド8"
+    },
+    {
+      "id": "q15",
+      "type": "choice",
+      "tags": [
+        "dit"
+      ],
+      "prompt": "食事誘発性熱産生で、摂取エネルギーのうち熱になる割合が20〜40%なのは？",
+      "options": [
+        {
+          "id": "a",
+          "text": "糖質"
+        },
+        {
+          "id": "b",
+          "text": "脂質"
+        },
+        {
+          "id": "c",
+          "text": "タンパク質"
+        },
+        {
+          "id": "d",
+          "text": "ビタミン"
+        }
+      ],
+      "answer": "c",
+      "explanation": "==タンパク質20〜40%==、糖質6〜9%、脂質4〜14%。タンパク質の約1/3は熱として消える。",
+      "sourcePage": "スライド9"
+    },
+    {
+      "id": "q16",
+      "type": "truefalse",
+      "tags": [
+        "dit"
+      ],
+      "prompt": "食事誘発性熱産生で発生した熱エネルギーは、身体活動に利用される。",
+      "answer": false,
+      "explanation": "×。身体活動には使われないので「==エネルギーの浪費==」ともいわれる。",
+      "sourcePage": "スライド9"
+    }
+  ]
+}

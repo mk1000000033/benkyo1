@@ -19,6 +19,7 @@ export const SUBJECTS: Subject[] = [
   { id: "immunology", name: "免疫学", emoji: "🛡️", color: "sky" },
   { id: "organic-chemistry", name: "有機化学", emoji: "⚗️", color: "yellow" },
   { id: "analytical-chemistry-3", name: "分析化学3", emoji: "🧪", color: "purple" },
+  { id: "preventive-nutrition", name: "予防栄養学", emoji: "🥗", color: "mint" },
 ];
 
 export function findSubject(id: string): Subject | undefined {

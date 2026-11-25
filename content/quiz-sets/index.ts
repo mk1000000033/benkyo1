@@ -48,6 +48,8 @@ import analytical_chemistry_3_mid_1_v1 from "./analytical-chemistry-3-mid-1.v1.j
 import analytical_chemistry_3_mid_2_v1 from "./analytical-chemistry-3-mid-2.v1.json";
 import analytical_chemistry_3_mid_3_v1 from "./analytical-chemistry-3-mid-3.v1.json";
 import analytical_chemistry_3_mid_4_v1 from "./analytical-chemistry-3-mid-4.v1.json";
+import preventive_nutrition_09a_v1 from "./preventive-nutrition-09a.v1.json";
+import preventive_nutrition_09b_v1 from "./preventive-nutrition-09b.v1.json";
 
 export const QUIZ_SET_FILES: unknown[] = [
   natural_products_2024_q2_v1,
@@ -92,5 +94,7 @@ export const QUIZ_SET_FILES: unknown[] = [
   analytical_chemistry_3_mid_2_v1,
   analytical_chemistry_3_mid_3_v1,
   analytical_chemistry_3_mid_4_v1,
+  preventive_nutrition_09a_v1,
+  preventive_nutrition_09b_v1,
   // ↑ ここに新しい問題セットを追加
 ];

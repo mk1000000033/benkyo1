@@ -35,6 +35,14 @@ export const THEMES: Record<string, Theme[]> = {
     { id: "msms", name: "MS/MS・開裂", emoji: "💥", description: "プレカーサー・プロダクト・衝突活性化・ECD/IRMPD" },
     { id: "ion", name: "イオン化法", emoji: "💦", description: "ESI・MALDI・多価イオン" },
   ],
+  "preventive-nutrition": [
+    { id: "energy", name: "利用エネルギー", emoji: "🔥", description: "アトウォーター係数・消化吸収率・物理的/生理的燃焼値" },
+    { id: "rq", name: "呼吸商・窒素係数", emoji: "🫁", description: "直接法・間接法・RQ・尿中窒素量・非タンパク質呼吸商" },
+    { id: "dit", name: "食事誘発性熱産生", emoji: "🍽️", description: "食後に熱になるエネルギーの割合" },
+    { id: "bmr", name: "基礎代謝", emoji: "😴", description: "基礎代謝量・基礎代謝基準値・安静時代謝量" },
+    { id: "activity", name: "活動とエネルギー必要量", emoji: "🏃", description: "身体活動レベル・推定エネルギー必要量・METs・エクササイズ" },
+    { id: "bmi", name: "BMI", emoji: "📏", description: "体格の基準値" },
+  ],
 };
 
 export function themesOf(subjectId: string): Theme[] {

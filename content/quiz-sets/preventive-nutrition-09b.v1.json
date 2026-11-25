@@ -1,0 +1,509 @@
+{
+  "id": "preventive-nutrition-09b",
+  "version": 1,
+  "subjectId": "preventive-nutrition",
+  "title": "第9回② 基礎代謝量・活動時エネルギー・BMI",
+  "lectureDate": null,
+  "group": "第9回 エネルギー代謝",
+  "published": true,
+  "sourceMaterial": "予防栄養学 第9回 授業スライド（栄養と健康：(4)基礎代謝量 (5)活動時のエネルギー消費 (6)推定エネルギー必要量 (7)BMI）",
+  "questions": [
+    {
+      "id": "q01",
+      "type": "choice",
+      "tags": [
+        "bmr"
+      ],
+      "prompt": "基礎代謝量の測定条件として誤っているのは？",
+      "options": [
+        {
+          "id": "a",
+          "text": "早朝"
+        },
+        {
+          "id": "b",
+          "text": "空腹時"
+        },
+        {
+          "id": "c",
+          "text": "座位"
+        },
+        {
+          "id": "d",
+          "text": "覚醒"
+        }
+      ],
+      "answer": "c",
+      "explanation": "基礎代謝量は==仰臥位==（あおむけ）。座位で測るのは**安静時代謝量**。",
+      "sourcePage": "スライド3"
+    },
+    {
+      "id": "q02",
+      "type": "truefalse",
+      "tags": [
+        "bmr"
+      ],
+      "prompt": "基礎代謝量は睡眠中に測定する。",
+      "answer": false,
+      "explanation": "×。==覚醒==した状態で測る。",
+      "sourcePage": "スライド3"
+    },
+    {
+      "id": "q03",
+      "type": "truefalse",
+      "tags": [
+        "bmr"
+      ],
+      "prompt": "基礎代謝量のうち、脂肪組織が占める割合は約20%である。",
+      "answer": false,
+      "explanation": "×。骨格筋・肝臓・脳がそれぞれ約20%、心臓・腎臓が約10%、==脂肪は5%未満==。",
+      "sourcePage": "スライド3"
+    },
+    {
+      "id": "q04",
+      "type": "choice",
+      "tags": [
+        "bmr"
+      ],
+      "prompt": "基礎代謝量が最大になる年齢の組合せとして正しいのは？",
+      "options": [
+        {
+          "id": "a",
+          "text": "男性 1〜2歳、女性 1〜2歳"
+        },
+        {
+          "id": "b",
+          "text": "男性 15〜17歳、女性 12〜14歳"
+        },
+        {
+          "id": "c",
+          "text": "男性 12〜14歳、女性 15〜17歳"
+        },
+        {
+          "id": "d",
+          "text": "男性 20〜29歳、女性 18〜29歳"
+        }
+      ],
+      "answer": "b",
+      "explanation": "基礎代謝**量**は==男性15〜17歳、女性12〜14歳==で最大。1〜2歳で最大なのは基礎代謝**基準値**。",
+      "sourcePage": "スライド3"
+    },
+    {
+      "id": "q05",
+      "type": "fill",
+      "tags": [
+        "bmr"
+      ],
+      "prompt": "女性の基礎代謝量は男性より [[blank]] 低い。",
+      "options": [
+        {
+          "id": "a",
+          "text": "1〜5%"
+        },
+        {
+          "id": "b",
+          "text": "10〜20%"
+        },
+        {
+          "id": "c",
+          "text": "30〜40%"
+        },
+        {
+          "id": "d",
+          "text": "50%"
+        }
+      ],
+      "answer": "b",
+      "explanation": "女性は男性より==10〜20%==低い。",
+      "sourcePage": "スライド3"
+    },
+    {
+      "id": "q06",
+      "type": "choice",
+      "tags": [
+        "bmr"
+      ],
+      "prompt": "基礎代謝量を増加させるものは？",
+      "options": [
+        {
+          "id": "a",
+          "text": "気温が高い"
+        },
+        {
+          "id": "b",
+          "text": "栄養状態が悪い"
+        },
+        {
+          "id": "c",
+          "text": "甲状腺ホルモン過剰"
+        },
+        {
+          "id": "d",
+          "text": "体重の減少"
+        }
+      ],
+      "answer": "c",
+      "explanation": "発熱・==甲状腺ホルモン過剰==・低い気温で増加。栄養状態が悪いと減少。体重とは正比例。",
+      "sourcePage": "スライド3"
+    },
+    {
+      "id": "q07",
+      "type": "choice",
+      "tags": [
+        "bmr"
+      ],
+      "prompt": "基礎代謝基準値（kcal/kg体重/日）が最も大きいのは？",
+      "options": [
+        {
+          "id": "a",
+          "text": "1〜2歳"
+        },
+        {
+          "id": "b",
+          "text": "12〜14歳"
+        },
+        {
+          "id": "c",
+          "text": "15〜17歳"
+        },
+        {
+          "id": "d",
+          "text": "30〜49歳"
+        }
+      ],
+      "answer": "a",
+      "explanation": "男女とも==1〜2歳==で最大、年齢とともに低下。",
+      "sourcePage": "スライド3"
+    },
+    {
+      "id": "q08",
+      "type": "fill",
+      "tags": [
+        "bmr"
+      ],
+      "prompt": "安静時代謝量は座位で測定し、基礎代謝量より [[blank]] 多い。",
+      "options": [
+        {
+          "id": "a",
+          "text": "約5%"
+        },
+        {
+          "id": "b",
+          "text": "10〜20%"
+        },
+        {
+          "id": "c",
+          "text": "30〜40%"
+        },
+        {
+          "id": "d",
+          "text": "約2倍"
+        }
+      ],
+      "answer": "b",
+      "explanation": "安静時代謝量は基礎代謝量より==10〜20%==多い。",
+      "sourcePage": "スライド3"
+    },
+    {
+      "id": "q09",
+      "type": "choice",
+      "tags": [
+        "activity"
+      ],
+      "prompt": "身体活動レベルの定義は？",
+      "options": [
+        {
+          "id": "a",
+          "text": "総エネルギー消費量 ÷ 基礎代謝量"
+        },
+        {
+          "id": "b",
+          "text": "基礎代謝量 ÷ 総エネルギー消費量"
+        },
+        {
+          "id": "c",
+          "text": "METs × 時間"
+        },
+        {
+          "id": "d",
+          "text": "体重 ÷ 身長²"
+        }
+      ],
+      "answer": "a",
+      "explanation": "==1日の総エネルギー消費量／1日の基礎代謝量==。",
+      "sourcePage": "スライド4"
+    },
+    {
+      "id": "q10",
+      "type": "fill",
+      "tags": [
+        "activity"
+      ],
+      "prompt": "身体活動レベル「ふつう」の値は [[blank]] である。",
+      "options": [
+        {
+          "id": "a",
+          "text": "1.25"
+        },
+        {
+          "id": "b",
+          "text": "1.50"
+        },
+        {
+          "id": "c",
+          "text": "1.75"
+        },
+        {
+          "id": "d",
+          "text": "2.00"
+        }
+      ],
+      "answer": "c",
+      "explanation": "低い1.50・==ふつう1.75==・高い2.00。",
+      "sourcePage": "スライド4"
+    },
+    {
+      "id": "q11",
+      "type": "truefalse",
+      "tags": [
+        "activity"
+      ],
+      "prompt": "推定エネルギー必要量は、エネルギー出納がゼロとなる1日あたりのエネルギー摂取量である。",
+      "answer": true,
+      "explanation": "○。不足と過剰のリスクが最も小さくなる量で、摂れば==体重は変わらない==。",
+      "sourcePage": "スライド4"
+    },
+    {
+      "id": "q12",
+      "type": "choice",
+      "tags": [
+        "activity"
+      ],
+      "prompt": "20歳男性、体重70 kg、身体活動レベル「ふつう」。推定エネルギー必要量は？（基礎代謝基準値 23.7 kcal/kg体重/日）",
+      "options": [
+        {
+          "id": "a",
+          "text": "約1,659 kcal/日"
+        },
+        {
+          "id": "b",
+          "text": "約2,489 kcal/日"
+        },
+        {
+          "id": "c",
+          "text": "約2,903 kcal/日"
+        },
+        {
+          "id": "d",
+          "text": "約3,318 kcal/日"
+        }
+      ],
+      "answer": "c",
+      "explanation": "23.7×70＝1,659 → ×1.75＝==2,903.25 kcal/日==",
+      "sourcePage": "スライド6"
+    },
+    {
+      "id": "q13",
+      "type": "choice",
+      "tags": [
+        "activity"
+      ],
+      "prompt": "20歳女性、体重50 kg、身体活動レベル「低い」。推定エネルギー必要量は？（基礎代謝基準値 22.1 kcal/kg体重/日）",
+      "options": [
+        {
+          "id": "a",
+          "text": "1,105 kcal/日"
+        },
+        {
+          "id": "b",
+          "text": "1,657.5 kcal/日"
+        },
+        {
+          "id": "c",
+          "text": "1,933.75 kcal/日"
+        },
+        {
+          "id": "d",
+          "text": "2,210 kcal/日"
+        }
+      ],
+      "answer": "b",
+      "explanation": "22.1×50＝1,105 → ×1.50＝==1,657.5 kcal/日==",
+      "sourcePage": "スライド6"
+    },
+    {
+      "id": "q14",
+      "type": "choice",
+      "tags": [
+        "activity"
+      ],
+      "prompt": "METs（メッツ）が表すものは？",
+      "options": [
+        {
+          "id": "a",
+          "text": "身体活動の量"
+        },
+        {
+          "id": "b",
+          "text": "動作のエネルギー消費量が安静時代謝量の何倍かを示す強度"
+        },
+        {
+          "id": "c",
+          "text": "基礎代謝量の何倍かを示す1日の活動量"
+        },
+        {
+          "id": "d",
+          "text": "体格の指標"
+        }
+      ],
+      "answer": "b",
+      "explanation": "METsは==強度==。量はエクササイズ（Ex）＝METs×時間。",
+      "sourcePage": "スライド5"
+    },
+    {
+      "id": "q15",
+      "type": "choice",
+      "tags": [
+        "activity"
+      ],
+      "prompt": "ジョギング（7.0 METs）を30分行ったときの身体活動量は？",
+      "options": [
+        {
+          "id": "a",
+          "text": "3.5 Ex"
+        },
+        {
+          "id": "b",
+          "text": "7 Ex"
+        },
+        {
+          "id": "c",
+          "text": "14 Ex"
+        },
+        {
+          "id": "d",
+          "text": "210 Ex"
+        }
+      ],
+      "answer": "a",
+      "explanation": "7.0×0.5時間＝==3.5 Ex==（分は時間に直す）。",
+      "sourcePage": "スライド5"
+    },
+    {
+      "id": "q16",
+      "type": "choice",
+      "tags": [
+        "activity"
+      ],
+      "prompt": "体重60 kgの人がテニス（7.0 METs）を1時間行ったときの消費カロリーは？",
+      "options": [
+        {
+          "id": "a",
+          "text": "420 kcal"
+        },
+        {
+          "id": "b",
+          "text": "441 kcal"
+        },
+        {
+          "id": "c",
+          "text": "463 kcal"
+        },
+        {
+          "id": "d",
+          "text": "4,410 kcal"
+        }
+      ],
+      "answer": "b",
+      "explanation": "1.05×7×1×60＝==441 kcal==",
+      "sourcePage": "スライド5"
+    },
+    {
+      "id": "q17",
+      "type": "fill",
+      "tags": [
+        "activity"
+      ],
+      "prompt": "健康づくりのための身体活動基準2013では、毎週 [[blank]] エクササイズ以上の運動で生活習慣病を予防できるとしている。",
+      "options": [
+        {
+          "id": "a",
+          "text": "3.3"
+        },
+        {
+          "id": "b",
+          "text": "10"
+        },
+        {
+          "id": "c",
+          "text": "23"
+        },
+        {
+          "id": "d",
+          "text": "60"
+        }
+      ],
+      "answer": "c",
+      "explanation": "毎週==23 Ex以上==（1日平均約3.3 Ex）。",
+      "sourcePage": "スライド5"
+    },
+    {
+      "id": "q18",
+      "type": "choice",
+      "tags": [
+        "bmi"
+      ],
+      "prompt": "身長160 cm、体重64 kgの人のBMIと判定は？",
+      "options": [
+        {
+          "id": "a",
+          "text": "20.0・ふつう"
+        },
+        {
+          "id": "b",
+          "text": "22.0・ふつう"
+        },
+        {
+          "id": "c",
+          "text": "25.0・肥満"
+        },
+        {
+          "id": "d",
+          "text": "40.0・肥満"
+        }
+      ],
+      "answer": "c",
+      "explanation": "64÷(1.6×1.6)＝64÷2.56＝25.0 → ==25以上なので肥満==。",
+      "sourcePage": "スライド7"
+    },
+    {
+      "id": "q19",
+      "type": "choice",
+      "tags": [
+        "bmi"
+      ],
+      "prompt": "18〜49歳でBMIの基準とされる値と「やせ」の基準の組合せは？",
+      "options": [
+        {
+          "id": "a",
+          "text": "22・18.5未満"
+        },
+        {
+          "id": "b",
+          "text": "22・20未満"
+        },
+        {
+          "id": "c",
+          "text": "25・18.5未満"
+        },
+        {
+          "id": "d",
+          "text": "20・17未満"
+        }
+      ],
+      "answer": "a",
+      "explanation": "==22==で総死亡率・発症率が最も低い。==18.5未満がやせ==、25以上が肥満。",
+      "sourcePage": "スライド7"
+    }
+  ]
+}
