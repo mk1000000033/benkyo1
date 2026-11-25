@@ -42,6 +42,10 @@ import immunology_01a from "./immunology-01a.json";
 import immunology_01b from "./immunology-01b.json";
 import immunology_02a from "./immunology-02a.json";
 import immunology_02b from "./immunology-02b.json";
+import analytical_chemistry_3_mid_1 from "./analytical-chemistry-3-mid-1.json";
+import analytical_chemistry_3_mid_2 from "./analytical-chemistry-3-mid-2.json";
+import analytical_chemistry_3_mid_3 from "./analytical-chemistry-3-mid-3.json";
+import analytical_chemistry_3_mid_4 from "./analytical-chemistry-3-mid-4.json";
 export const NOTE_FILES: unknown[] = [
   natural_products_2024_q2,
   natural_products_2024_q3,
@@ -80,5 +84,9 @@ export const NOTE_FILES: unknown[] = [
   immunology_01b,
   immunology_02a,
   immunology_02b,
+  analytical_chemistry_3_mid_1,
+  analytical_chemistry_3_mid_2,
+  analytical_chemistry_3_mid_3,
+  analytical_chemistry_3_mid_4,
   // ↑ ここに新しいまとめを追加
 ];

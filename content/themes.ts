@@ -25,6 +25,16 @@ export const THEMES: Record<string, Theme[]> = {
     { id: "innate", name: "自然免疫", emoji: "📡", description: "バリア・食細胞・PRR・TLR・食作用・抗菌物質" },
     { id: "adaptive", name: "獲得免疫", emoji: "🎯", description: "NK細胞・T細胞の分化・細胞傷害・免疫学的記憶" },
   ],
+  "analytical-chemistry-3": [
+    { id: "prep", name: "役割・前処理", emoji: "🩸", description: "分析化学の役割・生体試料の前処理" },
+    { id: "uv", name: "UV吸収", emoji: "🌈", description: "Trp・Tyr・Phe・ポストラベル法" },
+    { id: "fluorescence", name: "蛍光", emoji: "✨", description: "OPA法・置換基・インターカレーション" },
+    { id: "ir", name: "赤外・ラマン", emoji: "🔥", description: "振動の活性・特性吸収帯・指紋領域" },
+    { id: "ms", name: "質量分析の基本", emoji: "⚖️", description: "ベースピーク・精密質量・質量の種類・窒素ルール" },
+    { id: "dbe", name: "不飽和度", emoji: "🧮", description: "水素不足指数の計算" },
+    { id: "msms", name: "MS/MS・開裂", emoji: "💥", description: "プレカーサー・プロダクト・衝突活性化・ECD/IRMPD" },
+    { id: "ion", name: "イオン化法", emoji: "💦", description: "ESI・MALDI・多価イオン" },
+  ],
 };
 
 export function themesOf(subjectId: string): Theme[] {

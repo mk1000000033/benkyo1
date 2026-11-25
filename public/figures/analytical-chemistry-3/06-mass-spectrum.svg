@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 196" width="720" height="392" font-family="'Hiragino Maru Gothic ProN','Hiragino Sans','Noto Sans JP',sans-serif">
+<rect width="360" height="196" fill="#ffffff"/>
+<line x1="48" y1="160" x2="340" y2="160" stroke="#3d3a50" stroke-width="2"/><line x1="48" y1="160" x2="48" y2="18" stroke="#3d3a50" stroke-width="2"/>
+<text x="194" y="186" font-size="12" font-weight="700" fill="#3d3a50" text-anchor="middle">横軸：質量電荷比（m/z）</text>
+<text x="20" y="90" font-size="12" font-weight="700" fill="#3d3a50" text-anchor="middle" transform="rotate(-90 20 90)">縦軸：イオン強度</text>
+<g stroke-width="7"><line x1="96" y1="160" x2="96" y2="112" stroke="#7a7392"/><line x1="146" y1="160" x2="146" y2="32" stroke="#e0558a"/><line x1="206" y1="160" x2="206" y2="94" stroke="#7a7392"/><line x1="278" y1="160" x2="278" y2="74" stroke="#2f9e7a"/><line x1="294" y1="160" x2="294" y2="146" stroke="#7a7392"/></g>
+<text x="156" y="36" font-size="12" font-weight="700" fill="#e0558a">ベースピーク（最大＝100%）</text>
+<text x="270" y="68" font-size="12" font-weight="700" fill="#2f9e7a" text-anchor="end">分子イオンピーク</text>
+</svg>

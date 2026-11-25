@@ -1,0 +1,476 @@
+{
+  "id": "analytical-chemistry-3-mid-2",
+  "version": 1,
+  "subjectId": "analytical-chemistry-3",
+  "title": "2. 赤外吸収・ラマン（問題4）",
+  "lectureDate": null,
+  "group": "中間テスト範囲プリント問題",
+  "published": true,
+  "sourceMaterial": "分析化学 中間テスト範囲プリント（問題1〜7・解答例）",
+  "questions": [
+    {
+      "id": "q01",
+      "type": "fill",
+      "tags": [
+        "ir"
+      ],
+      "prompt": "赤外吸収やラマン散乱は、分子の [[blank]] により起こる。",
+      "options": [
+        {
+          "id": "a",
+          "text": "振動"
+        },
+        {
+          "id": "b",
+          "text": "回転のみ"
+        },
+        {
+          "id": "c",
+          "text": "電子遷移"
+        },
+        {
+          "id": "d",
+          "text": "核スピン"
+        }
+      ],
+      "answer": "a",
+      "explanation": "結合はバネのように伸び縮み・曲がる。その ==振動== のエネルギーが赤外光の領域。",
+      "sourcePage": "問題4①"
+    },
+    {
+      "id": "q02",
+      "type": "choice",
+      "tags": [
+        "ir"
+      ],
+      "prompt": "二酸化炭素の対称伸縮は？",
+      "options": [
+        {
+          "id": "a",
+          "text": "赤外活性"
+        },
+        {
+          "id": "b",
+          "text": "ラマン活性"
+        },
+        {
+          "id": "c",
+          "text": "赤外・ラマン両方活性"
+        },
+        {
+          "id": "d",
+          "text": "どちらも不活性"
+        }
+      ],
+      "answer": "b",
+      "explanation": "O=C=O の両側が同時に同じだけ伸びる → 電荷の偏りが生まれない → 赤外ではなく ==ラマン==。",
+      "sourcePage": "問題4②"
+    },
+    {
+      "id": "q03",
+      "type": "choice",
+      "tags": [
+        "ir"
+      ],
+      "prompt": "二酸化炭素の逆対称伸縮は？",
+      "options": [
+        {
+          "id": "a",
+          "text": "赤外活性"
+        },
+        {
+          "id": "b",
+          "text": "ラマン活性"
+        },
+        {
+          "id": "c",
+          "text": "赤外・ラマン両方活性"
+        },
+        {
+          "id": "d",
+          "text": "どちらも不活性"
+        }
+      ],
+      "answer": "a",
+      "explanation": "片方が伸びて片方が縮む → 偏り（双極子）ができる → ==赤外==。",
+      "sourcePage": "問題4②"
+    },
+    {
+      "id": "q04",
+      "type": "choice",
+      "tags": [
+        "ir"
+      ],
+      "prompt": "二酸化炭素の面内変角は？",
+      "options": [
+        {
+          "id": "a",
+          "text": "赤外活性"
+        },
+        {
+          "id": "b",
+          "text": "ラマン活性"
+        },
+        {
+          "id": "c",
+          "text": "赤外・ラマン両方活性"
+        },
+        {
+          "id": "d",
+          "text": "どちらも不活性"
+        }
+      ],
+      "answer": "a",
+      "explanation": "まっすぐな分子が曲がる → 偏りができる → ==赤外==。",
+      "sourcePage": "問題4②"
+    },
+    {
+      "id": "q05",
+      "type": "choice",
+      "tags": [
+        "ir"
+      ],
+      "prompt": "アセチレンの三重結合の対称伸縮は？",
+      "options": [
+        {
+          "id": "a",
+          "text": "赤外活性"
+        },
+        {
+          "id": "b",
+          "text": "ラマン活性"
+        },
+        {
+          "id": "c",
+          "text": "赤外・ラマン両方活性"
+        },
+        {
+          "id": "d",
+          "text": "どちらも不活性"
+        }
+      ],
+      "answer": "b",
+      "explanation": "H–C≡C–H は左右対称。対称な伸縮 → ==ラマン==。",
+      "sourcePage": "問題4②"
+    },
+    {
+      "id": "q06",
+      "type": "choice",
+      "tags": [
+        "ir"
+      ],
+      "prompt": "水分子の対称伸縮は？",
+      "options": [
+        {
+          "id": "a",
+          "text": "赤外活性"
+        },
+        {
+          "id": "b",
+          "text": "ラマン活性"
+        },
+        {
+          "id": "c",
+          "text": "赤外・ラマン両方活性"
+        },
+        {
+          "id": "d",
+          "text": "どちらも不活性"
+        }
+      ],
+      "answer": "c",
+      "explanation": "水は**折れ曲がった**分子なので、対称に伸びても偏りが変わる → ==赤外もラマンも活性==（例外として覚える）。",
+      "sourcePage": "問題4②"
+    },
+    {
+      "id": "q07",
+      "type": "fill",
+      "tags": [
+        "ir"
+      ],
+      "prompt": "赤外吸収スペクトルで官能基特有の吸収帯を [[blank]] 吸収帯と呼ぶ。",
+      "options": [
+        {
+          "id": "a",
+          "text": "特性"
+        },
+        {
+          "id": "b",
+          "text": "指紋"
+        },
+        {
+          "id": "c",
+          "text": "基準"
+        },
+        {
+          "id": "d",
+          "text": "倍音"
+        }
+      ],
+      "answer": "a",
+      "explanation": "官能基の「特性」が出る吸収 → ==特性吸収帯==。これで官能基を見分ける。",
+      "sourcePage": "問題4③"
+    },
+    {
+      "id": "q08",
+      "type": "fill",
+      "tags": [
+        "ir"
+      ],
+      "prompt": "赤外吸収スペクトルで、1500ないし1300カイザー以下を [[blank]] 領域と言う。",
+      "options": [
+        {
+          "id": "a",
+          "text": "指紋"
+        },
+        {
+          "id": "b",
+          "text": "特性"
+        },
+        {
+          "id": "c",
+          "text": "紫外"
+        },
+        {
+          "id": "d",
+          "text": "近赤外"
+        }
+      ],
+      "answer": "a",
+      "explanation": "分子ごとに複雑でその分子だけのパターン → 人の**指紋**のように化合物を特定できる → ==指紋領域==。",
+      "sourcePage": "問題4③"
+    },
+    {
+      "id": "q09",
+      "type": "choice",
+      "tags": [
+        "ir"
+      ],
+      "prompt": "400カイザーの光の波長は？",
+      "options": [
+        {
+          "id": "a",
+          "text": "2500 nm"
+        },
+        {
+          "id": "b",
+          "text": "4000 nm"
+        },
+        {
+          "id": "c",
+          "text": "25000 nm"
+        },
+        {
+          "id": "d",
+          "text": "250 nm"
+        }
+      ],
+      "answer": "c",
+      "explanation": "λ[nm] ＝ 1×10⁷ ÷ 波数[cm⁻¹] ＝ 10⁷ ÷ (4×10²) ＝ ==25000 nm==\n💡 1 cm ＝ 10⁷ nm だから「10⁷ を波数で割る」。",
+      "sourcePage": "問題4④"
+    },
+    {
+      "id": "q10",
+      "type": "choice",
+      "tags": [
+        "ir"
+      ],
+      "prompt": "水酸基（O–H）の特性吸収帯は？",
+      "options": [
+        {
+          "id": "a",
+          "text": "3650〜3400 cm⁻¹"
+        },
+        {
+          "id": "b",
+          "text": "2260〜2210 cm⁻¹"
+        },
+        {
+          "id": "c",
+          "text": "1810〜1650 cm⁻¹"
+        },
+        {
+          "id": "d",
+          "text": "1600〜1500 cm⁻¹"
+        }
+      ],
+      "answer": "a",
+      "explanation": "一番軽い H との結合 → 一番速く振動 → ==一番高い波数（3000台）==。",
+      "sourcePage": "問題4⑤"
+    },
+    {
+      "id": "q11",
+      "type": "choice",
+      "tags": [
+        "ir"
+      ],
+      "prompt": "カルボニル基（C=O）の特性吸収帯は？",
+      "options": [
+        {
+          "id": "a",
+          "text": "3650〜3400 cm⁻¹"
+        },
+        {
+          "id": "b",
+          "text": "1810〜1650 cm⁻¹"
+        },
+        {
+          "id": "c",
+          "text": "2260〜2210 cm⁻¹"
+        },
+        {
+          "id": "d",
+          "text": "1600〜1500 cm⁻¹"
+        }
+      ],
+      "answer": "b",
+      "explanation": "二重結合は ==1700前後==。IR で一番強く目立つピーク。",
+      "sourcePage": "問題4⑤"
+    },
+    {
+      "id": "q12",
+      "type": "choice",
+      "tags": [
+        "ir"
+      ],
+      "prompt": "CN三重結合の特性吸収帯は？",
+      "options": [
+        {
+          "id": "a",
+          "text": "3650〜3400 cm⁻¹"
+        },
+        {
+          "id": "b",
+          "text": "1810〜1650 cm⁻¹"
+        },
+        {
+          "id": "c",
+          "text": "2260〜2210 cm⁻¹"
+        },
+        {
+          "id": "d",
+          "text": "1600〜1500 cm⁻¹"
+        }
+      ],
+      "answer": "c",
+      "explanation": "三重結合はバネが硬い → 二重結合より高い ==2000台==。",
+      "sourcePage": "問題4⑤"
+    },
+    {
+      "id": "q13",
+      "type": "choice",
+      "tags": [
+        "ir"
+      ],
+      "prompt": "フェニル基の特性吸収帯は？",
+      "options": [
+        {
+          "id": "a",
+          "text": "1600〜1500 cm⁻¹"
+        },
+        {
+          "id": "b",
+          "text": "1810〜1650 cm⁻¹"
+        },
+        {
+          "id": "c",
+          "text": "2260〜2210 cm⁻¹"
+        },
+        {
+          "id": "d",
+          "text": "3650〜3400 cm⁻¹"
+        }
+      ],
+      "answer": "a",
+      "explanation": "芳香環の C=C は普通の二重結合より少し低め → ==1600・1500==。",
+      "sourcePage": "問題4⑤"
+    },
+    {
+      "id": "q14",
+      "type": "choice",
+      "tags": [
+        "ir"
+      ],
+      "prompt": "水の特性吸収帯は？",
+      "options": [
+        {
+          "id": "a",
+          "text": "1700付近のみ"
+        },
+        {
+          "id": "b",
+          "text": "1600付近 および 3400〜3600 cm⁻¹"
+        },
+        {
+          "id": "c",
+          "text": "2200付近 および 1500付近"
+        },
+        {
+          "id": "d",
+          "text": "3000付近のみ"
+        }
+      ],
+      "answer": "b",
+      "explanation": "O–H 伸縮（3000台）＋ H–O–H の変角（1600）の ==2か所==。",
+      "sourcePage": "問題4⑤"
+    },
+    {
+      "id": "q15",
+      "type": "fill",
+      "tags": [
+        "ir"
+      ],
+      "prompt": "赤外吸収スペクトル法とラマンスペクトル法の違い：赤外吸収は [[blank]] モーメントの変化に起因する。",
+      "options": [
+        {
+          "id": "a",
+          "text": "双極子"
+        },
+        {
+          "id": "b",
+          "text": "磁気"
+        },
+        {
+          "id": "c",
+          "text": "角運動量"
+        },
+        {
+          "id": "d",
+          "text": "慣性"
+        }
+      ],
+      "answer": "a",
+      "explanation": "💡 「赤外**そう**（双極子）」。電荷の偏りが変わる振動だけ赤外光を吸う。",
+      "sourcePage": "問題4⑥"
+    },
+    {
+      "id": "q16",
+      "type": "fill",
+      "tags": [
+        "ir"
+      ],
+      "prompt": "赤外吸収スペクトル法とラマンスペクトル法の違い：ラマン散乱は [[blank]] 率の変化を反映する。",
+      "options": [
+        {
+          "id": "a",
+          "text": "分極"
+        },
+        {
+          "id": "b",
+          "text": "屈折"
+        },
+        {
+          "id": "c",
+          "text": "吸光"
+        },
+        {
+          "id": "d",
+          "text": "透過"
+        }
+      ],
+      "answer": "a",
+      "explanation": "💡 「ラマン**ぶん**（分極率）」。電子雲のゆがみやすさが変わる振動がラマンで見える。",
+      "sourcePage": "問題4⑥"
+    }
+  ]
+}

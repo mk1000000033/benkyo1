@@ -1,0 +1,478 @@
+{
+  "id": "analytical-chemistry-3-mid-4",
+  "version": 1,
+  "subjectId": "analytical-chemistry-3",
+  "title": "4. 質量分析まとめ（問題7）",
+  "lectureDate": null,
+  "group": "中間テスト範囲プリント問題",
+  "published": true,
+  "sourceMaterial": "分析化学 中間テスト範囲プリント（問題1〜7・解答例）",
+  "questions": [
+    {
+      "id": "q01",
+      "type": "fill",
+      "tags": [
+        "ion"
+      ],
+      "prompt": "質量分析における多価イオン：複数の [[blank]] 付加により複数の正電荷を持つイオンが生成する。これを多価イオンと呼び、[[blank]] に顕著に見られる。",
+      "options": [
+        {
+          "id": "1a",
+          "text": "プロトン"
+        },
+        {
+          "id": "1b",
+          "text": "電子"
+        },
+        {
+          "id": "1c",
+          "text": "中性子"
+        },
+        {
+          "id": "1d",
+          "text": "ナトリウム"
+        },
+        {
+          "id": "2a",
+          "text": "ESI"
+        },
+        {
+          "id": "2b",
+          "text": "EI"
+        },
+        {
+          "id": "2c",
+          "text": "MALDI"
+        },
+        {
+          "id": "2d",
+          "text": "CI"
+        }
+      ],
+      "answer": "1a|2a",
+      "blanks": [
+        {
+          "options": [
+            {
+              "id": "1a",
+              "text": "プロトン"
+            },
+            {
+              "id": "1b",
+              "text": "電子"
+            },
+            {
+              "id": "1c",
+              "text": "中性子"
+            },
+            {
+              "id": "1d",
+              "text": "ナトリウム"
+            }
+          ],
+          "answer": "1a"
+        },
+        {
+          "options": [
+            {
+              "id": "2a",
+              "text": "ESI"
+            },
+            {
+              "id": "2b",
+              "text": "EI"
+            },
+            {
+              "id": "2c",
+              "text": "MALDI"
+            },
+            {
+              "id": "2d",
+              "text": "CI"
+            }
+          ],
+          "answer": "2a"
+        }
+      ],
+      "explanation": "==ESI== ではタンパク質など大きい分子に H⁺（==プロトン==）がたくさん付く → 電荷が増えて m/z が小さくなり測りやすい。",
+      "sourcePage": "問題(7)①"
+    },
+    {
+      "id": "q02",
+      "type": "choice",
+      "tags": [
+        "msms"
+      ],
+      "prompt": "高エネルギーコリジョンに分類される ECD では、何開裂が観測される？",
+      "options": [
+        {
+          "id": "a",
+          "text": "b/y"
+        },
+        {
+          "id": "b",
+          "text": "c/z"
+        },
+        {
+          "id": "c",
+          "text": "a/x"
+        },
+        {
+          "id": "d",
+          "text": "b/z"
+        }
+      ],
+      "answer": "b",
+      "explanation": "💡 「ECD は**シーズー（c/z）**🐶」",
+      "sourcePage": "問題(7)③"
+    },
+    {
+      "id": "q03",
+      "type": "choice",
+      "tags": [
+        "msms"
+      ],
+      "prompt": "低エネルギーに分類される IRMPD では、何開裂が観測される？",
+      "options": [
+        {
+          "id": "a",
+          "text": "c/z"
+        },
+        {
+          "id": "b",
+          "text": "a/x"
+        },
+        {
+          "id": "c",
+          "text": "b/y"
+        },
+        {
+          "id": "d",
+          "text": "c/y"
+        }
+      ],
+      "answer": "c",
+      "explanation": "💡 「IRMPD は**バイ（b/y）**」。低エネルギーでふつうに割ると ==b/y==。",
+      "sourcePage": "問題(7)④"
+    },
+    {
+      "id": "q04",
+      "type": "choice",
+      "tags": [
+        "ms"
+      ],
+      "prompt": "トロピリウムイオンの構造は？",
+      "options": [
+        {
+          "id": "a",
+          "text": "6員環の芳香族陽イオン"
+        },
+        {
+          "id": "b",
+          "text": "7員環の芳香族陽イオン（環の中に＋）"
+        },
+        {
+          "id": "c",
+          "text": "5員環の芳香族陰イオン"
+        },
+        {
+          "id": "d",
+          "text": "鎖状の陽イオン"
+        }
+      ],
+      "answer": "b",
+      "explanation": "トロピ＝==7員環==（トロポロンも7員環）。ベンジル基から生じる m/z 91 の安定なイオン。",
+      "sourcePage": "問題(7)⑤"
+    },
+    {
+      "id": "q05",
+      "type": "choice",
+      "tags": [
+        "dbe"
+      ],
+      "prompt": "ピリジンの水素不足指数（不飽和度）は？",
+      "options": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "5"
+        },
+        {
+          "id": "d",
+          "text": "6"
+        }
+      ],
+      "answer": "b",
+      "explanation": "ベンゼンの C が1つ N になっただけ → ベンゼンと同じ ==4==。",
+      "sourcePage": "問題(7)⑥(1)"
+    },
+    {
+      "id": "q06",
+      "type": "choice",
+      "tags": [
+        "dbe"
+      ],
+      "prompt": "フェニルアラニンの水素不足指数（不飽和度）は？",
+      "options": [
+        {
+          "id": "a",
+          "text": "4"
+        },
+        {
+          "id": "b",
+          "text": "6"
+        },
+        {
+          "id": "c",
+          "text": "7"
+        },
+        {
+          "id": "d",
+          "text": "5"
+        }
+      ],
+      "answer": "d",
+      "explanation": "ベンゼン環 4 ＋ カルボキシ基の C=O 1 ＝ ==5==。",
+      "sourcePage": "問題(7)⑥(2)"
+    },
+    {
+      "id": "q07",
+      "type": "choice",
+      "tags": [
+        "dbe"
+      ],
+      "prompt": "アントラセンの水素不足指数（不飽和度）は？",
+      "options": [
+        {
+          "id": "a",
+          "text": "7"
+        },
+        {
+          "id": "b",
+          "text": "8"
+        },
+        {
+          "id": "c",
+          "text": "10"
+        },
+        {
+          "id": "d",
+          "text": "12"
+        }
+      ],
+      "answer": "c",
+      "explanation": "ベンゼン環3つ横並び。4 → 7 → ==10==（1つ増えるごとに＋3）。",
+      "sourcePage": "問題(7)⑥(3)"
+    },
+    {
+      "id": "q08",
+      "type": "choice",
+      "tags": [
+        "dbe"
+      ],
+      "prompt": "ナフタレンの水素不足指数（不飽和度）は？",
+      "options": [
+        {
+          "id": "a",
+          "text": "7"
+        },
+        {
+          "id": "b",
+          "text": "8"
+        },
+        {
+          "id": "c",
+          "text": "6"
+        },
+        {
+          "id": "d",
+          "text": "10"
+        }
+      ],
+      "answer": "a",
+      "explanation": "ベンゼン環2つ。4 → ==7==。",
+      "sourcePage": "問題(7)⑥(4)"
+    },
+    {
+      "id": "q09",
+      "type": "choice",
+      "tags": [
+        "ms"
+      ],
+      "prompt": "質量分析において、平均質量とは？",
+      "options": [
+        {
+          "id": "a",
+          "text": "¹²C＝12.0000 としたときの質量"
+        },
+        {
+          "id": "b",
+          "text": "同位体存在比を加味した化学質量"
+        },
+        {
+          "id": "c",
+          "text": "整数質量"
+        },
+        {
+          "id": "d",
+          "text": "最も軽い同位体の質量"
+        }
+      ],
+      "answer": "b",
+      "explanation": "同位体を「平均」した質量 ＝ 周期表に載っている原子量。",
+      "sourcePage": "問題(7)⑦"
+    },
+    {
+      "id": "q10",
+      "type": "fill",
+      "tags": [
+        "ms"
+      ],
+      "prompt": "核質量は ¹²C＝[[blank]] としたときの質量で、質量分析で用いる。",
+      "options": [
+        {
+          "id": "a",
+          "text": "12.0000"
+        },
+        {
+          "id": "b",
+          "text": "12.0107"
+        },
+        {
+          "id": "c",
+          "text": "1.0000"
+        },
+        {
+          "id": "d",
+          "text": "6.0000"
+        }
+      ],
+      "answer": "a",
+      "explanation": "MS は1個1個のイオンを測るので、平均ではなく1つの核の質量（==¹²C＝12.0000== 基準）を使う。\n⚠️ 12.0107 は同位体を平均した原子量（平均質量）。",
+      "sourcePage": "問題(7)⑦"
+    },
+    {
+      "id": "q11",
+      "type": "choice",
+      "tags": [
+        "ms"
+      ],
+      "prompt": "窒素ルールとはなにか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "CHNOSP およびハロゲンからなる分子のノミナルマスは、N の数が0または偶数のとき偶数、奇数のとき奇数となる"
+        },
+        {
+          "id": "b",
+          "text": "N を含む分子は必ず奇数の質量になる"
+        },
+        {
+          "id": "c",
+          "text": "N の数が偶数のとき奇数、奇数のとき偶数となる"
+        },
+        {
+          "id": "d",
+          "text": "N を含む分子は分子イオンピークが出ない"
+        }
+      ],
+      "answer": "a",
+      "explanation": "💡 「**N が奇数なら質量も奇数**」\nN は質量14（偶数）なのに結合の手が3本（奇数）という変わり者だから。",
+      "sourcePage": "問題(7)⑧"
+    },
+    {
+      "id": "q12",
+      "type": "choice",
+      "tags": [
+        "ion"
+      ],
+      "prompt": "エレクトロスプレーイオン化（ESI）とは？",
+      "options": [
+        {
+          "id": "a",
+          "text": "高電界中に極性溶媒に溶かした試料を噴霧し、生成する帯電液滴を急激に濃縮してイオンを作る"
+        },
+        {
+          "id": "b",
+          "text": "試料をマトリックスと結晶化しレーザーでイオン化する"
+        },
+        {
+          "id": "c",
+          "text": "電子を衝突させてイオン化する"
+        },
+        {
+          "id": "d",
+          "text": "試料ガスに試薬ガスイオンを反応させる"
+        }
+      ],
+      "answer": "a",
+      "explanation": "Electro（電気）＋ Spray（スプレー）。名前どおり ==電気をかけて霧吹き== 💦",
+      "sourcePage": "問題(7)⑨"
+    },
+    {
+      "id": "q13",
+      "type": "choice",
+      "tags": [
+        "ion"
+      ],
+      "prompt": "マトリクス支援レーザー脱離イオン化（MALDI）とは？",
+      "options": [
+        {
+          "id": "a",
+          "text": "高電界中で試料を噴霧してイオン化する"
+        },
+        {
+          "id": "b",
+          "text": "電子を衝突させてイオン化する"
+        },
+        {
+          "id": "c",
+          "text": "マトリクスに溶解し結晶化した試料を、金属ターゲット上でレーザー脱離によりイオン化する"
+        },
+        {
+          "id": "d",
+          "text": "試料を加熱して気化させてからイオン化する"
+        }
+      ],
+      "answer": "c",
+      "explanation": "Matrix-Assisted Laser Desorption Ionization ＝ 名前に「==マトリックス・レーザー・脱離==」が全部入ってる 🔦",
+      "sourcePage": "問題(7)⑩"
+    },
+    {
+      "id": "q14",
+      "type": "choice",
+      "tags": [
+        "ms"
+      ],
+      "prompt": "平均質量と核質量のうち、質量分析で用いるのは？",
+      "options": [
+        {
+          "id": "a",
+          "text": "平均質量"
+        },
+        {
+          "id": "b",
+          "text": "核質量"
+        },
+        {
+          "id": "c",
+          "text": "どちらも用いない"
+        },
+        {
+          "id": "d",
+          "text": "どちらも同じ値"
+        }
+      ],
+      "answer": "b",
+      "explanation": "MS は分子1個ずつを測るので、存在比で平均した値ではなく ==核質量== を使う。",
+      "sourcePage": "問題(7)⑦"
+    }
+  ]
+}

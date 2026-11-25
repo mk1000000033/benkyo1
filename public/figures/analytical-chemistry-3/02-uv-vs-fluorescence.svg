@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 140" width="680" height="280" font-family="'Hiragino Maru Gothic ProN','Hiragino Sans','Noto Sans JP',sans-serif">
+<rect width="340" height="140" fill="#ffffff"/>
+<ellipse cx="170" cy="70" rx="160" ry="58" fill="#e3f6f0" stroke="#2f9e7a" stroke-width="2"/>
+<ellipse cx="232" cy="74" rx="70" ry="34" fill="#fde8ef" stroke="#e0558a" stroke-width="2"/>
+<text x="40" y="76" font-size="15" font-weight="700" fill="#3d3a50">UV吸収する</text>
+<text x="232" y="79" font-size="14" font-weight="700" fill="#3d3a50" text-anchor="middle">蛍光も出す</text>
+</svg>

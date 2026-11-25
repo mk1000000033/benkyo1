@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 142" width="400" height="284" font-family="'Hiragino Maru Gothic ProN','Hiragino Sans','Noto Sans JP',sans-serif">
+<rect width="200" height="142" fill="#ffffff"/>
+<polygon points="100,14 140,33 150,76 122,110 78,110 50,76 60,33" fill="none" stroke="#e0558a" stroke-width="3"/>
+<circle cx="100" cy="66" r="27" fill="none" stroke="#e0558a" stroke-width="2"/>
+<text x="100" y="74" font-size="24" font-weight="900" fill="#3d3a50" text-anchor="middle">＋</text>
+<text x="100" y="132" font-size="12" fill="#3d3a50" text-anchor="middle">7員環の芳香族陽イオン（m/z 91）</text>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 158" width="680" height="316" font-family="'Hiragino Maru Gothic ProN','Hiragino Sans','Noto Sans JP',sans-serif">
+<rect width="340" height="158" fill="#ffffff"/>
+<line x1="50" y1="16" x2="50" y2="124" stroke="#7a7392" stroke-width="5" stroke-linecap="round"/>
+<line x1="290" y1="16" x2="290" y2="124" stroke="#7a7392" stroke-width="5" stroke-linecap="round"/>
+<g stroke="#2f9e7a" stroke-width="7" stroke-linecap="round"><line x1="54" y1="28" x2="286" y2="28"/><line x1="54" y1="56" x2="286" y2="56"/><line x1="54" y1="112" x2="286" y2="112"/></g>
+<rect x="115" y="75" width="110" height="18" rx="9" fill="#e0558a"/>
+<text x="170" y="89" font-size="12" font-weight="700" fill="#fff" text-anchor="middle">蛍光色素</text>
+<text x="170" y="146" font-size="13" fill="#3d3a50" text-anchor="middle">塩基対（はしごの段）のすき間に挟まって光る</text>
+</svg>
