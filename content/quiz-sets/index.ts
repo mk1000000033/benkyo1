@@ -45,6 +45,7 @@ import immunology_01b_v1 from "./immunology-01b.v1.json";
 import immunology_02a_v1 from "./immunology-02a.v1.json";
 import immunology_02b_v1 from "./immunology-02b.v1.json";
 import analytical_chemistry_3_mid_1_v1 from "./analytical-chemistry-3-mid-1.v1.json";
+import analytical_chemistry_3_mid_1_v2 from "./analytical-chemistry-3-mid-1.v2.json";
 import analytical_chemistry_3_mid_2_v1 from "./analytical-chemistry-3-mid-2.v1.json";
 import analytical_chemistry_3_mid_3_v1 from "./analytical-chemistry-3-mid-3.v1.json";
 import analytical_chemistry_3_mid_4_v1 from "./analytical-chemistry-3-mid-4.v1.json";
@@ -91,6 +92,7 @@ export const QUIZ_SET_FILES: unknown[] = [
   immunology_02a_v1,
   immunology_02b_v1,
   analytical_chemistry_3_mid_1_v1,
+  analytical_chemistry_3_mid_1_v2,
   analytical_chemistry_3_mid_2_v1,
   analytical_chemistry_3_mid_3_v1,
   analytical_chemistry_3_mid_4_v1,
