@@ -43,6 +43,14 @@ export const THEMES: Record<string, Theme[]> = {
     { id: "activity", name: "活動とエネルギー必要量", emoji: "🏃", description: "身体活動レベル・推定エネルギー必要量・METs・エクササイズ" },
     { id: "bmi", name: "BMI", emoji: "📏", description: "体格の基準値" },
   ],
+  "basic-pharmacology": [
+    { id: "receptor", name: "受容体と薬の結合", emoji: "🔑", description: "Kd・アゴニスト/アンタゴニスト・内活性・逆アゴニスト" },
+    { id: "dose-response", name: "用量反応曲線", emoji: "📈", description: "EC50・pD2・曲線の読み方" },
+    { id: "antagonism", name: "拮抗作用", emoji: "🥊", description: "競合的・非競合的拮抗・pA2・pD'2・拮抗の種類" },
+    { id: "safety", name: "LD50と安全域", emoji: "☠️", description: "ED50・LD50・安全域" },
+    { id: "dependence", name: "依存性・耐性", emoji: "💊", description: "精神的依存・身体的依存・耐性・依存性薬物の分類" },
+    { id: "sensitivity", name: "受容体の感受性", emoji: "🔁", description: "脱感受性・過感受性・除神経性感受性増大" },
+  ],
 };
 
 export function themesOf(subjectId: string): Theme[] {

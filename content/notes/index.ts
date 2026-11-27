@@ -48,6 +48,9 @@ import analytical_chemistry_3_mid_3 from "./analytical-chemistry-3-mid-3.json";
 import analytical_chemistry_3_mid_4 from "./analytical-chemistry-3-mid-4.json";
 import preventive_nutrition_09a from "./preventive-nutrition-09a.json";
 import preventive_nutrition_09b from "./preventive-nutrition-09b.json";
+import basic_pharmacology_02a from "./basic-pharmacology-02a.json";
+import basic_pharmacology_02b from "./basic-pharmacology-02b.json";
+import basic_pharmacology_02c from "./basic-pharmacology-02c.json";
 export const NOTE_FILES: unknown[] = [
   natural_products_2024_q2,
   natural_products_2024_q3,
@@ -92,5 +95,8 @@ export const NOTE_FILES: unknown[] = [
   analytical_chemistry_3_mid_4,
   preventive_nutrition_09a,
   preventive_nutrition_09b,
+  basic_pharmacology_02a,
+  basic_pharmacology_02b,
+  basic_pharmacology_02c,
   // ↑ ここに新しいまとめを追加
 ];

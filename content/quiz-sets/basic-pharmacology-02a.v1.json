@@ -1,0 +1,329 @@
+{
+  "id": "basic-pharmacology-02a",
+  "version": 1,
+  "subjectId": "basic-pharmacology",
+  "title": "第2回① アゴニストと用量反応曲線",
+  "lectureDate": "2026-10-02",
+  "group": "第2回 アゴニストとアンタゴニスト・依存性",
+  "published": true,
+  "sourceMaterial": "基礎薬理学 第2回（10/2）授業資料：アゴニストとアンタゴニスト／薬の用量と反応の関係／薬物依存性・耐性",
+  "questions": [
+    {
+      "id": "q01",
+      "type": "choice",
+      "tags": [
+        "receptor"
+      ],
+      "prompt": "解離定数（Kd）について正しいのはどれか。",
+      "options": [
+        {
+          "id": "a",
+          "text": "Kdが小さいほど、薬物と受容体の親和性が高い"
+        },
+        {
+          "id": "b",
+          "text": "Kdが大きいほど、薬物と受容体の親和性が高い"
+        },
+        {
+          "id": "c",
+          "text": "Kdは同じ薬物でも濃度によって変わる"
+        },
+        {
+          "id": "d",
+          "text": "Kdは結合速度定数k₁そのものである"
+        }
+      ],
+      "answer": "a",
+      "explanation": "Kd＝[D][R]/[DR]。小さい＝複合体DRが多い＝離れにくい＝親和性が高い。温度などが一定なら薬物ごとに固有の値。",
+      "sourcePage": "p.2"
+    },
+    {
+      "id": "q02",
+      "type": "fill",
+      "tags": [
+        "receptor"
+      ],
+      "prompt": "Kd ＝ [D][R] ／ [[blank]]",
+      "options": [
+        {
+          "id": "a",
+          "text": "DR"
+        },
+        {
+          "id": "b",
+          "text": "D"
+        },
+        {
+          "id": "c",
+          "text": "R"
+        },
+        {
+          "id": "d",
+          "text": "D＋R"
+        }
+      ],
+      "answer": "a",
+      "explanation": "分母は薬物受容体複合体の濃度[DR]。速度定数で書くと Kd = k₋₁/k₁。",
+      "sourcePage": "p.2"
+    },
+    {
+      "id": "q03",
+      "type": "truefalse",
+      "tags": [
+        "receptor"
+      ],
+      "prompt": "アンタゴニストが受容体に結合すると、受容体の構造が変化して細胞内シグナル伝達が起こる。",
+      "answer": false,
+      "explanation": "構造変化を起こしてシグナルを発動させるのはアゴニスト。アンタゴニストは結合しても構造は変わらず、結合部位を占拠してアゴニストを邪魔する。",
+      "sourcePage": "p.3"
+    },
+    {
+      "id": "q04",
+      "type": "choice",
+      "tags": [
+        "dose-response"
+      ],
+      "prompt": "EC50の説明として正しいのはどれか。",
+      "options": [
+        {
+          "id": "a",
+          "text": "最大反応の50%の反応を起こすアゴニストの用量"
+        },
+        {
+          "id": "b",
+          "text": "動物の半数が死亡する用量"
+        },
+        {
+          "id": "c",
+          "text": "受容体の半分を占有するアンタゴニストの濃度"
+        },
+        {
+          "id": "d",
+          "text": "最大反応を起こすアゴニストの用量の50%"
+        }
+      ],
+      "answer": "a",
+      "explanation": "EC50＝最大反応の50%を引き起こすアゴニストの用量。半数致死量はLD50。",
+      "sourcePage": "p.3"
+    },
+    {
+      "id": "q05",
+      "type": "fill",
+      "tags": [
+        "dose-response"
+      ],
+      "prompt": "pD2 ＝ −log[[blank]]",
+      "options": [
+        {
+          "id": "a",
+          "text": "EC50"
+        },
+        {
+          "id": "b",
+          "text": "Kd"
+        },
+        {
+          "id": "c",
+          "text": "LD50"
+        },
+        {
+          "id": "d",
+          "text": "ED50"
+        }
+      ],
+      "answer": "a",
+      "explanation": "pD2はEC50の負の対数値でアゴニストの強さの指標。pD2が大きいほど作用が強い。",
+      "sourcePage": "p.4"
+    },
+    {
+      "id": "q06",
+      "type": "choice",
+      "tags": [
+        "dose-response"
+      ],
+      "prompt": "【演習1】グラフの薬物Aと薬物BのEC50・pD2の組み合わせとして正しいのはどれか。",
+      "options": [
+        {
+          "id": "a",
+          "text": "A：EC50＝10⁻⁷ M・pD2＝7 ／ B：EC50＝10⁻⁵ M・pD2＝5"
+        },
+        {
+          "id": "b",
+          "text": "A：EC50＝10⁻⁵ M・pD2＝5 ／ B：EC50＝10⁻⁷ M・pD2＝7"
+        },
+        {
+          "id": "c",
+          "text": "A：EC50＝10⁻⁷ M・pD2＝−7 ／ B：EC50＝10⁻⁵ M・pD2＝−5"
+        },
+        {
+          "id": "d",
+          "text": "A：EC50＝10⁻⁸ M・pD2＝8 ／ B：EC50＝10⁻⁴ M・pD2＝4"
+        }
+      ],
+      "answer": "a",
+      "explanation": "反応50%の線と曲線が交わる濃度がEC50。Aは10⁻⁷ M、Bは10⁻⁵ M。pD2＝−log EC50 なので A＝7、B＝5。左にあるAの方が強いアゴニスト。",
+      "sourcePage": "p.4",
+      "image": {
+        "src": "/structures/basic-pharmacology/02-ex1.png",
+        "alt": "薬物Aと薬物Bの用量反応曲線。横軸は薬物濃度（対数、10⁻⁸〜10⁻⁴ M）、縦軸は反応（%）。薬物Aが左、薬物Bが右にある"
+      }
+    },
+    {
+      "id": "q07",
+      "type": "choice",
+      "tags": [
+        "dose-response"
+      ],
+      "prompt": "【演習2】ある受容体へのアゴニストA、B、CのpD2値がそれぞれ8.0、5.1、3.4である。刺激作用の強い順として正しいのはどれか。",
+      "options": [
+        {
+          "id": "a",
+          "text": "A＞B＞C"
+        },
+        {
+          "id": "b",
+          "text": "A＞C＞B"
+        },
+        {
+          "id": "c",
+          "text": "B＞A＞C"
+        },
+        {
+          "id": "d",
+          "text": "C＞B＞A"
+        }
+      ],
+      "answer": "a",
+      "explanation": "pD2が大きいほどアゴニストとして強い。8.0＞5.1＞3.4 なので A＞B＞C。",
+      "sourcePage": "p.4"
+    },
+    {
+      "id": "q08",
+      "type": "truefalse",
+      "tags": [
+        "receptor"
+      ],
+      "prompt": "部分アゴニストの内活性は0より大きく1より小さい。",
+      "answer": true,
+      "explanation": "完全アゴニスト＝1、部分アゴニスト＝0〜1、競合的アンタゴニスト＝0、逆アゴニスト＝負。",
+      "sourcePage": "p.5"
+    },
+    {
+      "id": "q09",
+      "type": "truefalse",
+      "tags": [
+        "receptor"
+      ],
+      "prompt": "部分アゴニストは、完全アゴニストと併用すると競合的アンタゴニストとして働くことがある。",
+      "answer": true,
+      "explanation": "部分アゴニストは同じ受容体を奪い合い、自分は弱い反応しか出さないため、完全アゴニストの作用を減弱させる。",
+      "sourcePage": "p.5"
+    },
+    {
+      "id": "q10",
+      "type": "choice",
+      "tags": [
+        "receptor"
+      ],
+      "prompt": "逆アゴニストの内活性として正しいのはどれか。",
+      "options": [
+        {
+          "id": "a",
+          "text": "負の値（＜0）"
+        },
+        {
+          "id": "b",
+          "text": "0"
+        },
+        {
+          "id": "c",
+          "text": "0〜1の間"
+        },
+        {
+          "id": "d",
+          "text": "1"
+        }
+      ],
+      "answer": "a",
+      "explanation": "逆アゴニストは恒常的に活性化している受容体の基準の活性を下げるので内活性は負。内活性0のアンタゴニストとは違う。",
+      "sourcePage": "p.9"
+    },
+    {
+      "id": "q11",
+      "type": "truefalse",
+      "tags": [
+        "receptor"
+      ],
+      "prompt": "アンタゴニスト（内活性0）は、恒常的に活性化している受容体の基準の活性を低下させる。",
+      "answer": false,
+      "explanation": "基準の活性を下げるのは逆アゴニスト。アンタゴニストは活性型-不活性型の平衡状態に影響しない。",
+      "sourcePage": "p.9"
+    },
+    {
+      "id": "q12",
+      "type": "choice",
+      "tags": [
+        "dose-response"
+      ],
+      "prompt": "【演習3】完全刺激薬である化合物Aを化学修飾し、受容体への親和性がより高い化合物Bを得た。Aの濃度-反応曲線がa（破線）のとき、Bの曲線b（実線）が正しいのはどれか。ただし選択性・内活性は変わらない。",
+      "options": [
+        {
+          "id": "a",
+          "text": "1"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "3"
+        },
+        {
+          "id": "d",
+          "text": "4"
+        }
+      ],
+      "answer": "b",
+      "explanation": "親和性が高い→少ない濃度で効く→曲線は左へ平行移動。内活性は同じなので最大反応は100%のまま。よって2。",
+      "sourcePage": "p.10",
+      "image": {
+        "src": "/structures/basic-pharmacology/02-ex3.png",
+        "alt": "1〜4の4つのグラフ。破線aと実線bの濃度-反応曲線の位置と最大反応がそれぞれ違う"
+      }
+    },
+    {
+      "id": "q13",
+      "type": "choice",
+      "tags": [
+        "receptor"
+      ],
+      "prompt": "【演習7】各薬物を単独投与したときの濃度-反応曲線について、正しいものの組み合わせはどれか（余剰受容体なし）。",
+      "options": [
+        {
+          "id": "a",
+          "text": "1と2"
+        },
+        {
+          "id": "b",
+          "text": "1と4"
+        },
+        {
+          "id": "c",
+          "text": "2と5"
+        },
+        {
+          "id": "d",
+          "text": "3と5"
+        }
+      ],
+      "answer": "d",
+      "explanation": "1：完全アゴニストは100%まで達するはず→×。2：部分アゴニストは100%未満で頭打ち→×。3：競合的アンタゴニストは単独では反応なし→○。4：非競合的アンタゴニストも単独では反応なし→×。5：逆アゴニストは基準レベルを下げる→○。",
+      "sourcePage": "p.12",
+      "image": {
+        "src": "/structures/basic-pharmacology/02-ex7.png",
+        "alt": "1完全アゴニスト〜5逆アゴニストを単独投与したときの濃度-反応曲線の5つのグラフ"
+      }
+    }
+  ]
+}

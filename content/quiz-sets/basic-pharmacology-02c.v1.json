@@ -1,0 +1,335 @@
+{
+  "id": "basic-pharmacology-02c",
+  "version": 1,
+  "subjectId": "basic-pharmacology",
+  "title": "第2回③ 依存性・耐性・受容体の感受性",
+  "lectureDate": "2026-10-02",
+  "group": "第2回 アゴニストとアンタゴニスト・依存性",
+  "published": true,
+  "sourceMaterial": "基礎薬理学 第2回（10/2）授業資料：アゴニストとアンタゴニスト／薬の用量と反応の関係／薬物依存性・耐性",
+  "questions": [
+    {
+      "id": "q01",
+      "type": "choice",
+      "tags": [
+        "dependence"
+      ],
+      "prompt": "精神的依存の形成・維持に関与しているのはどれか。",
+      "options": [
+        {
+          "id": "a",
+          "text": "中脳辺縁系ドパミン神経系"
+        },
+        {
+          "id": "b",
+          "text": "延髄の嘔吐中枢"
+        },
+        {
+          "id": "c",
+          "text": "副交感神経系"
+        },
+        {
+          "id": "d",
+          "text": "視床下部-下垂体系"
+        }
+      ],
+      "answer": "a",
+      "explanation": "快感を生む中脳辺縁系ドパミン神経系（報酬系）の活性化が精神依存に関わる。",
+      "sourcePage": "p.13"
+    },
+    {
+      "id": "q02",
+      "type": "truefalse",
+      "tags": [
+        "dependence"
+      ],
+      "prompt": "身体的依存を起こす薬物の投与を中止すると、禁断症状（退薬症状）が現れる。",
+      "answer": true,
+      "explanation": "体が薬のある状態に適応しているため、急になくなると正常に機能できず退薬症状が出る。",
+      "sourcePage": "p.13"
+    },
+    {
+      "id": "q03",
+      "type": "choice",
+      "tags": [
+        "dependence"
+      ],
+      "prompt": "耐性の説明として正しいのはどれか。",
+      "options": [
+        {
+          "id": "a",
+          "text": "初期と同じ効果を得るために薬物の量や頻度を増やす必要がある状態"
+        },
+        {
+          "id": "b",
+          "text": "薬物を中止すると禁断症状が出る状態"
+        },
+        {
+          "id": "c",
+          "text": "薬物の快感を求めて欲求が高まる状態"
+        },
+        {
+          "id": "d",
+          "text": "少量で効果が強く出るようになる状態"
+        }
+      ],
+      "answer": "a",
+      "explanation": "2は身体的依存、3は精神的依存、4は過感受性に近い。",
+      "sourcePage": "p.13"
+    },
+    {
+      "id": "q04",
+      "type": "choice",
+      "tags": [
+        "dependence"
+      ],
+      "prompt": "耐性の原因として正しいのはどれか。",
+      "options": [
+        {
+          "id": "a",
+          "text": "受容体数の減少"
+        },
+        {
+          "id": "b",
+          "text": "受容体数の増加"
+        },
+        {
+          "id": "c",
+          "text": "受容体親和性の上昇"
+        },
+        {
+          "id": "d",
+          "text": "薬物の吸収率の上昇"
+        }
+      ],
+      "answer": "a",
+      "explanation": "耐性の原因：受容体数の減少、受容体親和性の低下、情報伝達系の活性変化など。",
+      "sourcePage": "p.13"
+    },
+    {
+      "id": "q05",
+      "type": "choice",
+      "tags": [
+        "dependence"
+      ],
+      "prompt": "精神的依存・身体的依存・耐性がすべて最も強い（+++）のはどれか。",
+      "options": [
+        {
+          "id": "a",
+          "text": "オピオイド型"
+        },
+        {
+          "id": "b",
+          "text": "コカイン"
+        },
+        {
+          "id": "c",
+          "text": "ニコチン"
+        },
+        {
+          "id": "d",
+          "text": "幻覚薬型（LSD）"
+        }
+      ],
+      "answer": "a",
+      "explanation": "オピオイド型（モルヒネなど）は3つとも+++。",
+      "sourcePage": "p.13"
+    },
+    {
+      "id": "q06",
+      "type": "choice",
+      "tags": [
+        "dependence"
+      ],
+      "prompt": "精神的依存は強い（+++）が、身体的依存も耐性もほぼないのはどれか。",
+      "options": [
+        {
+          "id": "a",
+          "text": "コカイン"
+        },
+        {
+          "id": "b",
+          "text": "メタンフェタミン"
+        },
+        {
+          "id": "c",
+          "text": "モルヒネ"
+        },
+        {
+          "id": "d",
+          "text": "アルコール"
+        }
+      ],
+      "answer": "a",
+      "explanation": "コカインは精神依存+++のみ。メタンフェタミンは耐性+++がある点で違う。",
+      "sourcePage": "p.13"
+    },
+    {
+      "id": "q07",
+      "type": "truefalse",
+      "tags": [
+        "dependence"
+      ],
+      "prompt": "覚醒剤（メタンフェタミン）は身体的依存を強く起こす。",
+      "answer": false,
+      "explanation": "覚醒剤は精神的依存+++・耐性+++だが、身体的依存は起こしにくい。",
+      "sourcePage": "p.13"
+    },
+    {
+      "id": "q08",
+      "type": "choice",
+      "tags": [
+        "dependence"
+      ],
+      "prompt": "【演習8】長期連用により、精神依存を起こしやすく、かつ身体依存及び耐性を生じにくい薬物として最も適切なのはどれか。",
+      "options": [
+        {
+          "id": "a",
+          "text": "フェノバルビタール"
+        },
+        {
+          "id": "b",
+          "text": "メタンフェタミン"
+        },
+        {
+          "id": "c",
+          "text": "コカイン"
+        },
+        {
+          "id": "d",
+          "text": "フェンタニル"
+        }
+      ],
+      "answer": "c",
+      "explanation": "精神依存だけ＝コカイン。メタンフェタミンは耐性あり、エタノール・フェノバルビタール・フェンタニルは身体依存あり。",
+      "sourcePage": "p.14"
+    },
+    {
+      "id": "q09",
+      "type": "choice",
+      "tags": [
+        "dependence"
+      ],
+      "prompt": "【演習9】長期連用により精神的依存を起こすが、身体的依存は生じにくいのはどれか。",
+      "options": [
+        {
+          "id": "a",
+          "text": "メタンフェタミン"
+        },
+        {
+          "id": "b",
+          "text": "モルヒネ"
+        },
+        {
+          "id": "c",
+          "text": "アルコール（エタノール）"
+        },
+        {
+          "id": "d",
+          "text": "エチゾラム"
+        }
+      ],
+      "answer": "a",
+      "explanation": "覚醒剤（メタンフェタミン）は身体依存を起こしにくい。モルヒネ（オピオイド）、アルコール・エチゾラム（BZ系）・フェノバルビタール（バルビツール酸）は身体依存+++。",
+      "sourcePage": "p.14"
+    },
+    {
+      "id": "q10",
+      "type": "truefalse",
+      "tags": [
+        "sensitivity"
+      ],
+      "prompt": "短時間で起こる脱感受性は、受容体とGタンパク質の脱共役による。",
+      "answer": true,
+      "explanation": "短時間：受容体とGタンパク質の脱共役。長時間：エンドサイトーシスで細胞膜表面の受容体数が減少（down-regulation）。",
+      "sourcePage": "p.15"
+    },
+    {
+      "id": "q11",
+      "type": "choice",
+      "tags": [
+        "sensitivity"
+      ],
+      "prompt": "長時間アゴニストにさらされて起こる脱感受性（down-regulation）の機序として正しいのはどれか。",
+      "options": [
+        {
+          "id": "a",
+          "text": "受容体がエンドサイトーシスで細胞内に取り込まれ、膜表面の受容体数が減る"
+        },
+        {
+          "id": "b",
+          "text": "受容体数が増える"
+        },
+        {
+          "id": "c",
+          "text": "アゴニストが化学的に分解される"
+        },
+        {
+          "id": "d",
+          "text": "受容体の親和性が上がる"
+        }
+      ],
+      "answer": "a",
+      "explanation": "長時間の脱感受性は受容体の内在化による数の減少（down-regulation）。",
+      "sourcePage": "p.15"
+    },
+    {
+      "id": "q12",
+      "type": "fill",
+      "tags": [
+        "sensitivity"
+      ],
+      "prompt": "アゴニスト濃度が長時間減少すると、受容体数が増えて反応性が亢進する。これを[[blank]]という。",
+      "options": [
+        {
+          "id": "a",
+          "text": "過感受性"
+        },
+        {
+          "id": "b",
+          "text": "脱感受性"
+        },
+        {
+          "id": "c",
+          "text": "耐性"
+        },
+        {
+          "id": "d",
+          "text": "身体的依存"
+        }
+      ],
+      "answer": "a",
+      "explanation": "過感受性（supersensitivity, up-regulation）。脱感受性の逆。",
+      "sourcePage": "p.15"
+    },
+    {
+      "id": "q13",
+      "type": "choice",
+      "tags": [
+        "sensitivity"
+      ],
+      "prompt": "レセルピンやグアネチジンでノルアドレナリンを枯渇させた後にアドレナリンを与えたときに起こることとして正しいのはどれか。",
+      "options": [
+        {
+          "id": "a",
+          "text": "過度の血圧上昇"
+        },
+        {
+          "id": "b",
+          "text": "血圧がほとんど変化しない"
+        },
+        {
+          "id": "c",
+          "text": "急激な血圧低下"
+        },
+        {
+          "id": "d",
+          "text": "心拍数の著しい低下のみ"
+        }
+      ],
+      "answer": "a",
+      "explanation": "除神経性感受性増大：ノルアドレナリン枯渇で代償的にアドレナリン受容体の感受性が上がり、アドレナリンで過度に血圧が上がる。",
+      "sourcePage": "p.15"
+    }
+  ]
+}
